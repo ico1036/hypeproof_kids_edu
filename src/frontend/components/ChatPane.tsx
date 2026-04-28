@@ -156,10 +156,14 @@ export default function ChatPane({
                 if (msg.role === "user" && !isLoading) setInput(msg.text);
               }}
             >
-              {/* 카드 JSON 제외하고 텍스트만 표시 */}
+              {/* 코드 노출 차단용 필터. React XSS 방어가 아니라 아이 화면의 raw 코드 숨김이 목적이다. */}
               {msg.text
-                .replace(/```[\s\S]*?```/gi, "")   // 모든 코드블록 제거
-                .replace(/\n*💡[^\n]*$/m, "")           // 마지막 💡 힌트 줄 제거 (별도 버튼으로 표시)
+                .replace(/```[\w-]*\s*[\s\S]*?```/g, "")  // 모든 ``` 코드블록 제거 (json/html/js/css 등)
+                .replace(/```[\s\S]*$/g, "")              // 닫히지 않은 스트리밍 중 코드블록 제거
+                .replace(/<!DOCTYPE[\s\S]*$/gi, "")        // 코드블록 없이 raw HTML로 흘러나오는 경우 차단
+                .replace(/<html[\s\S]*$/gi, "")
+                .replace(/<script[\s\S]*$/gi, "")          // 안전 우선: 이후 정상 설명도 함께 숨길 수 있음
+                .replace(/\n*💡[^\n]*$/m, "")              // 마지막 💡 힌트 줄 제거 (별도 버튼으로 표시)
                 .trim() ||
                 (msg.isStreaming ? "..." : "")}
             </div>
