@@ -26,6 +26,8 @@ def make_state(**kwargs) -> EduSessionState:
         "current_game_html": None,
         "current_game_url": None,
         "intent": None,
+        "client_block": None,
+        "forced_card_type": None,
         "card_result": None,
         "card_url": None,
         "hint": None,
@@ -132,3 +134,40 @@ async def test_classify_game_edit_keyword_without_html_falls_to_llm():
     result = await classify_intent_node(state)
     # mock LLM은 "card"를 반환하므로 intent는 "card"
     assert result["intent"] == "card"
+
+
+@pytest.mark.asyncio
+async def test_block_zero_prefers_character_when_game_is_mentioned_as_context():
+    state = make_state(
+        messages=[HumanMessage(content="게임에 나올 캐릭터 그려줘")],
+        client_block=0,
+    )
+    result = await classify_intent_node(state)
+    assert result["intent"] == "card"
+    assert result["forced_card_type"] == "character"
+
+
+@pytest.mark.asyncio
+async def test_negated_game_request_does_not_create_game():
+    state = make_state(
+        messages=[HumanMessage(content="게임 말고 캐릭터 만들래")],
+        client_block=0,
+    )
+    result = await classify_intent_node(state)
+    assert result["intent"] == "card"
+    assert result["forced_card_type"] == "character"
+
+
+@pytest.mark.asyncio
+async def test_block_two_defaults_to_game_create():
+    state = make_state(messages=[HumanMessage(content="별 모으게 해줘")], client_block=2)
+    result = await classify_intent_node(state)
+    assert result["intent"] == "game_create"
+
+
+@pytest.mark.asyncio
+async def test_block_one_prefers_world_card():
+    state = make_state(messages=[HumanMessage(content="구름 위 학교")], client_block=1)
+    result = await classify_intent_node(state)
+    assert result["intent"] == "card"
+    assert result["forced_card_type"] == "world"

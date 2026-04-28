@@ -19,6 +19,8 @@ class EduSessionState(TypedDict):
     current_game_url: Optional[str]
     # 라우팅
     intent: Optional[str]   # "card" | "game_create" | "game_edit" | "chitchat"
+    client_block: Optional[int]  # 0=character, 1=world, 2=master/game
+    forced_card_type: Optional[str]
     # 출력 버퍼
     card_result: Optional[dict]
     card_url: Optional[str]

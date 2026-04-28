@@ -40,6 +40,7 @@ async def handle_chat_message(
     child_id: str,
     session_id: str,
     graph,
+    client_block: int | None = None,
 ):
     """
     WebSocket 메시지를 받아 LangGraph 그래프를 astream_events v2 로 실행하고
@@ -63,6 +64,7 @@ async def handle_chat_message(
                 "session_id": session_id,
                 "child_id": child_id,
                 "tenant_id": "default",
+                "client_block": client_block,
                 "token_usage": {},
             },
             config=config,

@@ -19,12 +19,16 @@ _DATA_DIR = _BACKEND_ROOT / "data"
 _MAX_CARDS_PER_SESSION = 10
 
 # 게임 관련 키워드 (기존 백업 코드에서 이식)
-_GAME_CREATE_KEYWORDS = ["게임 만들", "게임 시작", "플레이", "놀자", "게임해", "시작해줘"]
+_GAME_CREATE_RE = re.compile(r"게임\s*(만들|시작|해|하|플레이)|플레이|놀자|레이싱|레이스")
+_GAME_NEGATION_RE = re.compile(r"게임\s*(말고|아니라|대신)")
+_CHARACTER_INTENT_RE = re.compile(r"캐릭터|아바타|주인공")
+_WORLD_INTENT_RE = re.compile(r"세계|배경|어디서|사는 곳")
 _GAME_EDIT_KEYWORDS = [
     "더 빠르게", "더 느리게", "어렵게", "쉽게", "적 추가", "아이템 추가",
     "시간 늘려", "시간 줄여", "점프 게임", "횡스크롤",
     "바꿔줘", "수정해줘", "변경해줘", "추가해줘", "없애줘", "지워줘",
     "색 바꿔", "색깔", "크게", "작게", "체력", "목숨", "점프", "배경",
+    "이거 별로", "별로야",
 ]
 
 _GAME_CREATE_HINTS = [
@@ -52,6 +56,27 @@ _MOCK_CARD_RESPONSE = '''와, 토끼 전사 캐릭터를 만들었어! 귀도 �
 💡 다음엔 "토끼가 사는 세계는 꽃이 가득한 숲이야"라고 해봐!'''
 
 
+def infer_route_from_prompt(user_msg: str, client_block: int | None, has_game: bool) -> dict:
+    char_intent = bool(_CHARACTER_INTENT_RE.search(user_msg))
+    world_intent = bool(_WORLD_INTENT_RE.search(user_msg))
+    game_negated = bool(_GAME_NEGATION_RE.search(user_msg))
+    game_intent = bool(_GAME_CREATE_RE.search(user_msg)) and not game_negated
+
+    if has_game and any(kw in user_msg for kw in _GAME_EDIT_KEYWORDS) and not (char_intent or world_intent):
+        return {"intent": "game_edit", "forced_card_type": None}
+    if game_intent and not (char_intent or world_intent):
+        return {"intent": "game_create", "forced_card_type": None}
+
+    if client_block == 2 and not (char_intent or world_intent or game_negated):
+        return {"intent": "game_create", "forced_card_type": None}
+    if client_block == 0 and not (world_intent or game_intent):
+        return {"intent": "card", "forced_card_type": "character"}
+    if client_block == 1 and not (char_intent or game_intent):
+        return {"intent": "card", "forced_card_type": "world"}
+
+    return {"intent": None, "forced_card_type": None}
+
+
 def _load_persona() -> str:
     if _PERSONA_PATH.exists():
         return _PERSONA_PATH.read_text(encoding="utf-8").strip()
@@ -72,10 +97,9 @@ async def classify_intent_node(state: EduSessionState) -> dict:
 
     # 키워드로 먼저 빠르게 분류
     has_game = bool(state.get("current_game_html"))
-    if any(kw in user_msg for kw in _GAME_EDIT_KEYWORDS) and has_game:
-        return {"intent": "game_edit"}
-    if any(kw in user_msg for kw in _GAME_CREATE_KEYWORDS):
-        return {"intent": "game_create"}
+    route = infer_route_from_prompt(user_msg, state.get("client_block"), has_game)
+    if route["intent"]:
+        return route
 
     # 애매한 경우 LLM에 위임 (session_context 포함)
     llm = get_intent_llm()
@@ -94,7 +118,7 @@ async def classify_intent_node(state: EduSessionState) -> dict:
     intent = response.content.strip().lower()
     if intent not in ("card", "game_create", "game_edit", "chitchat"):
         intent = "card"  # 기본값
-    return {"intent": intent}
+    return {"intent": intent, "forced_card_type": None}
 
 
 # ── 2. 카드 생성 ──
@@ -104,6 +128,8 @@ async def generate_card_node(state: EduSessionState) -> dict:
     if os.getenv("MOCK_LLM") == "1":
         text = _MOCK_CARD_RESPONSE
         card_data = _extract_card_json(text)
+        if state.get("forced_card_type") in ("character", "world"):
+            card_data["card_type"] = state["forced_card_type"]
         hint = _extract_hint(text)
         return {
             "card_result": card_data,
@@ -126,6 +152,11 @@ async def generate_card_node(state: EduSessionState) -> dict:
     ctx = state.get("session_context") or ""
     if ctx:
         context_parts.insert(0, f"[세션 요약] {ctx}")
+    forced_card_type = state.get("forced_card_type")
+    if forced_card_type in ("character", "world"):
+        context_parts.append(
+            f"[카드 타입 고정] card_type은 반드시 \"{forced_card_type}\"이어야 한다."
+        )
     full_user_msg = "\n".join(context_parts + [user_msg]) if context_parts else user_msg
 
     messages: list = []
@@ -610,5 +641,3 @@ def _extract_spec_json(text: str) -> dict:
     else:
         logger.warning(f"_extract_spec_json: no JSON found, text[:200]={text[:200]!r}")
     return {}
-
-

@@ -447,7 +447,19 @@ async def chat_ws(websocket: WebSocket, child_id: str):
                 auto_name = original_prompt[:15].strip()
                 await asyncio.to_thread(storage.update_session_name, session_id, auto_name)
 
-            await handle_chat_message(websocket, original_prompt, child_id, session_id, graph)
+            raw_block = data.get("block")
+            client_block: int | None = None
+            if type(raw_block) is int and raw_block in (0, 1, 2):
+                client_block = raw_block
+
+            await handle_chat_message(
+                websocket,
+                original_prompt,
+                child_id,
+                session_id,
+                graph,
+                client_block=client_block,
+            )
 
     except WebSocketDisconnect:
         logger.info("[%s::%s] WebSocket 연결 해제", child_id, session_id)
