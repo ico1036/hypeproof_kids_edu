@@ -1,3 +1,16 @@
+---
+type: project
+title: "SK바이오팜 × 비트리 × HypeProof Lab Meeting Minutes"
+status: archived
+created: 2026-05-12
+updated: 2026-05-15
+tags:
+  - project
+  - sk-biopharma
+  - bitree
+  - meeting
+---
+
 
 ---
 

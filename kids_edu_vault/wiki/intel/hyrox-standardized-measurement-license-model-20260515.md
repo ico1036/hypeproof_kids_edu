@@ -1,3 +1,16 @@
+---
+type: intel
+title: "HYROX 표준화 측정·라이센스 모델"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - intel
+  - hyrox
+  - measurement
+  - license
+---
+
 # HYROX 표준화 측정·순위·라이센스 모델 리서치
 
 작성: 2026-05-15  

@@ -2,7 +2,7 @@
 type: meta
 title: "Log"
 created: 2026-04-12
-updated: 2026-04-19
+updated: 2026-05-15
 tags:
   - meta/log
 ---
@@ -10,6 +10,15 @@ tags:
 # Log
 
 추가 전용. 새 엔트리는 **최상단**에 삽입. 과거 엔트리 수정 금지.
+
+---
+
+## 2026-05-15 | sync | HYROX 브랜치 wiki 구조 동기화 (upstream/main 기준)
+- 브랜치: sync-hyrox-to-upstream-wiki-structure-20260515
+- 작업: upstream/main 병합, projects/ 파일명 kebab-case 변환, [[projects/_index]] 생성, [[index]]/[[hot]] 갱신
+- Pages created: [[projects/_index]]
+- Pages updated: [[index]], [[hot]], [[intel/_index]], [[hypeproof-hyrox-framework-v1]]
+- Key insight: HYROX 문서(프레임워크/세션/라이센스/측정/SK바이오팜 분석)가 upstream vault 구조에 편입됨. HTML artifact는 wiki 페이지로 등록하지 않고 [[hypeproof-hyrox-framework-v1]] frontmatter related로만 참조.
 
 ---
 

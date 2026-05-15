@@ -1,12 +1,13 @@
 ---
-type: project
-title: "HypeProof Assets v0.1"
+type: asset
+title: "HypeProof HYROX Assets v0.1"
 status: active
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-15
 tags:
-  - project
-  - assets
+  - asset
+  - hyrox
+  - principles
   - sixteen-essence
 ---
 

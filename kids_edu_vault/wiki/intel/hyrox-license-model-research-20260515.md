@@ -1,3 +1,16 @@
+---
+type: intel
+title: "HYROX license/certification model research"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - intel
+  - hyrox
+  - license
+  - research
+---
+
 # HYROX license/certification model research
 
 작성: 2026-05-15

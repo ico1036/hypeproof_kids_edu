@@ -8,6 +8,9 @@ tags:
   - project
   - hyrox
   - framework
+related:
+  - "HypeProof-HYROX-proposal-v1.html (artifact, wiki 외부)"
+  - "HypeProof-pricing-benchmark.html (artifact, wiki 외부)"
 ---
 
 # HypeProof HYROX — 이론적 프레임워크 v1 (2026-05-11)

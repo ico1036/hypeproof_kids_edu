@@ -1,3 +1,16 @@
+---
+type: intel
+title: "Prompt quality evaluation sources"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - intel
+  - prompt-evaluation
+  - rubric
+  - sources
+---
+
 # Prompt quality / HAIC evaluation sources for HypeProof scoring
 
 작성: 2026-05-15

@@ -13,27 +13,27 @@ tags:
 
 ---
 
-## 현재 상태: SK바이오팜 파일럿 진입 + HypeProof Studio 개발 시작
+## 현재 상태: SK바이오팜 파일럿 진입 + HypeProof Studio 개발 시작 + HYROX 문서 구조 동기화
 
 ### 가장 최근 작업 (2026-05-15)
 
+**HYROX 브랜치 wiki 구조 동기화 진행**
+- 작업 브랜치: `sync-hyrox-to-upstream-wiki-structure-20260515`
+- 기준: `upstream/main` 최신 vault 구조 (`sources/`, `questions/`, `meta/`, kebab-case, frontmatter 필수)
+- HYROX 프로젝트 문서 파일명을 kebab-case로 변환하고 [[projects/_index]] 생성
+- [[index]], [[log]], [[hot]], [[intel/_index]]에 HYROX 관련 문서 등록
+- HTML artifacts (`HypeProof-HYROX-proposal-v1.html`, `HypeProof-pricing-benchmark.html`)는 wiki 페이지로 등록하지 않고 [[hypeproof-hyrox-framework-v1]]의 related artifact로만 참조
+
+**HYROX 가격정책 최근 결론**
+- 참가자 가격은 단일 기준: **₩15만 / 인·시간**
+- Starter Program 4h = **₩60만 / 인·가족**
+- 파일럿·단체 도입은 **₩40만~60만 / 인·가족** 범위 조정
+- Level 1·2·3은 결제 상품이 아니라 Challenge 결과로 부여되는 검증 등급
+- Facilitator/Partner License는 참가자 가격정책에서 제외하고 추후 운영자/B2B 모델에서 별도 설명
+
 **PR#7 `feature/langgraph-gemini` → main 머지 완료**
-- ico1036 리뷰 3건 반영 + 이미 구현된 항목 코멘트 확인 처리
-- 수정: `edit_code_node` 실패 피드백, `sys.path.insert` 7회→1회, [[langfuse-observability]] 시크릿 외부 주입, `.env.example` 추가
-- main 현재 커밋: `3794819`, 워크트리 및 `feature/langgraph-gemini` 브랜치 정리 완료
+- [[langgraph]]+[[gemini-2-5-flash]] 백엔드 전환 PR이 리뷰 후 main에 머지됨
 - 파일럿 후 처리 예정: Ping/Pong 하트비트, iframe CSP, 10턴+ rolling summary
-
-**볼트 구조 정렬 완료 + .raw 정비 (동일 세션)**
-- `sources/`, `questions/` 폴더 신설, dead link 4개 복구, orphan 39개 index 등록
-- 미ingest 파일 `2026-04-21-hospital-inquiry-draft.md` ingest 완료
-
-**[[sk-biopharma]] × [[bitree]] 파일럿 확정 (2026-05-14)**
-- 대상: 약 15~20가족, 6~7월 토요일 Biweekly, [[sk-biopharma]] 10층 내부 카페
-- 수업 단위: 4시간 × 2그룹/일
-
-**HypeProof Studio v0.1 개발 결정**
-- VS Code fork + 자체 chat panel (Track A / Track B 병렬)
-- 5/28~30 dry-run이 Go/No-go 게이트
 
 ---
 
@@ -51,7 +51,8 @@ tags:
 
 ## 핵심 페이지
 
-- [[2026-04-21-hospital-inquiry-draft]] — 국립암센터 사전 확인 요청 초안 (방금 ingest)
+- [[projects/_index]] · [[hypeproof-hyrox-framework-v1]] · [[hypeproof-hyrox-session-20260511]]
+- [[hypeproof-license-strategy-from-hyrox-20260515]] · [[hypeproof-measurement-rubric-from-hyrox-20260515]]
 - [[2026-05-12-sk-biopharma-meeting]] · [[2026-05-14-sk-biopharma-followup]]
 - [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]]
 - [[hypeproof-studio]] · [[adr-hypeproof-studio-v01]] · [[sixteen-essence]]
