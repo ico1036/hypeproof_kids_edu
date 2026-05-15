@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HypeProof HYROX — 프로덕트 제안서 v1.2</title>
+<title>HypeProof HYROX — 프로덕트 제안서 v1.3</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #1a1a2e; background: #fafafa; line-height: 1.7; }
@@ -57,14 +57,17 @@
   .license-card p { font-size: 14px; margin-bottom: 6px; }
   .formula { background:#fff; border:2px dashed #e63946; border-radius:8px; padding:16px; margin:16px 0; font-size:15px; font-weight:700; }
 
-  .clarity-table { width:100%; border-collapse: collapse; background:#fff; border:2px solid #eee; border-radius:8px; overflow:hidden; margin:16px 0; }
-  .clarity-table th { background:#1a1a2e; color:#fff; font-size:13px; padding:10px; text-align:left; }
-  .clarity-table td { border-top:1px solid #eee; padding:10px; font-size:14px; vertical-align:top; }
-  .clarity-table .no { color:#888; font-weight:700; }
-  .clarity-table .yes { color:#2a9d8f; font-weight:800; }
-  .distinction-box { background:#fff; border:2px solid #e63946; border-radius:8px; padding:18px; margin:18px 0; }
-  .distinction-box p { font-size:15px; margin-bottom:8px; }
-  .distinction-box strong { color:#e63946; }
+  .path-grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin:18px 0; }
+  .path-card { background:#fff; border:2px solid #eee; border-radius:8px; padding:18px; }
+  .path-card h4 { font-size:16px; font-weight:800; margin-bottom:8px; color:#1a1a2e; }
+  .path-card p { font-size:14px; margin-bottom:8px; }
+  .path-card ul { margin-left:18px; color:#444; font-size:14px; }
+  .path-card li { margin-bottom:5px; }
+  .path-card.accent { border-color:#e63946; }
+  .path-card.green { border-color:#2a9d8f; }
+  .flow-card { background:#fff; border:2px solid #eee; border-radius:8px; padding:18px; margin:16px 0; }
+  .flow-card .flow-line { font-size:15px; font-weight:800; color:#1a1a2e; margin-bottom:8px; }
+  .flow-card .flow-desc { font-size:14px; color:#555; }
 
   .footer { text-align: center; padding: 40px 0 20px; border-top: 2px solid #eee; margin-top: 48px; }
   .footer p { font-size: 14px; color: #888; }
@@ -73,6 +76,7 @@
     .hero h1 { font-size: 28px; }
     .tier-row { flex-direction: column; }
     .metric-grid { grid-template-columns: 1fr; }
+    .path-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -226,7 +230,7 @@
     <p>들어오려면 추천이 필요합니다. "누가 보냈나요?"가 첫 화면입니다. 초대는 실력 보증이 아니라 관심과 동기의 필터입니다.</p>
     <p><strong>하이엔드 포지셔닝</strong> — "여기는 아무나 못 온다"가 FOMO를 만듭니다.</p>
     <p><strong>동기 필터</strong> — AI를 잘 써야 들어오는 게 아닙니다. "진짜 하고 싶은 사람"만 모이는 구조입니다.</p>
-    <p><strong>확장 경로</strong> — Level 3 Leader는 커뮤니티 확장의 중심이 될 수 있지만, 이것은 개인 등급입니다. 공식 운영권은 별도의 Facilitator License가 있어야 합니다.</p>
+    <p><strong>확장 경로</strong> — 상위 리더는 커뮤니티를 만들고 새로운 참가자를 초대합니다. 공식 운영은 HypeProof Facilitator와 Partner 네트워크를 통해 확장됩니다.</p>
 
     <h3>등급 — 세 단계 자격증</h3>
     <div class="tier-row">
@@ -247,95 +251,70 @@
       </div>
     </div>
 
-    <h3>등급과 라이센스 — 한눈에 구분</h3>
-    <div class="distinction-box">
-      <p><strong>Level 1·2·3 = 내가 어느 정도 잘하는가를 보여주는 개인 등급.</strong></p>
-      <p><strong>License = HypeProof의 공식 기록·경기 운영·브랜드 사용을 허락받는 권한.</strong></p>
-      <p>따라서 <strong>Level 3 Leader와 Facilitator License는 다릅니다.</strong> Level 3는 "남을 이끌 준비가 된 사람"이고, Facilitator License는 "공식 경기를 열 수 있도록 HypeProof가 승인한 사람"입니다.</p>
+    <h3>두 개의 트랙 — 개인 인증과 운영 라이센스</h3>
+    <p>HypeProof는 참가자의 성장 단계와 공식 프로그램 운영 권한을 분리해 설계합니다. 참가자는 인증 등급을 통해 자신의 AI 협업 역량을 증명하고, 운영자는 라이센스를 통해 HypeProof 표준 프로그램을 개최합니다.</p>
+
+    <div class="path-grid">
+      <div class="path-card accent">
+        <h4>Certification Track — 개인 인증</h4>
+        <p>참가자가 HypeProof 16원칙을 얼마나 깊게 체화했는지 보여주는 개인 검증 체계입니다.</p>
+        <ul>
+          <li>Level 1 Practitioner — AI 협업 기본기</li>
+          <li>Level 2 Professional — 실전 적용 능력</li>
+          <li>Level 3 Leader — 타인을 이끄는 리더십</li>
+        </ul>
+      </div>
+      <div class="path-card green">
+        <h4>License Track — 공식 운영 권한</h4>
+        <p>HypeProof의 공식 기록, 운영 매뉴얼, 브랜드, 리포트 시스템을 사용할 수 있는 권한 체계입니다.</p>
+        <ul>
+          <li>Creator License — 공식 기록과 시즌 랭킹</li>
+          <li>Facilitator License — 개인 진행자 권한</li>
+          <li>Partner License — 기관 개최 권한</li>
+        </ul>
+      </div>
     </div>
 
-    <table class="clarity-table">
-      <thead>
-        <tr><th>구분</th><th>무엇인가</th><th>할 수 있는 것</th><th>공식 운영권</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Level 1 Practitioner</strong></td>
-          <td>AI 협업 기본 검증</td>
-          <td>내가 AI와 협업할 수 있음을 증명</td>
-          <td class="no">없음</td>
-        </tr>
-        <tr>
-          <td><strong>Level 2 Professional</strong></td>
-          <td>실전 적용 검증</td>
-          <td>자기 일/학습/사업에 AI를 전략적으로 적용</td>
-          <td class="no">없음</td>
-        </tr>
-        <tr>
-          <td><strong>Level 3 Leader</strong></td>
-          <td>타인을 이끄는 리더 등급</td>
-          <td>커뮤니티 확장, 초대, 코칭 후보군 진입</td>
-          <td class="no">아직 없음</td>
-        </tr>
-        <tr>
-          <td><strong>Creator License</strong></td>
-          <td>공식 기록 시즌권</td>
-          <td>공식 랭킹 등록, 시즌 점수, Competition 참가</td>
-          <td class="no">없음</td>
-        </tr>
-        <tr>
-          <td><strong>Facilitator License</strong></td>
-          <td>개인 운영 라이센스</td>
-          <td>HypeProof Challenge 진행, 참가자 코칭, 공식 기록 운영</td>
-          <td class="yes">있음</td>
-        </tr>
-        <tr>
-          <td><strong>Partner License</strong></td>
-          <td>기관 개최 라이센스</td>
-          <td>기관이 HypeProof 브랜드/커리큘럼으로 공식 프로그램 개최</td>
-          <td class="yes">있음</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="flow-card">
+      <div class="flow-line">성장 경로: Practitioner → Professional → Leader → Facilitator</div>
+      <div class="flow-desc">Level 3 Leader는 HypeProof 커뮤니티를 확장하고 타인을 이끌 수 있는 상위 개인 인증입니다. 이후 별도의 운영 실습과 승인을 거치면 공식 Facilitator로 활동할 수 있습니다.</div>
+    </div>
 
-    <h3>라이센스 — 공식 권한</h3>
+    <h3>라이센스 — 공식 운영 체계</h3>
 
     <div class="license-card">
-      <div class="license-tag">기록 권한</div>
+      <div class="license-tag">공식 기록</div>
       <div class="license-name">HypeProof Creator License</div>
-      <p><strong>정의:</strong> 참가자의 기록을 공식 랭킹·Competition·시즌 포트폴리오에 올리는 권한.</p>
-      <p><strong>주의:</strong> 수업을 열거나 남을 가르치는 권한은 아니다.</p>
-      <p><strong>발급 조건:</strong> 표준 Challenge 1회 완료 + 부정행위/대리작성/표절 규정 동의 + 시즌 등록.</p>
+      <p>참가자의 Challenge 기록을 공식 랭킹, 시즌 점수, Competition, 포트폴리오에 연결하는 시즌 멤버십입니다.</p>
+      <p><strong>등록 기준:</strong> 표준 Challenge 완료, 시즌 등록, HypeProof 공정성 규정 동의.</p>
     </div>
 
     <div class="license-card">
-      <div class="license-tag">개인 운영 권한</div>
+      <div class="license-tag">공식 진행자</div>
       <div class="license-name">HypeProof Facilitator License</div>
-      <p><strong>정의:</strong> HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한.</p>
-      <p><strong>Level 3와의 관계:</strong> Level 3는 후보 조건일 뿐, License가 아니다.</p>
-      <p><strong>발급 조건:</strong> Level 3 Leader + 모의 운영 + 실제 보조 운영 + HypeProof 승인.</p>
+      <p>HypeProof Challenge를 진행하고 참가자의 AI 협업 과정을 코칭하는 개인 진행자 라이센스입니다.</p>
+      <p><strong>등록 기준:</strong> Leader 인증, 운영 실습, 보조 진행 경험, HypeProof 승인.</p>
     </div>
 
     <div class="license-card">
-      <div class="license-tag">기관 개최 권한</div>
+      <div class="license-tag">공식 파트너</div>
       <div class="license-name">HypeProof Partner License</div>
-      <p><strong>정의:</strong> 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한.</p>
-      <p><strong>주의:</strong> 기관 라이센스가 있어도 공식 기록/리포트 발급은 HypeProof 시스템을 통해야 한다.</p>
-      <p><strong>발급 조건:</strong> HypeProof 승인 + Facilitator 보유 + 운영 매뉴얼 준수 + 기록 시스템 연동.</p>
+      <p>기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템으로 공식 프로그램을 개최하는 파트너 라이센스입니다.</p>
+      <p><strong>등록 기준:</strong> HypeProof 승인, Facilitator 배치, 운영 매뉴얼 준수, 기록 시스템 연동.</p>
     </div>
 
     <h3>바이럴 — KOL이 마케팅·세일즈를 대신한다</h3>
     <p>우리는 직접 마케팅·세일즈를 하지 않습니다. <strong>KOL만 찾습니다.</strong></p>
     <p><strong>파트너 채널 자동화</strong> — 비트리가 라이선스 파트너(동아일보 등)를 데려오고, 그 파트너가 바이오팜, 학부모 등 손님을 계속 데려옵니다. 세일즈·마케팅 자동화 기계.</p>
-    <p><strong>KOL = 마케팅 직원</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람이 Level 3 Leader가 되면, 자기 네트워크로 사람들을 우리 세계 안으로 끌고 옵니다. 단, 공식 수업 운영은 Facilitator License 취득 후에만 가능합니다.</p>
+    <p><strong>KOL = 마케팅 직원</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람이 Leader가 되면, 자기 네트워크로 사람들을 우리 세계 안으로 끌고 옵니다. 이후 Facilitator와 Partner 네트워크를 통해 공식 프로그램 운영으로 이어집니다.</p>
     <p><strong>결론</strong> — 우리가 할 일은 KOL을 찾는 것뿐. KOL이 스스로 마케팅·세일즈 역할을 하고, 바이럴은 그 안에 있습니다.</p>
 
     <h3>재방문 — 6개월 갱신</h3>
     <p>AI에서 1개월은 1년입니다. 오늘 배운 게 6개월 뒤엔 구식일 수 있습니다. 4주차 언러닝이 이걸 가르칩니다. 배운 걸 의심하는 태도 = 갱신의 동기.</p>
     <p>만료는 벌점이 아니라 다시 돌아와서 다시 검증받으라는 초대입니다. 갱신하러 오면 "이번엔 더 높은 등급에 도전하시겠습니까?"</p>
 
-    <h3>확장 — Level 3는 리더 등급, Facilitator는 운영권</h3>
-    <p>Level 3 Leader는 사람을 모으고, 커뮤니티를 만들고, 타인을 AI 협업 과정으로 이끌 수 있음을 보여주는 개인 등급입니다. 그러나 공식 HypeProof 경기를 열 수 있는 권한은 아닙니다. 공식 운영은 Level 3 이후 별도 심사를 거쳐 Facilitator License를 받은 사람만 할 수 있습니다.</p>
+    <h3>확장 — Leader에서 Facilitator로</h3>
+    <p>Leader는 HypeProof 커뮤니티를 넓히는 핵심 인물입니다. 검증된 Leader는 운영 실습과 승인 절차를 거쳐 Facilitator가 되고, Facilitator가 쌓이면 Partner Center와 지역별 프로그램으로 확장됩니다.</p>
   </div>
 
   <!-- 05. 차이 -->
@@ -355,7 +334,7 @@
     <h2>어떻게 팔 것인가</h2>
     <p><strong>우리는 직접 팔지 않습니다.</strong> KOL과 파트너가 팝니다.</p>
     <p><strong>비트리</strong> (성동효 부대표, 문두열 대표) — 영업 채널. 바이오팜, 동아일보 등 라이선스 파트너를 데려오고, 그 파트너가 손님을 계속 데려옵니다. 세일즈·마케팅 자동화 기계. 프로덕트 운영은 우리가.</p>
-    <p><strong>KOL 직접 채널</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람. 이 사람이 3급 Leader가 되면 자기 네트워크로 사람을 끌고 옵니다. 우리의 마케팅 직원.</p>
+    <p><strong>KOL 직접 채널</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람. 이 사람이 Leader가 되면 자기 네트워크로 사람을 끌고 옵니다. 우리의 마케팅 직원.</p>
     <p>두 채널이 같은 프로덕트에서 만납니다. 참가자 입장에서는 HypeProof HYROX에 참가한 것. 랭킹 보드에 채널 구분 없습니다.</p>
     <p><strong>우리가 할 일은 KOL을 찾는 것뿐.</strong> 나머지는 자동으로 돕습니다.</p>
   </div>
@@ -415,8 +394,8 @@
   </div>
 
   <div class="footer">
-    <p>HypeProof HYROX — 이론적 프레임워크 v1.2</p>
-    <p>2026.05.15 | 등급·라이센스 구조 명확화</p>
+    <p>HypeProof HYROX — 이론적 프레임워크 v1.3</p>
+    <p>2026.05.15 | 개인 인증·운영 라이센스 체계 정리</p>
   </div>
 
 </div>
