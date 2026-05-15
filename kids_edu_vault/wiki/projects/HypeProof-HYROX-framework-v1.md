@@ -48,17 +48,36 @@
 3주 Mastery: 백번뽑기 / 다중모델 / 추상사다리 / 수행위임역전
 4주 Transcendence: 언러닝 / 상상 / 소격 / 천번째감탄
 
-자동 측정: 입력 해상도, 반복 횟수, 수정 이력, 소요 시간
-진행자 관찰: 맥락 이해도, 감정 전이, 품질 판단, 협업 질
+### 측정: HypeProof Trace 기반 공식 기록
+
+HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 AI 협업 과정을 잰다. 주관 심사표가 아니라 `task → trial → trace → outcome → grader` 구조의 eval harness가 공식 기록의 기반이다.
+
+공식 점수 후보:
+- Prompt Completeness — 목표, 제약조건, 맥락/자료, 출력 형식, 예시 포함 여부
+- Iteration Depth — 의미 있는 수정 횟수, 버전 변화량, 피드백 구체성
+- Branching Score — 후보 생성 수, 후보 비교, 선택 이유
+- Validation Score — 테스트 횟수, 발견한 문제 수, 수정 반영 수, 최종 pass/fail
+- Human Control Ratio — AI 출력 복붙 대비 인간 선택/거절/수정 비율
+- Efficiency — 총 소요 시간, turn 수, token/cost, 재작업 비율
+
+진행자 관찰은 보조 신호다. 공식 기록의 중심은 trace와 outcome이다.
 
 ### 등급: 세 단계 자격증 모델
 
-1급 Verified AI Practitioner — 16원칙 4주 완주. "AI와 협업할 수 있다"
-2급 Verified AI Professional — 1급 + 심화 4주 + 과제. "AI를 전략적으로 활용한다"
-3급 Verified AI Leader — 2급 + 진행자 수료. "남을 가르칠 자격이 있다"
+1급 Verified AI Practitioner — 16원칙 4주 완주 + 표준 Challenge 기록. "AI와 협업할 수 있다"
+2급 Verified AI Professional — 1급 + 심화 4주 + 자기 도메인 과제. "AI를 전략적으로 활용한다"
+3급 Verified AI Leader — 2급 + 타인을 4스테이션으로 안내하는 리더 과제. "남을 AI 협업 과정으로 이끌 수 있다"
 
 등급명은 전문직 언어. "Level 1"이 아니라 명함에 적히고 싶은 명칭.
-3급이 확장의 열쇠. 3급 취득자가 진행자가 되어 새 사람을 데려옴.
+3급은 삭제하지 않는다. 다만 3급만으로 공식 운영권이 생기지는 않는다. 3급 Leader 중 모의 운영, 실제 보조 운영, HypeProof 승인을 통과한 사람만 Facilitator License를 받는다.
+
+### 라이센스: 등급과 권한 분리
+
+- HypeProof Creator License — 공식 랭킹 등록, 시즌 점수 누적, Competition 참가, 포트폴리오 유지 권한
+- HypeProof Facilitator License — HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한
+- HypeProof Partner License — 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한
+
+수료증은 참가 증명이고, 라이센스는 공식 기록·운영·브랜드 사용 권한이다.
 
 ### 가격: 하이엔드 타겟 (확정 전)
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HypeProof HYROX — 프로덕트 제안서</title>
+<title>HypeProof HYROX — 프로덕트 제안서 v1.1</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #1a1a2e; background: #fafafa; line-height: 1.7; }
@@ -45,12 +45,25 @@
   .evidence .label { font-size: 13px; font-weight: 700; color: #888; margin-bottom: 4px; }
   .evidence p { font-size: 15px; margin-bottom: 0; }
 
+  .metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
+  .metric-card { background: #fff; border: 2px solid #eee; border-radius: 8px; padding: 16px; }
+  .metric-card .metric-name { font-size: 15px; font-weight: 800; color: #1a1a2e; margin-bottom: 6px; }
+  .metric-card .metric-score { font-size: 22px; font-weight: 900; color: #e63946; margin-bottom: 4px; }
+  .metric-card .metric-desc { font-size: 13px; color: #666; }
+
+  .license-card { background: #fff; border: 2px solid #eee; border-radius: 8px; padding: 18px; margin-bottom: 12px; }
+  .license-card .license-name { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+  .license-card .license-tag { display: inline-block; font-size: 12px; font-weight: 700; color: #fff; background: #2a9d8f; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+  .license-card p { font-size: 14px; margin-bottom: 6px; }
+  .formula { background:#fff; border:2px dashed #e63946; border-radius:8px; padding:16px; margin:16px 0; font-size:15px; font-weight:700; }
+
   .footer { text-align: center; padding: 40px 0 20px; border-top: 2px solid #eee; margin-top: 48px; }
   .footer p { font-size: 14px; color: #888; }
 
   @media (max-width: 480px) {
     .hero h1 { font-size: 28px; }
     .tier-row { flex-direction: column; }
+    .metric-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -143,6 +156,58 @@
     </div>
   </div>
 
+  <!-- 03-1. 측정 -->
+  <div class="section">
+    <span class="section-num">03-1</span>
+    <h2>어떻게 측정하는가 — HypeProof Trace</h2>
+    <p>HYROX가 전자칩으로 시간을 재듯, HypeProof는 <strong>HypeProof Studio/Proxy 로그</strong>로 AI 협업 과정을 잽니다. 심사위원의 느낌이 아니라, 참가자가 남긴 prompt/output/edit/test trace가 기록입니다.</p>
+    <div class="highlight-box">
+      <strong>HypeProof Score</strong> = 표준 Challenge를 수행하는 동안 남은 입력·반복·분기·검증·수정·시간 로그에서 자동 산출되는 공식 기록.
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-name">Prompt Completeness</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">목표, 제약조건, 맥락/자료, 출력 형식, 예시가 들어갔는가.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Iteration Depth</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">의미 있는 수정 횟수, v1→v2→v3 변화량, 피드백 구체성.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Branching Score</div>
+        <div class="metric-score">15점</div>
+        <div class="metric-desc">후보를 몇 개 만들고, 비교 기준과 선택 이유를 남겼는가.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Validation Score</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">테스트 횟수, 발견한 문제 수, 고친 문제 수, 최종 pass/fail.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Human Control Ratio</div>
+        <div class="metric-score">15점</div>
+        <div class="metric-desc">AI 출력 복붙이 아니라 인간이 선택·거절·수정한 비율.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Efficiency</div>
+        <div class="metric-score">10점</div>
+        <div class="metric-desc">총 소요 시간, turn 수, token/cost, 재작업 비율.</div>
+      </div>
+    </div>
+
+    <div class="formula">
+      공식 기록 = Task(표준 과제) + Trial(참가자 1회 시도) + Trace(전체 로그) + Outcome(최종 산출물) + Grader(자동 채점/보정)
+    </div>
+
+    <div class="evidence">
+      <div class="label">평가 원칙</div>
+      <p>Anthropic식 eval 구조를 따른다. 성공 기준을 먼저 정의하고, task-specific eval을 만들고, 가능한 것은 자동 채점한다. 정성 평가는 보조 신호이며, 공식 기록의 중심은 trace와 outcome이다.</p>
+    </div>
+  </div>
+
   <!-- 04. 구조 -->
   <div class="section">
     <span class="section-num">04</span>
@@ -173,6 +238,30 @@
       </div>
     </div>
 
+    <h3>라이센스 — 등급과 권한을 분리한다</h3>
+    <p>1·2·3급은 개인의 실력 등급입니다. 라이센스는 별도입니다. 라이센스는 공식 기록, 공식 운영, 브랜드 사용 권한을 통제합니다.</p>
+
+    <div class="license-card">
+      <div class="license-tag">공식 기록 시즌권</div>
+      <div class="license-name">HypeProof Creator License</div>
+      <p>공식 랭킹 등록, 시즌 점수 누적, Competition 참가, 포트폴리오 유지 권한.</p>
+      <p><strong>발급 조건:</strong> 표준 Challenge 1회 완료 + 부정행위/대리작성/표절 규정 동의 + 시즌 등록.</p>
+    </div>
+
+    <div class="license-card">
+      <div class="license-tag">공식 운영 권한</div>
+      <div class="license-name">HypeProof Facilitator License</div>
+      <p>HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 권한.</p>
+      <p><strong>발급 조건:</strong> Level 3 Leader + 모의 운영 + 실제 보조 운영 + HypeProof 승인.</p>
+    </div>
+
+    <div class="license-card">
+      <div class="license-tag">기관 개최 권한</div>
+      <div class="license-name">HypeProof Partner License</div>
+      <p>기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한.</p>
+      <p><strong>발급 조건:</strong> HypeProof 승인 + Facilitator 보유 + 운영 매뉴얼 준수 + 기록 시스템 연동.</p>
+    </div>
+
     <h3>바이럴 — KOL이 마케팅·세일즈를 대신한다</h3>
     <p>우리는 직접 마케팅·세일즈를 하지 않습니다. <strong>KOL만 찾습니다.</strong></p>
     <p><strong>파트너 채널 자동화</strong> — 비트리가 라이선스 파트너(동아일보 등)를 데려오고, 그 파트너가 바이오팜, 학부모 등 손님을 계속 데려옵니다. 세일즈·마케팅 자동화 기계.</p>
@@ -183,8 +272,8 @@
     <p>AI에서 1개월은 1년입니다. 오늘 배운 게 6개월 뒤엔 구식일 수 있습니다. 4주차 언러닝이 이걸 가르칩니다. 배운 걸 의심하는 태도 = 갱신의 동기.</p>
     <p>만료는 벌점이 아니라 다시 돌아와서 다시 검증받으라는 초대입니다. 갱신하러 오면 "이번엔 더 높은 등급에 도전하시겠습니까?"</p>
 
-    <h3>확장 — 3급이 열쇠</h3>
-    <p>3급 취득자가 진행자가 되어 새 사람을 데려옵니다. HYROX의 체육관 라이선스와 같은 역할. 치과 → 의사 → 변호사 → 회계사. 같은 포맷, 다른 예시.</p>
+    <h3>확장 — 3급은 삭제하지 않고 Facilitator 후보가 된다</h3>
+    <p>3급 Leader는 커뮤니티를 만들고 새 참가자를 데려오는 개인 등급입니다. 다만 3급만으로 공식 운영권이 생기지는 않습니다. 3급 중 모의 운영, 실제 보조 운영, HypeProof 승인을 통과한 사람만 Facilitator License를 받아 공식 경기를 열 수 있습니다.</p>
   </div>
 
   <!-- 05. 차이 -->
@@ -264,8 +353,8 @@
   </div>
 
   <div class="footer">
-    <p>HypeProof HYROX — 이론적 프레임워크 v1</p>
-    <p>2026.05.11 | 파일럿: 5/26 보아치과</p>
+    <p>HypeProof HYROX — 이론적 프레임워크 v1.1</p>
+    <p>2026.05.15 | 측정·라이센스 구조 보강</p>
   </div>
 
 </div>
