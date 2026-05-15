@@ -36,6 +36,11 @@ tags:
 - [[intel-wrapper-architecture]] — Chat+preview 래퍼 스택 (Claude Agent SDK, iframe sandbox, Next.js). 2026-04-12.
 - [[intel-auth-billing-compliance]] — 아동 SaaS 인증·결제·PIPA/COPPA 컴플라이언스. 2026-04-12.
 
+## HYROX / Measurement Research
+- [[hyrox-license-model-research-20260515]] — HYROX license/certification model research
+- [[hyrox-standardized-measurement-license-model-20260515]] — HYROX 표준화 측정·라이센스 모델 정리
+- [[prompt-quality-evaluation-sources-20260515]] — Prompt quality evaluation sources
+
 ## Notes
 - `/defuddle <url>` 로 웹 페이지 본문만 추출 후 `.raw/`에 저장 → ingest.
 - 새 intel은 `_templates/intel.md`로 생성.

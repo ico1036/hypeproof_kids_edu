@@ -1,3 +1,16 @@
+---
+type: project
+title: "HypeProof Measurement Rubric from HYROX v0.1"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - project
+  - rubric
+  - measurement
+  - hyrox
+---
+
 # HypeProof Measurement Rubric from HYROX v0.1
 
 작성: 2026-05-15

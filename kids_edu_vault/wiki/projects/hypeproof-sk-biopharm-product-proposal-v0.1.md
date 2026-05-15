@@ -1,3 +1,16 @@
+---
+type: project
+title: "HypeProof × SK바이오팜 × 비트리 Product Proposal v0.1"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - project
+  - sk-biopharma
+  - bitree
+  - proposal
+---
+
 # HypeProof × SK바이오팜 × 비트리 Product Proposal v0.1
 
 작성: 2026-05-15  

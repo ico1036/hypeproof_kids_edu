@@ -128,13 +128,21 @@ tags:
 - [[ralph-loop-results]] — Ralph Loop 검증 결과
 - Track B: [[validation/track-b/_index|track-b/_index]]
 
-### Projects — 교육 외 사업 문서
+### Projects (9) — 교육 외 사업 문서
+- [[projects/_index|_index]]
 - [[hypeproof-hyrox-framework-v1]] (2026-05-11) — HypeProof HYROX 이론적 프레임워크 v1
 - [[hypeproof-hyrox-session-20260511]] (2026-05-11) — HYROX 논의 세션 (봉호·지웅·AB_kimi_bot)
 - [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — HypeProof Lab AI 협업 원칙서
+- [[hypeproof-license-strategy-from-hyrox-20260515]] (2026-05-15) — HYROX 모델 기반 라이센스 전략
+- [[hypeproof-brand-license-structure-v0.1]] (2026-05-15) — HypeProof 브랜드 라이센스 구조
+- [[hypeproof-measurement-rubric-from-hyrox-20260515]] (2026-05-15) — HYROX식 측정 루브릭
+- [[sk-biopharm-bitree-hypeproof-meeting-20260512]] (2026-05-12) — SK바이오팜 × 비트리 × HypeProof Lab 회의록
+- [[hypeproof-sk-biopharm-hyrox-analysis-20260515]] (2026-05-15) — SK바이오팜 회의록 × HYROX 제안서 분석
+- [[hypeproof-sk-biopharm-product-proposal-v0.1]] (2026-05-15) — SK바이오팜 제품 제안서 v0.1
 
 ### Assets — 디자인·콘텐츠 자산
-- [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — AI 상호작용 16원칙 (assets v0.1, owner: 봉호 태)
+- [[assets_v0.1]] (2026-05-03) — AI 상호작용 16원칙 (assets v0.1, owner: 봉호 태)
+- [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — HYROX 작업 중 보존한 HypeProof AI 협업 원칙 자산
 
 ### Sources — 원본 소스 요약 (wiki-ingest 자동 생성)
 - [[legal-professional-channel-meeting-20260711-source]] — 변호사 전문직 채널 미팅 메모 (준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설)

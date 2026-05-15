@@ -1,3 +1,16 @@
+---
+type: project
+title: "SK바이오팜 회의록 × HypeProof HYROX 프로덕트 제안서 분석"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - project
+  - hyrox
+  - sk-biopharma
+  - analysis
+---
+
 # SK바이오팜 회의록 × HypeProof HYROX 프로덕트 제안서 분석
 
 작성: 2026-05-15  

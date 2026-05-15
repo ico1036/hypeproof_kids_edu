@@ -8,6 +8,9 @@ tags:
   - project
   - hyrox
   - framework
+related:
+  - "HypeProof-HYROX-proposal-v1.html (artifact, wiki 외부)"
+  - "HypeProof-pricing-benchmark.html (artifact, wiki 외부)"
 ---
 
 # HypeProof HYROX — 이론적 프레임워크 v1 (2026-05-11)
@@ -115,6 +118,8 @@ HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 A
 - SK 파일럿 제안가: 가족당 40만~60만원 / 4h → 10만~15만원/h
 
 따라서 15만원/h는 대치동 소규모 프리미엄보다 높고, UC Riverside급 해외 프리미엄 AI 교육보다 약간 높으며, SK 파일럿 제안가 상단과 일치하는 검증형 프리미엄 가격이다.
+
+내부 검산: 컨설팅식 bottom-up 기준으로도 20가족 기준 4시간 매출은 1,200만원, 직접 운영비는 약 260만~400만원 수준이어서 충분한 gross margin이 남는다. 이 수치는 내부 판단 근거이며 대외 제안서 HTML에는 노출하지 않는다.
 
 ### 삼층 전략: 하이엔드 / 봇물 / 노블리스 오블리제
 

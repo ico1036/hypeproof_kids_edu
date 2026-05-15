@@ -1,3 +1,16 @@
+---
+type: project
+title: "HypeProof 라이센스 전략 — HYROX 모델 기반"
+status: developing
+created: 2026-05-15
+updated: 2026-05-15
+tags:
+  - project
+  - license
+  - hyrox
+  - strategy
+---
+
 # HypeProof 라이센스 전략 — HYROX 모델 기반
 
 작성: 2026-05-15  
