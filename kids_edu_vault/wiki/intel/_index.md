@@ -1,5 +1,6 @@
 ---
 type: index
+status: navigational
 title: "Intel"
 created: 2026-04-12
 updated: 2026-04-12
@@ -35,8 +36,17 @@ tags:
 - [[intel-wrapper-architecture]] — Chat+preview 래퍼 스택 (Claude Agent SDK, iframe sandbox, Next.js). 2026-04-12.
 - [[intel-auth-billing-compliance]] — 아동 SaaS 인증·결제·PIPA/COPPA 컴플라이언스. 2026-04-12.
 
+## HYROX / Measurement Research
+- [[hyrox-license-model-research-20260515]] — HYROX license/certification model research
+- [[hyrox-standardized-measurement-license-model-20260515]] — HYROX 표준화 측정·라이센스 모델 정리
+- [[prompt-quality-evaluation-sources-20260515]] — Prompt quality evaluation sources
+
 ## Notes
 - `/defuddle <url>` 로 웹 페이지 본문만 추출 후 `.raw/`에 저장 → ingest.
 - 새 intel은 `_templates/intel.md`로 생성.
 - `case-*` prefix = 외부 선례 사례. 하나의 URL·저자 기반 1차 자료 요약.
 - `research-*` prefix = 여러 case를 묶은 합성.
+
+## LLM Pulse
+- [[intel/llm-pulse/_index|llm-pulse/_index]] — LLM Pulse 아카이브 인덱스
+- [[llm-pulse-update]] — LLM Pulse 업데이트 런북

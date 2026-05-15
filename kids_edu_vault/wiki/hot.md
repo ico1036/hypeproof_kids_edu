@@ -2,83 +2,69 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-12
-updated: 2026-05-11
+updated: 2026-05-15
 tags:
   - meta/cache
 ---
 
-# Hot Cache — 2026-05-11
+# Hot Cache — 2026-05-15
 
 최근 컨텍스트 스냅샷. 세션 시작 시 가장 먼저 읽을 것.
 
 ---
 
-## 커리큘럼 구조: 1트랙 멀티 스킨 (2026-05-11 전환)
+## 현재 상태: SK바이오팜 파일럿 진입 + HypeProof Studio 개발 시작 + HYROX 문서 구조 동기화
 
-> 3-트랙 구조 폐기 → **코어 1개 + 스킨 교체** 방식으로 전환.
-> 상세: [[one-track-multi-skin]]
+### 가장 최근 작업 (2026-05-15)
 
-| 스킨 | 대상 | 상태 |
-|---|---|---|
-| 아동 | 초등생 | 5/5 파일럿 완료. 관찰 노트 ingest 필요 |
-| 성인 (치과의사) | 직장인·전문직 | 5/26 보아치과 파일럿 준비 중 |
-| 혼합 | 아동+성인 | 미착수 |
+**HYROX 브랜치 wiki 구조 동기화 진행**
+- 작업 브랜치: `sync-hyrox-to-upstream-wiki-structure-20260515`
+- 기준: `upstream/main` 최신 vault 구조 (`sources/`, `questions/`, `meta/`, kebab-case, frontmatter 필수)
+- HYROX 프로젝트 문서 파일명을 kebab-case로 변환하고 [[projects/_index]] 생성
+- [[index]], [[log]], [[hot]], [[intel/_index]]에 HYROX 관련 문서 등록
+- HTML artifacts (`HypeProof-HYROX-proposal-v1.html`, `HypeProof-pricing-benchmark.html`)는 wiki 페이지로 등록하지 않고 [[hypeproof-hyrox-framework-v1]]의 related artifact로만 참조
 
----
+**HYROX 가격정책 최근 결론**
+- 참가자 가격은 단일 기준: **₩15만 / 인·시간**
+- Starter Program 4h = **₩60만 / 인·가족**
+- 파일럿·단체 도입은 **₩40만~60만 / 인·가족** 범위 조정
+- Level 1·2·3은 결제 상품이 아니라 Challenge 결과로 부여되는 검증 등급
+- Facilitator/Partner License는 참가자 가격정책에서 제외하고 추후 운영자/B2B 모델에서 별도 설명
 
-## 현재 우선순위
-
-1. **5/26 보아치과 파일럿** — 치과의사 스킨 v3 + 진행자 스크립트 완성 상태. 원장님 AI 사례 1개 사전 확인 필요.
-2. **아동 파일럿 관찰 노트 ingest** — 코어 v2 설계를 위한 선행 작업.
-3. **스킨 구조 설계** — `specs/core/` + `specs/skins/` 파일 구조 재편, scaffold·페르소나 스킨 분리.
-
----
-
-## Track B — 치과의사 워크샵 현황
-
-- 커리큘럼: `specs/track-b/치과의사-curriculum-v3.md` ← **확정 버전**
-- 진행자 스크립트: `specs/track-b/facilitator-script-dental-v3.md`
-- v1·v2는 참고용으로 `specs/track-b/` 에 보관
-- 관찰 데이터 준비: `validation/track-b/` (5/26 파일럿 후 적재 예정)
-
-**5/26 전 필수 확인**: 원장님이 실제로 쓰는 AI 사례 1개 (블록 1용)
+**PR#7 `feature/langgraph-gemini` → main 머지 완료**
+- [[langgraph]]+[[gemini-2-5-flash]] 백엔드 전환 PR이 리뷰 후 main에 머지됨
+- 파일럿 후 처리 예정: Ping/Pong 하트비트, iframe CSP, 10턴+ rolling summary
 
 ---
 
-## Track A — 아동 워크샵 현황
+## 주요 임박 마일스톤
 
-- 커리큘럼: `specs/track-a/`
-- 스택: FastAPI (Python/uv) + Next.js (App Router) + GLM-5 (z.ai)
-- 핵심 assets: `src/frontend/lib/scaffoldData.ts`, `src/backend/personas/TUTOR.md`
-- 파일럿 완료 → Production Loop Stage 1 진입 대기 (관찰 노트 ingest 필요)
-
----
-
-## 제작 프로세스 (Production Loop)
-
-파일럿 이후 모든 트랙에 적용. 상세: [[production-loop]]
-
-- Stage 1 (인풋→설계): 관찰 노트 ingest + 교육 목표 정의
-- Stage 2 (설계→기술피드백): scaffold·페르소나 봉호님 직접 작성
-- Stage 3 (리허설→반영): 산출물·타이밍 수집 → vault 환류
+| 기한 | 내용 |
+|---|---|
+| 2026-05-15~30 | HypeProof Studio v0.1 빌드 |
+| 2026-05-28~30 | 운영진 자녀 dry-run (4시간) — **게이트** |
+| 2026-05-말 | [[sk-biopharma]] 수요조사용 제안서 제출 |
+| 2026-06-01 | Studio v0.1 release + 가족 안내 메일 |
+| 2026-06 (2~3주) | [[sk-biopharma]] 1회차 |
 
 ---
 
-## 핵심 ADR
+## 핵심 페이지
 
-- [[one-track-multi-skin]] — 1트랙 멀티 스킨 구조 채택 (2026-05-11) ← **현행**
-- [[three-track-structure]] — 3-트랙 구조 (superseded)
-- [[production-loop-adoption]] — 3단계 제작 루프 채택 (2026-05-05)
-- [[stack-decision-after-curriculum]] — 커리큘럼 확정 후 스택 결정
-- [[auth-session-game-persistence]] — status: implemented
-- [[game-bug-fix-2026-05-01]] — 게임 버그 3종 수정 기록
+- [[projects/_index]] · [[hypeproof-hyrox-framework-v1]] · [[hypeproof-hyrox-session-20260511]]
+- [[hypeproof-license-strategy-from-hyrox-20260515]] · [[hypeproof-measurement-rubric-from-hyrox-20260515]]
+- [[2026-05-12-sk-biopharma-meeting]] · [[2026-05-14-sk-biopharma-followup]]
+- [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]]
+- [[hypeproof-studio]] · [[adr-hypeproof-studio-v01]] · [[sixteen-essence]]
+- [[sk-biopharma-pilot]]
 
 ---
 
-## 핵심 파일 경로 (Track A 기술)
+## 스택 요약
 
-- `src/backend/genai_runner.py` — `_strip_code_for_chat()`, `generate_card()`
-- `src/backend/main.py` — spec 추출·주입 로직 (~490번째 줄)
-- `src/frontend/components/ChatPane.tsx` — 메시지 렌더 regex
-- `src/frontend/components/GamePreview.tsx` — `showGame` 토글
-- `src/backend/storage.py` / `src/frontend/hooks/useChat.ts`
+| 레이어 | 기술 |
+|---|---|
+| 백엔드 | FastAPI + [[langgraph]] + [[gemini-2-5-flash]] |
+| 프론트 | Next.js (App Router) |
+| 관측성 | [[langfuse-observability]] v2 self-hosted |
+| 교육 도구 | [[hypeproof-studio]] v0.1 (예정) / Cline (Plan B) |
