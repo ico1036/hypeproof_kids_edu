@@ -81,7 +81,7 @@ HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 A
 3급 Verified AI Leader — 2급 + 타인을 4스테이션으로 안내하는 리더 과제. "남을 AI 협업 과정으로 이끌 수 있다"
 
 등급명은 전문직 언어. "Level 1"이 아니라 명함에 적히고 싶은 명칭.
-3급은 삭제하지 않는다. 다만 3급만으로 공식 운영권이 생기지는 않는다. 3급 Leader 중 모의 운영, 실제 보조 운영, HypeProof 승인을 통과한 사람만 Facilitator License를 받는다.
+3급 Leader는 개인 인증 트랙의 상위 단계다. 검증된 Leader는 운영 실습과 승인 절차를 거쳐 Facilitator License로 이어질 수 있다.
 
 ### 라이센스: 등급과 권한 분리
 
@@ -89,7 +89,7 @@ HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 A
 - HypeProof Facilitator License — HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한
 - HypeProof Partner License — 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한
 
-수료증은 참가 증명이고, 라이센스는 공식 기록·운영·브랜드 사용 권한이다.
+개인 인증은 참가자의 역량을 보여주고, 라이센스는 공식 기록·운영·브랜드 사용 권한을 제공한다.
 
 ### 가격: 하이엔드 타겟 (확정 전)
 
