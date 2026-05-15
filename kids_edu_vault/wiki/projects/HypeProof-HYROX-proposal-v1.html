@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HypeProof HYROX — 프로덕트 제안서 v1.3</title>
+<title>HypeProof HYROX — 프로덕트 제안서 v1.4</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #1a1a2e; background: #fafafa; line-height: 1.7; }
@@ -68,6 +68,12 @@
   .flow-card { background:#fff; border:2px solid #eee; border-radius:8px; padding:18px; margin:16px 0; }
   .flow-card .flow-line { font-size:15px; font-weight:800; color:#1a1a2e; margin-bottom:8px; }
   .flow-card .flow-desc { font-size:14px; color:#555; }
+  .standard-table { width:100%; border-collapse: collapse; background:#fff; border:2px solid #eee; border-radius:8px; overflow:hidden; margin:16px 0; }
+  .standard-table th { background:#1a1a2e; color:#fff; font-size:13px; padding:10px; text-align:left; }
+  .standard-table td { border-top:1px solid #eee; padding:10px; font-size:14px; vertical-align:top; }
+  .standard-table strong { color:#e63946; }
+  .note-box { background:#fff; border:2px solid #2a9d8f; border-radius:8px; padding:16px; margin:16px 0; }
+  .note-box p { font-size:14px; margin-bottom:6px; }
 
   .footer { text-align: center; padding: 40px 0 20px; border-top: 2px solid #eee; margin-top: 48px; }
   .footer p { font-size: 14px; color: #888; }
@@ -219,6 +225,51 @@
       <div class="label">평가 원칙</div>
       <p>Anthropic식 eval 구조를 따른다. 성공 기준을 먼저 정의하고, task-specific eval을 만들고, 가능한 것은 자동 채점한다. 정성 평가는 보조 신호이며, 공식 기록의 중심은 trace와 outcome이다.</p>
     </div>
+
+    <h3>점수 체계 — 절대 기준과 상대 순위</h3>
+    <p>HypeProof Score는 두 가지로 표시됩니다. <strong>Standard Score</strong>는 등급 인증을 위한 절대 점수이고, <strong>Season Percentile</strong>은 같은 시즌 참가자 안에서의 상대 순위입니다.</p>
+    <table class="standard-table">
+      <thead>
+        <tr><th>구분</th><th>쓰임</th><th>평가 방식</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Standard Score</strong></td>
+          <td>Level 1·2·3 인증</td>
+          <td>고정된 표준 과제와 공개 기준표로 산출하는 0–100점 절대평가</td>
+        </tr>
+        <tr>
+          <td><strong>Season Percentile</strong></td>
+          <td>랭킹, Competition, 상위 초청</td>
+          <td>같은 시즌·같은 디비전 참가자 사이의 상대 순위</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>인증 기준 — 고정 통과선</h3>
+    <table class="standard-table">
+      <thead>
+        <tr><th>인증</th><th>통과 기준</th><th>추가 조건</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Level 1 Practitioner</strong></td>
+          <td>Standard Score 70점 이상</td>
+          <td>최종 산출물 완성, 무결성 위반 없음</td>
+        </tr>
+        <tr>
+          <td><strong>Level 2 Professional</strong></td>
+          <td>Standard Score 82점 이상</td>
+          <td>실전 과제 제출, Validation 16/20 이상, Human Control 12/15 이상</td>
+        </tr>
+        <tr>
+          <td><strong>Level 3 Leader</strong></td>
+          <td>Standard Score 88점 이상</td>
+          <td>타인 코칭 과제, 리더십 리포트, 운영 관찰 평가 통과</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>인증은 고정 기준으로 부여합니다. 같은 시즌에 뛰어난 참가자가 많아도 기준을 넘으면 인증됩니다. 순위와 초청은 Season Percentile로 별도 계산합니다.</p>
   </div>
 
   <!-- 04. 구조 -->
@@ -286,6 +337,7 @@
       <div class="license-tag">공식 기록</div>
       <div class="license-name">HypeProof Creator License</div>
       <p>참가자의 Challenge 기록을 공식 랭킹, 시즌 점수, Competition, 포트폴리오에 연결하는 시즌 멤버십입니다.</p>
+      <p><strong>비용의 의미:</strong> 시즌 기록 보관, 랭킹 운영, 포트폴리오 페이지, Competition 운영 인프라 사용료입니다.</p>
       <p><strong>등록 기준:</strong> 표준 Challenge 완료, 시즌 등록, HypeProof 공정성 규정 동의.</p>
     </div>
 
@@ -293,6 +345,7 @@
       <div class="license-tag">공식 진행자</div>
       <div class="license-name">HypeProof Facilitator License</div>
       <p>HypeProof Challenge를 진행하고 참가자의 AI 협업 과정을 코칭하는 개인 진행자 라이센스입니다.</p>
+      <p><strong>비용의 의미:</strong> HypeProof 운영 매뉴얼, 진행자 교육, 품질관리, 공식 리포트 시스템 사용료입니다.</p>
       <p><strong>등록 기준:</strong> Leader 인증, 운영 실습, 보조 진행 경험, HypeProof 승인.</p>
     </div>
 
@@ -300,7 +353,13 @@
       <div class="license-tag">공식 파트너</div>
       <div class="license-name">HypeProof Partner License</div>
       <p>기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템으로 공식 프로그램을 개최하는 파트너 라이센스입니다.</p>
+      <p><strong>비용의 의미:</strong> 브랜드 사용권, 커리큘럼 사용권, 마케팅 자료, 운영 툴, 기록 시스템 접근권입니다.</p>
       <p><strong>등록 기준:</strong> HypeProof 승인, Facilitator 배치, 운영 매뉴얼 준수, 기록 시스템 연동.</p>
+    </div>
+
+    <div class="note-box">
+      <p><strong>성과와 결제의 관계</strong></p>
+      <p>Challenge 성과로 얻는 것은 점수, 등급, 순위, 상위 초청입니다. 라이센스 비용은 그 성과를 공식 시즌 기록으로 유지하거나, HypeProof 프로그램을 운영하기 위한 시스템 사용료입니다. 유료 과정에는 첫 시즌 Creator License를 포함할 수 있고, 상위 입상자는 장학/초청 형태로 부여할 수 있습니다.</p>
     </div>
 
     <h3>바이럴 — KOL이 마케팅·세일즈를 대신한다</h3>
@@ -385,7 +444,10 @@
 
     <p style="font-size:12px; color:#888; margin-top:8px;">환율 $1=₩1,350. 소스: fonzi.ai, insideucr.ucr.edu, polygence.org, seoltab.com, hani.co.kr</p>
 
-    <p style="margin-top:12px;"><strong>6개월 갱신</strong> — 갱신 참가비. 2급 이상은 심화 과제만으로 가능.</p>
+    <p style="margin-top:12px;"><strong>인증 과정 참가비</strong> — Level 1·2·3 평가와 피드백 포함.</p>
+    <p><strong>Creator License</strong> — 공식 랭킹·시즌 포트폴리오·Competition 운영 인프라 사용료.</p>
+    <p><strong>Facilitator / Partner License</strong> — 공식 프로그램 운영권, 커리큘럼·브랜드·리포트 시스템 사용료.</p>
+    <p><strong>6개월 갱신</strong> — AI 변화에 맞춰 표준 과제와 기록을 다시 갱신.</p>
     <p><strong>B2B 팀 리포트</strong> — 병원장, 기업이 직원 교육 결과 구매.</p>
     <div class="evidence">
       <div class="label">HYROX 대응</div>
@@ -394,8 +456,8 @@
   </div>
 
   <div class="footer">
-    <p>HypeProof HYROX — 이론적 프레임워크 v1.3</p>
-    <p>2026.05.15 | 개인 인증·운영 라이센스 체계 정리</p>
+    <p>HypeProof HYROX — 이론적 프레임워크 v1.4</p>
+    <p>2026.05.15 | 점수·랭킹·라이센스 수익 구조 정리</p>
   </div>
 
 </div>

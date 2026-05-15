@@ -69,10 +69,17 @@ HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 A
 - Iteration Depth — 의미 있는 수정 횟수, 버전 변화량, 피드백 구체성
 - Branching Score — 후보 생성 수, 후보 비교, 선택 이유
 - Validation Score — 테스트 횟수, 발견한 문제 수, 수정 반영 수, 최종 pass/fail
-- Human Control Ratio — AI 출력 복붙 대비 인간 선택/거절/수정 비율
+- Human Control Ratio — AI raw output 대비 인간 선택/거절/수정 비율
 - Efficiency — 총 소요 시간, turn 수, token/cost, 재작업 비율
 
-진행자 관찰은 보조 신호다. 공식 기록의 중심은 trace와 outcome이다.
+평가 방식:
+- Standard Score — 0~100점 절대평가. Level 1·2·3 인증에 사용.
+- Season Percentile — 시즌 내 상대 순위. 랭킹, Competition, 상위 초청에 사용.
+- Level 1 Practitioner — Standard Score 70점 이상 + 최종 산출물 완성.
+- Level 2 Professional — Standard Score 82점 이상 + 실전 과제 + Validation 16/20 이상 + Human Control 12/15 이상.
+- Level 3 Leader — Standard Score 88점 이상 + 타인 코칭 과제 + 리더십 리포트 + 운영 관찰 평가.
+
+진행자 관찰은 Level 3와 Facilitator 심사의 보조 신호다. 공식 기록의 중심은 trace와 outcome이다.
 
 ### 등급: 세 단계 자격증 모델
 
@@ -85,11 +92,11 @@ HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 A
 
 ### 라이센스: 등급과 권한 분리
 
-- HypeProof Creator License — 공식 랭킹 등록, 시즌 점수 누적, Competition 참가, 포트폴리오 유지 권한
-- HypeProof Facilitator License — HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한
-- HypeProof Partner License — 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한
+- HypeProof Creator License — 공식 랭킹 등록, 시즌 점수 누적, Competition 참가, 포트폴리오 유지 권한. 비용은 시즌 기록 보관·랭킹 운영·포트폴리오·Competition 인프라 사용료.
+- HypeProof Facilitator License — HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한. 비용은 운영 매뉴얼·진행자 교육·품질관리·리포트 시스템 사용료.
+- HypeProof Partner License — 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한. 비용은 브랜드·커리큘럼·운영 툴·마케팅 자료 사용료.
 
-개인 인증은 참가자의 역량을 보여주고, 라이센스는 공식 기록·운영·브랜드 사용 권한을 제공한다.
+개인 인증은 참가자의 역량을 보여주고, 라이센스는 공식 기록·운영·브랜드 사용 권한을 제공한다. 성과로 얻는 것은 점수·등급·순위·상위 초청이고, 라이센스 비용은 해당 권한과 시스템을 지속 사용하는 비용이다.
 
 ### 가격: 하이엔드 타겟 (확정 전)
 
