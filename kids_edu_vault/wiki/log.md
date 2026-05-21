@@ -580,3 +580,4 @@ tags:
 - 생성: `stakeholders/`, `decisions/`, `deliverables/`, `intel/`, `comms/` 각 `_index.md`.
 - 생성: `_templates/` (stakeholder, decision, deliverable, intel, meeting, source).
 - 생성: vault 루트 `CLAUDE.md`.
+- 2026-05-21 — Added [[dental-supersearch-curriculum-v4]] and [[dental-supersearch-engine-workshop-v2]]: dental supersearch hackathon curriculum combining HYROX-style “원장님을 이겨라” with FDE/SaaS-style internal knowledge capture.
