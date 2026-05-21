@@ -13,6 +13,71 @@ tags:
 
 ---
 
+## 2026-05-15 | validation | 테스트 품질 3-Phase 개선 완료
+
+- 수정: Phase1(sys.path 삭제, anyio→asyncio, tautology assertion 수정, fixture 중복 제거, 테스트명 수정) / Phase2(test_card_node·test_spec_node _DATA_DIR monkeypatch 격리) / Phase3(error 이벤트, 갤러리/rename/save 엔드포인트, backendUrl.ts 단위 테스트, send() 가드+payload 검증)
+- Pages updated: [[test-quality-review-2026-05-15]], [[hot]], [[index]]
+- Key insight: 97(BE)+9(FE) → 111(BE)+19(FE) = 130 tests 전체 통과. HIGH 3건(sys.path 잔재, send() 가드 미검증, asyncio 마커 누락) 모두 해소. `backendUrl.test.ts` 신규 생성으로 프론트 테스트 파일 2개로 확장.
+
+---
+
+## 2026-05-15 | validation | 테스트 수정 + 전체 테스트 품질 검토
+
+- 수정: `test_auth_session_game.py` (claude_runner 임포트 → main, `_session_meta` → SQLite, 픽스처 전면 교체), `useChat.test.ts` (WS scheme env stub), `main.py` (null byte path traversal 400 처리)
+- Pages created: [[test-quality-review-2026-05-15]]
+- Pages updated: [[kids-edu-backend]], [[log]], [[hot]], [[index]]
+- Key insight: LangGraph 리라이트로 세션 저장소가 인메모리 딕트 → SQLite로 바뀌면서 테스트 픽스처가 통째로 무효화됐음. 동시에 `main.py`의 null byte path traversal 방어 구멍(Python 3.14 ValueError 미처리)이 발견돼 수정됨. 테스트 품질 검토 결과 97/9 전체 통과하나 HIGH 3건·MEDIUM 다수 공백 확인.
+
+---
+
+## 2026-05-15 | pr-merge | PR#7 feature/langgraph-gemini → main 머지 + 리뷰 반영
+- PR: https://github.com/JinyongShin/hypeproof_kids_edu/pull/7
+- Pages updated: [[adr-langgraph-gemini-backend]]
+- Key insight: [[langgraph]]+[[gemini-2-5-flash]] 백엔드 전환 PR이 리뷰 후 main에 머지됨. `edit_code_node` 실패 피드백 추가(사용자 경험), `sys.path` 반복 패턴 정리(코드 품질), Langfuse 시크릿 외부 주입(보안). 파일럿 후 처리 항목(Ping/Pong, CSP, rolling summary)은 별도 이슈로 추적 예정.
+
+---
+
+## 2026-05-15 | ingest | 국립암센터 행사 사전 확인 요청 초안
+- Source: `.raw/meeting_notes/2026-04-21-hospital-inquiry-draft.md`
+- Pages created: [[2026-04-21-hospital-inquiry-draft]]
+- Pages updated: [[comms/_index]], [[index]]
+- Key insight: 파일럿 당일 운영의 9개 핵심 체크포인트 (허가·감염관리·장비·콘텐츠 등)가 한 문서에 정리됨. [[game-content-guideline-pending]] 및 [[case-pediatric-onc-infection-control]] 과 직결.
+
+---
+
+## 2026-05-14 | vault-migration | 볼트 구조 정렬 — 스킬 철학 일치
+- 작업: wiki/wiki-ingest/wiki-query/wiki-lint 스킬 철학과 볼트 구조 갭 해소
+- Phase 0: git commit + tag (`vault-pre-migration-2026-05-14`) + 파일시스템 백업
+- Phase 1: [[sources/_index]] · [[questions/_index]] 신규 폴더 생성
+- Phase 2: `HypeProof-business-strategy.md` 루트→[[hypeproof-business-strategy]] (concepts/) 이동 + frontmatter 추가, 중복 파일 삭제
+- Phase 3: dead link 4개 stub 생성 — [[adr-langgraph-gemini-backend]] · [[adr-container-deployment]] · [[adr-multitenant-schema]] · [[langfuse-observability]]
+- Phase 4: orphan 파일 39개 → [[index]] 등록 (Validation·Projects·Assets·Sources·Questions 섹션 신설, Decisions·Specs·Runbooks·Components·Concepts·Comms 섹션 확장)
+- Phase 5: frontmatter 보완 — projects/ 3개·runbooks/ 1개·comms/ 1개 frontmatter 추가, _index.md 13개 `status: navigational` 추가, validation/ 6개 `status: archive` + `updated` 추가
+- Phase 6: vault CLAUDE.md 구조 문서 갱신 — 5개 폴더 추가, kebab-case 컨벤션 명시, 스킬 관리 폴더 주의사항 추가
+- Key insight: sources/와 questions/가 없으면 wiki-ingest·wiki-query의 지식 누적 루프가 단절됨
+
+---
+
+## 2026-05-14 — JY 액션 리스트 저장 + LangGraph E2E 완료 기록
+
+- Type: save / status update
+- Created: [[jy-action-list-2026-05-14]]
+- Updated: [[hot]]
+- Key insight: [[langgraph]] MOCK_LLM=0 E2E 테스트 완료 확인. fly.io 배포만 남음. [[sk-biopharma]] 파일럿 critical path: 제안서 초안 → Freelancer 채용 → Studio v0.1 빌드.
+
+---
+
+## 2026-05-14 — 배치 ingest 3종 (SK바이오팜 5/12 미팅 × 2 + 5/14 후속)
+
+- Source: `meeting_notes/2026-05-12.md`, `meeting_notes/20260512_meeting.md` (동일 내용), `meeting_notes/2026-05-14.md`
+- Type: batch ingest
+- Created: [[2026-05-12-sk-biopharma-meeting]], [[2026-05-14-sk-biopharma-followup]], [[sk-biopharma]], [[bitree]], [[oh-sungeun]], [[sixteen-essence]], [[hypeproof-studio]], [[adr-hypeproof-studio-v01]], [[sk-biopharma-pilot]]
+- Updated: [[index]], [[hot]]
+- Key insight: HypeProof Lab이 [[sk-biopharma]] 임직원 가족 대상 AI 게임 창작 교육 파일럿을 추진 중. 자체 IDE "[[hypeproof-studio]]" (VS Code fork) 개발 결정. 5/28 dry-run이 Go/No-go 게이트. [[sixteen-essence]] 프레임워크를 교육 IP의 핵심으로 구조화.
+- 주의: 2026-05-12.md와 20260512_meeting.md는 동일 내용 — 단일 comms 페이지로 통합.
+
+---
+
 ## 2026-04-21 — 병원 측 확인 질문 초안 작성
 
 - Type: 작업 기록
@@ -58,7 +123,7 @@ tags:
 
 ### 구현 주의사항
 - v0.3 커리큘럼의 AI 호출 3종(캐릭터 카드, 이야기, 표지 이미지)은 현재 백엔드 미구현.
-- R4 완성보장 폴백도 P0 미충족 상태 — 4/21 후 [[implementer]] 작업 범위 재산정 필요.
+- R4 완성보장 폴백도 P0 미충족 상태 — 4/21 후 [[subagent-team-structure]] 작업 범위 재산정 필요.
 
 ---
 
