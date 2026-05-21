@@ -13,6 +13,14 @@ tags:
 
 ---
 
+## AI Native 마인드 에셋 (2026-05-18 확정)
+
+> 7개 마인드: Taste / Intent Clarity / Context Design / Verification Reflex / Delegation Judgment / Iteration Reflex / Ownership
+> 상세: [[ai-native-assets]]
+> 적용: [[sk-biopharma-curriculum-v1]]
+
+---
+
 ## 현재 상태: SK바이오팜 파일럿 진입 + HypeProof Studio 개발 시작
 
 ### 가장 최근 작업 (2026-05-15)
@@ -48,6 +56,13 @@ tags:
 | 2026-05-말 | [[sk-biopharma]] 수요조사용 제안서 제출 |
 | 2026-06-01 | Studio v0.1 release + 가족 안내 메일 |
 | 2026-06 (2~3주) | [[sk-biopharma]] 1회차 |
+
+## 현재 우선순위
+
+1. **5/26 보아치과 파일럿** — 치과의사 스킨 v3 + 진행자 스크립트 완성 상태. 원장님 AI 사례 1개 사전 확인 필요.
+2. **SK바이오팜 커리큘럼 v1** — `specs/skins/mixed/sk-biopharma-curriculum-v1.md` 초안 완료. 봉호님 리뷰 후 진행자 스크립트 작성 필요.
+3. **아동 파일럿 관찰 노트 ingest** — 코어 v2 설계를 위한 선행 작업.
+4. **스킨 구조 설계** — `specs/core/` + `specs/skins/` 파일 구조 재편, scaffold·페르소나 스킨 분리.
 
 ---
 
