@@ -13,7 +13,7 @@ tags:
 # LLM Pulse 인덱스
 
 > 실행 워크플로우: [[llm-pulse-update]]
-> 분류 기준: [[assets_v0.1]] · [[curriculum-core]]
+> 분류 기준: [[hypeproof-hyrox-assets-v0.1]] · [[curriculum-core]]
 
 각 파일은 하루치 외부 시그널 + 16원칙·4주코스 영향 분류.
 

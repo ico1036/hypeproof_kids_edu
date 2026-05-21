@@ -1,4 +1,17 @@
-
+---
+type: intel
+title: "SK바이오팜 × 비트리 × HypeProof Lab 미팅 (2026-05-12)"
+source: "ico1036 PR#9"
+created: 2026-05-12
+updated: 2026-05-12
+tags:
+  - intel
+  - sk-biopharma
+  - bitree
+  - meeting
+related:
+  - "[[sk-biopharma]]"
+  - "[[sk-biopharma-meeting-2026-05-12]]"
 ---
 
 # SK바이오팜 × 비트리 × HypeProof Lab Meeting Minutes

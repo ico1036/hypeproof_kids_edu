@@ -122,12 +122,12 @@ tags:
 - Track B: [[validation/track-b/_index|track-b/_index]]
 
 ### Projects — 교육 외 사업 문서
-- [[HypeProof-HYROX-framework-v1]] (2026-05-11) — HypeProof HYROX 이론적 프레임워크 v1
-- [[HypeProof-HYROX-session-20260511]] (2026-05-11) — HYROX 논의 세션 (봉호·지웅·AB_kimi_bot)
-- [[HypeProof-assets-v0.1]] (2026-05-03) — HypeProof Lab AI 협업 원칙서
+- [[hypeproof-hyrox-framework-v1]] (2026-05-11) — HypeProof HYROX 이론적 프레임워크 v1
+- [[hypeproof-hyrox-session-20260511]] (2026-05-11) — HYROX 논의 세션 (봉호·지웅·AB_kimi_bot)
+- [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — HypeProof Lab AI 협업 원칙서
 
 ### Assets — 디자인·콘텐츠 자산
-- [[assets_v0.1]] (2026-05-03) — AI 상호작용 16원칙 (assets v0.1, owner: 봉호 태)
+- [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — AI 상호작용 16원칙 (assets v0.1, owner: 봉호 태)
 
 ### Sources — 원본 소스 요약 (wiki-ingest 자동 생성)
 - [[sources/_index|_index]] _(현재 비어있음 — 첫 ingest 시 자동 생성)_
