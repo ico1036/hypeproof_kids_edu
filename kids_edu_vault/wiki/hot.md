@@ -13,6 +13,14 @@ tags:
 
 ---
 
+## AI Native 마인드 에셋 (2026-05-18 확정)
+
+> 7개 마인드: Taste / Intent Clarity / Context Design / Verification Reflex / Delegation Judgment / Iteration Reflex / Ownership
+> 상세: [[ai-native-assets]]
+> 적용: [[sk-biopharma-curriculum-v1]]
+
+---
+
 ## 커리큘럼 구조: 1트랙 멀티 스킨 (2026-05-11 전환)
 
 > 3-트랙 구조 폐기 → **코어 1개 + 스킨 교체** 방식으로 전환.
@@ -29,8 +37,9 @@ tags:
 ## 현재 우선순위
 
 1. **5/26 보아치과 파일럿** — 치과의사 스킨 v3 + 진행자 스크립트 완성 상태. 원장님 AI 사례 1개 사전 확인 필요.
-2. **아동 파일럿 관찰 노트 ingest** — 코어 v2 설계를 위한 선행 작업.
-3. **스킨 구조 설계** — `specs/core/` + `specs/skins/` 파일 구조 재편, scaffold·페르소나 스킨 분리.
+2. **SK바이오팜 커리큘럼 v1** — `specs/skins/mixed/sk-biopharma-curriculum-v1.md` 초안 완료. 봉호님 리뷰 후 진행자 스크립트 작성 필요.
+3. **아동 파일럿 관찰 노트 ingest** — 코어 v2 설계를 위한 선행 작업.
+4. **스킨 구조 설계** — `specs/core/` + `specs/skins/` 파일 구조 재편, scaffold·페르소나 스킨 분리.
 
 ---
 
