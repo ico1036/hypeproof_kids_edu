@@ -2,7 +2,7 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-12
-updated: 2026-05-15
+updated: 2026-05-21
 tags:
   - meta/cache
 ---
@@ -71,3 +71,7 @@ tags:
 | 관측성 | [[langfuse-observability]] v2 self-hosted |
 | 교육 도구 | [[hypeproof-studio]] v0.1 (예정) / Cline (Plan B) |
 | 테스트 | pytest 111개 (백엔드) · Vitest 19개 (프론트, 파일 2개) — 전체 통과 |
+
+## 2026-05-21 — 치과 지식 슈퍼서치엔진 v4
+- [[dental-supersearch-curriculum-v4]] — v3의 “원장님은 5분, 직원이 주인공” 구조를 유지하면서, 산출물을 검색 웹앱 + 원장님 검증 로그 + 병원 내부 검색 규칙으로 전환.
+- [[dental-supersearch-engine-workshop-v2]] — “원장님을 이겨라” 게임 장치와 7 AI Native Assets를 검색스킬 제작 루프로 엮은 HTML 제안서/목업.

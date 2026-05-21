@@ -2,7 +2,7 @@
 type: meta
 title: "Index"
 created: 2026-04-12
-updated: 2026-05-14
+updated: 2026-05-21
 tags:
   - meta/index
 ---
@@ -79,7 +79,7 @@ tags:
 - Curriculum tracks: [[specs/core/_index|core]] · [[specs/skins/_index|skins (adult/kids)]] · [[specs/track-a/_index|track-a]] · [[specs/track-b/_index|track-b]]
 - Core: [[curriculum-core]] — 커리큘럼 코어 (skin 독립 공통 로직)
 - Track A: [[curriculum-v2-lesson-wow-impact]] · [[curriculum-wow-lesson-run]]
-- Track B: [[치과의사-curriculum-v1]] (archive) · [[치과의사-curriculum-v2]] (archive) · [[치과의사-curriculum-v3]] (active) · [[facilitator-script-dental-v3]]
+- Track B: [[치과의사-curriculum-v1]] (archive) · [[치과의사-curriculum-v2]] (archive) · [[치과의사-curriculum-v3]] (active) · [[facilitator-script-dental-v3]] · [[dental-supersearch-curriculum-v4]] (draft) · [[dental-supersearch-engine-workshop-v2]] (draft)
 - Skins: [[specs/skins/adult/skin|adult/skin]] · [[specs/skins/kids/skin|kids/skin]]
 
 ### Components (9)
