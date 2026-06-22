@@ -1,3 +1,72 @@
+## [2026-06-22] correction/save | 보아치과 v3 — v2의 HypeProof DNA 누락 정정
+- Type: curriculum correction
+- Created: [[dental-website-copyclone-v3]] (md), `exports/dental-website-copyclone-v3.html/.pdf`
+- Pages updated: [[specs/track-b/_index]], [[hot]], [[log]]
+- From: Telegram (Jiwoong Kim). v2가 봉호 코어·7에셋 행동신호·와우포인트·boaclinic급 결과물을 하나도 안 박은 generic draft라는 정당한 지적.
+- Key insight: v3는 (1)봉호 5블록+AI지휘관 서사+핵심 장면(AI가 다르게 만듦→질문 고침)을 본체로, (2)7에셋을 Q&A 아닌 행동신호 관찰표로, (3)오프닝 와우포인트 라이브 데모, (4)결과물 수준을 boaclinic.com급(네이버예약·카카오·SNS 연동 + Cloudflare Pages 안정 배포)으로 고정. v2는 deprecated.
+
+## [2026-06-21] ingest/save | 보아치과 v2 카피클론 + 주인님 확정 우선순위
+- Type: curriculum/spec + priority correction
+- Created: [[dental-website-copyclone-v2]] (md), `exports/dental-website-copyclone-v2.html`
+- Pages updated: [[specs/track-b/_index]], [[hot]], [[log]]
+- From: Telegram (Jiwoong Kim). AI의 임의 P0~P3 우선순위는 할루시네이션으로 기각. 정본 우선순위 = 1) 보아치과 커리큘럼을 웹사이트 카피 방향으로 전환(핵심가치 복사·껍데기만 교체) 2) HypeProof Studio 기술 운행 가능성 체크.
+- Key insight: v1(detail-v1)의 핵심가치(요리교실·공개URL·7Assets·검증·자기병원전환)는 유지, 출발점만 "빈 샘플 생성"→"실재 사이트 정답지 클론(구조만 차용·콘텐츠 데모 교체, 도용금지)"으로 교체. Studio 운행의 P0 블로커는 이미지 맥락주입 UI + 멀티턴 연속성.
+
+## [2026-06-08] save | HypeProof Studio 메타게임 은유
+- Type: concept/spec update
+- Pages updated: [[sk-biopharma-bongho-curriculum-v2]], [[hypeproof-studio-game-skillpack-v1]], [[hot]], [[log]]
+- From: 봉호 태님 Telegram insight: “HypeProof Studio라는 커다란 게임기 안에서 게임을 만드는 게임을 한다.”
+- Key insight: Studio는 AI 코딩툴이 아니라 메타게임 OS다. 7 Assets는 내부 매핑으로 두고, 아이에게는 퀘스트/뱃지/레벨업/출시 보상으로 경험되게 한다.
+
+## [2026-06-08] correction | 7 Assets 평가 프레임 금지
+- Type: correction
+- Pages updated: [[sk-biopharma-bongho-curriculum-v2]], [[hypeproof-studio-game-skillpack-v1]], [[hot]], [[log]]
+- From: Telegram correction that framing 7 Assets as scoring/rubric risks overriding 봉호 커리큘럼.
+- Key insight: 봉호 커리큘럼 우선. 7 Assets는 아이에게 점수로 노출하지 않고, Studio가 과정 흔적을 보존한 뒤 관찰 기록/성장 코멘트로만 번역한다. 0/1/2 루브릭은 봉호님 확인 전까지 사용하지 않는다.
+
+## [2026-06-08] save | SK바이오팜 봉호 커리큘럼 v2 재작성
+- Type: curriculum/spec
+- Created: [[sk-biopharma-bongho-curriculum-v2]]
+- Pages updated: [[hypeproof-studio-game-skillpack-v1]], [[specs/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram correction that 봉호 커리큘럼 must be treated as the product core, not as a partial reference.
+- Key insight: SK바이오팜 수업은 HypeProof Studio 수업이 아니라, 봉호 커리큘럼을 HypeProof Studio로 구현한 가족 AI 게임 창작 수업이다.
+
+## [2026-06-08] decision/save | SK바이오팜 봉호 커리큘럼 구현 + Game Skill Pack
+- Type: spec/decision
+- Created: [[hypeproof-studio-game-skillpack-v1]]
+- Pages updated: [[sk-biopharma-curriculum-detail-v1]], [[hypeproof-studio]], [[specs/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram decision that SK바이오팜 게임 만들기 수업은 HypeProof Studio로 해야 하며, 게임 제작 특화 스킬·룰·프롬프트를 사전 탑재해야 한다.
+- Key insight: 봉호 커리큘럼을 구현하는 Studio는 범용 코딩툴 대체물이 아니라 아이/가족 수업의 완성률·안전성·리포트 데이터 수집을 보장하는 guided education OS다.
+
+## [2026-06-08] save | 커리큘럼 상세 v1 2종 — SK바이오팜 / 보아치과
+- Type: curriculum/spec
+- Created: [[sk-biopharma-curriculum-detail-v1]], [[dental-website-workshop-detail-v1]]
+- Pages updated: [[sk-biopharma-pilot]], [[dental-homepage-seminar-v1]], [[specs/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram discussion on prioritizing SK바이오팜 커리큘럼 상세 v1 and 보아치과 웹사이트 만들기 상세 v1 based on existing vault materials.
+- Key insight: SK바이오팜은 봉호 커리큘럼을 본체로 HypeProof Studio에서 구현하는 7 Assets Family AI Creation Lab으로, 보아치과는 Claude Code 중심 실전 홈페이지 제작 + HypeProof Studio 스킬팩 제품화 경로로 분리하는 것이 현재 최선이다.
+
+## [2026-06-08] ingest | SK바이오팜 일정/대상자 내부 설문 결과
+- Source: `.raw/images/sk-biopharma-schedule-survey-20260608.md`
+- Summary: [[sk-biopharma-schedule-survey-20260608]]
+- Pages created: [[sk-biopharma-schedule-survey-20260608]], [[kim-jinhyuk]]
+- Pages updated: [[sk-biopharma-pilot]], [[sk-biopharma]], [[sources/_index]], [[stakeholders/_index]], [[index]], [[hot]], [[log]]
+- Key insight: SK바이오팜 파일럿 수요가 20가족/23자녀/2회차/7~8월 토요일 선호로 구체화되어, 분반 의견·2회차 견적·커리큘럼 자료·가능 일정 회신이 다음 병목이 되었다.
+
+## [2026-06-07] ingest | 세미나 기획 의견 정리 — 치과 AI 홈페이지 만들기
+- Source: `.raw/articles/dental-homepage-seminar-feedback-20260607.html`
+- Summary: [[dental-homepage-seminar-feedback-20260607]]
+- Pages created: [[dental-homepage-seminar-feedback-20260607]], [[dental-homepage-seminar-v1]], [[boa-dental]], [[park-junghyun]], [[lee-jaewon]], [[gabia]], [[cafe24]], [[claude-code]], [[vercel]], [[cloudflare]], [[hypeproof-ai-xyz]]
+- Pages updated: [[sources/_index]], [[specs/track-b/_index]], [[stakeholders/_index]], [[components/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 치과 홈페이지 세미나는 자유 제작보다 샘플을 그대로 따라 만드는 요리교실식 완주 경험과 실제 배포 URL 확보가 핵심이다.
+- Correction: 주인님 정정에 따라 이 소스는 [[boa-dental]] 이후 피드백으로 표시한다.
+
+## 2026-06-01 ingest | 7 AI Native Assets 측정 구조 원본
+- Source: `.raw/articles/7assets-measurement-review-original-20260523.html`
+- Summary: [[7assets-measurement-review-original-20260523]]
+- Pages created: [[seven-ai-native-assets-original]]
+- Pages updated: [[seven-ai-native-assets-sk-strategy]], [[sk-biopharma-pilot]]
+- Key insight: 7 Assets는 Q&A 답변이 아니라 과정 신호로 측정해야 하는 절차적 역량이다.
+
 ---
 type: meta
 title: "Log"
@@ -6,6 +75,20 @@ updated: 2026-04-19
 tags:
   - meta/log
 ---
+
+## [2026-06-01] save | 7 AI Native Assets — SK바이오팜 전략 업데이트
+- Type: concept
+- Location: wiki/concepts/seven-ai-native-assets-sk-strategy.md
+- From: SK바이오팜 최종 견적서와 Bitree 제안서 비교, 7 Assets 중심 상품 전략 업데이트
+- Key insight: 7 Assets는 세일즈용 포장이 아니라 외부 고객 인터페이스이며, 16 Essence는 내부 scoring rubric으로 유지한다.
+
+
+## [2026-06-01] ingest | SK바이오팜 Bitree 최종 견적서
+- Source: `.raw/images/sk-biopharma-bitree-final-quotation-20260526.md`
+- Summary: [[sk-biopharma-bitree-final-quotation-20260526]]
+- Pages updated: [[sk-biopharma-pilot]], [[index]], [[hot]]
+- Key insight: 최종 견적은 4시간/10가족 기준 VAT 포함 10,120,000원으로, 기존 40~60만원/가족 검토가보다 높은 프리미엄/high-touch 운영 가격이다.
+
 
 # Log
 
