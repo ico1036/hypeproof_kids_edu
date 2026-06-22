@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>보아치과 원장 AI 실습 강의 — 프로그램 개요 (최종)</title>
+<!-- DESIGN: SK 개요 구조 미러 + 의료 청록 팔레트. ✦=와우 암시 전용. ②는 의료 맥락상 '검증' 주연으로 재가중. -->
+<link rel="icon" href="data:,">
+<style>
+:root{--ac:#0f9d8c;--ac-deep:#0b6e62;--ink:#13211f;--muted:#5d6f70;--line:#e4ecec;--soft:#e9f6f3;--tint:#f6f9f9;--dark:#13302e;--font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Pretendard,system-ui,sans-serif;--serif:"AppleMyungjo","Nanum Myeongjo",serif}
+*{box-sizing:border-box}
+body{margin:0;background:#62676e;font-family:var(--font);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;letter-spacing:-.02em;line-height:1.5}
+.page{width:210mm;height:297mm;background:#fff;margin:14px auto;padding:11mm 12mm 10mm;position:relative;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.28)}
+.page1{border-top:7px solid var(--ac)}
+.badge{display:inline-block;background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:11px;font-weight:800}
+h1{font-family:var(--serif);font-size:39px;line-height:1.16;margin:11px 0 9px;letter-spacing:-.02em}
+.ac{color:var(--ac-deep)}
+.lead{font-size:14px;color:#37433f;margin:0;max-width:47em}
+p{color:var(--muted);margin:0}
+.label{color:var(--ac-deep);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.13em;margin:15px 0 7px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat,.axis{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:#fff}
+.stat b{font-size:17px;display:block;letter-spacing:-.02em}
+.stat span{display:block;color:var(--muted);font-size:11.5px;margin-top:3px;line-height:1.45}
+.axis b{font-size:14.5px;display:block;margin-bottom:4px}
+.axis .en{color:var(--muted);font-weight:600;font-size:11px}
+.axis p{font-size:12.5px;line-height:1.55;color:#3b4744}
+.axis .no{display:inline-block;color:var(--ac-deep);font-weight:900;margin-right:4px}
+.darkstrip{background:var(--dark);color:#fff;border-radius:12px;padding:14px 16px;font-size:13px;line-height:1.62}
+.darkstrip b{color:#7fe0cf}
+.darkstrip span{color:#d3e2df}
+.wm{color:var(--ac-deep);font-weight:900;font-size:11px;margin-left:3px}
+.wmnote{font-size:10.5px;color:#76807e;margin:-2px 0 10px}
+.runway{display:flex;gap:4px;margin:0 0 10px}
+.rseg{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--tint);min-width:0}
+.rseg.hot{background:var(--soft);border-color:#bfe7df}
+.rseg b{font-size:12px;display:block;white-space:nowrap}
+.rseg span{font-size:11px;color:var(--muted);white-space:nowrap}
+.tlbox{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:#fff}
+.tlbox h3{font-size:13px;margin:0 0 9px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.tlbox h3 em{font-style:normal;color:var(--muted);font-weight:600;font-size:11px}
+.trow{display:grid;grid-template-columns:34px 1fr;gap:8px;padding:7px 0;border-bottom:1px solid #f1f4f4;align-items:baseline}
+.trow:last-child{border-bottom:0}
+.trow i{font-style:normal;font-weight:900;color:var(--ac-deep);font-size:11px}
+.trow div{font-size:12px;color:#3b4744;line-height:1.45}
+.trow b{font-weight:800;color:var(--ink)}
+.strip{border:1px solid var(--line);border-left:4px solid var(--ac);border-radius:0 8px 8px 0;background:#fff;padding:10px 13px;font-size:12.5px;color:#3b4744}
+.strip b{color:var(--ink)}
+.mini4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.mini4 .stat b{font-size:13px}
+.foot{position:absolute;left:12mm;right:12mm;bottom:8mm;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:7px;font-size:10px;color:#76807e}
+.cta{background:var(--soft);border:1px solid #bfe7df;border-radius:12px;padding:12px 15px;font-size:12.5px;color:#3b4744}
+.cta b{color:var(--ac-deep)}
+.reveal{background:var(--dark);color:#fff;border-radius:12px;padding:15px 17px;font-size:13px;line-height:1.62;margin-top:10px}
+.reveal b{color:#7fe0cf}
+@media print{@page{size:A4;margin:0}body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{margin:0;box-shadow:none;break-after:page}.page:last-child{break-after:auto}}
+</style></head><body>
+
+<!-- ===== PAGE 1 ===== -->
+<section class="page page1">
+<div class="badge">보아치과 원장 대상 AI 실습 강의 · 프로그램 개요</div>
+<h1>홈페이지 코드는 AI가 씁니다<br><span class="ac">판단은 원장님이 합니다</span></h1>
+<p class="lead">원장님이 AI에게 우리 병원을 설명하고, 나온 결과를 의사의 눈으로 직접 확인해 바로잡아 — 실제 운영 가능한 병원 홈페이지 하나를 완성하고, 끝난 뒤에도 직접 고칠 권한까지 가져가는 4시간 실습 강의입니다.</p>
+
+<div class="label">Program</div>
+<div class="grid4">
+<div class="stat"><b>4시간</b><span>보기·만들기 + 확인·고치기 + 배포·점검 (쉬는 시간 포함)</span></div>
+<div class="stat"><b>치과 원장 · 실장</b><span>비개발자 대상 · 코딩 지식 필요 없음</span></div>
+<div class="stat"><b>실제 운영 홈페이지</b><span>네이버예약·카카오·지도 연동까지 작동하는 결과물</span></div>
+<div class="stat"><b>준비물: 노트북 1대</b><span>그 외 데모 자료·계정 안내는 저희가 준비합니다</span></div>
+</div>
+
+<div class="label">Two Skills</div>
+<div class="darkstrip"><b>왜 이 두 가지 힘일까요</b> <span>— 홈페이지 코드는 이미 AI가 씁니다. 원장님께 진짜 귀해지는 건 코딩 문법이 아니라, 우리 병원을 AI가 알아듣게 설명하는 힘(Context Engineering)과 — AI가 그럴듯하게 내놔도 의사의 눈으로 직접 확인하고 바로잡는 힘(Feedback Loop)입니다. 후자가 핵심입니다. AI 시대에도 “환자에게 내보내도 되는가”의 판단은 의사의 몫이니까요.</span></div>
+<div class="grid2" style="margin-top:10px">
+<div class="axis"><b><span class="no">①</span>생각을 정확히 설명하는 힘 <span class="en">· Context Engineering</span></b><p>“좋은 홈페이지”가 아니라 “신뢰감 있는 톤으로, 임플란트·교정 중심, 첫 화면에 예약 버튼”이라고 말하는 힘. 우리 병원이 누구에게 무엇을 보여줄지를 AI가 이해하게 정리해 전달합니다.</p></div>
+<div class="axis"><b><span class="no">②</span>직접 확인하고 고치는 힘 <span class="en">· Feedback Loop</span></b><p>AI가 그럴듯하게 내놔도 그대로 믿지 않는 힘. 의사인 내가 직접 눌러보고 — 예약이 되는지, 진료 정보가 맞는지, 의료광고 표현이 안전한지 확인해 틀린 곳을 바로잡습니다. <b>이 강의의 진짜 핵심.</b></p></div>
+</div>
+
+<div class="label">오늘 완성하는 홈페이지</div>
+<div class="grid2">
+<div class="axis"><b>페이지 구성</b><p>첫 화면 · 진료 안내 · 의료진 소개 · 병원 둘러보기 · 오시는 길/진료시간 · 예약 안내</p></div>
+<div class="axis"><b>실제 작동하는 연동</b><p>네이버 예약·플레이스 · 카카오톡 상담 · 전화 바로 걸기 · 지도 · 인스타·블로그 · 안정적 배포(+도메인)</p></div>
+</div>
+
+<div class="strip" style="margin-top:10px"><b>잘 만든 치과 홈페이지 한 곳을 기준 삼아, 같은 수준으로 만듭니다</b> — 남의 사이트를 복제하는 게 아니라, 구조만 참고하고 내용은 우리 병원 자료로 채웁니다. 의료광고 표현은 게시 전 원장님이 직접 검수합니다.</div>
+
+<div class="foot"><span>HypeProof Lab · 보아치과 원장 AI 실습 강의</span><span>1 / 2</span></div>
+</section>
+
+<!-- ===== PAGE 2 ===== -->
+<section class="page">
+<div class="label" style="margin-top:0">4-Hour Journey</div>
+<div class="runway">
+<div class="rseg hot" style="flex:100"><b>1부 · 보기·만들기 100분</b><span>첫 버전까지 한 바퀴</span></div>
+<div class="rseg" style="flex:70"><b>2부 · 확인·고치기 70분</b><span>의사의 눈으로 검증</span></div>
+<div class="rseg" style="flex:70"><b>3부 · 배포·점검 70분</b><span>띄우고, 의미를 새기기</span></div>
+</div>
+<p class="wmnote"><span class="wm" style="margin-left:0">✦</span> 원장님의 “된다!”와 “이건 내가 잡아야지”가 터지는 순간들</p>
+
+<div class="grid2">
+<div class="tlbox"><h3>1부 · 0:00–1:40 <em>— 설명 대신 장면으로 시작</em></h3>
+<div class="trow"><i>0:00</i><div><b>오프닝 데모</b><span class="wm">✦</span> — 5분 라이브로 완성 사이트 생성. “이걸 오늘 직접 만들어 가십니다”</div></div>
+<div class="trow"><i>0:15</i><div><b>기준 사이트 분해</b> — 잘 만든 치과 홈페이지를 섹션으로 뜯어보기</div></div>
+<div class="trow"><i>0:35</i><div><b>병원 정보 정리</b> — 진료·의료진·예약 채널을 한 장으로</div></div>
+<div class="trow"><i>0:55</i><div><b>첫 요청 만들기</b> — 부탁이 아니라 설명서를 씁니다 <span class="en" style="color:var(--muted)">(Context Engineering)</span></div></div>
+<div class="trow"><i>1:15</i><div><b>1차 제작 V1</b> — 버튼은 원장님이 누릅니다</div></div>
+</div>
+<div>
+<div class="tlbox"><h3>2부 · 1:40–2:50 <em>— 의사의 눈으로 확인하고 고치기</em></h3>
+<div class="trow"><i>1:40</i><div><b>직접 검증</b><span class="wm">✦</span> — 예약 눌리는지·진료정보 맞는지·과장 표현 없는지 원장님이 직접 확인</div></div>
+<div class="trow"><i>2:05</i><div><b>틀린 곳 바로잡기</b><span class="wm">✦</span> — 무엇이 왜 틀렸는지 짚어 더 정확히 다시 <span class="en" style="color:var(--muted)">(Feedback Loop)</span></div></div>
+<div class="trow"><i>2:25</i><div><b>운영 기능 연동</b> — 네이버예약·카카오·지도·전화 붙이고 작동 확인</div></div>
+</div>
+<div class="tlbox" style="margin-top:8px"><h3>3부 · 2:50–4:00 <em>— 띄우고, 의미를 새기기</em></h3>
+<div class="trow"><i>2:50</i><div><b>배포</b><span class="wm">✦</span> — 실제 주소로 띄우기. 내 홈페이지가 진짜 열리는 순간</div></div>
+<div class="trow"><i>3:20</i><div><b>의료광고 최종 점검</b> — 게시 전 표현 직접 검수 · 전환 체크리스트</div></div>
+<div class="trow"><i>3:40</i><div><b>클로징</b><span class="wm">✦</span> — 오늘 하신 ‘그 판단’에 이름을 붙입니다</div></div>
+</div>
+</div>
+</div>
+
+<div class="reveal"><b>클로징에서 이렇게 마무리합니다</b> — “오늘 AI가 다 만들어줬지만, 그걸 환자에게 내보내도 되는지 판단하고 바로잡은 건 원장님이셨습니다. <b>AI 시대에도 의사의 검증은 대체되지 않습니다.</b> 코드는 AI가 쓰고, 판단은 원장님이 한다 — 오늘 4시간 동안 직접 하신 그 힘입니다.”</div>
+
+<div class="label">Takeaways</div>
+<div class="mini4">
+<div class="stat"><b>실제 홈페이지 URL</b><span>그날 바로 공유</span></div>
+<div class="stat"><b>직접 고치는 능력</b><span>자주 쓰는 수정 요청 카드</span></div>
+<div class="stat"><b>전환 체크리스트</b><span>로고·사진·예약 링크 교체 절차</span></div>
+<div class="stat"><b>의료광고 점검표</b><span>게시 전 자가 검수용</span></div>
+</div>
+
+<p style="margin:16px 0 0;font-family:var(--serif);font-size:15px;line-height:1.55;color:var(--ink);max-width:42em">홈페이지는 결과물이고, 진짜 남는 건 “AI가 만든 것을 의사의 눈으로 확인하고 바로잡는 힘”입니다.<br>오늘 원장님은 4시간 동안 그걸 직접 익히십니다.</p>
+<div class="cta" style="margin-top:12px"><b>안심 포인트</b> — 의료광고법: 게시 전 원장님 최종 검수 원칙. 저작권: 복제가 아니라 구조 참고 + 우리 병원 자료. 강의 후: 집에서도 그대로 쓸 수 있는 검증된 도구·절차.</div>
+
+<div class="foot"><span>HypeProof Lab · 보아치과 원장 AI 실습 강의 · 프로그램 개요 (최종)</span><span>2 / 2</span></div>
+</section>
+</body></html>
