@@ -3,7 +3,7 @@ type: index
 status: navigational
 title: "Track B"
 created: 2026-04-12
-updated: 2026-06-08
+updated: 2026-07-06
 tags:
   - index/specs
   - track-b
@@ -21,4 +21,8 @@ tags:
 - [[dental-homepage-seminar-v1]] — AI로 치과 홈페이지 만들기 세미나 v1 (draft)
 - [[dental-website-workshop-detail-v1]] — 보아치과 강의용 AI 웹사이트 만들기 상세 v1 (draft)
 - [[dental-website-copyclone-v2]] — 보아치과 v2: 겉껍데기 카피 (generic, deprecated)
-- [[dental-website-copyclone-v3]] — 보아치과 원장 v3: 봉호코어+7에셋 행동신호+boaclinic급 결과물 (draft, active)
+- [[dental-website-copyclone-v3]] — 보아치과 원장 v3: 홍보 자유도+질문 능력+Feedback Loop+boaclinic급 결과물 (draft, active)
+- [[boa-dental-ai-homepage-cuesheet-20260706-spec]] — 보아치과 AI 홈페이지 실습 2시간 큐시트 정본 (active)
+
+## 산출물
+- [[boa-dental-ai-promo-race-poster-v1]] — 보아치과 AI 홍보 레이스 포스터 v1 (초반 설명→직접 수정→최종 결과물 평가)

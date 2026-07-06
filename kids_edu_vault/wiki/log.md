@@ -1,3 +1,39 @@
+## [2026-07-06] ingest | 보아치과 AI 홈페이지 실습 큐시트
+- Source: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf`
+- Companion sources: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.html`, `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.txt`
+- Summary: [[boa-dental-ai-homepage-cuesheet-20260706]]
+- Pages created: [[boa-dental-ai-homepage-cuesheet-20260706]], [[boa-dental-ai-homepage-cuesheet-20260706-spec]]
+- Pages updated: [[dental-website-copyclone-v3]], [[boa-dental]], [[hypeproof-studio]], [[sources/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 2시간 외부 공유용 큐시트는 발표/해커톤 감성을 빼고, 메인강사가 보아치과 홈페이지를 만드는 화면을 기준으로 같이 따라 만들게 한다. Context Engineering은 URL만 넣은 결과와 자세한 병원 컨텍스트 결과의 차이를 체감시키고, Loop Engineering은 루브릭을 만족할 때까지 검사와 수정을 반복시키는 것을 핵심으로 둔다. 최종 산출물은 홈페이지, 배포 URL, GitHub 저장소, `agent.md`다.
+
+## [2026-06-30] save | 보아치과 랜딩 첫 화면 메시지
+- Source: `.raw/telegram/2026-06-30-boa-dental-landing-message.md`
+- Summary: [[boa-dental-landing-message-20260630-source]]
+- Pages created: [[boa-dental-landing-message-20260630-source]]
+- Pages updated: [[dental-website-copyclone-v3]], [[sources/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 첫 화면은 실제 배포 홈페이지라는 즉시 결과물과, Claude Code/Codex 등 도구와 무관하게 쓰는 `맥락 설계`·`피드백 감각`을 HypeProof Lab의 실전 반복 훈련으로 체화한다는 메시지를 함께 보여줘야 한다.
+
+## [2026-06-30] ingest | Weekly on HypeProof 2026-06-29
+- Source: `.raw/meeting_notes/2026-06-29-weekly-on-hypeproof-gemini.md`
+- Summary: [[weekly-on-hypeproof-20260629-source]]
+- Pages created: [[weekly-on-hypeproof-20260629-source]], [[2026-06-29-weekly-on-hypeproof]]
+- Pages updated: [[boa-dental]], [[dental-website-copyclone-v3]], [[hypeproof-studio]], [[sources/_index]], [[comms/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 강의의 수강자 아웃풋은 홈페이지 초안/공개 URL/전후 비교/설명 카드/Loop Log이고, HypeProof 고유성은 Studio 로그·7 Assets 체화·레이스/커뮤니티·KOL 채널 전략에 있다.
+
+## [2026-06-27] ingest | 보아치과 AI 홍보 레이스 포스터 v1
+- Source: `.raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.pdf`
+- Companion source: `.raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.html`
+- Summary: [[boa-dental-ai-promo-race-poster-v1-20260627]]
+- Pages created: [[boa-dental-ai-promo-race-poster-v1-20260627]], [[boa-dental-ai-promo-race-poster-v1]]
+- Pages updated: [[boa-dental]], [[sources/_index]], [[deliverables/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 포스터 v1의 외부 정본 흐름은 초반 설명과 재료 정리 이후 원장님이 직접 문구·구성·톤을 깎아 최종 홈페이지 초안으로 평가받는 구조다.
+
+## [2026-06-27] correction/save | 보아치과 클로징 — 홍보 자유도 중심 정정
+- Type: curriculum correction
+- Pages updated: [[dental-website-copyclone-v3]], [[specs/track-b/_index]], [[hot]], `exports/boa-dental-design-rationale.html/.pdf`
+- From: Telegram (Jiwoong Kim). 보아치과 원장 강의의 클로징과 레슨은 부모/아이 강의와 달라야 하며, 핵심은 원장님이 자기 치과 홍보를 본인이 원하는 대로 할 수 있는 자유도를 얻는 것이라는 정정.
+- Key insight: 의료광고 검증은 필수 가드레일이지만 클로징의 주인공은 검증 자체가 아니다. 보아치과판의 두 중심 기술은 AI에게 내 병원을 제대로 질문/설명하는 Context Engineering과 첫 결과를 원하는 홍보 방향으로 계속 고쳐가는 Feedback Loop다.
+
 ## [2026-06-22] correction/save | 보아치과 v3 — v2의 HypeProof DNA 누락 정정
 - Type: curriculum correction
 - Created: [[dental-website-copyclone-v3]] (md), `exports/dental-website-copyclone-v3.html/.pdf`

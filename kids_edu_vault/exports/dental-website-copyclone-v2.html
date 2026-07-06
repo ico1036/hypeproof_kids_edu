@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>보아치과 강의 v2 — 잘 만든 홈페이지 겉껍데기 카피하기</title>
+<style>
+  :root{
+    --ink:#10242b; --sub:#46606a; --line:#e2ebee; --bg:#f6f9fa;
+    --accent:#0f9d8c; --accent-soft:#e6f6f3; --warn:#c2410c; --warn-soft:#fff2e8;
+    --p0:#dc2626; --p1:#ea8a0c; --keep:#0f9d8c;
+    --card:#ffffff; --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Segoe UI",sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:880px;margin:0 auto;padding:48px 24px 80px;}
+  header.hero{background:linear-gradient(135deg,#0f9d8c,#0b6e7d);color:#fff;
+    border-radius:var(--radius);padding:40px 36px;margin-bottom:32px;
+    box-shadow:0 12px 30px rgba(12,90,100,.18);}
+  header.hero .tag{display:inline-block;font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;background:rgba(255,255,255,.18);padding:5px 12px;
+    border-radius:999px;margin-bottom:14px;}
+  header.hero h1{margin:0 0 10px;font-size:27px;line-height:1.3;}
+  header.hero p{margin:0;opacity:.92;font-size:15px;}
+  header.hero .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;}
+  header.hero .meta span{background:rgba(255,255,255,.14);font-size:12.5px;
+    padding:5px 11px;border-radius:8px;}
+  .lead{background:var(--accent-soft);border-left:4px solid var(--accent);
+    padding:16px 20px;border-radius:10px;font-size:15.5px;font-weight:600;
+    color:#0b5a52;margin-bottom:34px;}
+  section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 30px;margin-bottom:22px;box-shadow:0 2px 10px rgba(20,60,70,.04);}
+  h2{font-size:19px;margin:0 0 16px;display:flex;align-items:center;gap:9px;}
+  h2 .n{background:var(--ink);color:#fff;width:26px;height:26px;border-radius:8px;
+    display:inline-flex;align-items:center;justify-content:center;font-size:14px;}
+  h3{font-size:15.5px;margin:22px 0 8px;color:var(--ink);}
+  p{margin:8px 0;color:var(--sub);font-size:14.5px;}
+  ul{margin:8px 0;padding-left:20px;}li{margin:6px 0;color:var(--sub);font-size:14.5px;}
+  strong{color:var(--ink);}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.7px;}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{background:var(--bg);color:var(--ink);font-weight:700;font-size:13px;}
+  td:first-child{font-weight:600;color:var(--ink);white-space:nowrap;}
+  .keep{color:var(--keep);font-weight:700;}
+  .swap{color:var(--warn);font-weight:700;}
+  .guard{background:var(--warn-soft);border-left:4px solid var(--warn);
+    padding:14px 18px;border-radius:10px;margin:16px 0;font-size:14px;color:#7c2d12;}
+  .guard b{color:var(--warn);}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;counter-reset:step;}
+  .flow .step{background:var(--bg);border:1px solid var(--line);border-radius:9px;
+    padding:9px 13px;font-size:13px;color:var(--ink);flex:1 1 calc(33% - 8px);min-width:150px;}
+  .flow .step b{display:block;color:var(--accent);font-size:11.5px;margin-bottom:2px;}
+  .flow .step.hot{background:var(--accent-soft);border-color:#b8e6df;}
+  pre{background:#0d2a30;color:#d7f3ee;padding:16px 18px;border-radius:11px;
+    font-size:12.8px;line-height:1.55;overflow-x:auto;
+    font-family:"SF Mono",Menlo,Consolas,monospace;}
+  .key{background:#fffdf3;border:1px solid #f1e4b6;border-left:4px solid #e0b62c;
+    padding:14px 18px;border-radius:10px;margin:16px 0;font-size:14px;color:#6b5418;}
+  .key b{color:#8a6d1e;}
+  footer{text-align:center;color:#90a4ab;font-size:12.5px;margin-top:30px;}
+  @media print{body{background:#fff;}section,header.hero{box-shadow:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="tag">HypeProof Lab · Track B · Draft v2</span>
+    <h1>보아치과 강의 v2<br>잘 만든 홈페이지 "겉껍데기" 카피하기</h1>
+    <p>핵심 가치는 그대로 복사하고, 출발점만 "빈 샘플 생성" → "정답지 클론"으로 교체한 해커톤형 실습</p>
+    <div class="meta">
+      <span>🦷 대상: 치과 원장/직원 (비개발자)</span>
+      <span>⏱ 3.5시간</span>
+      <span>📅 2026-06-21</span>
+      <span>🏆 보안치과 해커톤 (7/15)</span>
+    </div>
+  </header>
+
+  <div class="lead">
+    치과 비전문가가 <strong>실제로 잘 만든 홈페이지 1개를 골라 그 겉모습(레이아웃·디자인·정보 위계)을 AI로 클론</strong>하고,
+    끝에는 실제 접속 가능한 공개 URL을 얻는 AI Native 제작 실습. 베끼기가 아니라 <strong>벤치마킹</strong>을 가르친다.
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>무엇이 바뀌나 (v1 → v2)</h2>
+    <p>v1(detail-v1)의 <span class="keep">핵심 가치는 복사</span>하고, <span class="swap">겉껍데기(표면 활동)만 교체</span>한다.</p>
+    <table>
+      <tr><th>레이어</th><th>v1 (기존)</th><th>v2 (이번 변경)</th></tr>
+      <tr><td>표면 활동</td><td>강사가 만든 <b>빈 샘플</b>을 같은 프롬프트로 생성</td><td><span class="swap">실재 사이트의 겉모습을 AI로 클론</span></td></tr>
+      <tr><td>목표 이미지</td><td>추상적 (머릿속 샘플)</td><td>구체적 (눈앞의 정답지)</td></tr>
+      <tr><td>진행 형식</td><td>따라 만들기</td><td>따라 만들기 + <b>해커톤 베스트 선정</b></td></tr>
+      <tr><td>핵심 가치</td><td colspan="2"><span class="keep">요리교실 모델 · 공개 URL까지가 완성 · 7 Assets · 의료광고 검증 · 자기병원 전환 → 전부 동일 유지</span></td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>생각의 과정 (왜 이렇게 바꾸나)</h2>
+    <ul>
+      <li><strong>v1의 약점:</strong> "빈 샘플 만들어보세요"는 <strong>정답지가 없다</strong>. 초심자는 잘 됐는지 판단 기준이 없어 Taste·Verification 자산이 약하게 자극된다.</li>
+      <li><strong>카피 모델의 강점:</strong> 잘 만든 실재 사이트가 <strong>눈앞의 정답지(target)</strong>가 된다. "저거랑 똑같이"는 스크린샷/URL을 맥락으로 주입할 수 있어 Context Design 자산이 활동의 중심이 된다.</li>
+      <li><strong>해커톤 호환:</strong> 6/15 회의의 "잘 만든 홈페이지 1개 골라 따라 만들기 → 베스트 선정"과 정확히 맞물린다. 같은 타겟이라 결과물 심사가 공정하다.</li>
+    </ul>
+    <div class="guard">
+      ⚠️ <b>가드레일 (저작권/도용 금지):</b> 그대로 베끼는 게 목적이 아니다.
+      <b>"구조·레이아웃은 레퍼런스로 학습 → 로고·사진·문구는 데모 자산으로 교체"</b>가 원칙.
+      이 도용 금지 실습 자체가 의료광고·검증 자산을 가르치는 최고의 교보재가 된다.
+    </div>
+    <p><strong>결론:</strong> 요리교실·공개URL·7Assets·검증·자기병원전환은 <span class="keep">1mm도 안 건드리고</span>, 출발점만 "빈 샘플 생성" → "정답지 클론"으로 교체한다.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>타겟 사이트 선정 기준 (강사 사전 준비)</h2>
+    <ul>
+      <li>치과/병원/클리닉 계열 중 <strong>레이아웃·정보 위계가 명확하고 모던한</strong> 공개 사이트 1개.</li>
+      <li>과한 인터랙션/애니메이션은 제외 — 3시간 내 재현 가능해야 함.</li>
+      <li>강사는 타겟의 <strong>풀페이지 스크린샷(데스크탑+모바일)</strong> 과 섹션 분해표를 미리 준비.</li>
+      <li>저작권 안전을 위해 <strong>레퍼런스는 1개로 고정</strong>, "구조만 차용·콘텐츠는 데모 자산 교체" 명문화.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>3.5시간 플로우</h2>
+    <table>
+      <tr><th>시간</th><th>블록</th><th>산출물</th></tr>
+      <tr><td>0:00–0:15</td><td>정답지 공개 — 오늘 클론할 타겟과 최종 URL 미리 보여주기</td><td>타겟 이미지</td></tr>
+      <tr><td>0:15–0:35</td><td>구조 분해 — Hero/진료과목/의료진/위치/CTA로 쪼개기</td><td>섹션 분해표</td></tr>
+      <tr><td>0:35–1:15</td><td><b>1차 클론 — 타겟 스크린샷 맥락주입 → V1 생성</b></td><td>클론 V1</td></tr>
+      <tr><td>1:15–1:45</td><td>콘텐츠 교체 — 로고·사진·문구를 데모 자산으로 (도용금지 실습)</td><td>V2</td></tr>
+      <tr><td>1:45–2:10</td><td>AI 미니 모듈 — 이미지 맥락주입·부분수정·토큰</td><td>프롬프트 카드</td></tr>
+      <tr><td>2:10–2:40</td><td>디테일 튜닝 — 색/폰트/간격을 타겟 근접 + 내 톤으로 변형</td><td>V3</td></tr>
+      <tr><td>2:40–3:10</td><td>배포 — Vercel/Cloudflare 공개 URL 생성</td><td>공개 URL</td></tr>
+      <tr><td>3:10–3:30</td><td><b>해커톤 심사 — 팀별 비교 → 베스트 선정</b></td><td>베스트</td></tr>
+      <tr><td>3:30–3:40</td><td>의료광고 검증 — 게시 전 검수 원칙</td><td>검증 체크리스트</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>핵심 프롬프트 패턴 (v2 신규)</h2>
+    <pre>[첨부: 타겟 사이트 데스크탑/모바일 스크린샷]
+역할: 시니어 웹 디자이너 겸 프론트엔드 개발자.
+목표: 첨부한 사이트의 "레이아웃·정보 위계·디자인 톤"을 참고해
+      동등한 품질의 치과 홈페이지 골격을 만든다.
+제약: 로고·사진·문구는 복제하지 말고 자리표시자/데모 자산으로 둔다.
+      의료광고법상 과장 표현 금지.
+출력: 배포 가능하고 비개발자가 수정하기 쉬운 구조.</pre>
+    <div class="key">
+      💡 <b>v2의 교육적 정수:</b> "남의 좋은 결과를 보고 → 구조를 읽고 → 내 것으로 재구성"은
+      실무에서 AI를 쓰는 가장 현실적인 루프다. 베끼기가 아니라 <b>벤치마킹을 가르친다.</b>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>7 Assets 매핑 (v1 대비 강화점)</h2>
+    <table>
+      <tr><th>Asset</th><th>v2에서 강해지는 지점</th></tr>
+      <tr><td>Context Design</td><td>타겟 스크린샷/URL을 맥락으로 주입하는 경험이 핵심 활동이 됨</td></tr>
+      <tr><td>Taste</td><td>"정답지와 내 결과물 비교"가 상시 일어남</td></tr>
+      <tr><td>Verification</td><td>도용/의료광고 가드레일이 자연스러운 검증 훈련이 됨</td></tr>
+      <tr><td>나머지 4종</td><td>Intent·Iteration·Delegation·Ownership은 v1과 동일 유지</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>오픈 이슈</h2>
+    <ul>
+      <li>타겟 사이트 1개 최종 확정 (저작권 안전 + 재현 난이도)</li>
+      <li>클론 시 "이미지 맥락 주입"을 어떤 도구가 지원하는가 → <strong>HypeProof Studio 기술 체크</strong> 필요</li>
+      <li>해커톤 심사 기준표 확정</li>
+      <li>강의 시간: 3 / 3.5 / 4시간 중 선택</li>
+    </ul>
+  </section>
+
+  <footer>HypeProof Lab — dental-website-copyclone-v2 · 2026-06-21 · draft</footer>
+</div>
+</body>
+</html>

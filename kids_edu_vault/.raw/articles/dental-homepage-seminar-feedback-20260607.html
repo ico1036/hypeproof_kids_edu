@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>세미나 기획 의견 정리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1a17;
+    --paper:#f4efe6;
+    --card:#fbf8f1;
+    --accent:#b4451f;
+    --accent-soft:#e8d9c4;
+    --line:#ddd2bf;
+    --muted:#7a7165;
+    --green:#3f6b4c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'IBM Plex Sans KR',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(circle at 1px 1px, rgba(120,100,70,.06) 1px, transparent 0);
+    background-size:22px 22px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:64px 28px 96px}
+
+  /* Header */
+  header{border-bottom:3px solid var(--ink);padding-bottom:28px;margin-bottom:14px}
+  .eyebrow{
+    font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin-bottom:18px;
+  }
+  h1{
+    font-family:'Gowun Batang',serif;font-weight:700;
+    font-size:2.9rem;line-height:1.15;letter-spacing:-.01em;
+  }
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 0;flex-direction:column}
+  .meta div{font-size:.86rem;color:var(--muted)}
+  .meta b{color:var(--ink);font-weight:600;margin-right:6px}
+
+  /* Summary banner */
+  .summary{
+    margin:40px 0;padding:30px 32px;background:var(--ink);color:var(--paper);
+    border-radius:2px;position:relative;overflow:hidden;
+  }
+  .summary::before{
+    content:"“";position:absolute;top:-30px;right:18px;
+    font-family:'Gowun Batang',serif;font-size:11rem;color:rgba(255,255,255,.06);
+  }
+  .summary .label{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-soft);margin-bottom:12px}
+  .summary p{font-family:'Gowun Batang',serif;font-size:1.42rem;line-height:1.55;position:relative;z-index:1}
+
+  /* Sections */
+  section{margin-top:46px}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:18px}
+  .num{
+    font-family:'Gowun Batang',serif;font-size:1.5rem;color:var(--accent);
+    font-weight:700;flex-shrink:0;width:1.8rem;
+  }
+  h2{font-size:1.32rem;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+  .sec-body{padding-left:calc(1.8rem + 16px)}
+
+  ul{list-style:none}
+  li{position:relative;padding-left:24px;margin-bottom:10px;font-size:1rem}
+  li::before{content:"";position:absolute;left:4px;top:.7em;width:7px;height:7px;background:var(--accent-soft);border:1.5px solid var(--accent);border-radius:50%}
+  li.yes::before{background:var(--green);border-color:var(--green)}
+  li.no::before{background:transparent;border-color:#c0392b}
+  li.no{color:var(--muted)}
+  strong{font-weight:600;color:var(--accent);background:linear-gradient(transparent 62%, var(--accent-soft) 62%)}
+
+  /* Compare card */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px}
+  .box h3{font-size:.92rem;letter-spacing:.04em;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .box.old h3{color:var(--muted)}
+  .box.new h3{color:var(--green)}
+  .box ul li{font-size:.92rem;margin-bottom:8px}
+  .tag{font-size:.66rem;font-weight:700;padding:2px 8px;border-radius:99px;letter-spacing:.05em}
+  .tag.old{background:#eee5d6;color:var(--muted)}
+  .tag.new{background:#dcebe0;color:var(--green)}
+
+  /* Checklist */
+  .actions{margin-top:54px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;padding:30px 34px}
+  .actions h2{margin-bottom:18px}
+  .check{display:flex;align-items:flex-start;gap:12px;margin-bottom:13px;font-size:.98rem}
+  .check span.b{flex-shrink:0;width:18px;height:18px;border:2px solid var(--ink);border-radius:3px;margin-top:4px}
+
+  footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);text-align:center}
+
+  @media(max-width:560px){
+    .wrap{padding:44px 20px 70px}
+    h1{font-size:2.1rem}
+    .summary p{font-size:1.18rem}
+    .compare{grid-template-columns:1fr}
+    .sec-body{padding-left:0}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Client Feedback · Internal Memo</div>
+    <h1>세미나 기획<br>의견 정리</h1>
+    <div class="meta">
+      <div><b>출처</b>그룹채팅3 클라이언트 피드백 (박정현 님 · 이재원 형님)</div>
+      <div><b>대상</b>치과 대상 「AI로 홈페이지 만들기」 세미나</div>
+      <div><b>목적</b>강의 공동 기획 동료 전달용</div>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div class="label">한 줄 요약</div>
+    <p>치과 비전문가가 따라만 하면 실제 홈페이지가 완성되는 <em>요리교실식 세미나</em> + 중간중간 AI 개념·스킬 양념</p>
+  </div>
+
+  <section>
+    <div class="sec-head"><span class="num">1</span><h2>진행 방식 — "요리교실" 모델</h2></div>
+    <div class="sec-body">
+      <ul>
+        <li class="no">"각자 원하는 거 만들어봐" 식 → 강사가 봐주기 어렵고 참고 자료도 없음</li>
+        <li class="yes">특정 치과 홈페이지를 <strong>샘플로 정해두고, 그대로 따라 만드는</strong> 방식</li>
+        <li>실제 본인 치과 홈페이지는 세미나 후 각자 같은 방법으로 제작</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">2</span><h2>실습 재료는 강사 측이 미리 준비</h2></div>
+    <div class="sec-body">
+      <ul>
+        <li>로고·이미지 등은 <strong>요리교실 재료처럼</strong> 강의 측에서 데모용으로 미리 세팅</li>
+        <li>참가자에게 "준비해오라"고 하면 → 복잡해하고, 안 해오는 사람도 생김</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">3</span><h2>기술 스택 / 핵심 가치 제안</h2></div>
+    <div class="sec-body">
+      <div class="compare">
+        <div class="box old">
+          <h3><span class="tag old">기존</span> 외주 방식</h3>
+          <ul>
+            <li>도메인 구매 + 카페24·홈페이지 업체 서버</li>
+            <li>매달 관리비 발생</li>
+            <li>수정이 어려움</li>
+          </ul>
+        </div>
+        <div class="box new">
+          <h3><span class="tag new">제안</span> AI 셀프 제작</h3>
+          <ul>
+            <li>가비아에서 <b>도메인만</b> 구매</li>
+            <li>Claude Code로 제작</li>
+            <li>Vercel / Cloudflare 배포 → 서버비 0</li>
+            <li>수정 수시로 가능</li>
+          </ul>
+        </div>
+      </div>
+      <ul style="margin-top:16px">
+        <li class="yes"><strong>목표: 단순 제작이 아니라 실제 작동하는 홈페이지로 띄우는 것까지</strong></li>
+        <li>레퍼런스: hypeproof-ai.xyz (1시간 안 걸려 제작한 예시)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">4</span><h2>눈높이 — "1부터 떠먹여주기"</h2></div>
+    <div class="sec-body">
+      <ul>
+        <li>전문가에겐 쉬운 일이지만, 비전문가는 Vercel·Cloudflare가 <strong>존재하는지조차 모름</strong></li>
+        <li>전부 다 알 필요는 없음</li>
+        <li>따라 하면 결과가 나오도록 <strong>단계별로 떠먹여주는</strong> 구성</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">5</span><h2>부가 교육 — 중간중간 양념처럼</h2></div>
+    <div class="sec-body">
+      <ul>
+        <li>실습 흐름 사이사이에 AI 기초 개념(예: <strong>토큰</strong>)을 살짝씩 녹이기</li>
+        <li>홈페이지를 더 잘 만들기 위한 <strong>skill / 팁</strong> 강의도 중간에 끼워서</li>
+        <li>→ 자연스럽게 AI에 대한 관심 유도</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="actions">
+    <h2>다음 액션 체크리스트</h2>
+    <div class="check"><span class="b"></span><div>따라 만들 샘플 치과 홈페이지 1개 확정</div></div>
+    <div class="check"><span class="b"></span><div>데모용 로고·이미지 에셋 패키지 준비</div></div>
+    <div class="check"><span class="b"></span><div>가비아 도메인 구매 → 배포(Vercel/Cloudflare) 실습 동선 정리</div></div>
+    <div class="check"><span class="b"></span><div>단계별 "떠먹여주기" 스크립트 작성</div></div>
+    <div class="check"><span class="b"></span><div>중간 삽입할 AI 개념·스킬 미니 모듈 선정 (토큰 등)</div></div>
+  </div>
+
+  <footer>HypeProof Lab · 세미나 기획 메모</footer>
+
+</div>
+</body>
+</html>

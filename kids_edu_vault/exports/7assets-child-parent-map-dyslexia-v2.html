@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>7 Assets — 아이용 쉬운 넛지와 부모 리포트 구조</title>
+<style>
+:root{
+  --bg:#f5f7fb; --ink:#101828; --muted:#667085; --card:#ffffff; --line:#e4e7ec;
+  --blue:#2563eb; --blue2:#eff6ff; --purple:#7c3aed; --purple2:#f5f3ff;
+  --green:#059669; --green2:#ecfdf5; --orange:#d97706; --orange2:#fff7ed;
+  --pink:#db2777; --pink2:#fdf2f8; --dark:#111827;
+  --shadow:0 14px 36px rgba(16,24,40,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:radial-gradient(circle at 0 0,#e0ecff 0,transparent 30%),var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR","Apple SD Gothic Neo",sans-serif;
+  line-height:1.58; letter-spacing:-.015em; word-break:keep-all;
+}
+main{max-width:1080px;margin:0 auto;padding:18px 14px 48px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#111827,#1d4ed8 58%,#7c3aed);color:#fff;border-radius:30px;padding:34px 24px;margin:8px 0 16px;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.13);animation:float 5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(16px)}}
+.eyebrow{font-weight:900;font-size:13px;opacity:.85;margin-bottom:10px}.hero h1{font-size:clamp(28px,5vw,54px);line-height:1.05;margin:0 0 14px;letter-spacing:-.055em}.hero p{font-size:clamp(16px,2.3vw,22px);max-width:760px;margin:0;color:#eef4ff}.hero strong{color:#fff}.chiprow{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-weight:850;font-size:13px}.section{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:22px;margin:14px 0;box-shadow:0 10px 26px rgba(16,24,40,.05)}
+h2{font-size:clamp(22px,3vw,32px);letter-spacing:-.04em;margin:0 0 14px}.lead{font-size:18px;font-weight:850}.muted{color:var(--muted)}
+.diagram{display:grid;grid-template-columns:1fr 68px 1fr;gap:14px;align-items:stretch;margin-top:16px}.panel{border-radius:24px;padding:20px;border:1px solid var(--line);background:#fff}.panel.child{background:linear-gradient(180deg,#fff,#eff6ff);border-color:#bfdbfe}.panel.parent{background:linear-gradient(180deg,#fff,#f5f3ff);border-color:#ddd6fe}.panel h3{margin:0 0 8px;font-size:24px}.arrow{display:grid;place-items:center;color:var(--blue);font-size:34px;font-weight:950;animation:pulse 1.6s infinite}.arrow small{display:block;font-size:11px;color:var(--muted);font-weight:800;text-align:center}@keyframes pulse{0%,100%{transform:scale(1);opacity:.78}50%{transform:scale(1.12);opacity:1}}
+.coreline{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}.stage{position:relative;border:1px solid var(--line);border-radius:18px;padding:14px;background:#fff;min-height:116px}.stage b{display:block;font-size:16px;margin-bottom:4px}.stage span{font-size:13px;color:var(--muted)}.stage:after{content:"→";position:absolute;right:-13px;top:40%;font-weight:950;color:#98a2b3}.stage:last-child:after{display:none}.stage:nth-child(1){background:var(--blue2)}.stage:nth-child(2){background:var(--green2)}.stage:nth-child(3){background:var(--orange2)}.stage:nth-child(4){background:var(--pink2)}.stage:nth-child(5){background:var(--purple2)}
+.assets{display:grid;gap:14px}.asset{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 8px 22px rgba(16,24,40,.045)}.assetHead{display:flex;align-items:center;gap:12px;padding:16px 18px;background:#fbfcff;border-bottom:1px solid var(--line)}.num{display:grid;place-items:center;flex:0 0 42px;height:42px;border-radius:14px;background:var(--dark);color:#fff;font-size:18px;font-weight:950}.assetHead h3{margin:0;font-size:22px;letter-spacing:-.035em}.assetHead p{margin:2px 0 0;color:var(--muted);font-size:13px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0}.side{padding:18px}.side + .side{border-left:1px solid var(--line)}.label{display:inline-block;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:950;margin-bottom:10px}.blue{background:var(--blue2);color:var(--blue)}.purple{background:var(--purple2);color:var(--purple)}.quest{font-size:18px;font-weight:900;margin:0 0 10px}.badge{display:inline-flex;align-items:center;gap:6px;border-radius:14px;padding:9px 11px;background:#fff;border:1px solid var(--line);font-weight:900;margin-top:8px}.report{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:16px;padding:12px;color:#344054;font-size:15px}.mini{font-size:13px;color:var(--muted);margin-top:8px}.map{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.mapcard{border:1px solid var(--line);border-radius:20px;background:#fff;padding:16px}.mapcard h3{margin:0 0 8px}.big{font-size:24px;font-weight:950;letter-spacing:-.04em}.footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+@media(max-width:760px){main{padding:10px 9px 34px}.hero{border-radius:24px;padding:26px 18px}.diagram{grid-template-columns:1fr}.arrow{transform:rotate(90deg);font-size:28px}.coreline{grid-template-columns:1fr}.stage:after{content:"↓";right:50%;top:auto;bottom:-17px}.twocol{grid-template-columns:1fr}.side + .side{border-left:0;border-top:1px solid var(--line)}.map{grid-template-columns:1fr}.assetHead{align-items:flex-start}.assetHead h3{font-size:20px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="eyebrow">HypeProof Studio · 7 Assets 구조도</div>
+    <h1>아이에게는 퀘스트.<br>부모에게는 성장 증거.</h1>
+    <p><strong>같은 행동</strong>을 두 언어로 번역한다. 아이는 “게임 만드는 게임”을 하고, 부모는 그 안에 숨어 있는 7 AI Native Assets를 본다.</p>
+    <div class="chiprow">
+      <div class="chip">🎮 Studio = 커다란 게임기</div>
+      <div class="chip">🧒 아이 = 플레이어/지휘관</div>
+      <div class="chip">🤖 AI = 동료 NPC</div>
+      <div class="chip">📊 7 Assets = 내부 스킬트리</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>한 장 요약</h2>
+    <div class="diagram">
+      <div class="panel child">
+        <h3>아이 화면</h3>
+        <p class="lead">퀘스트 · 뱃지 · 레벨업</p>
+        <p class="muted">“평가받는다”가 아니라 “게임을 만들며 스킬을 얻는다”로 느끼게 한다.</p>
+      </div>
+      <div class="arrow">→<small>같은 행동을<br>번역</small></div>
+      <div class="panel parent">
+        <h3>부모 리포트</h3>
+        <p class="lead">7 Assets 성장 증거</p>
+        <p class="muted">아이가 직접 정한 것, 고친 것, 확인한 것을 부모 언어로 보여준다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>봉호 코어 위에 얹히는 흐름</h2>
+    <div class="coreline">
+      <div class="stage"><b>1. 도입</b><span>AI 지휘관 선언</span></div>
+      <div class="stage"><b>2. 탐색</b><span>내 캐릭터·세계·미션</span></div>
+      <div class="stage"><b>3. 첫 시도</b><span>V1 생성</span></div>
+      <div class="stage"><b>4. 개선</b><span>플레이테스트 후 수정</span></div>
+      <div class="stage"><b>5. 공유</b><span>출시·QR·다음 버전</span></div>
+    </div>
+  </section>
+
+
+  <section class="section warn">
+    <h2>아이 넛지 원칙</h2>
+    <div class="map">
+      <div class="mapcard"><h3>짧게</h3><p>한 번에 한 질문만. 10글자 안팎이면 더 좋다.</p></div>
+      <div class="mapcard"><h3>쉽게</h3><p>목표/맥락/검증 같은 말 금지. “뭐야?”, “어디야?”, “좋아?”</p></div>
+      <div class="mapcard"><h3>고르게</h3><p>막히면 선택지를 준다. “우주? 바다? 숲?”</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>7 Assets: 아이용 쉬운 말 ↔ 부모 리포트</h2>
+    <div class="assets">
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">1</div><div><h3>Intent Clarity</h3><p>목표를 세우는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“무슨 게임 만들까?”</p><div class="badge">🏁 퀘스트: 게임 한 줄 말하기</div><div class="badge">🎖️ 뱃지: 지휘관 선언 완료</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">처음에는 “재밌는 게임”이라고 했지만, 이후 “고양이가 별을 모아 우주선을 고치는 게임”으로 목표를 구체화했습니다.</div><p class="mini">관찰 포인트: 목표 / 플레이어 / 성공 조건</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">2</div><div><h3>Context Design</h3><p>AI가 이해할 맥락을 설계하는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“주인공은 누구야?”</p><div class="badge">🗺️ 퀘스트: 주인공·장소 고르기</div><div class="badge">🏗️ 뱃지: 세계 설계자</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">캐릭터 외형뿐 아니라 세계 배경과 장애물 조건까지 추가해 AI가 이해할 맥락을 넓혔습니다.</div><p class="mini">관찰 포인트: 캐릭터 / 배경 / 규칙 / 제약</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">3</div><div><h3>Delegation Judgment</h3><p>AI에게 맡길 것과 내가 판단할 것을 나누는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“이건 AI한테 시킬까, 우리가 고를까?”</p><div class="badge">🤝 퀘스트: AI에게 시킬 일 고르기</div><div class="badge">🕹️ 뱃지: AI 동료 지휘 성공</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">AI가 만든 화면을 그대로 받지 않고, 캐릭터 이름과 게임 목표는 본인이 결정했습니다.</div><p class="mini">관찰 포인트: 맡김 / 판단 / 부모 도움의 경계</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">4</div><div><h3>Iteration Reflex</h3><p>첫 결과에서 멈추지 않고 다시 고치는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“한 번 더 고쳐볼까?”</p><div class="badge">🔁 퀘스트: 한 번 더 고치기</div><div class="badge">⬆️ 뱃지: 첫 수정 성공</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">V1에서 목표가 잘 보이지 않는다고 판단하고, 미션 표시를 크게 바꾸는 수정을 요청했습니다.</div><p class="mini">관찰 포인트: 수정 횟수 / 수정 이유 / 구체성</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">5</div><div><h3>Verification Reflex</h3><p>직접 확인하는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“직접 해보자. 어디가 이상해?”</p><div class="badge">🧪 퀘스트: 플레이테스트</div><div class="badge">🐞 뱃지: 버그 탐험가</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">직접 플레이 후 조작법이 어렵다는 점을 발견했고, 버튼을 크게 바꾸자고 제안했습니다.</div><p class="mini">관찰 포인트: 실행 / 오류 발견 / 불편 설명</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">6</div><div><h3>Taste</h3><p>자기 기준으로 고르는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“어떤 게 더 좋아?”</p><div class="badge">🎨 퀘스트: 마음에 드는 걸 고르기</div><div class="badge">🎬 뱃지: 게임 디렉터</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">귀여운 분위기를 원한다고 말하며 어두운 배경을 밝은 우주 배경으로 바꾸도록 요청했습니다.</div><p class="mini">관찰 포인트: 선택 기준 / 거절 이유 / 스타일</p></div>
+        </div>
+      </article>
+
+      <article class="asset">
+        <div class="assetHead"><div class="num">7</div><div><h3>Ownership</h3><p>내 프로젝트로 가져가는 힘</p></div></div>
+        <div class="twocol">
+          <div class="side"><span class="label blue">아이 넛지</span><p class="quest">“게임 이름 뭐야?”</p><div class="badge">🚀 퀘스트: 내 게임 이름 붙이기</div><div class="badge">👑 뱃지: 마스터 개발자</div><div class="badge">🔓 보상: 다음 버전 해금</div></div>
+          <div class="side"><span class="label purple">부모 리포트</span><div class="report">최종 발표에서 자신이 고친 부분과 다음 버전에 넣고 싶은 아이디어를 스스로 설명했습니다.</div><p class="mini">관찰 포인트: 발표 / 다음 계획 / “내가 만들었다” 언어</p></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>부모 리포트는 이렇게 짧게</h2>
+    <div class="map">
+      <div class="mapcard"><h3>오늘 만든 것</h3><p>“별을 모아 우주선을 고치는 고양이 게임”</p></div>
+      <div class="mapcard"><h3>아이가 직접 정한 것</h3><p>캐릭터 이름, 게임 목표, 밝은 우주 배경</p></div>
+      <div class="mapcard"><h3>아이가 고친 것</h3><p>목표 문구를 크게 표시하고 버튼을 키움</p></div>
+      <div class="mapcard"><h3>강하게 보인 Assets</h3><p>Context Design · Taste · Ownership</p></div>
+      <div class="mapcard"><h3>다음에 키울 것</h3><p>Verification Reflex: 먼저 플레이하고 문제 찾기</p></div>
+      <div class="mapcard"><h3>집에서 이어갈 미션</h3><p>“다음 버전에 새 스테이지 하나 추가하기”</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#111827;color:#fff">
+    <h2>결론</h2>
+    <p class="big">아이에게는 <span style="color:#93c5fd">퀘스트와 보상</span>.</p>
+    <p class="big">부모에게는 <span style="color:#c4b5fd">7 Assets로 번역된 성장 증거</span>.</p>
+  </section>
+
+  <p class="footer">HypeProof Studio · 7 Assets Child/Parent Map · Dyslexia-friendly HTML v2</p>
+</main>
+</body>
+</html>

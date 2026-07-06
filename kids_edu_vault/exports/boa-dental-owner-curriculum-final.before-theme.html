@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>보아치과 AI 홍보 레이스 — 프로그램 개요</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--lime:#c8b15a;--ink:#12130f;--muted:#66706a;--paper:#f7f6f0;--paper2:#ffffff;--dark:#0d0f0c;--rail:#191b16;--line:#ddd9ca;--aqua:#8fb8b2;--font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Pretendard,system-ui,sans-serif;--serif:"AppleMyungjo","Nanum Myeongjo",serif}
+*{box-sizing:border-box}
+body{margin:0;background:#555b55;font-family:var(--font);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;letter-spacing:0;line-height:1.45}
+.page{width:210mm;height:297mm;background:var(--paper);margin:14px auto;padding:13mm 14mm 11mm;position:relative;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.34)}
+.page:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(16,18,15,.045) 1px,transparent 1px),linear-gradient(180deg,rgba(16,18,15,.035) 1px,transparent 1px);background-size:22px 22px;pointer-events:none}
+.page:after{content:"";position:absolute;left:14mm;right:14mm;bottom:21mm;height:1px;background:var(--line)}
+.content{position:relative;z-index:1}
+.cover{background:var(--dark);color:#f8faef}
+.cover:before{background:radial-gradient(circle at 18% 16%,rgba(255,255,255,.9),rgba(239,240,234,.82) 0 18%,transparent 39%),linear-gradient(120deg,rgba(247,246,240,.96) 0 43%,transparent 43.2%),linear-gradient(90deg,rgba(200,177,90,.045) 1px,transparent 1px),linear-gradient(180deg,rgba(200,177,90,.035) 1px,transparent 1px);background-size:auto,auto,22px 22px,22px 22px}
+.cover .clinical{position:absolute;left:0;top:0;width:54%;height:100%;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(234,241,237,.88));clip-path:polygon(0 0,100% 0,72% 100%,0 100%)}
+.cover .lane{position:absolute;right:-8mm;top:-14mm;width:64%;height:122%;transform:rotate(-8deg);background:repeating-linear-gradient(90deg,#0b0d0b 0 38px,#12140f 38px 76px);border-left:5px solid var(--lime)}
+.cover .lane:after{content:"";position:absolute;left:40%;top:0;bottom:0;width:2px;background:linear-gradient(var(--lime),transparent 18%,var(--lime) 46%,transparent 70%,var(--lime));box-shadow:34px 0 0 rgba(200,177,90,.24)}
+.badge{display:inline-block;background:var(--lime);color:#050505;padding:6px 12px;font-size:11px;font-weight:950;text-transform:uppercase}
+h1{font-family:Impact,"Arial Black",var(--font);font-size:64px;line-height:.98;margin:18px 0 13px;letter-spacing:1px;text-transform:uppercase}
+.cover h1{filter:drop-shadow(0 3px 8px rgba(0,0,0,.82))}
+.cover h1 .ko{color:#f8faef;-webkit-text-stroke:0;text-shadow:0 3px 8px rgba(0,0,0,.96),0 0 2px #000}
+.ko{font-family:var(--serif);letter-spacing:0;text-transform:none}
+.yellow{color:var(--lime)}
+.lead{font-size:16px;color:#26302b;margin:0;max-width:42em;line-height:1.68}
+.cover .lead{color:#eef1e5;max-width:34em;background:rgba(5,6,5,.72);padding:7px 10px;display:inline-block}
+.label{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;padding:4px 9px;margin:20px 0 10px}
+.cover .label,.dark .label{background:var(--lime);color:#050505}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat,.axis,.station,.coachcard{border:1px solid var(--line);background:rgba(255,255,255,.84);padding:16px 17px}
+.cover .stat,.cover .axis{border-color:#2e332b;background:rgba(9,11,8,.82);color:#f8faef}
+.stat b{font-size:18px;display:block;color:inherit}
+.stat span{display:block;color:var(--muted);font-size:12.5px;margin-top:6px;line-height:1.55}
+.cover .stat span{color:#c8cebf}
+.axis b{font-size:17px;display:block;color:inherit;margin-bottom:8px}
+.axis p{font-size:14px;line-height:1.7;color:#46514b;margin:0}
+.cover .axis p{color:#d8ddcf}
+.no{display:inline-grid;place-items:center;width:23px;height:23px;background:var(--lime);color:#050505;font-weight:950;margin-right:6px}
+.darkstrip{background:#050505;border-left:7px solid var(--lime);color:#fff;padding:18px 20px;font-size:15px;line-height:1.75}
+.darkstrip b{color:var(--lime)}
+.route{display:grid;grid-template-columns:1fr 130px;gap:20px;align-items:stretch}
+.map{background:#fbfcf7;color:#060606;padding:15px 12px;border:3px solid var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:space-between}
+.map b{font-size:13px;letter-spacing:.12em}
+.node{display:grid;place-items:center;width:34px;height:26px;background:var(--lime);font-weight:950;margin:5px 0}
+.line{width:2px;flex:1;min-height:19px;background:#111}
+.small{font-size:10px;color:#222;font-weight:800;text-align:center}
+.strip{border-left:5px solid var(--lime);background:#fff;padding:15px 17px;font-size:14px;color:#2a342f;line-height:1.65}
+.cover .strip{background:rgba(5,6,5,.82);color:#f1f4e9;border-left-color:var(--lime)}
+.strip b{color:#10120f}.cover .strip b{color:#fff}
+.runway{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:9px;margin:0 0 18px}
+.rseg{border:1px solid #cbd2c6;background:#fff;padding:12px 13px;min-width:0;position:relative}
+.rseg:after{content:"";position:absolute;right:-10px;top:50%;width:10px;height:3px;background:var(--ink)}
+.rseg:last-child:after{display:none}
+.rseg.hot{background:var(--lime);color:#060606;border-color:var(--lime)}
+.rseg b{font-size:13px;display:block;white-space:nowrap}
+.rseg span{font-size:11px;color:inherit;opacity:.74;white-space:nowrap}
+.station{border-top:7px solid var(--ink)}
+.station h3{font-size:18px;line-height:1.35;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--line);color:var(--ink)}
+.station h3 em{font-style:normal;color:var(--muted);font-weight:650;font-size:12px}
+.trow{display:grid;grid-template-columns:42px 1fr;gap:11px;padding:11px 0;border-bottom:1px solid #e0e5da;align-items:baseline}
+.trow:last-child{border-bottom:0}
+.trow i{font-style:normal;font-weight:950;color:#050505;background:var(--lime);font-size:11px;text-align:center;padding:2px 0}
+.trow div{font-size:14px;color:#39443e;line-height:1.62}
+.trow b{font-weight:850;color:#111}
+.reveal{background:var(--lime);color:#050505;padding:18px 20px;font-size:15px;line-height:1.7;margin-top:14px;font-weight:650}
+.reveal b{font-weight:950}
+.score{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.winner{border:2px solid var(--ink);background:#fff;padding:18px 20px}
+.winner b{display:block;color:#10120f;font-size:18px;margin-bottom:8px}
+.winner p{margin:0;color:#36413b;font-size:14px;line-height:1.75}
+.coachpage{background:#f7f8f2}
+.coachpage:before{background:linear-gradient(90deg,rgba(85,200,189,.13) 1px,transparent 1px),linear-gradient(180deg,rgba(16,18,15,.035) 1px,transparent 1px);background-size:22px 22px}
+.coachhead{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:end;margin-bottom:18px}
+.coachrail{background:var(--dark);color:#fff;border-left:9px solid var(--lime);padding:18px 20px}
+.coachrail b{display:block;color:var(--lime);font-size:13px;letter-spacing:.12em;margin-bottom:8px}
+.coachrail p{margin:0;font-size:14px;line-height:1.75;color:#e2e7dc}
+.coachgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.coachcard{min-height:93px;display:grid;grid-template-columns:38px 1fr;gap:11px;align-items:start}
+.mark{width:38px;height:38px;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-weight:950;font-size:13px}
+.coachcard b{display:block;color:#111;font-size:15px;margin-bottom:4px}
+.coachcard span{color:#5c6760;font-size:11px}
+.coachcard p{margin:6px 0 0;color:#3d4741;font-size:12.5px;line-height:1.55}
+.mentorgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:12px}
+.mentorcard{background:#fff;border:1px solid var(--line);border-top:7px solid var(--ink);padding:14px 16px;min-height:205px}
+.mentorcard h2{font-size:20px;line-height:1.15;margin:0 0 7px;color:#10120f}
+.mentorcard h2 span{font-size:11px;color:#5d675f;font-weight:750}
+.mentorcard .now{display:inline-block;background:var(--lime);color:#050505;font-size:11px;font-weight:950;padding:3px 6px;margin:0 0 9px}
+.mentorcard ul{margin:0;padding-left:16px;color:#344039;font-size:12.6px;line-height:1.58}
+.mentorcard li{margin:0 0 5px}
+.trustbar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+.trustbar div{background:#050505;color:#fff;border-left:5px solid var(--lime);padding:12px 13px;font-size:12.5px;line-height:1.55}
+.trustbar b{display:block;color:var(--lime);margin-bottom:3px}
+.foot{position:absolute;left:14mm;right:14mm;bottom:8mm;display:flex;justify-content:space-between;align-items:baseline;padding-top:7px;font-size:10px;color:#7f877f;z-index:1}
+.cover .foot{color:#aeb6aa}
+@media print{@page{size:A4;margin:0}body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{margin:0;box-shadow:none;break-after:page}.page:last-child{break-after:auto}}
+</style></head><body>
+
+<section class="page cover">
+<div class="clinical"></div><div class="lane"></div>
+<div class="content">
+<div class="badge">BOA DENTAL · AI PROMO RACE</div>
+<div class="route" style="margin-top:7px">
+<div>
+<h1><span class="ko">강의가 아니라</span><br><span class="yellow">AI 홍보 레이스</span></h1>
+<p class="lead">원장님이 정해진 코스를 돌며, AI에게 우리 병원의 맥락을 전달하고, 나온 홈페이지를 원하는 홍보 방향까지 반복 수정합니다. 홈페이지 초안은 결과물이고, 진짜 남는 것은 Context 기록과 Loop 기록입니다.</p>
+
+<div class="label">RACE FORMAT</div>
+<div class="grid4">
+<div class="stat"><b>4시간</b><span>데모 · Context · Loop · 우승자 선정</span></div>
+<div class="stat"><b>치과 원장 · 실장</b><span>비개발자 대상 · 코딩 지식 필요 없음</span></div>
+<div class="stat"><b>홈페이지 초안</b><span>우리 병원 자료로 만든 홍보 페이지</span></div>
+<div class="stat"><b>기록 카드</b><span>전후 비교 · 수정 횟수 · 핵심 문장</span></div>
+</div>
+
+<div class="label">POSITIONING</div>
+<div class="darkstrip"><b>설명보다 코스, 감탄보다 기록.</b> AI 사용법을 듣고 끝나는 시간이 아닙니다. 원장님이 직접 맥락을 주고, 결과를 고치며, 자기 병원 홍보 방향을 완성하는 실습입니다.</div>
+</div>
+
+<div class="map">
+<b>COURSE MAP</b>
+<div class="line"></div>
+<div class="node">S</div><div class="small">5 MIN DEMO</div>
+<div class="line"></div>
+<div class="node">01</div><div class="small">CONTEXT</div>
+<div class="line"></div>
+<div class="node">02</div><div class="small">LOOP</div>
+<div class="line"></div>
+<div class="node">03</div><div class="small">BEST VERSION</div>
+<div class="line"></div>
+<div class="node">F</div><div class="small">WINNER</div>
+<div class="line"></div>
+</div>
+</div>
+
+<div class="label">WHAT REMAINS</div>
+<div class="grid3">
+<div class="axis"><b>홈페이지 초안</b><p>우리 병원 자료를 바탕으로 첫 화면부터 문의 안내까지 한 번에 보는 홍보 페이지 초안을 만듭니다.</p></div>
+<div class="axis"><b>Context Pack</b><p>환자층, 톤, 강조 진료, 병원 분위기, 첫 화면 메시지를 AI에게 줄 설명서로 정리합니다.</p></div>
+<div class="axis"><b>Loop Log</b><p>무엇을 왜 고쳤는지, 몇 번의 피드백으로 어디까지 바뀌었는지를 기록으로 남깁니다.</p></div>
+</div>
+
+<div class="strip" style="margin-top:10px"><b>남는 말:</b> “AI가 만들어줬다”가 아니라 “내가 맥락을 주고, 피드백으로 바꿨다.” 이 문장이 동료 원장에게 전파됩니다.</div>
+</div>
+<div class="foot"><span>HypeProof Lab · 보아치과 AI 홍보 레이스</span><span>1 / 4</span></div>
+</section>
+
+<section class="page">
+<div class="content">
+<div class="label" style="margin-top:0">4-HOUR COURSE</div>
+<div class="runway">
+<div class="rseg hot"><b>START</b><span>5분 데모</span></div>
+<div class="rseg"><b>STATION 01</b><span>Context 기록</span></div>
+<div class="rseg"><b>STATION 02</b><span>Loop 기록</span></div>
+<div class="rseg"><b>FINISH</b><span>우승자 선정</span></div>
+</div>
+
+<div class="label">FIRST HALF</div>
+<div class="grid2">
+<div class="station"><h3>START · 0:00–0:15 <em>— 5분 안에 누구나 이 정도 만들 수 있다</em></h3>
+<div class="trow"><i>0:00</i><div><b>스타트 데모</b> — 즉석에서 치과 홈페이지 초안을 띄웁니다. 목적은 설명이 아니라 “이게 되네!”입니다</div></div>
+<div class="trow"><i>0:05</i><div><b>오늘의 코스 공개</b> — 어떤 스테이션을 돌고, 어떤 기록을 남길지 봅니다</div></div>
+<div class="trow"><i>0:10</i><div><b>기준 페이지 확인</b> — 잘 만든 치과 홈페이지의 구조를 코스처럼 확인합니다</div></div>
+</div>
+
+<div class="station"><h3>STATION 01 · 0:15–1:30 <em>— Context Engineering</em></h3>
+<div class="trow"><i>0:15</i><div><b>나쁜 출발</b> — “치과 홈페이지 만들어줘”처럼 맥락 없이 요청해 V1을 만듭니다</div></div>
+<div class="trow"><i>0:40</i><div><b>결과 해부</b> — 왜 우리 병원답지 않은지, AI가 무엇을 몰랐는지 직접 표시합니다</div></div>
+<div class="trow"><i>1:00</i><div><b>Context Pack 작성</b> — 환자층, 톤, 강조 진료, 병원 분위기, 첫 화면 메시지를 한 장으로 정리합니다</div></div>
+<div class="trow"><i>1:20</i><div><b>V2 생성</b> — 같은 AI라도 맥락을 넣으면 결과가 어떻게 달라지는지 비교합니다</div></div>
+</div>
+</div>
+
+<div class="label">STATION VALUE</div>
+<div class="grid2">
+<div class="axis"><b><span class="no">01</span>Context Engineering</b><p>맥락 없이 만든 V1과 병원 철학·환자층·톤·강조 진료를 넣어 만든 V2를 비교합니다.</p></div>
+<div class="axis"><b>핵심 기록</b><p>AI가 처음에 무엇을 몰랐는지, 원장님이 어떤 맥락을 줬는지, 결과가 어떻게 달라졌는지를 Before/After로 남깁니다.</p></div>
+</div>
+</div>
+<div class="foot"><span>HypeProof Lab · 4-Hour Course</span><span>2 / 4</span></div>
+</section>
+
+<section class="page">
+<div class="content">
+<div class="label" style="margin-top:0">SECOND HALF</div>
+<div class="grid2">
+<div class="station"><h3>STATION 02 · 1:30–3:20 <em>— Loop Engineering</em></h3>
+<div class="trow"><i>1:30</i><div><b>AI의 첫 결과를 이겨라</b> — V2에서 마음에 안 드는 톤, 섹션 순서, 문구, 강조점을 고릅니다</div></div>
+<div class="trow"><i>2:00</i><div><b>피드백 라운드 1</b> — “더 신뢰감 있게”, “예방진료를 앞에”, “첫 화면을 덜 광고처럼”처럼 원하는 방향을 말합니다</div></div>
+<div class="trow"><i>2:35</i><div><b>피드백 라운드 2</b> — 바뀐 결과를 보고 다시 조정합니다. 좋은 결과보다 좋은 수정 이유를 남깁니다</div></div>
+<div class="trow"><i>3:05</i><div><b>Best Version 선택</b> — 실제로 보여주고 싶은 버전을 고릅니다</div></div>
+</div>
+
+<div class="station"><h3>FINISH · 3:20–4:00 <em>— 기록하고 우승자를 뽑는다</em></h3>
+<div class="trow"><i>3:20</i><div><b>전후 비교</b> — V1과 최종본을 나란히 놓고, 무엇이 달라졌는지 봅니다</div></div>
+<div class="trow"><i>3:35</i><div><b>완주 기록 작성</b> — 내가 준 맥락, 내가 한 피드백, 바뀐 홍보 방향을 기록합니다</div></div>
+<div class="trow"><i>3:50</i><div><b>우승자 선정</b> — 가장 선명하게 바뀐 홈페이지와 가장 좋은 수정 이유를 뽑습니다</div></div>
+</div>
+</div>
+
+<div class="score">
+<div class="reveal"><b>마지막 장면</b> — 홈페이지 하나를 보여주는 것이 아니라, 부족한 V1과 최종본을 함께 보여줍니다. “어떤 맥락을 넣었고, 몇 번의 피드백으로 어디까지 바뀌었는지”가 기록표처럼 남습니다.</div>
+<div class="winner"><b>WINNER CRITERIA</b><p>1. Before/After 변화폭<br>2. Context Pack 선명도<br>3. Loop Log 구체성<br>4. 동료에게 설명 가능한 한 문장</p></div>
+</div>
+
+<div class="label">FINISH-LINE ASSETS</div>
+<div class="grid4">
+<div class="stat"><b>Best Version</b><span>원장님이 실제로 보여주고 싶은 최종본</span></div>
+<div class="stat"><b>Before/After</b><span>처음 결과와 최종 결과의 변화 비교</span></div>
+<div class="stat"><b>Loop Log</b><span>수정 요청과 바뀐 이유의 기록</span></div>
+<div class="stat"><b>Winner</b><span>가장 선명하게 바뀐 사례 선정</span></div>
+</div>
+</div>
+<div class="foot"><span>HypeProof Lab · Finish & Winner</span><span>3 / 4</span></div>
+</section>
+
+<section class="page coachpage">
+<div class="content">
+<div class="label">COACH PROFILE</div>
+<div class="coachhead">
+<div>
+<h1><span class="yellow">COACH</span><br><span class="ko">강사진 약력</span></h1>
+<p class="lead">현업자들이 직접 가르칩니다.</p>
+</div>
+<div class="coachrail"><b>FACULTY</b><p>AI · 데이터 · 제품 · 콘텐츠 · 운영 · 플랫폼 현업 경험을 가진 강사진.</p></div>
+</div>
+
+<div class="coachgrid">
+<div class="coachcard"><div class="mark">01</div><div><b>이재원 <span>· Sonatus · AI Architect / Staff PM</span></b><p>한양대 컴퓨터공학 박사과정. B2B SW 플랫폼, 차량 SW, AI Agent/자동화 워크플로우.</p></div></div>
+<div class="coachcard"><div class="mark">02</div><div><b>신진용 <span>· Remember · AI Engineer</span></b><p>물리학 석사, 전 퀀트 리서처. AI/ML, 채용·구직 자동화 에이전트, Agentic AI.</p></div></div>
+<div class="coachcard"><div class="mark">03</div><div><b>김지웅 <span>· AlphaBridge · 퀀트 리서처</span></b><p>CERN 물리학 박사. AI 기반 공모펀드 출시·운영, 국가슈퍼컴퓨팅센터 AI 공동연구.</p></div></div>
+<div class="coachcard"><div class="mark">04</div><div><b>태봉호 <span>· CERN CMS · 데이터 분석가</span></b><p>실험물리 박사과정. 고에너지 물리학 데이터 분석, 대규모 데이터 분석, ML 모델 R&amp;D.</p></div></div>
+<div class="coachcard"><div class="mark">05</div><div><b>강태진 <span>· Locolor · 이사 / AX Lead</span></b><p>영업·매출 콘텐츠 AX 리드. 미디어·영상·콘텐츠 기획, 콘텐츠 제작 워크플로우.</p></div></div>
+<div class="coachcard"><div class="mark">06</div><div><b>김정우 <span>· WrksAI · PM / Partner Satisfaction</span></b><p>메이커스페이스 팹랩대전 이사. AI Agent 자동화 교육 컨설팅, 현장 퍼실리테이션.</p></div></div>
+<div class="coachcard"><div class="mark">07</div><div><b>신재형 <span>· dendenpeople · AX Platform Developer</span></b><p>전사 AI 교육 및 가맹 AX 지원. 인력매칭 알고리즘, Next.js·React·TypeScript.</p></div></div>
+</div>
+
+</div>
+<div class="foot"><span>HypeProof Lab · Coach Profile</span><span>4 / 4</span></div>
+</section>
+</body></html>

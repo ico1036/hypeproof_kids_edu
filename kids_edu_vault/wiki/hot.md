@@ -2,12 +2,12 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-12
-updated: 2026-06-17
+updated: 2026-07-06
 tags:
   - meta/cache
 ---
 
-# Hot Cache — 2026-06-21
+# Hot Cache — 2026-07-06
 
 최근 컨텍스트 스냅샷. 세션 시작 시 가장 먼저 읽을 것.
 
@@ -21,8 +21,14 @@ tags:
    - 위키 최신 보아치과 커리큘럼([[dental-website-workshop-detail-v1]])의 **핵심 가치는 복사**하고, **겉껍데기만 "잘 만든 홈페이지 카피하기"로 교체**한다.
    - 산출: [[dental-website-copyclone-v3]] (active). v2는 HypeProof DNA 누락으로 deprecated.
    - **v3 본체 4요소**: ①봉호 5블록+AI지휘관 서사+핵심 장면 ②7에셋 행동신호 관찰표(Q&A 측정 금지) ③오프닝 와우포인트 라이브 데모 ④boaclinic.com급 결과물(네이버예약·카카오·SNS 연동 + Cloudflare Pages 배포).
+   - **2026-06-27 정정:** 보아치과 클로징은 부모/아이 강의처럼 성장/검증 대체불가로 끝내면 안 된다. 핵심 레슨은 원장이 자기 치과 홍보를 원하는 대로 직접 바꿀 자유도이며, 이를 가능하게 하는 두 기술이 Context Engineering과 Feedback Loop다.
+   - **2026-06-27 포스터 v1 ingest:** 외부 고객용 포스터에서는 내부 용어를 걷어내고 `초반 설명과 재료 정리 → 직접 문구·구성·톤을 깎아가기 → 최종 홈페이지 초안으로 평가`로 표현한다. Source: [[boa-dental-ai-promo-race-poster-v1-20260627]], deliverable: [[boa-dental-ai-promo-race-poster-v1]].
+   - **2026-06-29 회의록 ingest:** 수강자 아웃풋은 홈페이지 초안/공개 URL/Before-After/설명 카드/Loop Log/발표 경험이다. 우리만 가능한 것은 7 Assets 체화, [[hypeproof-studio]] 로그와 자동 리포트 seed, 레이스/경쟁/커뮤니티, 보아치과 원장 KOL화, 제품-교육-커뮤니티가 이어지는 디지털 서비스 경험이다. Source: [[2026-06-29-weekly-on-hypeproof]].
+   - **2026-06-30 랜딩 메시지 정리:** 첫 화면은 `실제 배포 홈페이지를 가져간다`와 `Claude Code/Codex 등 도구와 무관하게 통하는 두 능력(맥락 설계, 피드백 감각)을 체화한다`를 동시에 보여준다. `HYROX`는 내부 비유로만 두고 외부 표현은 `실전 반복 훈련`, `몸에 익힌다`, `AI를 지휘하는 감각`으로 쓴다. Source: [[boa-dental-landing-message-20260630-source]].
+   - **2026-07-06 2시간 큐시트 정본 ingest:** [[boa-dental-ai-homepage-cuesheet-20260706-spec]]는 발표/해커톤 감성을 제거한 외부 공유용 큐시트다. 메인강사는 보아치과 홈페이지를 만든다고 가정하고 스크린을 띄워 단계별로 진행하고, 수강생은 같은 단계에서 자기 병원 홈페이지를 만든다. 최종 결과물은 홈페이지/배포 URL/GitHub 저장소/`agent.md` 4개. Context Engineering은 URL만 넣은 결과와 병원 컨텍스트를 자세히 넣은 결과 차이 체감, Loop Engineering은 루브릭을 만족할 때까지 검사와 수정을 반복시키는 것이 핵심이다. 큐레이션 기준은 `*봉호님 작성 예정`으로 남긴다. Source: [[boa-dental-ai-homepage-cuesheet-20260706]].
 2. **HypeProof Studio로 위 커리큘럼 운행 가능한지 기술문제 체크**
    - 블로커 후보: 이미지(타겟 스크린샷) 맥락 주입 UI 지원 여부, 멀티턴 연속성/메모 캐싱(6/15 회의 지적), 라이브 프리뷰·배포 exec.
+   - 2026-06-29 회의에서 레드 시그널로 재확인: 리허설 전 [[hypeproof-studio]]와 [[claude-code]] 성능 격차를 테스트하고, 필요하면 Claude Code/스킬 기반 fallback을 준비한다.
 
 ---
 
