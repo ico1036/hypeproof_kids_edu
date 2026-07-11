@@ -3,7 +3,7 @@ type: index
 status: navigational
 title: "Concepts"
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-07-11
 tags:
   - index/concepts
 ---
@@ -23,6 +23,9 @@ tags:
 - [[no-debug-philosophy]] — 아이와 디버깅하지 않는다
 - [[ai-persona-workflows]] — AI 튜터 5종 페르소나 (W1–W5)
 - [[single-html-runtime]] — 단일 HTML 실행 모델
+
+## Professional Channel
+- [[legal-brief-prep-loop]] — 변호사 준비서면 루프: 의뢰인 사실 추출, 해석 분기, truthworthy 교정, 변호사 pass/fail 감각
 
 ## Notes
 - 새 concept은 `_templates/concept.md`로 생성.

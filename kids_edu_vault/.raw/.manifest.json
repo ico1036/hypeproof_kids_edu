@@ -243,6 +243,28 @@
       "pages_created": [],
       "pages_updated": [],
       "note": "Companion source for .raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf"
+    },
+    ".raw/telegram/2026-07-11-legal-professional-channel-meeting.md": {
+      "hash": "79e1340a643532d7507c3e6940b3f457dd69b2bcf98a35fb5e26a74348063e65",
+      "hash_algorithm": "sha256",
+      "ingested_at": "2026-07-11",
+      "pages_created": [
+        "wiki/sources/legal-professional-channel-meeting-20260711-source.md",
+        "wiki/comms/2026-07-11-legal-professional-channel-meeting.md",
+        "wiki/concepts/legal-brief-prep-loop.md",
+        "wiki/specs/track-b/legal-divorce-brief-prep-consulting.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/hypeproof-business-strategy.md",
+        "wiki/sources/_index.md",
+        "wiki/comms/_index.md",
+        "wiki/concepts/_index.md",
+        "wiki/specs/track-b/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ],
+      "note": "Telegram ingest request from Jiwoong Kim: legal professional channel meeting notes; GEO and divorce-dismissal niche left as confirmation-needed."
     }
   }
 }

@@ -2,14 +2,23 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-12
-updated: 2026-07-06
+updated: 2026-07-11
 tags:
   - meta/cache
 ---
 
-# Hot Cache — 2026-07-06
+# Hot Cache — 2026-07-11
 
 최근 컨텍스트 스냅샷. 세션 시작 시 가장 먼저 읽을 것.
+
+---
+
+## 2026-07-11 — 변호사 전문직 채널 미팅 ingest
+- [[legal-professional-channel-meeting-20260711-source]] ingested. Jiwoong Kim의 텔레그램 메모 기준, 변호사 전문직 채널의 pain point는 절차·교정·truthworthiness(0% hallucination 지향), 고강도 업무, "뭔가 놓쳤을까봐"라는 불안이다.
+- 준비서면의 핵심은 의뢰인의 정리되지 않은 머릿속 사건을 끌어내고, 하나의 사실에서 여러 해석을 구성하며, 변호사의 pass/fail 감각으로 49%→51%를 넘기는 것이다. 개념 페이지: [[legal-brief-prep-loop]].
+- 이혼·가사 사건 lifecycle은 원문 메모상 계약→소장→답변서→1회 변론→조기조정→가사조사→재조정, 최소 12개월로 적혔다. 이는 법률 일반정보가 아니라 미팅 메모의 실무 인식으로 저장한다.
+- 새 draft: [[legal-divorce-brief-prep-consulting]]. 상품 가설은 1:N 컨설팅, 준비서면 고도화, 변호사 감각 기반 교정, 샘플 선제 제시, 수임 목적 GEO 니치다.
+- 확인 필요: `GEO`의 정확한 의미, "이혼 기각" 니치의 법률/마케팅 의미, 샘플이 준비서면인지 GEO 콘텐츠인지 또는 둘 다인지.
 
 ---
 

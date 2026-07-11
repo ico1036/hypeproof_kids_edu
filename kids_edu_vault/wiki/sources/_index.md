@@ -3,7 +3,7 @@ type: meta
 title: "Sources Index"
 status: navigational
 created: 2026-05-14
-updated: 2026-07-06
+updated: 2026-07-11
 tags:
   - meta/index
 ---
@@ -15,6 +15,7 @@ wiki-ingest 스킬이 소스를 처리할 때 생성하는 요약 페이지 목�
 
 ## 인덱스
 
+- [[legal-professional-channel-meeting-20260711-source]] — 변호사 전문직 채널 미팅 메모 (준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설)
 - [[boa-dental-ai-homepage-cuesheet-20260706]] — 보아치과 AI 홈페이지 실습 큐시트 2026-07-06 (2시간 외부 공유용 정본)
 - [[weekly-on-hypeproof-20260629-source]] — Weekly on HypeProof 2026-06-29 (보아치과 강의 아웃풋, Studio 로그, 우리만 가능한 포지셔닝)
 - [[boa-dental-landing-message-20260630-source]] — 보아치과 랜딩 첫 화면 메시지 (실제 배포 홈페이지 + 도구 불문 AI 활용 핵심 능력 2개)

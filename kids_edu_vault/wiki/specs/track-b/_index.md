@@ -3,7 +3,7 @@ type: index
 status: navigational
 title: "Track B"
 created: 2026-04-12
-updated: 2026-07-06
+updated: 2026-07-11
 tags:
   - index/specs
   - track-b
@@ -12,6 +12,7 @@ tags:
 # Track B — 커리큘럼 스펙 (치과 테마)
 
 ## 커리큘럼 파일
+- [[legal-divorce-brief-prep-consulting]] — 변호사 전문직 채널: 이혼·가사 준비서면/GEO 니치 컨설팅 가설 (draft)
 - [[치과의사-curriculum-v1]] — 치과의사 커리큘럼 v1 (archive)
 - [[치과의사-curriculum-v2]] — 치과의사 커리큘럼 v2 (archive)
 - [[치과의사-curriculum-v3]] — 치과의사 커리큘럼 v3 (active)

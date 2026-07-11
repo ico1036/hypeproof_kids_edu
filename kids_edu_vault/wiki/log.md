@@ -1,3 +1,10 @@
+## [2026-07-11] ingest | 변호사 전문직 채널 미팅 메모
+- Source: `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md`
+- Summary: [[legal-professional-channel-meeting-20260711-source]]
+- Pages created: [[legal-professional-channel-meeting-20260711-source]], [[2026-07-11-legal-professional-channel-meeting]], [[legal-brief-prep-loop]], [[legal-divorce-brief-prep-consulting]]
+- Pages updated: [[hypeproof-business-strategy]], [[sources/_index]], [[comms/_index]], [[concepts/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 변호사 채널의 핵심은 빠른 초안보다 truthworthy한 사실 추출과 준비서면 교정 루프다. 의뢰인의 머릿속 사건을 꺼내고, 하나의 사실에서 여러 해석을 분기하며, 변호사의 pass/fail 감각으로 49%→51%를 넘기는 것이 상품 본체가 될 수 있다. GEO와 "이혼 기각" 니치는 후속 확인 필요로 남긴다.
+
 ## [2026-07-06] ingest | 보아치과 AI 홈페이지 실습 큐시트
 - Source: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf`
 - Companion sources: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.html`, `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.txt`
