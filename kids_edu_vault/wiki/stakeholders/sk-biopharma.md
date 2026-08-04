@@ -7,6 +7,8 @@ tags:
   - stakeholder/org
   - stakeholder/sk-biopharma
 status: active
+related:
+  - "[[sk-biopharma-meeting-2026-05-12]]"
 ---
 
 # SK바이오팜
@@ -29,10 +31,11 @@ SK그룹 계열 제약·바이오 기업. HypeProof Lab의 첫 번째 기업 임
 ## 교육 프로그램
 
 - [[sk-biopharma-pilot]]
-- [[sk-biopharma-schedule-survey-20260608]] — 2026년 6~7월 토요일 Biweekly
-- 대상: 임직원 가족 (약 15~20가족)
+- [[sk-biopharma-schedule-survey-20260608]] — 2026년 7~8월 토요일 2회차 선호
+- 대상: 임직원 가족 (약 15~20가족), 부모-자녀 페어 필수
 - 장소: SK바이오팜 10층 내부 카페
 - 내부 일정: 2026-06-08 기준 20가족/23자녀 수요 확인, 7월 또는 8월 토요일 2회차 선호
+- dry-run: 2026-05-28~30 (운영진 자녀 대상) — **Go/No-go 게이트**
 
 ## 제약 조건
 
@@ -41,7 +44,9 @@ SK그룹 계열 제약·바이오 기업. HypeProof Lab의 첫 번째 기업 임
 
 ## 관련 페이지
 
+- [[sk-biopharma-meeting-2026-05-12]]
 - [[2026-05-12-sk-biopharma-meeting]]
 - [[2026-05-14-sk-biopharma-followup]]
 - [[bitree]]
 - [[sk-biopharma-pilot]]
+- [[sk-biopharma-curriculum-v1]]

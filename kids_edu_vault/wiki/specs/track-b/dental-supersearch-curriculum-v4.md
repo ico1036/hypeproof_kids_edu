@@ -17,7 +17,6 @@ tags:
 related:
   - "[[치과의사-curriculum-v3]]"
   - "[[facilitator-script-dental-v3]]"
-  - "[[hypeproof-7-ai-native-mind-dentist-scoring-curriculum-20260520]]"
 ---
 
 # 치과 지식 슈퍼서치엔진 해커톤 v4
