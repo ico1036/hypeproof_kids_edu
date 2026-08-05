@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HypeProof HYROX — 프로덕트 제안서</title>
+<title>HypeProof HYROX — 프로덕트 제안서 v2.0</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #1a1a2e; background: #fafafa; line-height: 1.7; }
@@ -34,7 +34,7 @@
   .tier-row { display: flex; gap: 12px; margin: 16px 0; }
   .tier-card { flex: 1; background: #fff; border: 2px solid #eee; border-radius: 8px; padding: 16px; text-align: center; }
   .tier-card .tier-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
-  .tier-card .tier-price { font-size: 24px; font-weight: 800; color: #e63946; }
+  .tier-card .tier-badge { font-size: 13px; font-weight: 800; color: #e63946; margin-bottom: 6px; }
   .tier-card .tier-desc { font-size: 13px; color: #888; margin-top: 4px; }
 
   .viral-flow { text-align: center; padding: 24px; background: #fff; border: 2px solid #eee; border-radius: 8px; margin: 16px 0; }
@@ -45,12 +45,44 @@
   .evidence .label { font-size: 13px; font-weight: 700; color: #888; margin-bottom: 4px; }
   .evidence p { font-size: 15px; margin-bottom: 0; }
 
+  .metric-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 16px 0; }
+  .metric-card { background: #fff; border: 2px solid #eee; border-radius: 8px; padding: 16px; }
+  .metric-card .metric-name { font-size: 15px; font-weight: 800; color: #1a1a2e; margin-bottom: 6px; }
+  .metric-card .metric-score { font-size: 22px; font-weight: 900; color: #e63946; margin-bottom: 4px; }
+  .metric-card .metric-desc { font-size: 13px; color: #666; }
+
+  .license-card { background: #fff; border: 2px solid #eee; border-radius: 8px; padding: 18px; margin-bottom: 12px; }
+  .license-card .license-name { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+  .license-card .license-tag { display: inline-block; font-size: 12px; font-weight: 700; color: #fff; background: #2a9d8f; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; }
+  .license-card p { font-size: 14px; margin-bottom: 6px; }
+  .formula { background:#fff; border:2px dashed #e63946; border-radius:8px; padding:16px; margin:16px 0; font-size:15px; font-weight:700; }
+
+  .path-grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin:18px 0; }
+  .path-card { background:#fff; border:2px solid #eee; border-radius:8px; padding:18px; }
+  .path-card h4 { font-size:16px; font-weight:800; margin-bottom:8px; color:#1a1a2e; }
+  .path-card p { font-size:14px; margin-bottom:8px; }
+  .path-card ul { margin-left:18px; color:#444; font-size:14px; }
+  .path-card li { margin-bottom:5px; }
+  .path-card.accent { border-color:#e63946; }
+  .path-card.green { border-color:#2a9d8f; }
+  .flow-card { background:#fff; border:2px solid #eee; border-radius:8px; padding:18px; margin:16px 0; }
+  .flow-card .flow-line { font-size:15px; font-weight:800; color:#1a1a2e; margin-bottom:8px; }
+  .flow-card .flow-desc { font-size:14px; color:#555; }
+  .standard-table { width:100%; border-collapse: collapse; background:#fff; border:2px solid #eee; border-radius:8px; overflow:hidden; margin:16px 0; }
+  .standard-table th { background:#1a1a2e; color:#fff; font-size:13px; padding:10px; text-align:left; }
+  .standard-table td { border-top:1px solid #eee; padding:10px; font-size:14px; vertical-align:top; }
+  .standard-table strong { color:#e63946; }
+  .note-box { background:#fff; border:2px solid #2a9d8f; border-radius:8px; padding:16px; margin:16px 0; }
+  .note-box p { font-size:14px; margin-bottom:6px; }
+
   .footer { text-align: center; padding: 40px 0 20px; border-top: 2px solid #eee; margin-top: 48px; }
   .footer p { font-size: 14px; color: #888; }
 
   @media (max-width: 480px) {
     .hero h1 { font-size: 28px; }
     .tier-row { flex-direction: column; }
+    .metric-grid { grid-template-columns: 1fr; }
+    .path-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -143,49 +175,205 @@
     </div>
   </div>
 
+  <!-- 03-1. 측정 -->
+  <div class="section">
+    <span class="section-num">03-1</span>
+    <h2>어떻게 측정하는가 — HypeProof Trace</h2>
+    <p>HYROX가 전자칩으로 시간을 재듯, HypeProof는 <strong>HypeProof Studio/Proxy 로그</strong>로 AI 협업 과정을 잽니다. 심사위원의 느낌이 아니라, 참가자가 남긴 prompt/output/edit/test trace가 기록입니다.</p>
+    <div class="highlight-box">
+      <strong>HypeProof Score</strong> = 표준 Challenge를 수행하는 동안 남은 입력·반복·분기·검증·수정·시간 로그에서 자동 산출되는 공식 기록.
+    </div>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-name">Prompt Completeness</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">목표, 제약조건, 맥락/자료, 출력 형식, 예시가 들어갔는가.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Iteration Depth</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">의미 있는 수정 횟수, v1→v2→v3 변화량, 피드백 구체성.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Branching Score</div>
+        <div class="metric-score">15점</div>
+        <div class="metric-desc">후보를 몇 개 만들고, 비교 기준과 선택 이유를 남겼는가.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Validation Score</div>
+        <div class="metric-score">20점</div>
+        <div class="metric-desc">테스트 횟수, 발견한 문제 수, 고친 문제 수, 최종 pass/fail.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Human Control Ratio</div>
+        <div class="metric-score">15점</div>
+        <div class="metric-desc">AI 출력 복붙이 아니라 인간이 선택·거절·수정한 비율.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-name">Efficiency</div>
+        <div class="metric-score">10점</div>
+        <div class="metric-desc">총 소요 시간, turn 수, token/cost, 재작업 비율.</div>
+      </div>
+    </div>
+
+    <div class="formula">
+      공식 기록 = Task(표준 과제) + Trial(참가자 1회 시도) + Trace(전체 로그) + Outcome(최종 산출물) + Grader(자동 채점/보정)
+    </div>
+
+    <div class="evidence">
+      <div class="label">평가 원칙</div>
+      <p>Anthropic식 eval 구조를 따른다. 성공 기준을 먼저 정의하고, task-specific eval을 만들고, 가능한 것은 자동 채점한다. 정성 평가는 보조 신호이며, 공식 기록의 중심은 trace와 outcome이다.</p>
+    </div>
+
+    <h3>점수 체계 — 절대 기준과 상대 순위</h3>
+    <p>HypeProof Score는 두 가지로 표시됩니다. <strong>Standard Score</strong>는 등급 인증을 위한 절대 점수이고, <strong>Season Percentile</strong>은 같은 시즌 참가자 안에서의 상대 순위입니다.</p>
+    <table class="standard-table">
+      <thead>
+        <tr><th>구분</th><th>쓰임</th><th>평가 방식</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Standard Score</strong></td>
+          <td>Level 1·2·3 인증</td>
+          <td>고정된 표준 과제와 공개 기준표로 산출하는 0–100점 절대평가</td>
+        </tr>
+        <tr>
+          <td><strong>Season Percentile</strong></td>
+          <td>랭킹, Competition, 상위 초청</td>
+          <td>같은 시즌·같은 디비전 참가자 사이의 상대 순위</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>인증 기준 — 고정 통과선</h3>
+    <table class="standard-table">
+      <thead>
+        <tr><th>인증</th><th>통과 기준</th><th>추가 조건</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Level 1 Practitioner</strong></td>
+          <td>Standard Score 70점 이상</td>
+          <td>최종 산출물 완성, 무결성 위반 없음</td>
+        </tr>
+        <tr>
+          <td><strong>Level 2 Professional</strong></td>
+          <td>Standard Score 82점 이상</td>
+          <td>실전 과제 제출, Validation 16/20 이상, Human Control 12/15 이상</td>
+        </tr>
+        <tr>
+          <td><strong>Level 3 Leader</strong></td>
+          <td>Standard Score 88점 이상</td>
+          <td>타인 코칭 과제, 리더십 리포트, 운영 관찰 평가 통과</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>인증은 고정 기준으로 부여합니다. 같은 시즌에 뛰어난 참가자가 많아도 기준을 넘으면 인증됩니다. 순위와 초청은 Season Percentile로 별도 계산합니다.</p>
+  </div>
+
   <!-- 04. 구조 -->
   <div class="section">
     <span class="section-num">04</span>
     <h2>어떻게 돌아가는가</h2>
 
     <h3>입구 — 초대장 제도</h3>
-    <p>들어오려면 추천이 필요합니다. 비트리가 파트너를 데려오고, 3급 Leader가 참가자를 데려옵니다. "누가 보냈나요?"가 첫 화면.</p>
+    <p>들어오려면 추천이 필요합니다. "누가 보냈나요?"가 첫 화면입니다. 초대는 실력 보증이 아니라 관심과 동기의 필터입니다.</p>
     <p><strong>하이엔드 포지셔닝</strong> — "여기는 아무나 못 온다"가 FOMO를 만듭니다.</p>
-    <p><strong>동기 필터</strong> — AI를 잘 써야 들어오는 게 아닙니다. "진짜 하고 싶은 사람"만 모이는 구조. 초대한 사람이 관심을 확인하는 것이지 실력을 보증하는 게 아닙니다.</p>
-    <p><strong>확장 경로</strong> — 3급 Leader가 초대장을 발행합니다. 누가 누구를 초대했는지 추적되어 네트워크를 타고 자연스럽게 확장됩니다.</p>
+    <p><strong>동기 필터</strong> — AI를 잘 써야 들어오는 게 아닙니다. "진짜 하고 싶은 사람"만 모이는 구조입니다.</p>
+    <p><strong>확장 경로</strong> — 상위 리더는 커뮤니티를 만들고 새로운 참가자를 초대합니다. 공식 운영은 HypeProof Facilitator와 Partner 네트워크를 통해 확장됩니다.</p>
 
-    <h3>레벨 — 인증과 운영권을 분리한다</h3>
-    <p>HypeProof의 레벨은 가격표가 아닙니다. 참가자가 무엇을 할 수 있는지에 대한 권한 구조입니다. 참가자는 검증받고, 우수 참가자는 리더 후보가 되며, 운영권은 별도 라이선스로 관리합니다.</p>
+    <h3>등급 — 세 단계 검증 결과</h3>
     <div class="tier-row">
       <div class="tier-card">
-        <div class="tier-name">Verified<br>Participant</div>
-        <div class="tier-price">참가자</div>
-        <div class="tier-desc">유효 완주<br>공식 기록·배지·리포트</div>
+        <div class="tier-badge">LEVEL 1</div>
+        <div class="tier-name">Verified AI<br>Practitioner</div>
+        <div class="tier-desc">16원칙 기본 완주<br>"AI와 협업할 수 있다"</div>
       </div>
       <div class="tier-card">
-        <div class="tier-name">Certified<br>Leader</div>
-        <div class="tier-price">리더 후보</div>
-        <div class="tier-desc">상위 기록 + 리드 과제<br>케이스 발표·파트너 세션 초대</div>
+        <div class="tier-badge">LEVEL 2</div>
+        <div class="tier-name">Verified AI<br>Professional</div>
+        <div class="tier-desc">실전 적용 검증<br>"AI를 전략적으로 활용한다"</div>
       </div>
       <div class="tier-card">
-        <div class="tier-name">Licensed<br>Facilitator</div>
-        <div class="tier-price">운영권</div>
-        <div class="tier-desc">공식 Challenge 개최<br>기록·리포트·템플릿 사용</div>
+        <div class="tier-badge">LEVEL 3</div>
+        <div class="tier-name">Verified AI<br>Leader</div>
+        <div class="tier-desc">리더십·코칭 검증<br>"타인을 이끌 수 있다"</div>
       </div>
+    </div>
+
+    <h3>두 개의 트랙 — 개인 인증과 운영 라이센스</h3>
+    <p>HypeProof는 참가자의 성장 단계와 공식 프로그램 운영 권한을 분리해 설계합니다. 참가자는 인증 등급을 통해 자신의 AI 협업 역량을 증명하고, 운영자는 라이센스를 통해 HypeProof 표준 프로그램을 개최합니다.</p>
+
+    <div class="path-grid">
+      <div class="path-card accent">
+        <h4>Certification Track — 개인 인증</h4>
+        <p>참가자가 HypeProof 16원칙을 얼마나 깊게 체화했는지 보여주는 개인 검증 체계입니다.</p>
+        <ul>
+          <li>Level 1 Practitioner — AI 협업 기본기</li>
+          <li>Level 2 Professional — 실전 적용 능력</li>
+          <li>Level 3 Leader — 타인을 이끄는 리더십</li>
+        </ul>
+      </div>
+      <div class="path-card green">
+        <h4>Operating License Track — 공식 운영 권한</h4>
+        <p>HypeProof의 운영 매뉴얼, 브랜드, 커리큘럼, 리포트 시스템을 사용할 수 있는 권한 체계입니다.</p>
+        <ul>
+          <li>Facilitator License — 개인 진행자 권한</li>
+          <li>Partner License — 기관 개최 권한</li>
+          <li>Season Pro Pass — 상위 경쟁·시즌 랭킹 선택권</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flow-card">
+      <div class="flow-line">성장 경로: Practitioner → Professional → Leader → Facilitator</div>
+      <div class="flow-desc">Level 3 Leader는 HypeProof 커뮤니티를 확장하고 타인을 이끌 수 있는 상위 개인 인증입니다. 이후 별도의 운영 실습과 승인을 거치면 공식 Facilitator로 활동할 수 있습니다.</div>
+    </div>
+
+    <h3>라이센스 — 공식 운영 체계</h3>
+
+    <div class="note-box">
+      <p><strong>참가자 기록 원칙</strong></p>
+      <p>참가비에는 Challenge 수행, 공식 점수 산출, 기본 기록표, 디지털 배지가 포함됩니다. 참가자의 점수와 인증은 Challenge 결과로 바로 확정됩니다.</p>
+    </div>
+
+    <div class="license-card">
+      <div class="license-tag">공식 진행자</div>
+      <div class="license-name">HypeProof Facilitator License</div>
+      <p>HypeProof Challenge를 진행하고 참가자의 AI 협업 과정을 코칭하는 개인 진행자 라이센스입니다.</p>
+      <p><strong>비용의 의미:</strong> HypeProof 운영 매뉴얼, 진행자 교육, 품질관리, 공식 리포트 시스템 사용료입니다.</p>
+      <p><strong>등록 기준:</strong> Leader 인증, 운영 실습, 보조 진행 경험, HypeProof 승인.</p>
+    </div>
+
+    <div class="license-card">
+      <div class="license-tag">공식 파트너</div>
+      <div class="license-name">HypeProof Partner License</div>
+      <p>기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템으로 공식 프로그램을 개최하는 파트너 라이센스입니다.</p>
+      <p><strong>비용의 의미:</strong> 브랜드 사용권, 커리큘럼 사용권, 마케팅 자료, 운영 툴, 기록 시스템 접근권입니다.</p>
+      <p><strong>등록 기준:</strong> HypeProof 승인, Facilitator 배치, 운영 매뉴얼 준수, 기록 시스템 연동.</p>
+    </div>
+
+    <div class="license-card">
+      <div class="license-tag">상위 경쟁</div>
+      <div class="license-name">Season Pro Pass</div>
+      <p>상위 참가자가 시즌 랭킹, Competition, 초청전, 포트폴리오 확장 기능에 참여하는 선택형 시즌 패스입니다.</p>
+      <p><strong>비용의 의미:</strong> 상위 경쟁 리그 운영, 시즌 단위 랭킹 관리, 초청전 운영을 위한 고급 레이어 비용입니다. 기본 Challenge와 인증이 자리 잡은 뒤 확장됩니다.</p>
+      <p><strong>등록 기준:</strong> 공식 Challenge 기록 보유, 시즌 등록, 공정성 규정 동의.</p>
     </div>
 
     <h3>바이럴 — KOL이 마케팅·세일즈를 대신한다</h3>
     <p>우리는 직접 마케팅·세일즈를 하지 않습니다. <strong>KOL만 찾습니다.</strong></p>
     <p><strong>파트너 채널 자동화</strong> — 비트리가 라이선스 파트너(동아일보 등)를 데려오고, 그 파트너가 바이오팜, 학부모 등 손님을 계속 데려옵니다. 세일즈·마케팅 자동화 기계.</p>
-    <p><strong>KOL = 마케팅 직원</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람이 3급 Leader가 되면, 자기 네트워크로 사람들을 우리 세계 안으로 끌고 옵니다.</p>
+    <p><strong>KOL = 마케팅 직원</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람이 Leader가 되면, 자기 네트워크로 사람들을 우리 세계 안으로 끌고 옵니다. 이후 Facilitator와 Partner 네트워크를 통해 공식 프로그램 운영으로 이어집니다.</p>
     <p><strong>결론</strong> — 우리가 할 일은 KOL을 찾는 것뿐. KOL이 스스로 마케팅·세일즈 역할을 하고, 바이럴은 그 안에 있습니다.</p>
 
     <h3>재방문 — 6개월 갱신</h3>
     <p>AI에서 1개월은 1년입니다. 오늘 배운 게 6개월 뒤엔 구식일 수 있습니다. 4주차 언러닝이 이걸 가르칩니다. 배운 걸 의심하는 태도 = 갱신의 동기.</p>
     <p>만료는 벌점이 아니라 다시 돌아와서 다시 검증받으라는 초대입니다. 갱신하러 오면 "이번엔 더 높은 등급에 도전하시겠습니까?"</p>
 
-    <h3>확장 — 3급이 열쇠</h3>
-    <p>3급 취득자가 진행자가 되어 새 사람을 데려옵니다. HYROX의 체육관 라이선스와 같은 역할. 치과 → 의사 → 변호사 → 회계사. 같은 포맷, 다른 예시.</p>
+    <h3>확장 — Leader에서 Facilitator로</h3>
+    <p>Leader는 HypeProof 커뮤니티를 넓히는 핵심 인물입니다. 검증된 Leader는 운영 실습과 승인 절차를 거쳐 Facilitator가 되고, Facilitator가 쌓이면 Partner Center와 지역별 프로그램으로 확장됩니다.</p>
   </div>
 
   <!-- 05. 차이 -->
@@ -199,98 +387,109 @@
     </div>
   </div>
 
-  <!-- 06. 파트너십 -->
+  <!-- 06. 채널 -->
   <div class="section">
     <span class="section-num">06</span>
-    <h2>파트너십 — 우리는 직접 다 팔지 않습니다</h2>
-    <p>HypeProof는 교육 콘텐츠를 판매하는 회사가 아니라, <strong>AI 협업 능력을 검증하는 공식 경기장</strong>입니다. 따라서 핵심 자산은 강의자료가 아니라 브랜드, 커리큘럼, 채점 기준, 공식 기록, 리포트, 배지, 운영 시스템입니다.</p>
-
-    <h3>파트너의 역할</h3>
-    <p>파트너는 시장과 참가자를 데려옵니다. 기업, 학교, 병원, 학원, 커뮤니티, 미디어사가 각자의 고객을 모집하고, HypeProof는 검증 가능한 프로그램과 운영 인프라를 제공합니다.</p>
-    <p><strong>파트너가 담당하는 것:</strong> 영업, 모집, 공간, 현장 운영 보조, 지역/도메인 네트워크.</p>
-    <p><strong>HypeProof가 담당하는 것:</strong> IP, 커리큘럼, 7 AI Native Assets, Challenge 설계, 채점 기준, 공식 기록, 리포트, 배지, Facilitator 교육.</p>
-
-    <h3>라이선스 단계</h3>
-    <div class="tier-row">
-      <div class="tier-card">
-        <div class="tier-name">Referral<br>Partner</div>
-        <div class="tier-price">소개</div>
-        <div class="tier-desc">고객/기관 소개<br>성과 기반 수익 배분</div>
-      </div>
-      <div class="tier-card">
-        <div class="tier-name">Licensed<br>Facilitator</div>
-        <div class="tier-price">운영</div>
-        <div class="tier-desc">공식 프로그램 운영<br>커리큘럼·리포트 사용권</div>
-      </div>
-      <div class="tier-card">
-        <div class="tier-name">Institutional<br>Partner</div>
-        <div class="tier-price">확장</div>
-        <div class="tier-desc">기업·학교·미디어 단위<br>반복 운영/지역 확장</div>
-      </div>
-    </div>
-
-    <p>파트너십의 수익 구조는 고정 수강료가 아니라 <strong>수익 배분</strong>입니다. 파트너가 영업과 모집을 만들수록 더 많이 가져가고, HypeProof는 공식 기록과 검증 시스템의 품질을 통제합니다.</p>
-    <div class="highlight-box">
-      핵심 원칙은 하나입니다.<br>
-      <strong>공식 기록을 만들 권한은 HypeProof가 통제한다.</strong><br>
-      이것이 브랜드, 가격, 품질, 확장성을 지키는 라이선스의 본질입니다.
-    </div>
+    <h2>어떻게 팔 것인가</h2>
+    <p><strong>우리는 직접 팔지 않습니다.</strong> KOL과 파트너가 팝니다.</p>
+    <p><strong>비트리</strong> (성동효 부대표, 문두열 대표) — 영업 채널. 바이오팜, 동아일보 등 라이선스 파트너를 데려오고, 그 파트너가 손님을 계속 데려옵니다. 세일즈·마케팅 자동화 기계. 프로덕트 운영은 우리가.</p>
+    <p><strong>KOL 직접 채널</strong> — 보아치과 원장님처럼 이미 교육을 많이 했고 AX로 업계 스타가 되고 싶은 사람. 이 사람이 Leader가 되면 자기 네트워크로 사람을 끌고 옵니다. 우리의 마케팅 직원.</p>
+    <p>두 채널이 같은 프로덕트에서 만납니다. 참가자 입장에서는 HypeProof HYROX에 참가한 것. 랭킹 보드에 채널 구분 없습니다.</p>
+    <p><strong>우리가 할 일은 KOL을 찾는 것뿐.</strong> 나머지는 자동으로 돕습니다.</p>
   </div>
 
   <!-- 07. 수익 -->
   <div class="section">
     <span class="section-num">07</span>
-    <h2>가격정책 — 하나의 가격이 아니라 두 개의 시장</h2>
-    <p>HypeProof의 가격은 시간 단가 하나로 통일하지 않습니다. 학생·부모 라인과 전문가 라인은 구매 이유가 다릅니다. 하나는 AI 시대의 기본기를 익히는 교육이고, 다른 하나는 자신의 업을 방어하고 확장하기 위한 고가 검증 프로그램입니다.</p>
+    <h2>가격정책 — 하나의 기준가</h2>
 
-    <h3>파일럿 가격</h3>
     <div class="highlight-box">
-      <strong>파일럿은 전 라인 공통 10만원 / h / person</strong><br>
-      목적은 할인 판매가 아니라 레퍼런스 확보, 운영 검증, 후기와 케이스 제작입니다.
+      <strong>기준 참가비: ₩15만 / 인·시간</strong><br>
+      HypeProof HYROX의 가격은 하나로 제시합니다. 참가자는 프로그램 참가비를 내고, Challenge 수행·공식 점수·기본 리포트·디지털 배지를 받습니다. Level 1·2·3은 결제 상품이 아니라 Challenge 결과로 부여되는 검증 등급입니다.
     </div>
 
-    <h3>정식 라인업</h3>
-    <div class="tier-row">
-      <div class="tier-card">
-        <div class="tier-name">Line 1<br>학생 + 부모</div>
-        <div class="tier-price">5만원/h</div>
-        <div class="tier-desc">가족 단위 진입<br>기업 가족교육·캠프 확장</div>
-      </div>
-      <div class="tier-card">
-        <div class="tier-name">Line 2<br>전문가 교육</div>
-        <div class="tier-price">50만원/h</div>
-        <div class="tier-desc">전문직·기업가·임원<br>업무 시스템 구축/검증</div>
-      </div>
-      <div class="tier-card">
-        <div class="tier-name">Partner<br>License</div>
-        <div class="tier-price">Rev Share</div>
-        <div class="tier-desc">모집·운영 권한<br>수익 배분 별도 설계</div>
-      </div>
-    </div>
+    <h3>참가자 가격</h3>
+    <table class="standard-table">
+      <thead>
+        <tr><th>구분</th><th>기준</th><th>참가비</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>기준 단가</strong></td>
+          <td>1인/가족 1시간</td>
+          <td><strong>₩15만</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Starter Program</strong></td>
+          <td>4시간</td>
+          <td><strong>₩60만 / 인·가족</strong></td>
+        </tr>
+        <tr>
+          <td><strong>파일럿·단체 도입</strong></td>
+          <td>레퍼런스 확보, 단체 운영, 파트너 조건 반영</td>
+          <td>₩40만~60만 / 인·가족</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h3>Line 1 — 학생 + 부모</h3>
-    <p>학생·부모 라인은 AI 시대의 기본기를 가족 단위로 익히는 프로그램입니다. 가격은 <strong>1인당 5만원/h</strong>를 기준으로 합니다. 4시간 프로그램 기준 1인 20만원, 부모+자녀 2인 참여 시 40만원입니다.</p>
-    <p>이 라인은 기업 임직원 가족교육, 방학 캠프, 대치동형 프리미엄, 국내/해외 Camp로 확장됩니다. 핵심은 낮은 진입장벽과 반복 가능한 운영입니다.</p>
+    <h3>가격 해석</h3>
+    <p><strong>참가자가 내는 돈은 프로그램 참가비 하나입니다.</strong> 이 안에 교육, Challenge 수행, 공식 점수 산출, 피드백, 기본 리포트, 디지털 배지가 포함됩니다.</p>
+    <p><strong>운영 라이센스는 참가자 가격정책에서 제외합니다.</strong> Facilitator/Partner License는 추후 남을 가르치거나 기관이 공식 프로그램을 운영할 때 필요한 B2B/운영자용 구조입니다.</p>
 
-    <h3>Line 2 — 전문가 교육</h3>
-    <p>전문가 라인은 치과의사, 의사, 변호사, 회계사, 기업가, 임원처럼 자신의 업을 AI로 방어하고 확장해야 하는 사람을 위한 고가 프로그램입니다. 가격은 <strong>1인당 50만원/h</strong>를 기준으로 합니다.</p>
-    <p>4시간 프로그램 기준 1인 200만원입니다. 이는 단순 강의료가 아니라 참가자가 자기 업에 적용 가능한 시스템, 검색/판단 프레임, 검증 리포트, 공식 기록을 가져가는 가격입니다.</p>
+    <h3>가격 근거 — 왜 ₩15만/h인가</h3>
+    <p>₩15만/h는 임의의 숫자가 아니라, 기존 WTP 추정과 유사 교육의 시간 환산값을 함께 본 기준가입니다.</p>
+    <table class="standard-table">
+      <thead>
+        <tr><th>유사 케이스</th><th>계산 기준</th><th>시간 환산</th><th>해석</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>대치동 종합학원</strong></td>
+          <td>월 ₩200만~300만 / 월 60~80h 가정</td>
+          <td>약 ₩3만~5만/h</td>
+          <td>대량 반복 수업 하단 기준</td>
+        </tr>
+        <tr>
+          <td><strong>대치동 소규모 과목</strong></td>
+          <td>월 약 ₩130만 / 월 16h 가정</td>
+          <td>약 ₩8만/h</td>
+          <td>국내 소규모 프리미엄 하한</td>
+        </tr>
+        <tr>
+          <td><strong>MIT Professional Cert</strong></td>
+          <td>$3,200≈₩432만 / 16일×6h 가정</td>
+          <td>약 ₩4.5만/h</td>
+          <td>온라인/전문가 과정 기준</td>
+        </tr>
+        <tr>
+          <td><strong>UC Riverside AX</strong></td>
+          <td>$8,000≈₩1,080만 / 3주×5일×6h 가정</td>
+          <td>약 ₩12만/h</td>
+          <td>해외 프리미엄 AI 교육 기준</td>
+        </tr>
+        <tr>
+          <td><strong>SK 파일럿 제안가</strong></td>
+          <td>가족당 ₩40만~60만 / 4h</td>
+          <td>₩10만~15만/h</td>
+          <td>현재 파일럿 시장검증 기준</td>
+        </tr>
+      </tbody>
+    </table>
+
     <div class="evidence">
-      <div class="label">가격 논리</div>
-      <p>기업가 교육, 전문직 세미나, 고가 워크숍은 1~2일에 200만원 이상도 성립합니다. HypeProof 전문가 라인은 “AI를 배운다”가 아니라 “AI 시대에 내 전문성과 조직 운영 방식을 재설계한다”는 구매 이유를 가집니다.</p>
+      <div class="label">가격 판단</div>
+      <p>HypeProof HYROX의 기준가 ₩15만/h는 대치동 소규모 프리미엄보다 높고, UC Riverside급 해외 프리미엄 AI 교육보다 약간 높으며, SK 파일럿 제안가의 상단과 일치합니다. 따라서 “일반 강의” 가격이 아니라, AI 협업 실습·측정·피드백·리포트가 포함된 검증형 프리미엄 프로그램 가격으로 제시합니다.</p>
     </div>
 
-    <h3>파트너 수익</h3>
-    <p>파트너 라인은 수강료 정가가 아니라 수익 배분 구조로 설계합니다. 파트너가 고객, 공간, 모집, 현장 운영을 가져오면 HypeProof는 IP, 커리큘럼, 채점, 공식 기록, 리포트, 배지, 운영 시스템을 제공합니다.</p>
-    <p>초기에는 고정 비율보다 원칙이 중요합니다. <strong>파트너는 시장을 가져오고, HypeProof는 공식성을 제공합니다.</strong> 반복 운영이 검증되면 Referral Partner, Licensed Facilitator, Institutional Partner 단계별로 수익 배분과 권한 범위를 구체화합니다.</p>
-
-    <p style="margin-top:12px;"><strong>6개월 갱신</strong> — AI 변화 속도에 맞춰 기록 갱신과 재도전 구조를 둡니다. 갱신은 벌점이 아니라 다시 경기장에 들어오는 초대입니다.</p>
-    <p><strong>B2B 팀 리포트</strong> — 병원장, 기업, 학교가 참가자별/팀별 AI 협업 역량 리포트를 구매할 수 있습니다.</p>
+    <div class="evidence">
+      <div class="label">결론</div>
+      <p>HypeProof HYROX의 기준 참가비는 ₩15만 / 인·시간입니다. 4시간 Starter Program 기준 참가비는 ₩60만이며, 파일럿·단체 도입 시 ₩40만~60만 범위에서 조정합니다.</p>
+    </div>
   </div>
 
   <div class="footer">
-    <p>HypeProof HYROX — 이론적 프레임워크 v1</p>
-    <p>2026.05.22 | 파일럿: 5/26 보아치과 | Pricing & Partnership updated</p>
+    <p>HypeProof HYROX — 이론적 프레임워크 v2.0</p>
+    <p>2026.05.15 | 기준 참가비와 가격 근거 정리</p>
   </div>
 
 </div>

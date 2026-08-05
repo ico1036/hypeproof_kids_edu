@@ -8,6 +8,9 @@ tags:
   - project
   - hyrox
   - framework
+related:
+  - "HypeProof-HYROX-proposal-v1.html (artifact, wiki 외부)"
+  - "HypeProof-pricing-benchmark.html (artifact, wiki 외부)"
 ---
 
 # HypeProof HYROX — 이론적 프레임워크 v1 (2026-05-11)
@@ -60,24 +63,63 @@ tags:
 3주 Mastery: 백번뽑기 / 다중모델 / 추상사다리 / 수행위임역전
 4주 Transcendence: 언러닝 / 상상 / 소격 / 천번째감탄
 
-자동 측정: 입력 해상도, 반복 횟수, 수정 이력, 소요 시간
-진행자 관찰: 맥락 이해도, 감정 전이, 품질 판단, 협업 질
+### 측정: HypeProof Trace 기반 공식 기록
+
+HYROX가 전자칩으로 시간을 재듯, HypeProof는 Studio/Proxy 로그로 AI 협업 과정을 잰다. 주관 심사표가 아니라 `task → trial → trace → outcome → grader` 구조의 eval harness가 공식 기록의 기반이다.
+
+공식 점수 후보:
+- Prompt Completeness — 목표, 제약조건, 맥락/자료, 출력 형식, 예시 포함 여부
+- Iteration Depth — 의미 있는 수정 횟수, 버전 변화량, 피드백 구체성
+- Branching Score — 후보 생성 수, 후보 비교, 선택 이유
+- Validation Score — 테스트 횟수, 발견한 문제 수, 수정 반영 수, 최종 pass/fail
+- Human Control Ratio — AI raw output 대비 인간 선택/거절/수정 비율
+- Efficiency — 총 소요 시간, turn 수, token/cost, 재작업 비율
+
+평가 방식:
+- Standard Score — 0~100점 절대평가. Level 1·2·3 인증에 사용.
+- Season Percentile — 시즌 내 상대 순위. 랭킹, Competition, 상위 초청에 사용.
+- Level 1 Practitioner — Standard Score 70점 이상 + 최종 산출물 완성.
+- Level 2 Professional — Standard Score 82점 이상 + 실전 과제 + Validation 16/20 이상 + Human Control 12/15 이상.
+- Level 3 Leader — Standard Score 88점 이상 + 타인 코칭 과제 + 리더십 리포트 + 운영 관찰 평가.
+
+진행자 관찰은 Level 3와 Facilitator 심사의 보조 신호다. 공식 기록의 중심은 trace와 outcome이다.
 
 ### 등급: 세 단계 자격증 모델
 
-1급 Verified AI Practitioner — 16원칙 4주 완주. "AI와 협업할 수 있다"
-2급 Verified AI Professional — 1급 + 심화 4주 + 과제. "AI를 전략적으로 활용한다"
-3급 Verified AI Leader — 2급 + 진행자 수료. "남을 가르칠 자격이 있다"
+1급 Verified AI Practitioner — 16원칙 4주 완주 + 표준 Challenge 기록. "AI와 협업할 수 있다"
+2급 Verified AI Professional — 1급 + 심화 4주 + 자기 도메인 과제. "AI를 전략적으로 활용한다"
+3급 Verified AI Leader — 2급 + 타인을 4스테이션으로 안내하는 리더 과제. "남을 AI 협업 과정으로 이끌 수 있다"
 
 등급명은 전문직 언어. "Level 1"이 아니라 명함에 적히고 싶은 명칭.
-3급이 확장의 열쇠. 3급 취득자가 진행자가 되어 새 사람을 데려옴.
+3급 Leader는 개인 인증 트랙의 상위 단계다. 검증된 Leader는 운영 실습과 승인 절차를 거쳐 Facilitator License로 이어질 수 있다.
 
-### 가격: 하이엔드 타겟 (확정 전)
+### 라이센스: 등급과 권한 분리
 
-하이엔드가 메인 비즈니스. 히스토그램 기준으로 국제 엘리트 대비 경쟁력 있는 가격에 위치.
-1급 ~₩200-300만 (4주 코스, 진행자 포함)
-2급 ~₩400-600만 (심화, 1급 통과자만)
-3급 ~₩700-1,000만 (진행자 양성, 우리 확장의 자산)
+- HypeProof Facilitator License — HypeProof Challenge를 진행하고 참가자를 코칭할 수 있는 개인 운영 권한. 비용은 운영 매뉴얼·진행자 교육·품질관리·리포트 시스템 사용료.
+- HypeProof Partner License — 기관이 HypeProof 브랜드, 16원칙 커리큘럼, 표준 측정 룰, 리포트 시스템을 사용해 공식 프로그램을 개최할 권한. 비용은 브랜드·커리큘럼·운영 툴·마케팅 자료 사용료.
+- Season Pro Pass — 상위 참가자가 시즌 랭킹, Competition, 초청전, 포트폴리오 확장 기능에 참여하는 선택형 시즌 패스. 초기 핵심 수익원이 아니라 생태계 형성 후 붙는 고급 경쟁 레이어.
+
+개인 인증은 참가자의 역량을 보여주고, 운영 라이센스는 공식 프로그램 운영·브랜드 사용 권한을 제공한다. 참가비에는 Challenge 수행, 공식 점수 산출, 기본 기록표, 디지털 배지가 포함된다. 성과로 얻는 것은 점수·등급·순위·상위 초청이고, Facilitator/Partner 비용은 HypeProof를 운영하는 사업권과 시스템 사용료다.
+
+### 가격: 하나의 기준가
+
+공식 제안서의 참가자 가격은 하나로 제시한다.
+- 기준 참가비: 15만원 / 인·시간
+- Starter Program: 4h × 15만원 = 60만원 / 인·가족
+- 파일럿·단체 도입: 40만~60만원 / 인·가족 범위 조정
+
+참가자가 내는 돈은 프로그램 참가비 하나다. 이 안에 교육, Challenge 수행, 공식 점수 산출, 피드백, 기본 리포트, 디지털 배지가 포함된다. Level 1·2·3은 결제 상품명이 아니라 Challenge 결과로 부여되는 검증 등급이다. Facilitator/Partner License는 참가자 가격정책에서 제외하고, 추후 운영자/B2B 사업모델에서 별도로 설명한다.
+
+가격 근거:
+- 대치동 종합학원: 월 200만~300만원 / 월 60~80h 가정 → 약 3만~5만원/h
+- 대치동 소규모 과목: 월 약 130만원 / 월 16h 가정 → 약 8만원/h
+- MIT Professional Cert: $3,200≈432만원 / 16일×6h 가정 → 약 4.5만원/h
+- UC Riverside AX: $8,000≈1,080만원 / 3주×5일×6h 가정 → 약 12만원/h
+- SK 파일럿 제안가: 가족당 40만~60만원 / 4h → 10만~15만원/h
+
+따라서 15만원/h는 대치동 소규모 프리미엄보다 높고, UC Riverside급 해외 프리미엄 AI 교육보다 약간 높으며, SK 파일럿 제안가 상단과 일치하는 검증형 프리미엄 가격이다.
+
+내부 검산: 컨설팅식 bottom-up 기준으로도 20가족 기준 4시간 매출은 1,200만원, 직접 운영비는 약 260만~400만원 수준이어서 충분한 gross margin이 남는다. 이 수치는 내부 판단 근거이며 대외 제안서 HTML에는 노출하지 않는다.
 
 ### 삼층 전략: 하이엔드 / 봇물 / 노블리스 오블리제
 
@@ -163,8 +205,9 @@ AI에서 1개월은 1년이다. 오늘 배운 게 6개월 뒤엔 구식일 수 �
 
 ## 수익 모델
 
-참가비: 1급 50만원, 2급 80만원, 3급 150만원
-진행자 라이선스: 3급 취득자가 등록된 진행자로 활동 (HYROX 체육관 라이선스와 동일 역할)
+프로그램 참가비: 기준 15만원 / 인·시간. Starter 4h = 60만원 / 인·가족. 파일럿·단체 도입은 40만~60만원 범위 조정. 등급 자체에 가격표를 붙이지 않는다.
+운영 라이선스: Facilitator/Partner가 HypeProof 프로그램을 공식 운영 (HYROX 코치/체육관 라이선스에 해당)
+상위 경쟁 패스: Season Pro Pass는 HYROX Athlete License에 해당하되, 초기 핵심 수익원이 아니라 랭킹/초청전이 생긴 뒤의 선택형 레이어
 인증 갱신: 6개월마다
 B2B 팀 리포트: 병원장/기업이 직원 교육 결과 구매
 

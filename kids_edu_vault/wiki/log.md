@@ -139,6 +139,14 @@ tags:
 
 ---
 
+## 2026-05-15 | sync | HYROX 브랜치 wiki 구조 동기화 (upstream/main 기준)
+- 브랜치: sync-hyrox-to-upstream-wiki-structure-20260515
+- 작업: upstream/main 병합, projects/ 파일명 kebab-case 변환, [[projects/_index]] 보강, [[index]]/[[hot]] 갱신
+- Pages updated: [[index]], [[hot]], [[intel/_index]], [[hypeproof-hyrox-framework-v1]]
+- Key insight: HYROX 문서(프레임워크/세션/라이센스/측정/SK바이오팜 분석)를 upstream vault 구조에 편입. HTML artifact는 wiki 페이지로 등록하지 않고 [[hypeproof-hyrox-framework-v1]] frontmatter related로만 참조.
+
+---
+
 ## 2026-05-15 | validation | 테스트 품질 3-Phase 개선 완료
 
 - 수정: Phase1(sys.path 삭제, anyio→asyncio, tautology assertion 수정, fixture 중복 제거, 테스트명 수정) / Phase2(test_card_node·test_spec_node _DATA_DIR monkeypatch 격리) / Phase3(error 이벤트, 갤러리/rename/save 엔드포인트, backendUrl.ts 단위 테스트, send() 가드+payload 검증)

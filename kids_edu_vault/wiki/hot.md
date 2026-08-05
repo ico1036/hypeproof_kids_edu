@@ -101,6 +101,11 @@ tags:
 - VS Code fork + 자체 chat panel (Track A / Track B 병렬)
 - 5/28~30 dry-run이 Go/No-go 게이트
 
+**HYROX 문서 구조 동기화**
+- HYROX 프로젝트 문서 파일명을 kebab-case로 정리하고 [[projects/_index]]에 등록
+- [[hypeproof-hyrox-framework-v1]], [[hypeproof-license-strategy-from-hyrox-20260515]], [[hypeproof-measurement-rubric-from-hyrox-20260515]]를 프로젝트 근거 축으로 유지
+- HTML artifacts는 wiki 페이지로 등록하지 않고 [[hypeproof-hyrox-framework-v1]]의 related artifact로 참조
+
 ---
 
 ## 주요 임박 마일스톤
@@ -126,6 +131,8 @@ tags:
 
 - [[test-quality-review-2026-05-15]] — 테스트 품질 검토 결과 (방금 생성)
 - [[kids-edu-backend]] — 백엔드 컴포넌트 (LangGraph 구조 반영 업데이트)
+- [[projects/_index]] · [[hypeproof-hyrox-framework-v1]] · [[hypeproof-hyrox-session-20260511]]
+- [[hypeproof-license-strategy-from-hyrox-20260515]] · [[hypeproof-measurement-rubric-from-hyrox-20260515]]
 - [[2026-05-12-sk-biopharma-meeting]] · [[2026-05-14-sk-biopharma-followup]]
 - [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]]
 - [[hypeproof-studio]] · [[adr-hypeproof-studio-v01]] · [[sixteen-essence]]
