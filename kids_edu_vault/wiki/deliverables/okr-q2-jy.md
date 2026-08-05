@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "OKR Q2 (JY) — 파일럿 실행환경 구축"
 status: active
 priority: 1
 owner: "[[jinyong-shin]]"

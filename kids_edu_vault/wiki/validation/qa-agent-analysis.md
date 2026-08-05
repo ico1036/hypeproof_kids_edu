@@ -1,5 +1,6 @@
 ---
 type: analysis
+title: "gameforge QA 에이전트 분석 — 진용님 버전 연동 가능성 리포트"
 topic: qa-agent-integration
 date: 2026-04-27
 author: AB_kimi_bot (subagent)

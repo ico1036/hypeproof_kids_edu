@@ -1,5 +1,6 @@
 ---
 type: component
+title: "sans-kids-school-2025 (실습 자산)"
 status: active
 stack_layer: content
 repo: "jayleekr/sans-kids-school-2025"

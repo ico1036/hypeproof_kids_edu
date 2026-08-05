@@ -1,5 +1,6 @@
 ---
 type: validation-report
+title: "엣지케이스 테스트 결과"
 status: archive
 updated: 2026-05-14
 test: edge-cases

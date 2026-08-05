@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "Jay (Jay Lee / 이재원)"
 status: active
 role: "Founder / Host / 사업 총괄"
 org: "HypeProof Lab (본업: Sonatus)"

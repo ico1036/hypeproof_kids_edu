@@ -15,7 +15,7 @@ tags:
   - 7-ai-native-assets
   - fde
 related:
-  - "[[치과의사-curriculum-v3]]"
+  - "[[dental-doctor-curriculum-v3]]"
   - "[[facilitator-script-dental-v3]]"
 ---
 

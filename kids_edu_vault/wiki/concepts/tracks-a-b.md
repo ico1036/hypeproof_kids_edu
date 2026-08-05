@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "Tracks A / B — 운영 시스템 두 트랙"
 status: mature
 tags:
   - concept

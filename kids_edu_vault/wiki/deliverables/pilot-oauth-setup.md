@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "OAuth 연동 + HTTPS"
 status: in-progress
 priority: 2
 owner: "[[jinyong-shin]]"

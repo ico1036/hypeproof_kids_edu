@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "AI 튜터: 빠른 구현 모드"
 status: active
 priority: 2
 date: 2026-04-10

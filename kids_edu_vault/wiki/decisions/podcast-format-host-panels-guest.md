@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "팟캐스트 포맷: 호스트 1 + 패널 2 + 게스트 1"
 status: active
 priority: 4
 date: 2026-01-05

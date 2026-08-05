@@ -1,5 +1,6 @@
 ---
 type: intel
+title: "파일럿 장소 — 국립암센터 현장 체크"
 status: summarized
 source_url: ""
 source_date: 2026-04-10

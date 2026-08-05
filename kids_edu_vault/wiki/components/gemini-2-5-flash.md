@@ -1,5 +1,6 @@
 ---
 type: component
+title: "Gemini 2.5 Flash"
 status: active
 stack_layer: ai
 version: "2.5-flash"

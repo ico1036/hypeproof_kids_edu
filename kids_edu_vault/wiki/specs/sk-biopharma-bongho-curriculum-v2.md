@@ -16,7 +16,7 @@ tags:
   - 7-ai-native-assets
 related:
   - "[[curriculum-core]]"
-  - "[[specs/skins/kids/skin]]"
+  - "[[specs/skins/kids/skin-kids]]"
   - "[[curriculum-v2-lesson-wow-impact]]"
   - "[[hypeproof-studio]]"
   - "[[hypeproof-studio-game-skillpack-v1]]"
@@ -28,7 +28,7 @@ related:
 
 ## 0. 기준 정정
 
-이 문서의 본체는 [[curriculum-core]]와 [[specs/skins/kids/skin]]에 정리된 **봉호 태의 커리큘럼 코어**다.
+이 문서의 본체는 [[curriculum-core]]와 [[specs/skins/kids/skin-kids]]에 정리된 **봉호 태의 커리큘럼 코어**다.
 
 [[hypeproof-studio]]는 커리큘럼의 주인이 아니라, 봉호 커리큘럼을 SK바이오팜 현장에서 안정적으로 실행하기 위한 구현 환경이다.
 

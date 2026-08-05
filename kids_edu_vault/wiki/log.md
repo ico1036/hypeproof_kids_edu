@@ -1,3 +1,18 @@
+---
+type: meta
+title: "Log"
+created: 2026-04-12
+updated: 2026-08-05
+tags:
+  - meta/log
+---
+
+# Log
+
+볼트 변경 이력. 최신 항목이 위.
+
+---
+
 ## [2026-07-11] ingest | 변호사 전문직 채널 미팅 메모
 - Source: `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md`
 - Summary: [[legal-professional-channel-meeting-20260711-source]]

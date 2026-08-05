@@ -1,5 +1,6 @@
 ---
 type: component
+title: "oauth2-proxy"
 status: active
 stack_layer: platform
 version: "latest"

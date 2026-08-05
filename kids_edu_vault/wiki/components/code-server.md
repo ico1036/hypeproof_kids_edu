@@ -1,5 +1,6 @@
 ---
 type: component
+title: "code-server"
 status: active
 stack_layer: platform
 version: "latest"

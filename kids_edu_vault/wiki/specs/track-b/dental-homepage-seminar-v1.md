@@ -16,7 +16,7 @@ tags:
 related:
   - "[[boa-dental]]"
   - "[[dental-homepage-seminar-feedback-20260607]]"
-  - "[[치과의사-curriculum-v3]]"
+  - "[[dental-doctor-curriculum-v3]]"
   - "[[dental-supersearch-curriculum-v4]]"
   - "[[dental-website-workshop-detail-v1]]"
 ---

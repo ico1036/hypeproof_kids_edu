@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "병동 파일럿 게임 프레이밍: 협력형 우선"
 status: proposed
 priority: 2
 date: 2026-04-12

@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "AI 온보딩 역할 신설"
 status: active
 priority: 3
 date: 2026-01-19

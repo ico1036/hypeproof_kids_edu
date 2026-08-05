@@ -1,5 +1,6 @@
 ---
 type: meeting
+title: "2026-07-11 Legal Professional Channel Meeting"
 status: done
 date: 2026-07-11
 attendees:

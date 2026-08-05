@@ -11,7 +11,7 @@ tags:
 
 # 보아치과 원장 박정현 — 페이스북 포스트 분석
 
-관련: [[boa-dental]] · [[park-junghyun]] · [[boa-dental-526-briefing]] · [[치과의사-curriculum-v1]]
+관련: [[boa-dental]] · [[park-junghyun]] · [[boa-dental-526-briefing]] · [[dental-doctor-curriculum-v1]]
 
 ## 수집일: 2026-05-04
 
@@ -91,7 +91,7 @@ tags:
 
 ### 5/26 강의 설계 참조
 
-상세 운영 흐름은 산출물 [[boa-dental-526-briefing]]과 main의 최신 v1 초안 [[치과의사-curriculum-v1]]에 둔다. 이 intel 페이지는 수요 검증·인물/채널 관찰 근거만 유지한다.
+상세 운영 흐름은 산출물 [[boa-dental-526-briefing]]과 main의 최신 v1 초안 [[dental-doctor-curriculum-v1]]에 둔다. 이 intel 페이지는 수요 검증·인물/채널 관찰 근거만 유지한다.
 
 
 ### 통합 비즈니스 모델 (확정)

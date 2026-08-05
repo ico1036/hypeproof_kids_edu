@@ -3,6 +3,7 @@ type: source
 title: "보아치과 AI 홈페이지 실습 큐시트"
 source_type: document
 source_date: 2026-07-06
+created: 2026-07-06
 ingested: 2026-07-06
 raw:
   - ".raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf"

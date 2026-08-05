@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "Gemini API Key 발급"
 status: delivered
 priority: 2
 owner: "[[jinyong-shin]]"

@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "Production Loop v1 채택"
 status: active
 priority: 2
 date: 2026-05-05

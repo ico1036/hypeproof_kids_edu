@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "Jay Lee (Jaewon Lee)"
 status: active
 role: "Founder / Host"
 org: "HypeProof Lab (본업: Sonatus)"

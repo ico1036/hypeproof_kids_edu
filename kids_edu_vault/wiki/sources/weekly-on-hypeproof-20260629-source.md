@@ -1,5 +1,6 @@
 ---
 type: source
+title: "Source — Weekly on HypeProof 2026-06-29"
 status: summarized
 source_type: meeting_transcript
 source_date: 2026-06-29

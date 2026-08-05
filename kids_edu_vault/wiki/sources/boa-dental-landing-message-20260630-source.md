@@ -1,5 +1,6 @@
 ---
 type: source
+title: "Source — 보아치과 랜딩 메시지 2026-06-30"
 status: summarized
 source_type: telegram_thread
 source_date: 2026-06-30

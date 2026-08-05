@@ -57,7 +57,7 @@ tags:
 - Bug / Content (2026-04-18→2026-05-01): [[game-bug-fix-2026-05-01]] · [[game-content-guideline-pending]] (pending — 의료 전문가 확인 전 보류)
 - LLM Infra: [[llm-provider-scaling]] — LLM 제공사 스케일링 결정
 
-### Deliverables (13)
+### Deliverables (15)
 - [[deliverables/_index|_index]]
 - [[okr-q2-jy]]
 - [[pilot-5-5-milestones]] — 전체 팀 마일스톤 (2026-04-12 확정)
@@ -66,6 +66,8 @@ tags:
 - [[boa-dental-ai-promo-race-poster-v1]] (2026-06-27) — 보아치과 AI 홍보 레이스 포스터 v1, 초반 설명→직접 수정→최종 결과물 평가 구조
 - [[boa-dental-526-briefing]] — 보아치과 5/26 미팅 브리핑
 - [[sk-biopharma-pilot]] (2026-05-14) — SK바이오팜 임직원 가족 AI 교육 파일럿 (6~7월)
+- [[sk-biopharma-family-workshop-design-v1]] — SK바이오팜 가족 워크숍 내부 설계안 v1 (내부 전용)
+- [[sk-biopharma-7assets-proposal-upgrade-20260601]] (2026-06-01) — SK바이오팜 7 Assets 제안서 보강안
 - [[jy-action-list-2026-05-14]] (2026-05-14) — JY 우선순위 액션 리스트 (5/28 dry-run 게이트 기준)
 - [[pilot-gemini-api-key]] · [[pilot-server-domain]] · [[pilot-oauth-setup]] · [[pilot-cline-gemini-integration]] · [[pilot-game-starter-template]] · [[pilot-rehearsal-late-april]] · [[pilot-operator-guide]]
 - [[curriculum-submission-v2]] (2026-04-22) — 커리큘럼 협력사 제출용 포맷 (final)
@@ -84,8 +86,8 @@ tags:
 - Curriculum tracks: [[specs/core/_index|core]] · [[specs/skins/_index|skins (adult/kids)]] · [[specs/track-a/_index|track-a]] · [[specs/track-b/_index|track-b]]
 - Core: [[curriculum-core]] — 커리큘럼 코어 (skin 독립 공통 로직)
 - Track A: [[curriculum-v2-lesson-wow-impact]] · [[curriculum-wow-lesson-run]]
-- Track B: [[legal-divorce-brief-prep-consulting]] (draft) · [[치과의사-curriculum-v1]] (archive) · [[치과의사-curriculum-v2]] (archive) · [[치과의사-curriculum-v3]] (active) · [[facilitator-script-dental-v3]] · [[dental-supersearch-curriculum-v4]] (draft) · [[dental-supersearch-engine-workshop-v2]] (draft) · [[dental-homepage-seminar-v1]] (draft) · [[dental-website-workshop-detail-v1]] (draft) · [[boa-dental-ai-homepage-cuesheet-20260706-spec]] (active)
-- Skins: [[specs/skins/adult/skin|adult/skin]] · [[specs/skins/kids/skin|kids/skin]]
+- Track B: [[legal-divorce-brief-prep-consulting]] (draft) · [[dental-doctor-curriculum-v1]] (archive) · [[dental-doctor-curriculum-v2]] (archive) · [[dental-doctor-curriculum-v3]] (active) · [[facilitator-script-dental-v3]] · [[dental-supersearch-curriculum-v4]] (draft) · [[dental-supersearch-engine-workshop-v2]] (draft) · [[dental-homepage-seminar-v1]] (draft) · [[dental-website-workshop-detail-v1]] (draft) · [[boa-dental-ai-homepage-cuesheet-20260706-spec]] (active)
+- Skins: [[specs/skins/adult/skin-adult|adult/skin]] · [[specs/skins/kids/skin-kids|kids/skin]]
 
 ### Components (15)
 - [[components/_index|_index]]

@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "Single-HTML Runtime (단일 HTML 실행 모델)"
 status: active
 tags:
   - concept

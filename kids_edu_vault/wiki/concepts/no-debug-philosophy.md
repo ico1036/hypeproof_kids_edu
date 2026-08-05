@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "No-Debug Philosophy (아이와 디버깅하지 않기)"
 status: active
 tags:
   - concept

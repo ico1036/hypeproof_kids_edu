@@ -1,5 +1,6 @@
 ---
 type: spec
+title: "Pilot 커리큘럼: 병동용 재설계"
 status: draft
 owner: "[[jinyong-shin]]"
 target_date: 2026-05-05

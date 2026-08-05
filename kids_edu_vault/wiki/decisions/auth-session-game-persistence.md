@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "로그인 · 채팅 세션 관리 · 게임 HTML 파일 저장 (통합 ADR)"
 status: implemented
 priority: 1
 date: 2026-04-13

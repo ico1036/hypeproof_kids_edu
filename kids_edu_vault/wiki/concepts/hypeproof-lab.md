@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "HypeProof Lab"
 status: mature
 tags:
   - concept

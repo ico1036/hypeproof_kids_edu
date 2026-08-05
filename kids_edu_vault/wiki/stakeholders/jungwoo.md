@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "JUNGWOO (정우)"
 status: active
 role: "Lead Facilitator / On-site Feedback"
 org: "HypeProof Lab"

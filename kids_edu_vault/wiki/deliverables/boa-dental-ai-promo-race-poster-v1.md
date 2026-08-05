@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "보아치과 AI 홍보 레이스 포스터 v1"
 status: delivered
 priority: 2
 owner: "HypeProof Lab"

@@ -1,5 +1,6 @@
 ---
 type: spec
+title: "Langfuse 관측성 스펙"
 status: draft
 owner: "[[jinyong-shin]]"
 target_date: 2026-05-19

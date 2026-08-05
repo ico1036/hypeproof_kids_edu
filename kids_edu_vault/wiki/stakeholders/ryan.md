@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "Ryan"
 status: active
 role: "Experience Designer / Reference Designer"
 org: "HypeProof Lab"

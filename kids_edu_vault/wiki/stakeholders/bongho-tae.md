@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "봉호 태 (Bongho Tae)"
 status: active
 role: "Research Support / Academic"
 org: "HypeProof Lab"

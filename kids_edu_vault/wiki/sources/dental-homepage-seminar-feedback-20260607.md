@@ -14,7 +14,7 @@ related:
   - "[[boa-dental]]"
   - "[[dental-homepage-seminar-v1]]"
   - "[[dental-supersearch-curriculum-v4]]"
-  - "[[치과의사-curriculum-v3]]"
+  - "[[dental-doctor-curriculum-v3]]"
 tags:
   - source/client-feedback
   - 치과
@@ -76,5 +76,5 @@ tags:
 ## 위키 반영
 
 - 새 스펙: [[dental-homepage-seminar-v1]]
-- 관련 기존 트랙: [[치과의사-curriculum-v3]], [[dental-supersearch-curriculum-v4]]
+- 관련 기존 트랙: [[dental-doctor-curriculum-v3]], [[dental-supersearch-curriculum-v4]]
 - 새 컴포넌트/엔티티: [[boa-dental]], [[gabia]], [[cafe24]], [[claude-code]], [[vercel]], [[cloudflare]], [[hypeproof-ai-xyz]], [[park-junghyun]], [[lee-jaewon]]

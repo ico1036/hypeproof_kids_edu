@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "Sandbox: iframe + srcdoc (WebContainers 기각)"
 status: proposed
 priority: 2
 date: 2026-04-12

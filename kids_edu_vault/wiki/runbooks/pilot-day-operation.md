@@ -1,5 +1,6 @@
 ---
 type: runbook
+title: "Pilot Day Operation — 2026-05-05"
 status: planned
 audience: operator
 last_verified: 2026-04-12

@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "4월 말 리허설"
 status: deferred
 priority: 1
 owner: "[[jinyong-shin]]"

@@ -23,6 +23,10 @@ tags:
 - [[boa-dental-ai-promo-race-poster-v1]] — 보아치과 AI 홍보 레이스 포스터 v1 (2026-06-27, delivered)
 - [[boa-dental-526-briefing]] — 보아치과 5/26 미팅 브리핑
 
+## Proposals & Design
+- [[sk-biopharma-family-workshop-design-v1]] — SK바이오팜 가족 워크숍 내부 설계안 v1 (내부 전용)
+- [[sk-biopharma-7assets-proposal-upgrade-20260601]] — SK바이오팜 7 Assets 제안서 보강안 (2026-06-01, draft)
+
 ## In Progress — Pilot (due 2026-05-05)
 - [[pilot-gemini-api-key]] (due 2026-04-18)
 - [[pilot-server-domain]] (due 2026-04-18)

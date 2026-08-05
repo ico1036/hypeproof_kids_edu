@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "Cline + Gemini 자동 연동"
 status: delivered
 priority: 2
 owner: "[[jinyong-shin]]"

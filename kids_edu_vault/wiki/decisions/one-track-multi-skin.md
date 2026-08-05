@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "1트랙 멀티 스킨 구조 채택"
 status: active
 priority: 1
 date: 2026-05-11

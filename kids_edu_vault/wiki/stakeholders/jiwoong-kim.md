@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "JiWoong Kim (라이언)"
 status: active
 role: "SW Engineer / Researcher"
 org: "HypeProof Lab"

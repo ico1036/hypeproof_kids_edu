@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "AI Persona Workflows (AI 튜터 5종 페르소나)"
 status: active
 tags:
   - concept

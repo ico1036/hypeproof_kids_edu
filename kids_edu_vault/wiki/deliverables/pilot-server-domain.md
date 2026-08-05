@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "배포 서버 + 도메인 준비"
 status: delivered
 priority: 2
 owner: "[[jinyong-shin]]"

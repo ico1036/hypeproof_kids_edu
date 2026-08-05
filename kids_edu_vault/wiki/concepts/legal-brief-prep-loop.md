@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "Legal Brief Prep Loop"
 status: developing
 tags:
   - concept

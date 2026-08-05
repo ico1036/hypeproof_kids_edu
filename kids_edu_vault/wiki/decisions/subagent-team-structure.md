@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "Subagent 팀 구조: Wiki 2 + Dev 4"
 status: proposed
 priority: 2
 date: 2026-04-12

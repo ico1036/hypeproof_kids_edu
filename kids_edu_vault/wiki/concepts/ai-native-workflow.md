@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "AI 네이티브 워크플로우"
 status: developing
 tags:
   - concept

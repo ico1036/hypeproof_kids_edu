@@ -1,3 +1,19 @@
+---
+type: deliverable
+title: "SK바이오팜 임직원 가족 AI 게임 창작 워크숍 내부 설계안 v1"
+created: 2026-06-11
+updated: 2026-08-05
+status: draft
+tags:
+  - deliverable/design
+  - project/sk-biopharma
+  - internal-only
+related:
+  - "[[sk-biopharma-pilot]]"
+  - "[[sk-biopharma]]"
+  - "[[seven-ai-native-assets-sk-strategy]]"
+---
+
 # SK바이오팜 임직원 가족 AI 게임 창작 워크숍 — 내부 설계안 v1
 
 > 내부 문서. 고객 노출 금지 항목: 7 asset 명칭, HypeProof Essence, 내부 매핑 표.

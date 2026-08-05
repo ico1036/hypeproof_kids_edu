@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "TJ"
 status: active
 role: "Video Production Lead"
 org: "HypeProof Lab"

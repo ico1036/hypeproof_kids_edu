@@ -1,5 +1,6 @@
 ---
 type: meeting
+title: "2026-06-29 Weekly on HypeProof"
 status: done
 date: 2026-06-29
 attendees:

@@ -12,8 +12,8 @@ related:
   - "[[sk-biopharma-pilot]]"
   - "[[sk-biopharma-bitree-final-quotation-20260526]]"
   - "[[hypeproof-studio]]"
-  - "[[2026-05-12-sk-bio…ting]]"
-  - "[[2026-05-14-sk-bio…owup]]"
+  - "[[2026-05-12-sk-biopharma-meeting]]"
+  - "[[2026-05-14-sk-biopharma-followup]]"
 ---
 
 # 7 AI Native Assets — SK바이오팜 전략 업데이트

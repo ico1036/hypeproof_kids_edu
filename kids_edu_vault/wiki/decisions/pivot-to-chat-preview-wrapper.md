@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "Pivot: code-server+cline → Chat+Preview 래퍼"
 status: proposed
 priority: 1
 date: 2026-04-12

@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "펀더멘탈 팀 · 콘텐츠 팀"
 status: mature
 tags:
   - concept

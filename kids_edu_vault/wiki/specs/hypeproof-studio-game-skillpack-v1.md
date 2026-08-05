@@ -21,7 +21,7 @@ related:
 
 ## 0. 기준: 봉호 커리큘럼 구현
 
-이 스킬팩의 목적은 Studio 자체를 앞세우는 것이 아니다. [[curriculum-core]]와 [[specs/skins/kids/skin]]에 있는 봉호 커리큘럼을 소프트웨어 흐름으로 구현하는 것이다.
+이 스킬팩의 목적은 Studio 자체를 앞세우는 것이 아니다. [[curriculum-core]]와 [[specs/skins/kids/skin-kids]]에 있는 봉호 커리큘럼을 소프트웨어 흐름으로 구현하는 것이다.
 
 따라서 모든 기능은 아래 순서를 강제해야 한다.
 

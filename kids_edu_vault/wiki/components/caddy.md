@@ -1,5 +1,6 @@
 ---
 type: component
+title: "Caddy"
 status: active
 stack_layer: infra
 version: "2.x"

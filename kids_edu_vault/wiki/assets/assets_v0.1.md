@@ -88,7 +88,7 @@ tags:
 
 ## 적용 현황 (vault 내 참조)
 
-- [[치과의사-curriculum-v1]] — 스테이션 2(역목표), 스테이션 4(잇기 가설) 적용
+- [[dental-doctor-curriculum-v1]] — 스테이션 2(역목표), 스테이션 4(잇기 가설) 적용
 - [[curriculum-v2-lesson-wow-impact]] — 블록 1(원칙 10·4), 블록 3(원칙 3·11), 블록 5(원칙 13·15)
 - [[curriculum-submission-v2]] — 블록별 원칙 매핑 (역목표·만족 유예·언러닝·소격)
 - [[curriculum-core]] — 코어 학습 메커니즘의 소스 (예정)

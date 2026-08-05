@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "커뮤니케이션 툴: 디스코드"
 status: active
 priority: 3
 date: 2026-01-05

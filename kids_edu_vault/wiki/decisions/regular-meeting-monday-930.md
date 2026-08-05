@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "매주 월요일 21:30 KST 온라인 정기 미팅"
 status: active
 priority: 3
 date: 2026-01-12

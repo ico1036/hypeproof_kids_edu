@@ -1,5 +1,6 @@
 ---
 type: source
+title: "Legal Professional Channel Meeting 2026-07-11"
 status: summarized
 source_type: telegram_message
 source_date: 2026-07-11

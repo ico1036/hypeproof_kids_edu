@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "JeHyeong"
 status: active
 role: "Web Infrastructure / On-site Tech Support"
 org: "HypeProof Lab"

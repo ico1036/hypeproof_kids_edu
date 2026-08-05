@@ -1,5 +1,6 @@
 ---
 type: component
+title: "Cline (VS Code Extension)"
 status: active
 stack_layer: ai
 version: "latest"

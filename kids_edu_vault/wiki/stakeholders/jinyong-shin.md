@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "신진용 (JY)"
 status: active
 role: "SW Engineer / Pilot Env Owner"
 org: "HypeProof Lab (본업: 리멤버)"

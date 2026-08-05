@@ -5,7 +5,7 @@ title: "진행자 스크립트 — 치과의사 워크샵 v3"
 created: 2026-05-05
 updated: 2026-05-05
 author: HypeProof Lab
-curriculum_ref: "[[치과의사-curriculum-v3]]"
+curriculum_ref: "[[dental-doctor-curriculum-v3]]"
 tags:
   - deliverable
   - script
@@ -227,6 +227,6 @@ tags:
 
 ## 관련
 
-- [[치과의사-curriculum-v3]]
-- [[치과의사-curriculum-v1]]
-- [[치과의사-curriculum-v2]]
+- [[dental-doctor-curriculum-v3]]
+- [[dental-doctor-curriculum-v1]]
+- [[dental-doctor-curriculum-v2]]

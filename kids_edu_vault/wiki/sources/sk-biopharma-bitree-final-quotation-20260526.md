@@ -10,8 +10,8 @@ tags:
 status: ingested
 related:
   - "[[sk-biopharma-pilot]]"
-  - "[[2026-05-12-sk-bio…ting]]"
-  - "[[2026-05-14-sk-bio…owup]]"
+  - "[[2026-05-12-sk-biopharma-meeting]]"
+  - "[[2026-05-14-sk-biopharma-followup]]"
   - "[[bitree]]"
   - "[[hypeproof-studio]]"
 sources:

@@ -1,5 +1,6 @@
 ---
 type: concept
+title: "Mission Driven"
 status: mature
 tags:
   - concept

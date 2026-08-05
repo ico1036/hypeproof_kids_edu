@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "게임 스타터 템플릿 + AI 튜터 지침 탑재"
 status: delivered
 priority: 3
 owner: "[[jinyong-shin]]"

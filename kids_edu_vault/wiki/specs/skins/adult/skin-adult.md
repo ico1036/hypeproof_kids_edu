@@ -172,5 +172,5 @@ source_ref: "specs/track-b/"
 
 - `specs/track-b/` — 치과의사 케이스 원본 (v1·v2·v3 히스토리 보존)
 - [[curriculum-core]] — 코어 흐름
-- [[치과의사-curriculum-v3]] — 치과 케이스 최신 버전
+- [[dental-doctor-curriculum-v3]] — 치과 케이스 최신 버전
 - `validation/track-b/` — 5/26 파일럿 후 적재 예정

@@ -1,5 +1,6 @@
 ---
 type: deliverable
+title: "운영자 가이드 문서 (KR3)"
 status: delivered
 priority: 1
 owner: "[[jinyong-shin]]"

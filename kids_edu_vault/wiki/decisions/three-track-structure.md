@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "3-트랙 교육 구조 채택"
 status: superseded
 superseded_by: "[[one-track-multi-skin]]"
 priority: 1

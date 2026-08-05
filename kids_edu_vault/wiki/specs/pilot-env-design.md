@@ -1,5 +1,6 @@
 ---
 type: spec
+title: "Pilot 실행환경 설계"
 status: draft
 owner: "[[jinyong-shin]]"
 target_date: 2026-05-05

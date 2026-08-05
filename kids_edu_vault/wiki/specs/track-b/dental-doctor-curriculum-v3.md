@@ -197,6 +197,6 @@ tags:
 
 ## 관련
 
-- [[치과의사-curriculum-v1]]
-- [[치과의사-curriculum-v2]]
+- [[dental-doctor-curriculum-v1]]
+- [[dental-doctor-curriculum-v2]]
 - [[three-track-structure]] — Track B (성인)

@@ -13,9 +13,9 @@ tags:
 
 ## 커리큘럼 파일
 - [[legal-divorce-brief-prep-consulting]] — 변호사 전문직 채널: 이혼·가사 준비서면/GEO 니치 컨설팅 가설 (draft)
-- [[치과의사-curriculum-v1]] — 치과의사 커리큘럼 v1 (archive)
-- [[치과의사-curriculum-v2]] — 치과의사 커리큘럼 v2 (archive)
-- [[치과의사-curriculum-v3]] — 치과의사 커리큘럼 v3 (active)
+- [[dental-doctor-curriculum-v1]] — 치과의사 커리큘럼 v1 (archive)
+- [[dental-doctor-curriculum-v2]] — 치과의사 커리큘럼 v2 (archive)
+- [[dental-doctor-curriculum-v3]] — 치과의사 커리큘럼 v3 (active)
 - [[facilitator-script-dental-v3]] — 치과 테마 퍼실리테이터 스크립트 v3
 - [[dental-supersearch-curriculum-v4]] — 치과 지식 슈퍼서치엔진 해커톤 v4 (draft)
 - [[dental-supersearch-engine-workshop-v2]] — 슈퍼서치엔진 워크샵 HTML 제안서/목업 (draft)

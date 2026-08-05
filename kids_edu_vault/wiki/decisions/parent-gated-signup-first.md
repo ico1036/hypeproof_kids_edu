@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "Auth: 부모 이메일 가입 우선, Google OAuth는 보조"
 status: proposed
 priority: 1
 date: 2026-04-12

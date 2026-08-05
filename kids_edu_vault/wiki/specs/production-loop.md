@@ -1,5 +1,6 @@
 ---
 type: spec
+title: "커리큘럼 제작 루프 (Production Loop v1)"
 status: active
 owner: "봉호 태"
 target_date: 2026-06-01

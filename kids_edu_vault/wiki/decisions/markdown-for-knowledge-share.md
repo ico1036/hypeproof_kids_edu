@@ -1,5 +1,6 @@
 ---
 type: decision
+title: "지식 공유는 Markdown / PDF"
 status: active
 priority: 2
 date: 2026-01-19

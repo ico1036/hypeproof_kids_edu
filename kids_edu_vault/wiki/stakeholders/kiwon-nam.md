@@ -1,5 +1,6 @@
 ---
 type: stakeholder
+title: "Kiwon Nam"
 status: active
 role: "Marketing & Strategy"
 org: "HypeProof Lab"

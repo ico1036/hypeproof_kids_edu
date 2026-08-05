@@ -12,7 +12,7 @@ tags:
 
 # 보아치과 5/26 미팅 브리핑
 
-관련: [[boa-dental]] · [[park-junghyun]] · [[boa-dental-demand-validation]] · [[치과의사-curriculum-v1]] · [[dental-supersearch-curriculum-v4]] · [[sixteen-essence]]
+관련: [[boa-dental]] · [[park-junghyun]] · [[boa-dental-demand-validation]] · [[dental-doctor-curriculum-v1]] · [[dental-supersearch-curriculum-v4]] · [[sixteen-essence]]
 
 ## 1) 보아치과 박정현 원장님 프로필 & 예상 니즈
 
