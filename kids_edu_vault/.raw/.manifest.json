@@ -97,6 +97,187 @@
         "wiki/log.md",
         "wiki/hot.md"
       ]
+    },
+    ".raw/articles/7assets-measurement-review-original-20260523.html": {
+      "hash": "4955cd512fd3c21ce4aa6be0708ed8f18f7aad0d97168f47915354002631aefe",
+      "ingested_at": "2026-06-01",
+      "pages_created": [
+        "wiki/sources/7assets-measurement-review-original-20260523.md",
+        "wiki/concepts/seven-ai-native-assets-original.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/seven-ai-native-assets-sk-strategy.md",
+        "wiki/deliverables/sk-biopharma-pilot.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/articles/dental-homepage-seminar-feedback-20260607.html": {
+      "hash": "a81160c9edfac5bc1b118fc3c186db847e0aebd38ee154191b96ffd4bf5f6cdd",
+      "ingested_at": "2026-06-07",
+      "pages_created": [
+        "wiki/sources/dental-homepage-seminar-feedback-20260607.md",
+        "wiki/specs/track-b/dental-homepage-seminar-v1.md",
+        "wiki/stakeholders/boa-dental.md",
+        "wiki/stakeholders/park-junghyun.md",
+        "wiki/stakeholders/lee-jaewon.md",
+        "wiki/components/gabia.md",
+        "wiki/components/cafe24.md",
+        "wiki/components/claude-code.md",
+        "wiki/components/vercel.md",
+        "wiki/components/cloudflare.md",
+        "wiki/components/hypeproof-ai-xyz.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/specs/track-b/_index.md",
+        "wiki/stakeholders/_index.md",
+        "wiki/components/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/sources/dental-homepage-seminar-feedback-20260607.md",
+        "wiki/specs/track-b/dental-homepage-seminar-v1.md"
+      ]
+    },
+    ".raw/images/sk-biopharma-schedule-survey-20260608.md": {
+      "hash": "f0f609f36009d70ef735ebb96df12cd058607e1eb33f3c6f2c13757aeeef4ad8",
+      "ingested_at": "2026-06-08",
+      "pages_created": [
+        "wiki/sources/sk-biopharma-schedule-survey-20260608.md",
+        "wiki/stakeholders/kim-jinhyuk.md"
+      ],
+      "pages_updated": [
+        "wiki/deliverables/sk-biopharma-pilot.md",
+        "wiki/stakeholders/sk-biopharma.md",
+        "wiki/sources/_index.md",
+        "wiki/stakeholders/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.pdf": {
+      "hash": "9d5b6bd35bcf4660d9e3ef495d5015deb7aa4a2618864815928cab69510854b3",
+      "html_hash": "8719593d8b9886e87f9d124e1293a6405467c86c18edb9590b220922306f37a6",
+      "ingested_at": "2026-06-27",
+      "related_raw": [
+        ".raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.html"
+      ],
+      "pages_created": [
+        "wiki/sources/boa-dental-ai-promo-race-poster-v1-20260627.md",
+        "wiki/deliverables/boa-dental-ai-promo-race-poster-v1.md"
+      ],
+      "pages_updated": [
+        "wiki/stakeholders/boa-dental.md",
+        "wiki/sources/_index.md",
+        "wiki/deliverables/_index.md",
+        "wiki/specs/track-b/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/meeting_notes/2026-06-29-weekly-on-hypeproof-gemini.md": {
+      "hash": "150b82280867d34cec1756e8faa02aaa464bb87f97e51f51968c9c878a1f7a8e",
+      "ingested_at": "2026-06-30",
+      "pages_created": [
+        "wiki/sources/weekly-on-hypeproof-20260629-source.md",
+        "wiki/comms/2026-06-29-weekly-on-hypeproof.md"
+      ],
+      "pages_updated": [
+        "wiki/stakeholders/boa-dental.md",
+        "wiki/specs/track-b/dental-website-copyclone-v3.md",
+        "wiki/concepts/hypeproof-studio.md",
+        "wiki/sources/_index.md",
+        "wiki/comms/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/telegram/2026-06-30-boa-dental-landing-message.md": {
+      "hash": "9acbe60f8dfa99222e09a8d9b01d4afb6d5ac7571befb234788555d7606b4558",
+      "ingested_at": "2026-06-30",
+      "pages_created": [
+        "wiki/sources/boa-dental-landing-message-20260630-source.md"
+      ],
+      "pages_updated": [
+        "wiki/specs/track-b/dental-website-copyclone-v3.md",
+        "wiki/sources/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ]
+    },
+    ".raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf": {
+      "hash": "4076d020520e3a61d333cc81821e6db6",
+      "ingested_at": "2026-07-06",
+      "pages_created": [
+        "wiki/sources/boa-dental-ai-homepage-cuesheet-20260706.md",
+        "wiki/specs/track-b/boa-dental-ai-homepage-cuesheet-20260706-spec.md"
+      ],
+      "pages_updated": [
+        "wiki/specs/track-b/dental-website-copyclone-v3.md",
+        "wiki/stakeholders/boa-dental.md",
+        "wiki/concepts/hypeproof-studio.md",
+        "wiki/sources/_index.md",
+        "wiki/specs/track-b/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ],
+      "note": "보아치과 AI 홈페이지 실습 큐시트 2026-07-06. PDF가 대표 원본이며 HTML/TXT는 동일 내용의 companion source."
+    },
+    ".raw/documents/boa-dental-ai-homepage-cuesheet-20260706.html": {
+      "hash": "4d5bcf74e93f3656d1552ec38a69d8f0",
+      "ingested_at": "2026-07-06",
+      "pages_created": [],
+      "pages_updated": [],
+      "note": "Companion source for .raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf"
+    },
+    ".raw/documents/boa-dental-ai-homepage-cuesheet-20260706.txt": {
+      "hash": "ff1b9f0aa1fa2c3ef94d9a482b0d189d",
+      "ingested_at": "2026-07-06",
+      "pages_created": [],
+      "pages_updated": [],
+      "note": "Companion source for .raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf"
+    },
+    ".raw/images/sk-biopharma-bitree-final-quotation-20260526.md": {
+      "hash": "76624fd5ab14af3fafe7ab49c7054281",
+      "ingested_at": "2026-06-01",
+      "pages_created": [
+        "wiki/sources/sk-biopharma-bitree-final-quotation-20260526.md"
+      ],
+      "pages_updated": [
+        "wiki/deliverables/sk-biopharma-pilot.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/telegram/2026-07-11-legal-professional-channel-meeting.md": {
+      "hash": "79e1340a643532d7507c3e6940b3f457dd69b2bcf98a35fb5e26a74348063e65",
+      "hash_algorithm": "sha256",
+      "ingested_at": "2026-07-11",
+      "pages_created": [
+        "wiki/sources/legal-professional-channel-meeting-20260711-source.md",
+        "wiki/comms/2026-07-11-legal-professional-channel-meeting.md",
+        "wiki/concepts/legal-brief-prep-loop.md",
+        "wiki/specs/track-b/legal-divorce-brief-prep-consulting.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/hypeproof-business-strategy.md",
+        "wiki/sources/_index.md",
+        "wiki/comms/_index.md",
+        "wiki/concepts/_index.md",
+        "wiki/specs/track-b/_index.md",
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md"
+      ],
+      "note": "Telegram ingest request from Jiwoong Kim: legal professional channel meeting notes; GEO and divorce-dismissal niche left as confirmation-needed."
     }
   }
 }

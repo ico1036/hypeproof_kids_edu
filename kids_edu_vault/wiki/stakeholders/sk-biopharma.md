@@ -2,7 +2,7 @@
 type: stakeholder
 title: "SK바이오팜"
 created: 2026-05-14
-updated: 2026-05-21
+updated: 2026-06-08
 tags:
   - stakeholder/org
   - stakeholder/sk-biopharma
@@ -26,15 +26,16 @@ SK그룹 계열 제약·바이오 기업. HypeProof Lab의 첫 번째 기업 임
 ## 핵심 담당자
 
 - [[oh-sungeun]] — 경영지원팀, 내부 보고·수요조사 담당
+- [[kim-jinhyuk]] — 수석매니저, 2026-06-08 내부 설문 결과와 일정/견적 요청 전달
 
 ## 교육 프로그램
 
-- [[sk-biopharma-pilot]] — 2026년 6~7월 토요일 Biweekly
+- [[sk-biopharma-pilot]]
+- [[sk-biopharma-schedule-survey-20260608]] — 2026년 7~8월 토요일 2회차 선호
 - 대상: 임직원 가족 (약 15~20가족), 부모-자녀 페어 필수
 - 장소: SK바이오팜 10층 내부 카페
-- 내부 일정: 5월 말 수요조사 완료 → 6월 착수
+- 내부 일정: 2026-06-08 기준 20가족/23자녀 수요 확인, 7월 또는 8월 토요일 2회차 선호
 - dry-run: 2026-05-28~30 (운영진 자녀 대상) — **Go/No-go 게이트**
-- 1회차: 2026년 6월 2~3주차
 
 ## 제약 조건
 

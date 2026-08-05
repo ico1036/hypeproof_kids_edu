@@ -2,7 +2,7 @@
 type: deliverable
 title: "SK바이오팜 임직원 가족 AI 교육 파일럿"
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-06-08
 tags:
   - deliverable/pilot
   - stakeholder/sk-biopharma
@@ -28,6 +28,30 @@ HypeProof Lab의 **첫 번째 기업 임직원 가족 교육 프로덕트 파일
 
 ---
 
+
+## 2026-06-08 내부 설문 기반 일정/대상 업데이트
+
+Source: [[sk-biopharma-schedule-survey-20260608]]
+
+| 항목 | 내용 |
+|---|---|
+| 확정 전 수요 | 20가족 / 자녀 23명 (변경 가능) |
+| 학년 분포 | 6학년 7명, 5학년 6명, 4학년 4명, 3학년 6명 |
+| 분반안 | A: 5·6학년 13명 / B: 3·4학년 10명 |
+| 선호 일정 | 2026년 7월 또는 8월 중 토요일 (20명 중 17명 선호) |
+| 회차 | 2회차, 1회당 10가족 기준 |
+| 예시 일정 | 7월 진행 시 7/11(토), 7/18(토) 가능 여부 확인 요청 |
+
+### 즉시 회신 필요
+
+1. 3·4학년 / 5·6학년 분반안에 대한 의견
+2. 1st 13명, 2nd 10명 기준 2회차 견적
+3. 구성원 공유용 강의 커리큘럼 세부 자료
+4. 7월 또는 8월 중 가능한 2회차 일정
+
+> [!key-insight] 파일럿이 실제 일정 조율 단계로 이동
+> 기존 15~20가족, 6~7월 토요일 biweekly 가정에서 20가족/23자녀/2회차/7~8월 토요일 선호로 구체화되었다. 견적·커리큘럼 자료·가능 일정 회신이 다음 병목이다.
+
 ## 마일스톤
 
 | 기한 | 항목 | 상태 |
@@ -40,6 +64,10 @@ HypeProof Lab의 **첫 번째 기업 임직원 가족 교육 프로덕트 파일
 
 ---
 
+## 커리큘럼 상세 v1
+
+- [[sk-biopharma-curriculum-detail-v1]] — 20가족/23자녀, A반 5·6학년 13명/B반 3·4학년 10명 기준 4시간 상세 운영안. 7 AI Native Assets 중심으로 설계.
+
 ## 준비 Action Items
 
 | 항목 | 기한 | 담당 |
@@ -47,7 +75,7 @@ HypeProof Lab의 **첫 번째 기업 임직원 가족 교육 프로덕트 파일
 | 수요조사용 제안서 작성 | 5월 중순 | HypeProof Lab |
 | 4시간 클래스 구성안 확정 | 5월 중순 | HypeProof Lab |
 | 학년별 게임 제작 방향성 정의 | 5월 중순 | HypeProof Lab |
-| [[sixteen-essence]]와 게임 제작 과정 매핑 | 5월 중순 | HypeProof Lab + [[bitree]] |
+| 7 AI Native Assets와 게임 제작 과정 매핑 | 5월 중순 | HypeProof Lab + [[bitree]] |
 | 시스템 요구사항 문서 작성 | 5월 중순 | HypeProof Lab |
 | AI 사용 비용 산정 | 5월 중순 | HypeProof Lab |
 | 강사비·판매가 정책 정리 | 5월 중순 | HypeProof Lab + [[bitree]] |
@@ -65,6 +93,22 @@ HypeProof Lab의 **첫 번째 기업 임직원 가족 교육 프로덕트 파일
 
 ---
 
+
+## 최종 견적서 업데이트 (2026-05-26)
+
+Source: [[sk-biopharma-bitree-final-quotation-20260526]]
+
+| 항목 | 내용 |
+|---|---:|
+| 기준 | 4시간 / 10가족 / 1회차 |
+| 공급가액 | 9,200,000원 |
+| VAT 포함 총액 | 10,120,000원 |
+| VAT 제외 가족당 단가 | 920,000원 |
+| VAT 포함 가족당 단가 | 1,012,000원 |
+
+> [!contradiction] 기존 파일럿 검토가와의 차이
+> 기존 기획 문서의 가족당 40~60만원 검토 구간보다 최종 견적은 높다. 다만 견적서는 부모+자녀 페어 10가족 기준 standard market guide 120만원/가족에서 회차당 280만원 할인한 프리미엄 가격으로 포지셔닝한다.
+
 ## 확장 의미
 
 이 파일럿이 성공하면:
@@ -76,10 +120,23 @@ HypeProof Lab의 **첫 번째 기업 임직원 가족 교육 프로덕트 파일
 
 ---
 
+
+## 7 AI Native Assets 전략 업데이트 (2026-06-01)
+
+Source: [[seven-ai-native-assets-sk-strategy]], [[seven-ai-native-assets-original]]
+
+SK바이오팜 제안서는 `7 AI Native Assets`를 새 커리큘럼 기준으로 삼는다. 게임을 가르치는 것이 목적이 아니라, 게임 제작 과정을 통해 7가지 에셋을 체득하게 하는 것이 목적이다.
+
+- 단일 커리큘럼 기준: 7 AI Native Assets
+- 게임의 역할: 학습 목적이 아니라 7 Assets를 훈련하는 프로젝트 매개
+- 부모 리포트: 7 Assets별 행동 증거와 다음 프로젝트 제안
+- 가격 방어: 10가족 한정 premium family AI lab + HypeProof Studio + 7 Assets 성장 리포트
+
+핵심 수정: “Assistant Instructor”는 가격 방어를 위해 `AI Builder Coach` 또는 `Family Project Coach`로 명칭을 바꾼다.
+
 ## 관련 페이지
 
-- [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]]
+- [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]] · [[kim-jinhyuk]]
 - [[hypeproof-studio]] · [[adr-hypeproof-studio-v01]]
-- [[sixteen-essence]]
 - [[2026-05-12-sk-biopharma-meeting]]
 - [[2026-05-14-sk-biopharma-followup]]

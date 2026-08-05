@@ -1,0 +1,169 @@
+26. 7. 6. 오전 1:10
+
+보아치과 AI 홈페이지 실습 큐시트
+
+HYPEPROOF LAB WORKSHOP
+
+보아치과 AI 홈페이지 실습 큐시트
+
+19:00-21:00 · 홈페이지 제작, 배포, GitHub 저장, AI agent 인수인계까지
+
+운영 방식
+수강생
+치과원장 11명
+운영진
+메인강사 1명, 보조강사 5명
+지원 배치
+보조강사 1명당 수강생 2명 담당, 11번째 수강생은 3인 포드 배치
+
+메인강사는 보아치과 홈페이지를 만든다고 가정하고 스크린을 띄워 단계별로 진행한다. 수강생은 같은 단계
+에서 각자 병원 홈페이지를 만들고, 보조강사는 중간중간 막히는 부분을 현장에서 지원한다.
+
+최종 결과물
+1. 홈페이지
+
+본인 치과용 최종 홈페이지
+
+2. 배포 URL
+Cloudflare 또는 GitHub Pages URL
+3. GitHub 저장소
+
+홈페이지 파일과 작업 히스토리 저장
+file:///Users/ryan/.openclaw/workspace/outputs/boa-dental-cuesheet/boa-dental-ai-cuesheet.html
+
+1/5
+
+26. 7. 6. 오전 1:10
+
+보아치과 AI 홈페이지 실습 큐시트
+
+4. agent.md
+다음 AI agent에게 넘길 인수인계 문서
+
+사전 준비물
+1. BOA 치과 완성 데모
+
+완성 홈페이지와 제작 채팅 로그
+
+2. HypeProof Studio 등록 플로우
+설치, 학생 등록, 토큰 발급, 토큰 입력, 채팅 테스트 5분 컷
+3. 배포 스킬
+Cloudflare, GitHub Pages
+4. 디자인 스킬
+
+레이아웃과 시각 품질 자동 정리
+
+5. Playwright MCP
+
+화면 검사와 루브릭 확인
+
+진행 큐시트
+
+file:///Users/ryan/.openclaw/workspace/outputs/boa-dental-cuesheet/boa-dental-ai-cuesheet.html
+
+2/5
+
+26. 7. 6. 오전 1:10
+
+보아치과 AI 홈페이지 실습 큐시트
+
+19:00-19:10
+완성 데모
+BOA 치과 완성 홈페이지 시연
+BOA 치과 제작 채팅 로그 시연
+오늘 만들 결과물 안내: 홈페이지, 배포 URL, GitHub 저장소, agent.md
+전체 흐름 안내: URL 초안 → 병원 컨텍스트 → 큐레이션 → 루브릭 → 될 때까지 자동 개선 → 최종안
+고정
+
+19:10-19:30
+세팅
+HypeProof Studio 설치
+
+학생 등록
+토큰 입력
+채팅 테스트
+GitHub 가입
+GitHub 소개: 코드 저장, 홈페이지 배포, AI agent 인수인계
+2인 1조 배치
+
+19:30-19:45
+
+Reference First
+
+보아치과 홈페이지 제작 화면 기준으로 실습 시작
+참고 홈페이지 URL만 넣고 1차 초안 생성
+참고 URL이 없는 경우 BOA 치과 주소 사용
+본인 치과 홈페이지 1차 초안 생성
+
+URL만 줘도 AI는 빠르게 초안을 만든다. 결과는 참고 사이트의 분위기를 따라가지만, 우리 병원의 맥
+락은 아직 부족하다.
+file:///Users/ryan/.openclaw/workspace/outputs/boa-dental-cuesheet/boa-dental-ai-cuesheet.html
+
+3/5
+
+26. 7. 6. 오전 1:10
+
+보아치과 AI 홈페이지 실습 큐시트
+
+19:45-20:05
+
+Context Engineering
+
+1차 초안에 병원 컨텍스트 추가
+URL만 넣은 결과와 컨텍스트를 자세히 넣은 결과 비교
+본인 치과 컨텍스트 입력: 어필 포인트, 밀고 싶은 진료, 주요 환자층, 병원의 톤, 첫 화면 인상, 빼고 싶
+은 표현
+2차 초안 생성
+보조강사가 좋은 컨텍스트 사례 2-3개 수집
+best-case 큐레이션: *봉호님 작성 예정
+
+대충 URL만 넣었을 때와 병원 컨텍스트를 자세히 알려줬을 때의 결과 차이를 체감한다.
+
+20:05-20:35
+
+Loop Engineering
+
+홈페이지 평가 루브릭 작성
+Playwright MCP로 화면 검사
+루브릭 미달 항목 확인
+AI에게 수정 지시
+다시 검사
+루브릭을 만족할 때까지 검사와 수정을 반복
+보조강사가 좋은 루브릭/자동 개선 사례 2-3개 수집
+best-case 큐레이션: *봉호님 작성 예정
+
+루브릭을 정의하고, 그 기준을 만족할 때까지 AI가 계속 검사하고 고치게 한다. 핵심은 될 때까지 반복
+시키는 것이다.
+
+file:///Users/ryan/.openclaw/workspace/outputs/boa-dental-cuesheet/boa-dental-ai-cuesheet.html
+
+4/5
+
+26. 7. 6. 오전 1:10
+
+보아치과 AI 홈페이지 실습 큐시트
+
+20:35-20:58
+최종안 고정
+
+홈페이지 최종안 저장
+배포 URL 생성
+GitHub 저장소에 지금까지 작업한 내용 업로드
+agent.md 인수인계 문서 업로드
+
+20:58-21:00
+결과물 확인
+
+홈페이지 확인
+배포 URL 확인
+GitHub 저장소 확인
+agent.md 확인
+
+오늘 가져가는 것은 홈페이지, 배포 URL, GitHub 저장소, agent.md 인수인계 문서입니다.
+이 문서가 있으면 다른 컴퓨터에서 다른 AI agent를 써도 오늘 작업을 이어받을 수 있습니다.
+
+file:///Users/ryan/.openclaw/workspace/outputs/boa-dental-cuesheet/boa-dental-ai-cuesheet.html
+
+5/5
+
+

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 AI Native Assets — 측정 구조 검토</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #181c27;
+      --surface2: #1e2336;
+      --border: #2a3050;
+      --accent: #4f7cff;
+      --accent2: #7c5fff;
+      --green: #2ecc8a;
+      --yellow: #f5c842;
+      --red: #ff5b5b;
+      --text: #e8eaf2;
+      --text-muted: #7c84a0;
+      --text-dim: #4a5168;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+      margin-bottom: 48px;
+    }
+    .header .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(79,124,255,0.12);
+      border: 1px solid rgba(79,124,255,0.25);
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .header .subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    .header .meta {
+      margin-top: 16px;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 56px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    /* Callout */
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .callout.warn {
+      border-left-color: var(--yellow);
+    }
+    .callout.danger {
+      border-left-color: var(--red);
+    }
+    .callout p {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--text);
+    }
+    .callout .callout-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .callout.warn .callout-title { color: var(--yellow); }
+    .callout.danger .callout-title { color: var(--red); }
+
+    /* Analogy block */
+    .analogy {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+    .analogy strong {
+      color: var(--text);
+      font-style: normal;
+    }
+
+    /* Asset validity table */
+    .asset-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin: 20px 0;
+    }
+    .asset-row {
+      display: grid;
+      grid-template-columns: 180px 110px 1fr;
+      gap: 0;
+      align-items: stretch;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .asset-row.header-row {
+      background: var(--surface2);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+    }
+    .asset-col {
+      padding: 12px 16px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid var(--border);
+    }
+    .asset-col:last-child {
+      border-right: none;
+    }
+    .asset-name {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .asset-name .ko {
+      display: block;
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .validity-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 4px;
+    }
+    .v-low {
+      background: rgba(255,91,91,0.12);
+      color: var(--red);
+      border: 1px solid rgba(255,91,91,0.25);
+    }
+    .v-partial {
+      background: rgba(245,200,66,0.12);
+      color: var(--yellow);
+      border: 1px solid rgba(245,200,66,0.25);
+    }
+    .v-ok {
+      background: rgba(46,204,138,0.12);
+      color: var(--green);
+      border: 1px solid rgba(46,204,138,0.25);
+    }
+    .asset-reason {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    /* Signal table */
+    .signal-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin: 20px 0;
+    }
+    .signal-row {
+      display: grid;
+      grid-template-columns: 200px 1fr 160px;
+      gap: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .signal-row.header-row {
+      background: var(--surface2);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+    }
+    .signal-col {
+      padding: 12px 16px;
+      font-size: 13px;
+      border-right: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .signal-col:last-child {
+      border-right: none;
+    }
+    .signal-name {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .signal-detail {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .signal-asset-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .asset-tag {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: rgba(79,124,255,0.1);
+      color: var(--accent);
+      border: 1px solid rgba(79,124,255,0.2);
+    }
+
+    /* Two-layer model */
+    .layer-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+    @media (max-width: 640px) {
+      .layer-split { grid-template-columns: 1fr; }
+      .asset-row { grid-template-columns: 1fr; }
+      .signal-row { grid-template-columns: 1fr; }
+    }
+    .layer-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .layer-card.layer-a {
+      border-top: 3px solid var(--yellow);
+    }
+    .layer-card.layer-b {
+      border-top: 3px solid var(--green);
+    }
+    .layer-card h3 {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .layer-card .layer-role {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 14px;
+    }
+    .layer-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .layer-card ul li {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding-left: 16px;
+      position: relative;
+    }
+    .layer-card ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--text-dim);
+    }
+    .layer-card .layer-verdict {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .layer-a .layer-verdict { color: var(--yellow); }
+    .layer-b .layer-verdict { color: var(--green); }
+
+    /* Gap highlight */
+    .gap-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .gap-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,91,91,0.3);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .gap-card h3 {
+      color: var(--red);
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .gap-card .current {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+      padding: 8px 10px;
+      background: rgba(255,91,91,0.06);
+      border-radius: 4px;
+      border-left: 2px solid rgba(255,91,91,0.3);
+    }
+    .gap-card .better {
+      font-size: 12px;
+      color: var(--green);
+      padding: 8px 10px;
+      background: rgba(46,204,138,0.06);
+      border-radius: 4px;
+      border-left: 2px solid rgba(46,204,138,0.3);
+    }
+    .gap-card .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .gap-card .label.bad { color: var(--red); }
+    .gap-card .label.good { color: var(--green); }
+
+    /* Flow diagram */
+    .flow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .flow-node {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .flow-node.highlight {
+      border-color: var(--accent);
+      background: rgba(79,124,255,0.08);
+    }
+    .flow-arrow {
+      color: var(--text-dim);
+      font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-dim);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-dim);
+      display: inline-block;
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="tag">검토 문서</div>
+    <h1>7 AI Native Assets<br>측정 구조 검토</h1>
+    <p class="subtitle">채팅 Q&amp;A 방식의 한계와 과정 신호 기반 측정 가능성 분석</p>
+    <div class="meta">boa-search-skill-creator<span class="dot"></span>2026-05-23<span class="dot"></span>보아치과 AI 온보딩 검토</div>
+  </div>
+
+
+  <!-- 1. 핵심 문제 -->
+  <section>
+    <div class="section-label">01 — 핵심 문제</div>
+    <h2>질문은 자산을 가르치지, 측정하지 않는다</h2>
+
+    <p>현재 Phase 1 Q&amp;A는 7자산 각각에 대해 질문을 던지고 답을 받는 방식이다. 이 방식에는 구조적 한계가 있다.</p>
+
+    <div class="analogy">
+      <strong>"좋은 검색 결과는 어떤 모양인가요?"</strong>라고 물어서 나온 답은<br>
+      Taste를 <strong>가르친 것</strong>이지, Taste를 <strong>측정한 것</strong>이 아니다.<br><br>
+      수영을 가르치면서 <strong>"물에서 어떻게 하면 뜰 것 같아요?"</strong>라고 묻고<br>
+      그 답을 보고 수영 실력을 평가하는 것과 같다.
+    </div>
+
+    <div class="callout warn">
+      <div class="callout-title">핵심 구분</div>
+      <p><strong>선언적 지식(Declarative)</strong> — 어떻게 해야 하는지 말할 수 있는가<br>
+      <strong>절차적 역량(Procedural)</strong> — 실제 상황에서 그렇게 하는가<br><br>
+      Q&amp;A는 선언적 지식만 포착한다. 7자산은 절차적 역량이다.</p>
+    </div>
+  </section>
+
+
+  <!-- 2. 자산별 유효성 -->
+  <section>
+    <div class="section-label">02 — 자산별 분석</div>
+    <h2>자산마다 질문 측정의 유효성이 다르다</h2>
+
+    <div class="asset-grid">
+      <div class="asset-row header-row">
+        <div class="asset-col">자산</div>
+        <div class="asset-col">질문 유효성</div>
+        <div class="asset-col">이유</div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Delegation judgment<span class="ko">위임 판단</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-ok">유효</span></div>
+        <div class="asset-col"><span class="asset-reason">경계선을 명시적으로 선언하는 것 자체에 의미가 있음. 단, 압박 상황에서 지키는지는 행동으로만 확인 가능</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Intent clarity<span class="ko">의도 명확성</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-partial">부분적</span></div>
+        <div class="asset-col"><span class="asset-reason">질문이 의도를 유도해서 나온 답이지, 스스로 명확한 의도를 가진다는 증거가 아님. 초기 프롬프트 구조가 더 직접적인 신호</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Context design<span class="ko">컨텍스트 설계</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-partial">부분적</span></div>
+        <div class="asset-col"><span class="asset-reason">설계 방법을 아는 것과 매번 실제로 쓰는 것은 다름. Q&amp;A로는 context.md를 만들게만 할 수 있고, 실제 사용 여부는 별개</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Taste<span class="ko">안목</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-low">낮음</span></div>
+        <div class="asset-col"><span class="asset-reason">좋은 결과의 모양을 말할 수 있는 것과, 실제 나쁜 결과를 받았을 때 알아채고 거부하는 것은 전혀 다름</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Ownership<span class="ko">소유감</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-low">낮음</span></div>
+        <div class="asset-col"><span class="asset-reason">실패 시 어떤 언어를 쓰는지로만 드러남. "AI가 이상했어요" vs "내 프롬프트가 약했어요" — 이건 사후 회고 텍스트에서만 확인 가능</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Verification reflex<span class="ko">검증 반사</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-low">거의 불가</span></div>
+        <div class="asset-col"><span class="asset-reason">reflex(반사)는 정의상 계획이 아닌 자동 행동. "확인하겠다"고 말하는 것과 실제로 확인하는 것은 다름. 행동 관찰만 가능</span></div>
+      </div>
+
+      <div class="asset-row">
+        <div class="asset-col">
+          <div class="asset-name">Iteration reflex<span class="ko">반복 반사</span></div>
+        </div>
+        <div class="asset-col"><span class="validity-badge v-low">거의 불가</span></div>
+        <div class="asset-col"><span class="asset-reason">"V1은 거칠어도 괜찮다는 거 동의해요?"에서 "네"는 아무 정보도 없음. 실제로 몇 번 돌아와서 깎았는지만이 유일한 측정값</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 3. 과정 신호 -->
+  <section>
+    <div class="section-label">03 — 행동 신호</div>
+    <h2>과정에서 읽어낼 수 있는 신호들</h2>
+
+    <p>채팅 메시지 자체뿐 아니라 대화가 진행되는 과정에서 각 자산의 발현 여부를 높은 타당도로 추론할 수 있는 신호들이 있다.</p>
+
+    <div class="signal-grid">
+      <div class="signal-row header-row">
+        <div class="signal-col">신호</div>
+        <div class="signal-col">의미 / 읽는 방법</div>
+        <div class="signal-col">측정 자산</div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">첫 번째 프롬프트 길이</div>
+          <div class="signal-detail">도움 없이 처음 던진 메시지</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          짧음(10자 미만) → 의도·컨텍스트 없음<br>
+          구조적으로 긴 첫 프롬프트 → Context design 내면화<br>
+          단순히 길기만 한 것과 <em>역할+목적+조건이 포함된 것</em>은 구별 필요
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Intent clarity</span>
+            <span class="asset-tag">Context design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">세션 간 프롬프트 길이 변화</div>
+          <div class="signal-detail">V1 → V2 → V3 첫 메시지 비교</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          세션마다 첫 프롬프트가 구체화됨 → Context design 성장<br>
+          점점 간결해짐 → 고급 단계(노이즈 제거) 가능성<br>
+          길이보다 <em>구성 요소의 증가</em>가 더 좋은 지표
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Context design</span>
+            <span class="asset-tag">Iteration reflex</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">같은 목적 내 수정 횟수</div>
+          <div class="signal-detail">하나의 검색 목적에 쓴 메시지 수</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          첫 결과 그대로 사용 → Taste 낮음, Iteration reflex 낮음<br>
+          2회 이상 수정 → Iteration reflex 발현 가능성<br>
+          단순 입력 오류와 <em>의도적 개선</em>은 구별 필요
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Taste</span>
+            <span class="asset-tag">Iteration reflex</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">출처 확인 후속 메시지</div>
+          <div class="signal-detail">결과 받은 직후 "이 출처 믿을 수 있어?" 등</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          결과를 그대로 수용 → Verification reflex 없음<br>
+          결과 받고 출처·연도 확인 질문 → Verification reflex 직접 신호<br>
+          이건 <em>행동 관찰로만 측정 가능</em>한 자산
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Verification reflex</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">세션 복귀 간격 + 지참 내용</div>
+          <div class="signal-detail">Phase 1 후 며칠 만에, 무엇을 들고 돌아왔는가</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          빠른 복귀 + 구체적 개선점 지참 → Iteration reflex 높음<br>
+          오래 안 돌아옴 → Phase 1만 하고 실제 사용 없음<br>
+          돌아왔을 때 "원장님 피드백 받아왔어요" → Ownership 신호
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Iteration reflex</span>
+            <span class="asset-tag">Ownership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">원장님 피드백 분포 추세</div>
+          <div class="signal-detail">세션별 PASS / 더확인 / 위험 비율 변화</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          시간이 지나며 PASS율 상승 → 전반적 성장 신호<br>
+          처음부터 PASS율이 너무 높음 → 너무 쉬운 문제만 선택 (Ownership 낮음)<br>
+          PASS율 변화 없음 → 반복 없이 패턴 고착
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Taste</span>
+            <span class="asset-tag">Ownership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="signal-row">
+        <div class="signal-col">
+          <div class="signal-name">자기 회고 언어 패턴</div>
+          <div class="signal-detail">self_note에서 1인칭 책임 언어 비율</div>
+        </div>
+        <div class="signal-col" style="font-size:13px;color:var(--text-muted);padding:12px 16px;">
+          "AI가 이상했어요" → Ownership 낮음<br>
+          "내 컨텍스트가 약했네요. 다음엔 X를 추가할게요" → Ownership 높음<br>
+          이건 텍스트 분석으로 자동 감지 가능
+        </div>
+        <div class="signal-col">
+          <div class="signal-asset-tags">
+            <span class="asset-tag">Ownership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. 두 레이어 -->
+  <section>
+    <div class="section-label">04 — 제안</div>
+    <h2>두 가지 측정 레이어를 분리해야 한다</h2>
+
+    <p>Q&amp;A와 행동 신호는 역할이 다르다. 섞으면 둘 다 제대로 못 한다.</p>
+
+    <div class="layer-split">
+      <div class="layer-card layer-a">
+        <h3>레이어 A — Q&amp;A</h3>
+        <div class="layer-role">교육 + 경계 선언용</div>
+        <ul>
+          <li>Delegation judgment 경계를 명시하게 함</li>
+          <li>Intent / Context의 초기 틀을 잡아줌</li>
+          <li>처음부터 완벽한 것이 아니라 시작점을 만드는 것</li>
+        </ul>
+        <div class="layer-verdict">측정에 쓰지 말 것</div>
+      </div>
+      <div class="layer-card layer-b">
+        <h3>레이어 B — 행동 신호</h3>
+        <div class="layer-role">측정용</div>
+        <ul>
+          <li>자산별 행동 proxy 신호 자동 집계</li>
+          <li>LLM judge는 행동 증거를 보고 판단</li>
+          <li>세션 간 변화 추적으로 성장 측정</li>
+        </ul>
+        <div class="layer-verdict">채점 타당도 훨씬 높음</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">현재 상태</div>
+      <p>Phase 1 Q&amp;A가 교육과 측정을 동시에 하려고 설계되어 있다. 그 결과 교육 효과는 있지만 측정 타당도는 낮다. Phase 2 LLM judge 채점이 행동 기반이긴 하지만, 임직원이 <em>제출한 정보</em>만 보고 판단하므로 실제 행동 전체를 포착하지 못한다.</p>
+    </div>
+
+    <div class="flow">
+      <div class="flow-node">첫 메시지 구조</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node highlight">자동 수집</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">수정 패턴</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node highlight">자동 수집</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">회고 언어</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node highlight">LLM 분석</div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-node">자산 점수</div>
+    </div>
+  </section>
+
+
+  <!-- 5. 가장 큰 갭 -->
+  <section>
+    <div class="section-label">05 — 우선 개선 대상</div>
+    <h2>가장 갭이 큰 두 자산</h2>
+
+    <p>7자산 중 현재 측정 방식이 가장 잘못 설계된 두 자산이다. 두 자산 모두 질문으로는 원천적으로 측정이 안 된다.</p>
+
+    <div class="gap-cards">
+      <div class="gap-card">
+        <h3>Iteration reflex (반복 반사)</h3>
+        <div class="current">
+          <div class="label bad">현재</div>
+          "V1은 거칠어도 괜찮다는 거 동의해요?" → "네"<br>
+          이 답변의 정보량: 0에 가까움
+        </div>
+        <div class="better">
+          <div class="label good">더 나은 측정</div>
+          몇 번 깎으러 돌아왔는가<br>
+          매번 얼마나 구체적인 개선점을 지참했는가<br>
+          세션 간 프롬프트 구성 요소 증가
+        </div>
+      </div>
+
+      <div class="gap-card">
+        <h3>Verification reflex (검증 반사)</h3>
+        <div class="current">
+          <div class="label bad">현재</div>
+          체크리스트를 만들게 함<br>
+          만든 것 ≠ 실제로 쓰는 것
+        </div>
+        <div class="better">
+          <div class="label good">더 나은 측정</div>
+          결과 받은 직후 출처 확인 질문 유무<br>
+          "이 출처 믿을 수 있어?" 패턴 감지<br>
+          검증 없이 넘어간 턴 비율 추적
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 6. 요약 -->
+  <section>
+    <div class="section-label">06 — 요약</div>
+    <h2>한 문장 정리</h2>
+    <div class="callout">
+      <div class="callout-title">핵심 메시지</div>
+      <p>
+        <strong>Q&amp;A는 가르치는 데 쓰고, 측정은 과정 신호에서 해야 한다.</strong><br><br>
+        현재 스킬은 두 역할을 혼재해서 쓰고 있으며, 그 결과 측정 타당도가 낮다.
+        특히 Verification reflex와 Iteration reflex는 질문으로는 원천적으로 측정이 불가능하고,
+        행동 신호(메시지 수, 수정 패턴, 세션 복귀 간격, 회고 언어)만이 유효한 지표가 된다.
+      </p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <span>7 AI Native Assets — 측정 구조 검토</span>
+    <span>보아치과 AI 온보딩<span class="dot"></span>2026-05-23</span>
+  </div>
+
+</div>
+</body>
+</html>

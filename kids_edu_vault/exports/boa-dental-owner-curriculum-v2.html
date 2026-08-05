@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>원장님이 직접 만드는 우리 병원 홈페이지 — 보아치과 실습 강의 제안서</title>
+<style>
+  :root{
+    --ink:#13302e; --body:#42595b; --faint:#7c9092;
+    --line:#e3edec; --paper:#fbfcfc; --soft:#eef5f4;
+    --star:#d6263a; --u:8px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{margin:0;background:var(--paper);color:var(--body);
+    font-family:"Apple SD Gothic Neo","Pretendard",-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:15px;line-height:1.66;}
+  .serif{font-family:"AppleMyungjo","Nanum Myeongjo",serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:72px 32px 96px;}
+
+  .kicker{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--faint);font-weight:700;margin:0 0 18px;}
+  .title{font-family:"AppleMyungjo","Nanum Myeongjo",serif;color:var(--ink);
+    font-size:38px;line-height:1.28;letter-spacing:-.01em;margin:0 0 20px;font-weight:700;}
+  .promise{font-size:16.5px;color:var(--body);max-width:60ch;margin:0 0 28px;}
+  .meta{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .meta div{flex:1 1 33%;padding:16px 0;min-width:150px;}
+  .meta .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;}
+  .meta .v{font-size:15px;color:var(--ink);font-weight:600;margin-top:3px;}
+
+  section{margin-top:64px;}
+  h2{font-family:"AppleMyungjo","Nanum Myeongjo",serif;color:var(--ink);
+    font-size:23px;line-height:1.35;letter-spacing:-.01em;font-weight:700;margin:0 0 8px;}
+  .lede{color:var(--faint);font-size:13.5px;margin:0 0 22px;}
+
+  ul.clean{list-style:none;padding:0;margin:0;}
+  ul.clean li{padding:14px 0 14px 26px;border-bottom:1px solid var(--line);position:relative;}
+  ul.clean li::before{content:"—";position:absolute;left:0;color:var(--faint);}
+  ul.clean li b{color:var(--ink);font-weight:600;}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;}
+  .grid2 .col h3{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);
+    font-weight:700;margin:0 0 6px;padding-top:18px;border-top:2px solid var(--ink);}
+  .grid2 .col ul{list-style:none;padding:0;margin:0;}
+  .grid2 .col li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;margin-top:6px;}
+  thead th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);
+    text-align:left;font-weight:700;padding:0 12px 10px 0;border-bottom:2px solid var(--ink);}
+  tbody td{padding:16px 12px 16px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px;}
+  tbody td:first-child{white-space:nowrap;color:var(--faint);font-size:12.5px;font-weight:600;width:84px;}
+  .blk{color:var(--ink);font-weight:700;font-family:"AppleMyungjo","Nanum Myeongjo",serif;}
+  td .do{display:block;color:var(--body);margin-top:3px;font-size:13px;}
+  .star{color:var(--star);font-weight:700;}
+
+  /* 7역량 패널 */
+  .skills{list-style:none;padding:0;margin:0;}
+  .skills li{display:grid;grid-template-columns:38px 1fr;gap:0 18px;padding:16px 0;border-bottom:1px solid var(--line);}
+  .skills .no{font-family:"AppleMyungjo","Nanum Myeongjo",serif;font-size:16px;color:var(--faint);padding-top:2px;}
+  .skills .nm{color:var(--ink);font-weight:700;font-size:15px;}
+  .skills .ds{color:var(--body);font-size:13.5px;margin-top:2px;}
+  .skills li.anchor{background:var(--soft);margin:0 -16px;padding:18px 16px;border-radius:10px;border-bottom:none;}
+  .skills li.anchor .nm{font-family:"AppleMyungjo","Nanum Myeongjo",serif;font-size:16px;}
+
+  .panel{background:var(--soft);border-radius:12px;padding:28px 30px;margin-top:24px;}
+  .cap{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;}
+  .cap dt{color:var(--ink);font-weight:700;font-size:13.5px;white-space:nowrap;}
+  .cap dd{margin:0;font-size:13.5px;color:var(--body);}
+
+  .legend{display:flex;align-items:center;gap:8px;margin-top:18px;font-size:12.5px;color:var(--faint);}
+  .legend .star{font-size:14px;}
+
+  footer{margin-top:80px;padding-top:18px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;font-size:11.5px;color:var(--faint);}
+
+  @media (max-width:560px){.wrap{padding:48px 20px 64px;}.title{font-size:29px;}.grid2{grid-template-columns:1fr;}}
+  @media print{body{background:#fff;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="kicker">HypeProof Lab · 보아치과 원장 대상 실습 강의 제안</p>
+  <h1 class="title">원장님이 직접 만드는<br>우리 병원 홈페이지</h1>
+  <p class="promise">AI에게 지시해 4시간 만에 실제 운영 가능한 병원 홈페이지를 완성하고, 강의가 끝난 뒤에도 직접 고칠 수 있는 권한과 — 동료 원장에게 설명할 수 있는 역량까지 가져가는 실습 강의입니다.</p>
+  <div class="meta">
+    <div><div class="k">대상</div><div class="v">치과 원장 · 실장</div></div>
+    <div><div class="k">소요 시간</div><div class="v">4시간 (1일)</div></div>
+    <div><div class="k">가져가는 것</div><div class="v">실제 접속되는 홈페이지</div></div>
+  </div>
+
+  <section>
+    <h2>이 강의가 원장님께 드리는 것</h2>
+    <ul class="clean">
+      <li><b>외주에 맡기지 않습니다.</b> 원장님이 직접 만들고, 직접 고칩니다.</li>
+      <li><b>작은 수정에 매번 업체를 부르지 않아도 됩니다.</b> 문구·사진·진료시간을 말 한마디로 바꿉니다.</li>
+      <li><b>강의가 끝나면 실제 주소가 손에 남습니다.</b> 화면 연습이 아니라, 접속되는 홈페이지를 가져가십니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>오늘 완성하는 홈페이지</h2>
+    <p class="lede">잘 만든 치과 홈페이지 한 곳을 기준으로 삼아, 같은 수준의 구조와 기능을 갖춘 내 병원 홈페이지를 만듭니다.</p>
+    <div class="grid2">
+      <div class="col">
+        <h3>페이지 구성</h3>
+        <ul>
+          <li>첫 화면 (병원 인상)</li>
+          <li>진료 안내</li>
+          <li>의료진 소개</li>
+          <li>병원 둘러보기</li>
+          <li>오시는 길 · 진료시간</li>
+          <li>예약 안내</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>실제 작동하는 연동</h3>
+        <ul>
+          <li>네이버 예약 · 플레이스</li>
+          <li>카카오톡 상담 버튼</li>
+          <li>전화 바로 걸기</li>
+          <li>지도 (찾아오는 길)</li>
+          <li>인스타그램 · 블로그</li>
+          <li>안정적 배포 + 도메인 연결</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4시간, 이렇게 진행합니다</h2>
+    <p class="lede">보고 → 정하고 → 만들고 → 다듬고 → 띄웁니다. 각 단계마다 원장님이 직접 손을 움직입니다.</p>
+    <table>
+      <thead><tr><th>시간</th><th>단계</th></tr></thead>
+      <tbody>
+        <tr><td>0:00–0:25</td><td><span class="blk">보기 <span class="star">★</span></span><span class="do">완성된 홈페이지가 단 몇 분 만에 만들어지는 과정을 먼저 보여드립니다. “이걸 오늘 직접 만들어 가십니다.”</span></td></tr>
+        <tr><td>0:25–1:00</td><td><span class="blk">정하기</span><span class="do">기준이 될 홈페이지를 함께 뜯어보고, 우리 병원 정보(진료·의료진·예약 채널)를 정리합니다.</span></td></tr>
+        <tr><td>1:00–1:40</td><td><span class="blk">만들기</span><span class="do">기준 화면을 AI에게 보여주고, 우리 병원 홈페이지의 첫 버전을 만듭니다.</span></td></tr>
+        <tr><td>1:40–2:50</td><td><span class="blk">다듬기 <span class="star">★</span></span><span class="do">생각과 다르게 나온 부분을 찾아, 말로 고쳐 내 의도대로 바꿉니다. 예약·상담·지도 연동도 이때 붙입니다.</span></td></tr>
+        <tr><td>2:50–3:30</td><td><span class="blk">띄우기 <span class="star">★</span></span><span class="do">실제 인터넷 주소로 배포합니다. 내 홈페이지가 진짜로 열리는 순간을 확인합니다.</span></td></tr>
+        <tr><td>3:30–4:00</td><td><span class="blk">점검 · 마무리</span><span class="do">게시 전 의료광고 표현을 함께 점검하고, 집에서 이어서 고칠 체크리스트를 드립니다.</span></td></tr>
+      </tbody>
+    </table>
+    <div class="legend"><span class="star">★</span> 표시는 원장님이 “직접 할 수 있다”를 체감하시는 핵심 순간입니다.</div>
+  </section>
+
+  <section>
+    <h2>수업 후 가져가시는 것</h2>
+    <ul class="clean">
+      <li><b>실제 접속되는 홈페이지 주소</b> — 그날 바로 공유 가능합니다.</li>
+      <li><b>직접 고치는 능력</b> — 자주 쓰는 수정 요청 예시를 카드로 드립니다.</li>
+      <li><b>우리 병원용 전환 체크리스트</b> — 로고·사진·예약 링크 교체 절차.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>원장님이 체득하시는 7가지 힘</h2>
+    <p class="lede">홈페이지는 결과물이고, 진짜 남는 건 이 역량입니다. 강의 뒤 동료 원장에게도 그대로 설명할 수 있는 언어로 정리했습니다.</p>
+    <ul class="skills">
+      <li class="anchor">
+        <div class="no">01</div>
+        <div><div class="nm">내 것으로 만드는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Ownership</span></div>
+        <div class="ds">외주에 맡기지 않고 내가 만들고, 고치고, 책임진다. “이건 내가 했다”고 말할 수 있는 상태 — 이 강의가 진짜로 남기는 것.</div></div>
+      </li>
+      <li><div class="no">02</div><div><div class="nm">원하는 걸 정확히 말하는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Intent</span></div><div class="ds">우리 병원이 누구에게 무엇을 보여줘야 하는지를 AI에게 분명히 전달한다.</div></div></li>
+      <li><div class="no">03</div><div><div class="nm">맥락을 쥐여주는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Context</span></div><div class="ds">참고할 홈페이지와 우리 병원 정보(진료·의료진·예약 채널)를 AI에게 제대로 입력한다.</div></div></li>
+      <li><div class="no">04</div><div><div class="nm">결과를 검증하는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Verification</span></div><div class="ds">예약 버튼이 실제로 눌리는지, 의료광고 표현이 안전한지 직접 확인한다.</div></div></li>
+      <li><div class="no">05</div><div><div class="nm">맡길 것과 챙길 것을 가르는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Delegation</span></div><div class="ds">AI에게 맡길 일과, 원장이 의료적으로 책임져야 할 일을 구분한다.</div></div></li>
+      <li><div class="no">06</div><div><div class="nm">고쳐가며 완성하는 힘 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Iteration</span></div><div class="ds">한 번에 끝내려 하지 않고, 원하는 모습이 될 때까지 다듬는다.</div></div></li>
+      <li><div class="no">07</div><div><div class="nm">좋고 나쁨을 가리는 안목 <span style="color:var(--faint);font-weight:400;font-size:12px;">· Taste</span></div><div class="ds">AI가 준 결과를 그대로 받지 않고, 더 나은 기준으로 고르고 거른다.</div></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>안심하셔도 되는 이유</h2>
+    <div class="panel">
+      <dl class="cap">
+        <dt>의료광고법</dt><dd>과장될 수 있는 표현은 함께 점검하고, 실제 게시 전 원장님 최종 검수를 원칙으로 합니다.</dd>
+        <dt>저작권</dt><dd>다른 병원 사이트를 복제하지 않습니다. 구조만 참고하고 내용은 우리 병원 자료로 바꿉니다.</dd>
+        <dt>강의 후</dt><dd>강의에서 쓴 방식은 집에서도 그대로 쓸 수 있는, 검증된 도구와 절차입니다.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <span>HypeProof Lab — 보아치과 원장 실습 강의 제안서</span>
+    <span>제안용 · 2026.06 · v2</span>
+  </footer>
+</div>
+</body>
+</html>

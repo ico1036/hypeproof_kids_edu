@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SK바이오팜 가족 AI 창작 워크숍 — 프로그램 개요 (2p)</title>
+<!-- CHANGELOG
+v001 v135 설계안에서 고객 노출 검증 카피만 추출해 A4 2페이지 고정 조판 — 1p 본질·두 가지 힘·와우 6 / 2p 4시간 여정·분반·산출물·신청
+v002 타이포 한 단계 확대 — h1 37px·와우 제목 13.5px·본문 12~12.5px, 카드 패딩 12/13 (렌더 검수 후 여백 잔량을 가독성에 환원, 2p 클리핑 0건 유지)
+v003 와우포인트 비노출 — 1p '와우포인트 6' 섹션 제거(내부 운영 전략), 4시간 여정 해당 행에 ✦ 마커 + 한 줄 범례로만 표시
+v004 '왜 이 두 가지 힘인가' — 원칙 다크 스트립을 부모 설득 카피로 교체하고 두 힘 카드 앞으로 이동 (아이 입 깨달음 문장 유지)
+v005 준비물 정정 — 노트북 미제공: 참가 팀이 노트북 1대 지참, '준비물 없음·노트북 제공' 문구 전면 교체
+v006 2면 재배치 — 분반·부모 역할 스트립을 1p로 이동해 와우 섹션 자리를 채우고 양면 타이포 확대 (A4 2p 클리핑 0건 재검수)
+v007 2p 클로징 보강 — 검증 카피 '마무리 문장'을 CTA 앞에 배치, 검증 행 한 글자 고아 줄바꿈 교정(nbsp)
+v008 다크 스트립 전문성 보강 — '아이 입 깨달음' 인용문 제거, 두 힘에 영문 명칭 병기 (Context Engineering / Reflection) ※고객 노출 영문 명칭은 사용자 결정으로 번역표 예외
+v009 두 번째 힘 영문 명칭 환원 — Reflection → Feedback Loop (사용자 결정, 설계안 v135 Lesson 2 영문명과 재일치)
+v010 히어로 타이틀 교체 — "코드는 AI가 씁니다 / 아이는 생각을 씁니다" (사용자 선정, 요약본 전용 — 설계안은 기존 타이틀 유지)
+-->
+<!-- DESIGN: v135 설계안과 동일 토큰(SK 레드 = 시간·✦ 구조 신호 전용, Swiss 골격, 반경 12/8).
+     시그니처: 2+1+1 시간 비례 러닝 바. 고객용 금지어 0 규칙 적용 구간 = 문서 전체. 와우 전략은 ✦ 마커로만 암시. -->
+<link rel="icon" href="data:,">
+<style>
+:root{--sk:#ea002c;--sk-deep:#b50021;--ink:#17191f;--muted:#5f6875;--line:#e6e9ee;--soft:#fff0f3;--tint:#f7f8fa;--d34bg:#fff4dd;--d34fg:#8a5a00;--d56bg:#eef5ff;--d56fg:#1e40af;--dark:#151b26;--font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",Pretendard,system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#62676e;font-family:var(--font);color:var(--ink);word-break:keep-all;overflow-wrap:break-word;letter-spacing:-.02em;line-height:1.5}
+.page{width:210mm;height:297mm;background:#fff;margin:14px auto;padding:11mm 12mm 10mm;position:relative;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.28)}
+.page1{border-top:7px solid var(--sk)}
+.badge{display:inline-block;background:#fff;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:11px;font-weight:800}
+h1{font-size:40px;line-height:1.12;margin:10px 0 8px;letter-spacing:-.05em}
+.red{color:var(--sk)}
+.lead{font-size:14.5px;color:#394150;margin:0;max-width:46em}
+p{color:var(--muted);margin:0}
+.label{color:var(--sk);font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;margin:14px 0 7px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat,.axis{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:#fff}
+.stat b{font-size:18.5px;display:block;letter-spacing:-.03em}
+.stat span{display:block;color:var(--muted);font-size:12px;margin-top:3px;line-height:1.45}
+.axis b{font-size:14.5px;display:block;margin-bottom:4px}
+.axis p{font-size:13px;line-height:1.55;color:#3b4350}
+.axis .no{display:inline-block;color:var(--sk);font-weight:900;margin-right:4px}
+.darkstrip{background:var(--dark);color:#fff;border-radius:12px;padding:14px 16px;font-size:13.5px;line-height:1.6}
+.darkstrip b{color:#ff9aaa}
+.darkstrip span{color:#d7dee8}
+.pill{display:inline-block;border-radius:999px;padding:2px 8px;font-size:10.5px;font-weight:900;background:var(--soft);color:var(--sk-deep);border:1px solid #ffd8df}
+.pill.ghost{background:var(--tint);color:#3b4350;border-color:var(--line)}
+.pill.d34{background:var(--d34bg);color:var(--d34fg);border-color:#f4e2bb}
+.pill.d56{background:var(--d56bg);color:var(--d56fg);border-color:#d6e4ff}
+.wm{color:var(--sk);font-weight:900;font-size:11px;margin-left:3px}
+.wmnote{font-size:10.5px;color:#76808c;margin:-2px 0 10px}
+.runway{display:flex;gap:4px;margin:0 0 10px}
+.rseg{border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--tint);min-width:0}
+.rseg.hot{background:var(--soft);border-color:#ffd8df}
+.rseg b{font-size:12px;display:block;white-space:nowrap}
+.rseg span{font-size:11px;color:var(--muted);white-space:nowrap}
+.tlbox{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:#fff}
+.tlbox h3{font-size:13.5px;margin:0 0 10px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.tlbox h3 em{font-style:normal;color:var(--muted);font-weight:600;font-size:11px}
+.trow{display:grid;grid-template-columns:30px 1fr;gap:8px;padding:7px 0;border-bottom:1px solid #f1f3f5;align-items:baseline}
+.trow:last-child{border-bottom:0}
+.trow i{font-style:normal;font-weight:900;color:var(--sk);font-size:11px}
+.trow div{font-size:12.5px;color:#3b4350;line-height:1.45}
+.trow b{font-weight:800;color:var(--ink)}
+.strip{border:1px solid var(--line);border-left:4px solid var(--sk);border-radius:0 8px 8px 0;background:#fff;padding:10px 13px;font-size:12.5px;color:#3b4350}
+.strip b{color:var(--ink)}
+.mini4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.mini4 .stat b{font-size:13.5px}
+.foot{position:absolute;left:12mm;right:12mm;bottom:8mm;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:7px;font-size:10px;color:#76808c}
+.cta{background:var(--soft);border:1px solid #ffd8df;border-radius:12px;padding:12px 15px;font-size:12.5px;color:#3b4350}
+.cta b{color:var(--sk-deep)}
+@media print{
+@page{size:A4;margin:0}
+body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{margin:0;box-shadow:none;break-after:page}
+.page:last-child{break-after:auto}
+}
+</style></head><body data-version="10">
+
+<!-- ================= PAGE 1 ================= -->
+<section class="page page1">
+<div class="badge">SK바이오팜 임직원 가족 AI 창작 워크숍 · 프로그램 개요</div>
+<h1>코드는 AI가 씁니다<br><span class="red">아이는 생각을 씁니다</span></h1>
+<p class="lead">부모와 아이가 한 팀이 되어 — AI에게 생각을 설명하고, 결과를 직접 확인하고, 더 정확한 말로 다시 고쳐 — 플레이 가능한 게임 하나를 완성하는 4시간 가족 AI 창작 랩입니다.</p>
+
+<div class="label">Program</div>
+<div class="grid4">
+<div class="stat"><b>4시간</b><span>체험·제작 120분 + 완성 60분 + 발표 60분 (쉬는 시간·간식 포함)</span></div>
+<div class="stat"><b>20가족 · 23명</b><span>임직원 가족, 초3~초6 자녀 · 자녀 1명+보호자 1명이 한 팀</span></div>
+<div class="stat"><b>분반 2개 · 2회차</b><span>초3·4 10팀 / 초5·6 13팀 · 7~8월 토요일</span></div>
+<div class="stat"><b>준비물: 노트북 1대</b><span>팀당 노트북 1대 지참 — 그 외 모든 재료는 저희가 준비합니다</span></div>
+</div>
+
+<div class="label">Two Skills</div>
+<div class="darkstrip"><b>왜 이 두 가지 힘일까요</b> <span>— 코드는 이미 AI가 씁니다. 아이가 어른이 될 세상에서 귀해지는 건 코딩 문법이 아니라, 생각을 AI가 알아듣게 설명하는 힘(Context Engineering)과 나온 결과를 직접 확인하고 더 낫게 고치는 힘(Feedback Loop)입니다. 그래서 오늘 아이는 이 두 가지를 강의로 듣는 대신 직접 겪습니다.</span></div>
+<div class="grid2" style="margin-top:10px">
+<div class="axis"><b><span class="no">①</span>생각을 구체화하는 힘</b><p>“재밌는 게임”이 아니라 “고양이가 별을 모으는 3분짜리 점프 게임”이라고 말하는 힘. 상상을 캐릭터·세계·목표·규칙으로 정리해 AI가 이해할 수 있게 설명합니다.</p></div>
+<div class="axis"><b><span class="no">②</span>만들어보고 다시 고치는 힘</b><p>첫 결과를 믿고 끝내지 않는 힘. 직접 플레이해서 확인하고, “AI가 무엇을 몰랐지?”를 찾아 더 정확한 말로 다시 요청합니다.</p></div>
+</div>
+
+<div class="label">Two Tracks</div>
+<div class="grid2">
+<div class="axis"><span class="pill d34">초3·4 · 10팀</span><b style="margin-top:5px">“상상 → 선택 → 짧은 설명”</b><p>보기 카드와 문장완성형으로 시작해 캐릭터·장면 중심으로 만듭니다. 타이핑은 부모가 도와도, 문장은 아이가 만듭니다.</p></div>
+<div class="axis"><span class="pill d56">초5·6 · 13팀</span><b style="margin-top:5px">“규칙 → 검증 → 개선”</b><p>점수·난이도 규칙을 직접 설계하고, 다른 팀과 게임을 바꿔 테스트하며 받은 피드백을 검토해 고칩니다.</p></div>
+</div>
+
+<div class="strip" style="margin-top:10px"><b>부모는 대신 만드는 사람이 아니라, 질문하는 파트너입니다</b> — “왜 그렇게 정했어?” “처음 하는 친구도 바로 이해할까?” 정답을 알려주지 않으셔도 됩니다. 오히려 그 편이 좋습니다.</div>
+
+<div class="foot"><span>HypeProof Lab · SK바이오팜 임직원 가족 AI 창작 워크숍</span><span>1 / 2</span></div>
+</section>
+
+<!-- ================= PAGE 2 ================= -->
+<section class="page">
+<div class="label" style="margin-top:0">4-Hour Journey</div>
+<div class="runway"><div class="rseg hot" style="flex:120"><b>1부 · 체험·제작 120분</b><span>만들고 고치기를 한 바퀴</span></div><div class="rseg" style="flex:60"><b>2부 · 완성 60분</b><span>쉬는 시간 + 팀별 코칭</span></div><div class="rseg" style="flex:60"><b>3부 · 발표 60분</b><span>모든 팀이 주인공</span></div></div>
+<p class="wmnote"><span class="wm" style="margin-left:0">✦</span> 아이의 “와!”가 터지는 순간들</p>
+<div class="grid2">
+<div class="tlbox"><h3>1부 · 0:00–2:00 <em>— 설명 없이 장면으로 시작합니다</em></h3>
+<div class="trow"><i>0:00</i><div><b>오프닝 데모</b><span class="wm">✦</span> — 30초 라이브 생성, 두 번째는 객석 아이디어로</div></div>
+<div class="trow"><i>0:08</i><div><b>말 비교 데모</b><span class="wm">✦</span> — 두 문장, 두 게임. 차이는 아이들이 발견</div></div>
+<div class="trow"><i>0:20</i><div><b>게임 씨앗</b><span class="wm">✦</span> — “만약에 …라면?” 호기심을 카드 한 장으로</div></div>
+<div class="trow"><i>0:35</i><div><b>기획 카드</b> — 캐릭터·세계·목표·규칙, 상상을 구조로</div></div>
+<div class="trow"><i>0:55</i><div><b>첫 요청 만들기</b> — 부탁이 아니라 설명서를 씁니다</div></div>
+<div class="trow"><i>1:10</i><div><b>1차 제작 V1</b> — 버튼은 아이가 누릅니다</div></div>
+<div class="trow"><i>1:25</i><div><b>플레이 검증</b><span class="wm">✦</span> — 부모가 첫 플레이어, 좋은&nbsp;점&nbsp;1&nbsp;·&nbsp;이상한&nbsp;점&nbsp;2</div></div>
+<div class="trow"><i>1:40</i><div><b>고쳐서 V2</b><span class="wm">✦</span> — 무엇을·어떻게, 더 정확한 말로 다시</div></div>
+</div>
+<div>
+<div class="tlbox"><h3>2부 · 2:00–3:00 <em>— 쉬고, 완성하는 시간</em></h3>
+<div class="trow"><i>2:00</i><div><b>쉬는 시간 10분</b> — 간식과 재충전</div></div>
+<div class="trow"><i>2:10</i><div><b>팀별 코칭 40분</b> — 속도가 달라도 전원 완성, 빠른 팀은 보너스 기능·게임 교환 테스트</div></div>
+<div class="trow"><i>2:50</i><div><b>제출 체크포인트</b> — 제목 확정, QR 발급, 노트북 뚜껑 닫기</div></div>
+</div>
+<div class="tlbox" style="margin-top:8px"><h3>3부 · 3:00–4:00 <em>— 말로 정리하며 내 것으로</em></h3>
+<div class="trow"><i>3:00</i><div><b>발표 준비</b> — 게임은 그대로, 말만 다듬기</div></div>
+<div class="trow"><i>3:10</i><div><b>발표 카드 3문장</b> — 처음 생각·고친 것·자랑 + 부모 앞 리허설</div></div>
+<div class="trow"><i>3:25</i><div><b>쇼케이스</b> — 팀당 90초, 순위 없이 모든 팀이 주인공</div></div>
+<div class="trow"><i>3:50</i><div><b>클로징</b><span class="wm">✦</span> — 엔딩 월: 전 팀 QR을 가족이 동시에 스캔</div></div>
+</div>
+</div>
+</div>
+
+<div class="label">Takeaways</div>
+<div class="mini4">
+<div class="stat"><b>완성 게임</b><span>브라우저에서 바로 실행</span></div>
+<div class="stat"><b>QR / URL</b><span>가족·친구와 공유</span></div>
+<div class="stat"><b>발표 카드</b><span>아이의 의도와 수정 과정 기록</span></div>
+<div class="stat"><b>성장 코멘트</b><span>코치 관찰 기반 — 48시간 내 발송</span></div>
+</div>
+
+<p style="margin:18px 0 0;font-size:15px;line-height:1.55;color:var(--ink);font-weight:700;letter-spacing:-.03em;max-width:40em">AI가 실행을 돕는 세상에서, 사람은 무엇을 정하고 무엇을 확인해야 할까요.<br>오늘 아이는 4시간 동안 그 답을 직접 만들어봅니다.</p>
+<div class="cta" style="margin-top:12px"><b>참가 신청은 사내 공지 채널에서</b> — 좌석이 한정되어 있습니다 (자녀당 1팀). 회차당 진행자 1명과 패밀리 코치 2~3명이 전 과정을 함께합니다. 게임에는 실명 대신 닉네임을 쓰고, 게임 URL은 가족·친구 공유 한정입니다.</div>
+
+<div class="foot"><span>HypeProof Lab · 2026-06-11 · 프로그램 개요 v010 (설계안 v135 기준)</span><span>2 / 2</span></div>
+</section>
+</body></html>

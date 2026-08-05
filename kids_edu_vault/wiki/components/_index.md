@@ -3,7 +3,7 @@ type: index
 status: navigational
 title: "Components"
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-06-07
 tags:
   - index/components
 ---
@@ -19,6 +19,13 @@ tags:
 - [[cline]] — VS Code AI 채팅 익스텐션
 - [[gemini-2-5-flash]] — AI 튜터 모델
 - [[sans-kids-school-2025]] — 실습 콘텐츠 자산
+
+## Dental Homepage Seminar Stack
+- [[gabia]] — 도메인 구매
+- [[claude-code]] — AI 홈페이지 제작
+- [[vercel]] · [[cloudflare]] — 무료/저비용 배포 및 도메인 연결 후보
+- [[cafe24]] — 기존 외주/호스팅 비교 대상
+- [[hypeproof-ai-xyz]] — AI 셀프 제작 레퍼런스 사이트
 
 ## Notes
 - 새 component는 `_templates/component.md`로 생성.
