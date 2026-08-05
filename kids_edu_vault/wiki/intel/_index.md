@@ -31,6 +31,7 @@ tags:
 
 ## Competitive
 - [[intel-competitive-landscape-2026]] — Chat-to-code/game 시장 구도 (bolt·Lovable·v0·Replit·Scratch·엔트리·Khanmigo). 2026-04-12.
+- [[boa-dental-demand-validation]] — 보아치과/박정현 원장 AI 강의 수요 검증
 
 ## Technical References
 - [[intel-wrapper-architecture]] — Chat+preview 래퍼 스택 (Claude Agent SDK, iframe sandbox, Next.js). 2026-04-12.

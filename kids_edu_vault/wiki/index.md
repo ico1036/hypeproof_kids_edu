@@ -64,6 +64,7 @@ tags:
 - [[2026-05-05-pilot]] — 파일럿 실행 현황 페이지 (2026-04-17 신규)
 - [[curriculum-v0.3]] — 커리큘럼 v0.3 산출물 트래킹 (봉호·지웅, 2026-04-19 delivered)
 - [[boa-dental-ai-promo-race-poster-v1]] (2026-06-27) — 보아치과 AI 홍보 레이스 포스터 v1, 초반 설명→직접 수정→최종 결과물 평가 구조
+- [[boa-dental-526-briefing]] — 보아치과 5/26 미팅 브리핑
 - [[sk-biopharma-pilot]] (2026-05-14) — SK바이오팜 임직원 가족 AI 교육 파일럿 (6~7월)
 - [[jy-action-list-2026-05-14]] (2026-05-14) — JY 우선순위 액션 리스트 (5/28 dry-run 게이트 기준)
 - [[pilot-gemini-api-key]] · [[pilot-server-domain]] · [[pilot-oauth-setup]] · [[pilot-cline-gemini-integration]] · [[pilot-game-starter-template]] · [[pilot-rehearsal-late-april]] · [[pilot-operator-guide]]
@@ -104,6 +105,7 @@ tags:
 
 ### Intel (14)
 - [[intel/_index|_index]]
+- [[boa-dental-demand-validation]] — 보아치과/박정현 원장 AI 강의 수요 검증
 - Venue: [[environ-kukrip-amsenter]]
 - Synthesis: [[research-peds-onc-coding-ed]]
 - Cases: [[case-sickle-cell-coding-study]] · [[case-stjude-educational-challenges]] · [[case-starlight-therapeutic-gaming]] · [[case-techquity-pediatric-oncology]] · [[case-hospital-pedagogy-framework]] · [[case-pediatric-onc-infection-control]] · [[case-korean-hospital-schools]] · [[case-academic-continuity-peds-onc]] · [[case-oep-socioecological-program]]
