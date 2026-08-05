@@ -16,6 +16,8 @@ tags:
 
 # 치과의사 AI 실전 워크샵 v1
 
+> 2026-05-04~05 선행 초안. 현행 Track B 정본은 [[dental-supersearch-curriculum-v4]]이며, 이 문서는 [[boa-dental]], [[park-junghyun]], [[sixteen-essence]]를 치과 전문직 워크숍으로 번역한 archive로 남긴다.
+
 ## 사전 확인 사항 (워크샵 전)
 
 | 항목 | 확인 방법 | 미충족 시 대응 |
