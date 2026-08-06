@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HypeProof Studio · 치과 지식 슈퍼서치엔진 워크샵</title>
+  <style>
+    :root {
+      --bg:#f6f9fc; --paper:#fff; --ink:#191f28; --text:#4e5968; --muted:#8b95a1;
+      --line:#e5e8eb; --soft:#f2f4f6; --blue:#3182f6; --blue-dark:#1b64da;
+      --green:#00a87e; --orange:#ec7e00; --red:#e23b4a; --dark:#101828;
+      --shadow:0 18px 50px rgba(25,31,40,.08); --radius:18px;
+      --font:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 8% 0%,rgba(49,130,246,.16),transparent 34%),var(--bg);color:var(--text);font-family:var(--font);word-break:keep-all;overflow-wrap:break-word;letter-spacing:-.02em;line-height:1.65}
+    h1,h2,h3,h4{margin:0;color:var(--ink);letter-spacing:-.03em;line-height:1.3} p{margin:0}
+    .page{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:40px 0 72px}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff 0%,#eef6ff 100%);border:1px solid rgba(49,130,246,.16);border-radius:32px;padding:44px;box-shadow:var(--shadow)}
+    .hero:after{content:"";position:absolute;right:-92px;top:-92px;width:280px;height:280px;border-radius:50%;background:rgba(49,130,246,.13)}
+    .eyebrow{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border-radius:999px;border:1px solid rgba(49,130,246,.22);background:#fff;color:var(--blue-dark);font-size:13px;font-weight:850;margin-bottom:18px}
+    h1{max-width:900px;font-size:clamp(34px,5vw,58px);font-weight:780}.lead{max-width:840px;margin-top:20px;font-size:20px;color:#3d4f64}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:28px;align-items:stretch}.mission,.judge{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px;box-shadow:0 8px 24px rgba(25,31,40,.05)}
+    .mission b{color:var(--blue-dark)}.judge{background:#101828;color:#e5edf8}.judge h3{color:#fff}.judge p{margin-top:8px;color:#c8d3e0}.quote{margin-top:12px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);color:#fff;font-weight:850}
+    .nav{position:sticky;top:0;z-index:5;margin:20px 0 28px;display:flex;gap:8px;overflow-x:auto;padding:12px;border:1px solid var(--line);border-radius:18px;background:rgba(246,249,252,.92);backdrop-filter:blur(12px)}
+    .nav a{flex:0 0 auto;min-height:44px;display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;color:var(--text);text-decoration:none;background:#fff;border:1px solid var(--line);font-weight:800;font-size:14px}.nav a.primary{background:var(--blue);border-color:var(--blue);color:#fff}
+    section{margin-top:30px}.section-head{margin-bottom:16px;display:flex;align-items:end;justify-content:space-between;gap:16px}.section-head h2{font-size:29px}.section-head p{margin-top:6px;color:var(--muted)}
+    .grid{display:grid;gap:16px}.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 8px 28px rgba(25,31,40,.045)}.card h3{font-size:20px;margin-bottom:8px}.card p,.card li{color:var(--text)}.card ul{margin:10px 0 0;padding-left:20px}.card li{margin:5px 0}
+    .badge{display:inline-flex;align-items:center;min-height:28px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:850;margin-bottom:12px;background:#edf4ff;color:var(--blue-dark);border:1px solid #d7e7ff}.green{background:#ecfdf5;color:#008060;border-color:#b8f2d9}.orange{background:#fff7ed;color:#b85f00;border-color:#ffd9aa}.red{background:#fff1f3;color:var(--red);border-color:#ffd1d8}.dark{background:#eef2f7;color:#344054;border-color:#d0d5dd}
+    .loop{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{min-height:172px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}.num{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;background:var(--blue);color:#fff;font-weight:900;margin-bottom:12px}.step strong{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}.step span{font-size:14px;color:var(--muted)}
+    .engine{display:grid;grid-template-columns:300px 1fr 330px;gap:14px;align-items:stretch}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 36px rgba(25,31,40,.055);min-height:560px}.panel-head{padding:14px 16px;background:#fbfcfd;border-bottom:1px solid var(--line);color:var(--ink);font-weight:900}.panel-body{padding:16px}.field{margin-bottom:12px}.field label{display:block;margin-bottom:6px;color:var(--ink);font-size:13px;font-weight:850}input,select,textarea{width:100%;min-height:44px;border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:88px;resize:vertical}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(49,130,246,.12)}
+    .btn{width:100%;min-height:48px;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:900;font-size:15px;cursor:pointer}.ghost{margin-top:8px;background:#fff;color:var(--ink);border:1px solid var(--line)}
+    .result{display:grid;gap:12px}.box{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fbfcfd}.box h4{font-size:16px;margin-bottom:8px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{display:inline-flex;align-items:center;min-height:34px;padding:6px 10px;border-radius:999px;background:#edf4ff;color:var(--blue-dark);font-size:13px;font-weight:800}.table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px;overflow:hidden;border-radius:12px}.table th,.table td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}.table th{background:#f2f7fd;color:var(--ink);font-weight:900}.table tr:last-child td{border-bottom:0}
+    .verdict{display:grid;gap:10px}.verdict button{min-height:48px;border-radius:12px;border:1px solid var(--line);background:#fff;font-weight:900;cursor:pointer;text-align:left;padding:10px 12px}.verdict button.pass{border-color:#b8f2d9;background:#f2fff9;color:#008060}.verdict button.warn{border-color:#ffd9aa;background:#fff8f2;color:#b85f00}.verdict button.fail{border-color:#ffd1d8;background:#fff6f7;color:var(--red)}.note{margin-top:12px;border-radius:16px;background:#f8fafc;border:1px dashed #cbd5e1;padding:14px;color:#475467}
+    .modes .card{cursor:pointer;transition:.18s ease}.modes .card:hover{transform:translateY(-2px);border-color:rgba(49,130,246,.42);box-shadow:0 14px 34px rgba(49,130,246,.10)}.modes .card.selected{border-color:var(--blue);box-shadow:0 0 0 4px rgba(49,130,246,.12)}
+    .skill-loop{border:1px solid var(--line);background:#fff;border-radius:24px;padding:26px}.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.skill-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fbfcfd}.skill-card h3{font-size:18px;margin-bottom:8px}.skill-card ul{margin:8px 0 0;padding-left:19px}.skill-card li{margin:4px 0;color:var(--text)}.asset-map{border:1px solid var(--line);background:#fff;border-radius:24px;padding:26px}.asset-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:14px}.asset-table th,.asset-table td{border-bottom:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.asset-table th{background:#f2f7fd;color:var(--ink);font-weight:900}.asset-table tr:last-child td{border-bottom:0}.mind-pill{display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border-radius:999px;background:#edf4ff;color:var(--blue-dark);font-size:12px;font-weight:900;white-space:nowrap}.curriculum-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px}.cblock{border:1px solid var(--line);border-radius:16px;padding:14px;background:#fbfcfd}.cblock b{display:block;color:var(--ink);margin-bottom:4px}.cblock span{font-size:13px;color:var(--muted)}.vault{border:1px solid var(--line);background:#fff;border-radius:24px;padding:26px}.vault-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.vault-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:#fbfcfd}.vault-card h3{font-size:18px;margin-bottom:8px}.vault-card code{display:block;margin-top:10px;padding:10px;border-radius:12px;background:#101828;color:#e5edf8;font-size:12px;white-space:pre-wrap}.knowledge{border:1px solid #d7e7ff;background:linear-gradient(180deg,#fff,#f5f9ff);border-radius:24px;padding:26px}.knowledge-map{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.kitem{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}.kitem b{display:block;color:var(--ink);margin-bottom:6px}.kitem span{color:var(--muted);font-size:14px}.script{background:var(--dark);color:#e5edf8;border-radius:24px;padding:26px}.script h2,.script h3{color:#fff}.script p{color:#c8d3e0}.script .line{margin-top:14px;padding:18px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);color:#fff;font-size:18px;font-weight:850}
+    @media(max-width:1080px){.engine{grid-template-columns:1fr}.panel{min-height:auto}.loop{grid-template-columns:repeat(3,1fr)}.knowledge-map{grid-template-columns:repeat(2,1fr)}.curriculum-strip{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(2,1fr)}.vault-grid{grid-template-columns:repeat(2,1fr)}.hero-grid,.cols-4{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.page{width:min(100% - 20px,1180px);padding-top:20px}.hero{padding:28px 22px;border-radius:24px}.lead{font-size:17px}.hero-grid,.cols-2,.cols-3,.cols-4,.loop,.knowledge-map,.curriculum-strip,.skill-grid,.vault-grid{grid-template-columns:1fr}.section-head{display:block}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">HypeProof Studio · Dental Super Search Engine</div>
+      <h1>치과 지식 슈퍼서치엔진 만들기</h1>
+      <p class="lead">직원이 직접 검색엔진을 만들고, 마지막에 “원장님을 이겨라!” 챌린지로 검증받는 워크샵. 웃기게 시작하지만 남는 건 병원 내부 지식이 박힌 작은 솔루션이다.</p>
+      <div class="hero-grid">
+        <div class="mission"><b>오늘의 산출물:</b> 질문 입력 → 검색전략 → 출처 우선순위 → 비교표 → 위험신호 → 원장님 판정 → 병원 내부 규칙 저장까지 흐르는 작은 웹앱.</div>
+        <div class="judge"><h3>게임 구도</h3><p>직원이 만든 검색엔진이 원장님을 이길 수 있을까? 당연히 못 이긴다. 그래서 웃기고, 그래서 배운다.</p><div class="quote">“자, 원장님을 이겨라! 이 결과 맞나요?”</div></div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <a class="primary" href="#engine">엔진 목업</a><a href="#assets">7 Assets</a><a href="#skill-loop">검색스킬 루프</a><a href="#knowledge">내부지식</a><a href="#vault">고급 볼트</a><a href="#loop">수업 루프</a><a href="#roles">직원 vs 원장님</a><a href="#script">진행 멘트</a>
+    </nav>
+
+    <section class="grid cols-3">
+      <article class="card"><span class="badge red">기존안 문제</span><h3>ChatGPT에 물어봐도 나오는 수준</h3><p>안내문/FAQ 생성은 할머니도 한다. 수업의 쾌감은 “답변”이 아니라 “시스템 제작”에서 나와야 한다.</p></article>
+      <article class="card"><span class="badge">새 미션</span><h3>검색 과정을 웹앱으로 만든다</h3><p>검색질문, 출처, 비교표, 검증 질문이 자동으로 나오는 ‘내 병원 지식 탐색기’를 만든다.</p></article>
+      <article class="card"><span class="badge green">클라이맥스</span><h3>원장님을 이겨라</h3><p>직원이 자신만만하게 검색결과를 내고, 원장님이 웃으면서 깨준다. 그 피드백이 앱의 규칙으로 저장된다.</p></article>
+    </section>
+
+    <section id="engine">
+      <div class="section-head"><div><h2>슈퍼서치엔진 목업</h2><p>참가자가 Studio로 만들게 될 웹앱의 최종 모습. 실제로는 각자 주제만 바꿔 만든다.</p></div></div>
+      <div class="engine">
+        <aside class="panel">
+          <div class="panel-head">1. 검색 미션 입력</div>
+          <div class="panel-body">
+            <div class="field"><label>무엇을 알고 싶나요?</label><textarea id="question">환자가 “임플란트 하고 바로 운동해도 되나요?”라고 물었을 때, 설명 전에 확인할 근거를 찾고 싶다.</textarea></div>
+            <div class="field"><label>결정 기준</label><select id="criteria"><option>환자 설명에 쓸 수 있는 신뢰도</option><option>장비/비품 구매 판단</option><option>블로그/콘텐츠 작성 근거</option><option>경쟁 병원/시장 조사</option></select></div>
+            <div class="field"><label>피하고 싶은 것</label><textarea>광고성 블로그, 과장표현, 출처 없는 단정, 실제 진단/치료판단</textarea></div>
+            <button class="btn" id="makeEngine">검색 엔진 실행</button>
+            <button class="btn ghost" id="resetEngine">다른 주제로 바꾸기</button>
+          </div>
+        </aside>
+
+        <section class="panel">
+          <div class="panel-head">2. AI가 만드는 검색 시스템</div>
+          <div class="panel-body result" id="resultArea">
+            <div class="box"><h4>검색 질문 5개</h4><div class="chips"><span class="chip">임플란트 후 운동 가능 시점</span><span class="chip">implant exercise after surgery guideline</span><span class="chip">치과 수술 후 주의사항 학회</span><span class="chip">발치/임플란트 출혈 운동 영향</span><span class="chip">환자 설명용 근거자료</span></div></div>
+            <div class="box"><h4>출처 우선순위</h4><table class="table"><tr><th>우선</th><th>출처</th><th>이유</th></tr><tr><td>1</td><td>학회/대학병원 안내</td><td>환자 안내에 안전</td></tr><tr><td>2</td><td>논문/리뷰</td><td>근거 확인용</td></tr><tr><td>3</td><td>제조사/제품문서</td><td>장비·재료 관련</td></tr><tr><td>보류</td><td>광고 블로그/유튜브</td><td>표현 참고만</td></tr></table></div>
+            <div class="box"><h4>위험 신호</h4><p>“무조건 가능”, “완전 안전”, “통증 없음”처럼 보장하는 표현. 출처 없이 개인 경험만 말하는 콘텐츠. 특정 제품 판매로 바로 연결되는 글.</p></div>
+          </div>
+        </section>
+
+        <aside class="panel">
+          <div class="panel-head">3. 원장님을 이겨라</div>
+          <div class="panel-body">
+            <div class="badge green">최종 보스 등장</div>
+            <h3>원장님, 이거 맞나요?</h3>
+            <p style="margin-top:8px;color:var(--muted)">직원이 만든 검색엔진이 원장님을 이길 수 있는지 웃으면서 확인한다.</p>
+            <div class="verdict" style="margin-top:14px">
+              <button class="pass" data-verdict="PASS: 환자 일반 안내에 사용 가능. 단 개인 상태별 예외 설명 추가.">PASS · 일반 안내 가능</button>
+              <button class="warn" data-verdict="더 확인: 수술 난이도/환자 상태에 따라 달라짐. 원장님 확인 질문을 추가.">더 확인 · 조건 필요</button>
+              <button class="fail" data-verdict="위험: 진단/치료 판단처럼 보임. 환자 발송 금지, 내부 참고만.">위험 · 사용 금지</button>
+            </div>
+            <div class="note" id="verdictNote">원장님에게 깨진 포인트가 다음 검색 규칙으로 저장됩니다.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="assets" class="asset-map">
+      <span class="badge">7 AI Native Assets = 검색스킬 제작 능력</span>
+      <h2>7개 Asset은 “좋은 검색엔진을 만드는 사고 루프”다</h2>
+      <p style="margin-top:8px;color:var(--text)">미션카드는 필요 없다. 참가자는 하나의 슈퍼서치엔진을 만들면서, 어떻게 질문을 쪼개고, 어떤 도구를 쓰고, 무엇을 걸러내고, 어떻게 원장님 검증을 반영할지 스스로 루프를 돈다.</p>
+      <div class="curriculum-strip">
+        <div class="cblock"><b>1. 도입</b><span>원장님을 이겨라: 검색엔진 챌린지</span></div>
+        <div class="cblock"><b>2. 탐색</b><span>검색할 문제를 결정 문제로 바꿈</span></div>
+        <div class="cblock"><b>3. 첫 시도</b><span>질문·도구·출처 필터 V1 설계</span></div>
+        <div class="cblock"><b>4. 개선</b><span>원장님에게 깨지고 검색 규칙 수정</span></div>
+        <div class="cblock"><b>5. 공유</b><span>병원용 검색스킬로 저장</span></div>
+      </div>
+      <table class="asset-table">
+        <tr><th>7 Asset</th><th>검색스킬 만들 때의 핵심 질문</th><th>엔진에 들어가는 기능</th><th>원장님에게 깨질 포인트</th></tr>
+        <tr><td><span class="mind-pill">Intent Clarity</span></td><td>이 검색은 무슨 결정을 돕는가? 환자설명, 구매, 콘텐츠, 내부교육 중 무엇인가?</td><td>검색 목적 선택 + 성공 기준 입력</td><td>“그건 검색 문제가 아니라 진료 판단이야.”</td></tr>
+        <tr><td><span class="mind-pill">Context Design</span></td><td>AI가 오해하지 않게 어떤 배경을 줘야 하나? 환자군, 상황, 병원 톤, 금지표현은?</td><td>Context Pack: 대상/상황/제약/톤/금지어</td><td>“우리 병원은 그 표현 안 써.”</td></tr>
+        <tr><td><span class="mind-pill">Delegation Judgment</span></td><td>AI에게 어디까지 시키고, 어디서 원장님 판단으로 넘길까?</td><td>AI 할 일/사람 판단/금지 업무 3분류</td><td>“이건 AI가 결론내면 안 돼.”</td></tr>
+        <tr><td><span class="mind-pill">Iteration Reflex</span></td><td>첫 검색이 허접할 때 어떻게 검색어·도구·필터를 바꿀까?</td><td>검색어 변형, 영어/한국어 쿼리, 재검색 버튼</td><td>“키워드가 너무 일반적이야. 이렇게 물어봐야 해.”</td></tr>
+        <tr><td><span class="mind-pill">Verification Reflex</span></td><td>무엇을 믿고 무엇을 버릴까? 공식/학회/논문/제조사/광고글을 어떻게 구분할까?</td><td>출처 신뢰도 점수 + 위험 신호 체크</td><td>“그 출처는 광고야. 이 출처를 봐야 해.”</td></tr>
+        <tr><td><span class="mind-pill">Taste</span></td><td>검색결과를 환자용, 내부용, 원장님 질문용으로 어떻게 다르게 표현할까?</td><td>출력 톤 변환: 환자용/직원용/원장님 질문용</td><td>“맞긴 한데 환자에게 이렇게 말하면 불안해져.”</td></tr>
+        <tr><td><span class="mind-pill">Ownership</span></td><td>이번에 배운 검색법을 다음에도 쓰려면 어떤 병원 규칙으로 저장해야 하나?</td><td>원장님 피드백 로그 + 병원 검색 규칙 저장</td><td>“좋아, 이건 우리 병원 기준으로 저장하자.”</td></tr>
+      </table>
+    </section>
+
+    <section id="skill-loop" class="skill-loop">
+      <span class="badge green">검색스킬 제작 루프</span>
+      <h2>참가자가 진짜 고민하게 될 것들</h2>
+      <p style="margin-top:8px;color:var(--text)">슈퍼서치엔진을 잘 만들려면 단순히 검색어를 넣는 게 아니라, 검색 전략·도구 선택·필터링·검증·표현까지 설계해야 한다. 여기서 7 Assets가 전부 작동한다.</p>
+      <div class="skill-grid">
+        <div class="skill-card"><h3>1. 질문 쪼개기</h3><ul><li>큰 질문을 검색 가능한 작은 질문으로 분해</li><li>한국어/영어/전문용어 쿼리 변환</li><li>결론형 질문 vs 근거형 질문 구분</li></ul></div>
+        <div class="skill-card"><h3>2. 도구 고르기</h3><ul><li>웹검색: 넓게 훑기</li><li>공식 사이트/학회: 기준 확인</li><li>논문/리뷰: 근거 확인</li><li>제조사 문서: 제품/장비 확인</li></ul></div>
+        <div class="skill-card"><h3>3. 출처 필터링</h3><ul><li>공식/학회/대학병원 우선</li><li>광고성 블로그/유튜브는 보류</li><li>날짜, 이해관계, 과장표현 확인</li></ul></div>
+        <div class="skill-card"><h3>4. 원장님 질문 만들기</h3><ul><li>AI가 결론내지 말고 질문으로 넘김</li><li>“이 표현 환자에게 써도 되나요?”</li><li>“이 출처 우리 병원 기준에 맞나요?”</li></ul></div>
+        <div class="skill-card"><h3>5. 깨진 이유 반영</h3><ul><li>틀린 검색어 저장</li><li>믿으면 안 되는 출처 저장</li><li>우리 병원 금지 표현 저장</li></ul></div>
+        <div class="skill-card"><h3>6. 재사용 규칙화</h3><ul><li>다음 검색 때 자동으로 같은 필터 적용</li><li>원장님 승인 출처 목록 축적</li><li>환자용/내부용 출력 분리</li></ul></div>
+      </div>
+    </section>
+
+    <section id="knowledge" class="knowledge">
+      <span class="badge green">FDE 해커톤 산출물</span>
+      <h2>치과 안에서만 아는 지식이 앱에 남는다</h2>
+      <p style="margin-top:8px;color:var(--text)">외부 검색은 누구나 한다. 진짜 자산은 원장님과 직원만 아는 병원 맥락이 검색엔진의 규칙으로 저장되는 순간이다.</p>
+      <div class="knowledge-map">
+        <div class="kitem"><b>우리 병원 표현</b><span>환자에게 쓰는 말투, 금지어, 부드러운 설명 방식</span></div>
+        <div class="kitem"><b>원장님 판정 기준</b><span>PASS / 더 확인 / 위험을 가르는 내부 기준</span></div>
+        <div class="kitem"><b>자주 받는 질문</b><span>환자가 실제로 묻는 질문과 직원이 막히는 지점</span></div>
+        <div class="kitem"><b>신뢰 출처 목록</b><span>원장님이 인정하는 학회·대학병원·제조사·문서</span></div>
+      </div>
+      <div class="quote" style="background:#101828;margin-top:16px">해커톤 결과물 = 검색 웹앱 + 병원 내부 규칙 + 원장님 검증 로그. 즉, 체험이 아니라 작은 내부 솔루션.</div>
+    </section>
+
+    <section id="loop">
+      <div class="section-head"><div><h2>수업 루프</h2><p>직원이 도전하고, 원장님이 깨주고, 그 깨짐이 시스템으로 남는 5단계.</p></div></div>
+      <div class="loop">
+        <div class="step"><div class="num">1</div><strong>직원 질문</strong><span>Intent Clarity — 궁금증을 결정 문제로 바꾼다.</span></div>
+        <div class="step"><div class="num">2</div><strong>검색엔진 생성</strong><span>Context Design — 상황·기준·금지조건을 넣는다.</span></div>
+        <div class="step"><div class="num">3</div><strong>1차 판단</strong><span>Delegation — AI 검색과 인간 판단을 나눈다.</span></div>
+        <div class="step"><div class="num">4</div><strong>원장님을 이겨라</strong><span>Verification — 깨지면서 검증 기준을 배운다.</span></div>
+        <div class="step"><div class="num">5</div><strong>깨진 이유 저장</strong><span>Ownership — 병원 지식 시스템으로 남긴다.</span></div>
+      </div>
+    </section>
+
+    <section id="vault" class="vault">
+      <span class="badge green">Advanced Skill</span>
+      <h2>고급반: 병원 전용 Obsidian 지식 볼트</h2>
+      <p style="margin-top:8px;color:var(--text)">슈퍼서치엔진이 한 번의 검색 도구라면, 고급반은 그 검색과 원장님 판정을 전부 병원 지식 그래프로 축적한다. 이때부터는 교육이 아니라 내부 지식 인프라 구축이다.</p>
+      <div class="vault-grid">
+        <div class="vault-card"><h3>1. 질문 노트</h3><p>환자/직원이 실제로 물어본 질문을 케이스별로 저장한다.</p><code>questions/임플란트-운동-가능시점.md</code></div>
+        <div class="vault-card"><h3>2. 원장님 판정 로그</h3><p>PASS / 더 확인 / 위험 판정과 이유를 누적한다.</p><code>reviews/원장님-판정-log.md</code></div>
+        <div class="vault-card"><h3>3. 신뢰 출처 라이브러리</h3><p>학회, 대학병원, 제조사, 논문 등 인정 출처를 모은다.</p><code>sources/approved-sources.md</code></div>
+        <div class="vault-card"><h3>4. 우리 병원 표현 사전</h3><p>환자에게 쓰는 말투, 금지어, 부드러운 설명을 표준화한다.</p><code>style/우리병원-표현규칙.md</code></div>
+        <div class="vault-card"><h3>5. 검색 스킬 템플릿</h3><p>다음 검색 때 재사용할 쿼리 구조와 필터를 저장한다.</p><code>templates/supersearch-template.md</code></div>
+        <div class="vault-card"><h3>6. 내부 솔루션화</h3><p>볼트가 쌓이면 신규 직원 교육, 콘텐츠 검수, 환자 안내 기준으로 재사용된다.</p><code>index.md → hot.md → rules/</code></div>
+      </div>
+      <div class="quote" style="background:#101828;margin-top:16px">초급 = 원장님을 이겨라 검색엔진. 고급 = 원장님에게 깨진 이유가 병원 지식 볼트로 쌓이는 시스템.</div>
+    </section>
+
+    <section id="roles">
+      <div class="section-head"><div><h2>역할 구도</h2><p>진지한 심사장이 아니라, 웃기는 도전장이다. 하지만 학습은 진짜다.</p></div></div>
+      <div class="grid cols-3">
+        <article class="card"><span class="badge green">직원</span><h3>질문을 시스템화</h3><p>“뭘 검색해야 하지?”를 검색질문·출처·비교표로 바꾼다.</p></article>
+        <article class="card"><span class="badge">Studio</span><h3>웹앱으로 구현</h3><p>입력칸, 버튼, 표, 판정 저장까지 작은 앱 형태로 만든다.</p></article>
+        <article class="card"><span class="badge orange">원장님</span><h3>최종 보스</h3><p>“그건 아닌데?” 한마디로 검색엔진을 업그레이드시키는 사람.</p></article>
+      </div>
+    </section>
+
+    <section id="script" class="script">
+      <h2>진행자 멘트</h2>
+      <p>전문영역을 우리가 가르치려 하지 않는다. 직원의 도전 욕구와 원장님의 도메인 지식을 게임처럼 붙인다.</p>
+      <div class="line">“오늘은 원장님을 이겨볼 겁니다. 여러분이 검색엔진을 만들고, 마지막에 원장님한테 들이밉니다. 틀리면? 더 좋습니다. 그게 우리 병원 검색 규칙이 됩니다.”</div>
+      <div class="grid cols-3" style="margin-top:16px">
+        <div><h3>직원에게</h3><p>“검색어를 잘 몰라도 됩니다. 시스템이 질문을 쪼개줍니다.”</p></div>
+        <div><h3>원장님에게</h3><p>“오늘은 최종 보스 역할입니다. 직원들이 만든 검색엔진을 웃으면서 깨주세요.”</p></div>
+        <div><h3>클로징</h3><p>“오늘 원장님을 못 이긴 이유가, 다음엔 이기는 검색 규칙이 됩니다.”</p></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const verdictNote=document.getElementById('verdictNote');
+    document.querySelectorAll('.verdict button').forEach(btn=>btn.addEventListener('click',()=>{verdictNote.textContent=btn.dataset.verdict;}));
+    document.getElementById('makeEngine').addEventListener('click',()=>{
+      const q=document.getElementById('question').value.trim()||'궁금한 문제';
+      document.getElementById('resultArea').querySelector('.box h4').textContent='검색 질문 5개 · '+q.slice(0,22)+(q.length>22?'…':'');
+      document.getElementById('engine').scrollIntoView({behavior:'smooth',block:'start'});
+    });
+    document.getElementById('resetEngine').addEventListener('click',()=>{document.getElementById('question').value='새 소독기 후보 3개를 비교하고 싶다. 가격, A/S, 실제 병원 사용 후기를 보고 싶다.';});
+  </script>
+</body>
+</html>

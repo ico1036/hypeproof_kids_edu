@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>보아치과 원장 강의 v3 — 봉호 코어 카피클론</title>
+<style>
+  :root{
+    --ink:#10242b; --sub:#46606a; --line:#e2ebee; --bg:#f6f9fa;
+    --accent:#0f9d8c; --accent-soft:#e6f6f3; --warn:#c2410c; --warn-soft:#fff2e8;
+    --gold:#e0b62c; --keep:#0f9d8c; --card:#ffffff; --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Segoe UI",sans-serif;
+    line-height:1.62;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px;}
+  header.hero{background:linear-gradient(135deg,#0f9d8c,#0b6e7d);color:#fff;
+    border-radius:var(--radius);padding:40px 36px;margin-bottom:30px;
+    box-shadow:0 12px 30px rgba(12,90,100,.18);}
+  header.hero .tag{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    background:rgba(255,255,255,.18);padding:5px 12px;border-radius:999px;margin-bottom:14px;}
+  header.hero h1{margin:0 0 10px;font-size:26px;line-height:1.32;}
+  header.hero p{margin:0;opacity:.93;font-size:14.5px;}
+  header.hero .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;}
+  header.hero .meta span{background:rgba(255,255,255,.14);font-size:12.5px;padding:5px 11px;border-radius:8px;}
+  .oneliner{background:var(--accent-soft);border-left:4px solid var(--accent);padding:16px 20px;
+    border-radius:10px;font-size:15px;font-weight:600;color:#0b5a52;margin-bottom:30px;}
+  section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 10px rgba(20,60,70,.04);}
+  h2{font-size:18.5px;margin:0 0 14px;display:flex;align-items:center;gap:9px;}
+  h2 .n{background:var(--ink);color:#fff;width:26px;height:26px;border-radius:8px;
+    display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:none;}
+  p{margin:8px 0;color:var(--sub);font-size:14px;}
+  ul{margin:8px 0;padding-left:20px;}li{margin:6px 0;color:var(--sub);font-size:14px;}
+  strong{color:var(--ink);}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px;}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{background:var(--bg);color:var(--ink);font-weight:700;font-size:12.5px;}
+  td:first-child{font-weight:600;color:var(--ink);white-space:nowrap;}
+  pre{background:#0d2a30;color:#d7f3ee;padding:15px 18px;border-radius:11px;font-size:12.6px;
+    line-height:1.5;overflow-x:auto;font-family:"SF Mono",Menlo,Consolas,monospace;}
+  .wow{background:#fffaf3;border:1px solid #f3dcae;border-left:4px solid var(--gold);
+    padding:14px 18px;border-radius:10px;margin:14px 0;font-size:13.8px;color:#6b5418;}
+  .scene{background:#eef6ff;border:1px solid #cfe2f7;border-left:4px solid #2f73c4;
+    padding:14px 18px;border-radius:10px;margin:14px 0;font-size:13.8px;color:#1d3f6b;}
+  .guard{background:var(--warn-soft);border-left:4px solid var(--warn);padding:13px 18px;
+    border-radius:10px;margin:12px 0;font-size:13.6px;color:#7c2d12;}
+  .fix li{margin:8px 0;}
+  footer{text-align:center;color:#90a4ab;font-size:12.5px;margin-top:28px;}
+  .hl{color:var(--accent);font-weight:700;}
+  @media print{body{background:#fff;}section,header.hero{box-shadow:none;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="tag">HypeProof Lab · Track B · Draft v3</span>
+    <h1>보아치과 원장 강의 v3<br>봉호 코어로 다시 쓴 홈페이지 카피클론</h1>
+    <p>평소 외주에 맡기던 원장이 → 오늘은 AI 지휘관이 되어 → boaclinic급 운영 홈페이지를 직접 만들고 → 배포 URL과 "내가 고칠 수 있다"를 손에 쥐고 돌아간다</p>
+    <div class="meta">
+      <span>🦷 치과 원장/실장 (비개발자)</span>
+      <span>⏱ 4시간</span>
+      <span>📅 2026-06-22</span>
+      <span>🏆 보안치과 해커톤</span>
+    </div>
+  </header>
+
+  <section style="border-color:#f3c0a8;">
+    <h2><span class="n" style="background:var(--warn);">0</span>v2가 틀린 점 (자기 정정)</h2>
+    <p>v2는 "껍데기만 카피"라는 표면만 잡고 <strong>HypeProof DNA를 하나도 안 박았다.</strong> 빠진 것:</p>
+    <ul class="fix">
+      <li><strong>봉호 코어</strong> — AI 지휘관 서사 / 5블록 / "AI가 내 생각과 다르게 만든 걸 질문으로 고치는" 핵심 장면</li>
+      <li><strong>오프닝 와우포인트</strong> — "이런 걸 바로 할 수 있어요" 라이브 데모 전략</li>
+      <li><strong>7에셋 행동신호 측정표</strong> — Q&A 아님, 과정 신호로 관찰 (정의가 이미 존재)</li>
+      <li><strong>실제 결과물 수준</strong> — boaclinic.com 급: 네이버예약·카카오·SNS 연동 + 안정 배포처</li>
+    </ul>
+    <p>v3는 이 4개를 <span class="hl">본체</span>로 고정한다.</p>
+  </section>
+
+  <div class="oneliner">
+    평소 홈페이지를 외주에 맡기던 원장이, 오늘은 <strong>AI를 지시하는 사람</strong>이 되어
+    <strong>boaclinic.com 수준의 실제 운영 가능한 병원 홈페이지(네이버예약·카카오·SNS 연동)</strong>를 직접 만들고,
+    안정 배포된 URL과 "내가 고칠 수 있다"는 확신을 손에 쥐고 돌아가는 4시간.
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>봉호 코어의 성인 번역</h2>
+    <pre>평소 = 홈페이지는 내가 못 건드리는 것 (외주 의존)
+        ↓
+오늘 = 내가 AI를 지시하는 사람
+        ↓
+내 병원 홈페이지를 직접 만들어낸다
+        ↓
+배포된 URL + 수정 능력을 손에 쥐고 돌아간다</pre>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>오프닝 와우포인트 + 핵심 장면</h2>
+    <div class="wow">
+      ⚡ <b>와우포인트 (첫 10분):</b> 강사가 라이브로 5분 만에 boaclinic급 골격을 띄운다 →
+      "지금 이거, 오늘 끝나면 <b>여러분이 직접</b> 만들어 갑니다. 외주 견적 받지 마세요." → "나도 할 수 있다" 가능성 심기.
+    </div>
+    <div class="scene">
+      🎯 <b>핵심 장면 (이게 없으면 HypeProof 수업 아님):</b> 원장이 시킨다 → AI가 의도와 다르게 만든다 →
+      "AI가 뭘 몰랐지?" 발견 → 질문을 정확히 고친다 → 결과가 바뀐다 → "내가 AI를 움직였다". <br>
+      카피클론에서는 <b>"타깃과 다르게 나온 부분"</b>이 이 발견의 트리거가 된다.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>봉호 5블록 × 4시간 운영안</h2>
+    <table>
+      <tr><th>시간</th><th>봉호 코어</th><th>현장 활동</th><th>산출물</th></tr>
+      <tr><td>0:00–0:25</td><td><b>도입(와우)</b></td><td>5분 라이브 데모 → "내가 AI 지휘관" 선언</td><td>지휘관 프레임</td></tr>
+      <tr><td>0:25–1:00</td><td><b>탐색</b></td><td>정답지 선택 + 구조 분해 + 내 병원 정보(진료과목·의료진·예약채널) 정리</td><td>분해표 + 병원정보 카드</td></tr>
+      <tr><td>1:00–1:40</td><td><b>첫 시도</b></td><td>타깃 스크린샷 맥락주입 → V1 클론 생성</td><td>클론 V1</td></tr>
+      <tr><td>1:40–2:30</td><td><b>개선(핵심장면)</b></td><td>타깃과 다른 부분 발견 → 질문 고쳐 V2 / 콘텐츠 교체(도용금지)</td><td>V2 + 검증 메모</td></tr>
+      <tr><td>2:30–3:10</td><td><b>개선 심화</b></td><td>네이버예약·카카오·인스타·클릭투콜·지도 <b>연동</b> + 디테일 튜닝</td><td>운영 기능 붙은 V3</td></tr>
+      <tr><td>3:10–3:40</td><td><b>공유</b></td><td>안정 배포 → 공개 URL + 해커톤 베스트 선정</td><td>배포 URL + 베스트</td></tr>
+      <tr><td>3:40–4:00</td><td><b>공유/증거</b></td><td>의료광고 검증 + 집에서 이어갈 체크리스트 + 성장 리포트 seed</td><td>검증 체크리스트 + 증거물</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>결과물 수준 — boaclinic.com 벤치마크</h2>
+    <p><strong>필수 섹션:</strong> Hero / 진료안내 / 의료진 소개 / 병원 둘러보기 / 오시는 길·진료시간 / 예약 CTA</p>
+    <p><strong>필수 연동 (실제 운영 가능해야 함):</strong></p>
+    <table>
+      <tr><th>기능</th><th>연동</th></tr>
+      <tr><td>예약</td><td><b>네이버 예약 / 네이버 플레이스</b> 링크</td></tr>
+      <tr><td>상담</td><td><b>카카오톡 채널</b> 상담 버튼</td></tr>
+      <tr><td>전화</td><td>모바일 <b>클릭투콜</b> (tel:)</td></tr>
+      <tr><td>위치</td><td>네이버/카카오 <b>지도 임베드</b></td></tr>
+      <tr><td>SNS</td><td>인스타그램·블로그 링크</td></tr>
+    </table>
+    <p><strong>안정 배포처:</strong> 기본 권장 <span class="hl">Cloudflare Pages</span>(무료·트래픽 안정·커스텀 도메인·HTTPS 자동), 대안 Vercel. 도메인은 가비아 연결(현장은 무료 URL까지 보장, DNS는 집 체크리스트).</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>7 AI Native Assets — 행동신호 관찰표</h2>
+    <p>원칙: 7에셋은 말로 설명하는지가 아니라 <strong>실제 과정 신호</strong>로 관찰. 평가/점수 표현은 외부 노출 금지, 내부는 관찰 기록.</p>
+    <table>
+      <tr><th>Asset</th><th>이 수업에서 보는 행동 신호</th></tr>
+      <tr><td>Intent Clarity</td><td>첫 프롬프트에 병원 목적·타깃 환자·원하는 톤을 스스로 넣는가</td></tr>
+      <tr><td>Context Design</td><td>타깃 스크린샷 + 내 병원 정보(진료과목·예약채널)를 맥락으로 제공하는가</td></tr>
+      <tr><td>Delegation Judgment</td><td>AI가 만들 것 vs 원장이 검수할 것(의료광고 표현) 경계를 긋는가</td></tr>
+      <tr><td>Iteration Reflex</td><td>V1에서 멈추지 않고 몇 번 돌아와 고치는가</td></tr>
+      <tr><td>Verification Reflex</td><td>예약버튼·링크·의료광고 문구를 <b>실제로 눌러보고</b> 검증하는가</td></tr>
+      <tr><td>Taste</td><td>정답지와 비교해 더 나은 기준으로 거부/수정하는가</td></tr>
+      <tr><td>Ownership</td><td>"외주 줘야지"가 아니라 "내가 고칠 수 있다"로 회고하는가</td></tr>
+    </table>
+    <p>→ Studio가 프롬프트 구조·수정 횟수·검증 클릭·회고 언어를 로그로 남겨 <strong>서술형 성장 리포트</strong> seed로 변환.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>가드레일 & 오픈 이슈</h2>
+    <div class="guard">
+      ⚠️ <b>저작권</b>: 타깃은 구조·레이아웃 레퍼런스로만, 로고·사진·문구는 내 병원 자산/데모로 교체.
+      <b>의료광고법</b>: "최고·유일·100%·치료 보장" 금지, 게시 전 원장 최종 검수 필수.
+    </div>
+    <ul>
+      <li>타깃 사이트 1개 확정 (boaclinic급·재현 가능·저작권 안전)</li>
+      <li>와우포인트 라이브 데모 대본 + 사전 빌드 백업본</li>
+      <li>네이버예약/카카오 연동 현장 계정 준비(병목 가능)</li>
+      <li>해커톤 심사 기준표 (완성도 / 연동 작동 / 의료광고 검증 / Taste)</li>
+    </ul>
+  </section>
+
+  <footer>HypeProof Lab — dental-website-copyclone-v3 · 2026-06-22 · draft · 봉호 코어 + 7에셋 행동신호 적용</footer>
+</div>
+</body>
+</html>

@@ -1,8 +1,9 @@
 ---
 type: index
+status: navigational
 title: "Deliverables"
 created: 2026-04-12
-updated: 2026-04-19
+updated: 2026-06-27
 tags:
   - index/deliverables
 ---
@@ -19,6 +20,7 @@ tags:
 
 ## Curriculum
 - [[curriculum-v0.3]] — 커리큘럼 v0.3 산출물 트래킹 (봉호·지웅, 2026-04-19 전달, status: delivered)
+- [[boa-dental-ai-promo-race-poster-v1]] — 보아치과 AI 홍보 레이스 포스터 v1 (2026-06-27, delivered)
 
 ## In Progress — Pilot (due 2026-05-05)
 - [[pilot-gemini-api-key]] (due 2026-04-18)

@@ -1,3 +1,115 @@
+## [2026-07-11] ingest | 변호사 전문직 채널 미팅 메모
+- Source: `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md`
+- Summary: [[legal-professional-channel-meeting-20260711-source]]
+- Pages created: [[legal-professional-channel-meeting-20260711-source]], [[2026-07-11-legal-professional-channel-meeting]], [[legal-brief-prep-loop]], [[legal-divorce-brief-prep-consulting]]
+- Pages updated: [[hypeproof-business-strategy]], [[sources/_index]], [[comms/_index]], [[concepts/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 변호사 채널의 핵심은 빠른 초안보다 truthworthy한 사실 추출과 준비서면 교정 루프다. 의뢰인의 머릿속 사건을 꺼내고, 하나의 사실에서 여러 해석을 분기하며, 변호사의 pass/fail 감각으로 49%→51%를 넘기는 것이 상품 본체가 될 수 있다. GEO와 "이혼 기각" 니치는 후속 확인 필요로 남긴다.
+
+## [2026-07-06] ingest | 보아치과 AI 홈페이지 실습 큐시트
+- Source: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf`
+- Companion sources: `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.html`, `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.txt`
+- Summary: [[boa-dental-ai-homepage-cuesheet-20260706]]
+- Pages created: [[boa-dental-ai-homepage-cuesheet-20260706]], [[boa-dental-ai-homepage-cuesheet-20260706-spec]]
+- Pages updated: [[dental-website-copyclone-v3]], [[boa-dental]], [[hypeproof-studio]], [[sources/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 2시간 외부 공유용 큐시트는 발표/해커톤 감성을 빼고, 메인강사가 보아치과 홈페이지를 만드는 화면을 기준으로 같이 따라 만들게 한다. Context Engineering은 URL만 넣은 결과와 자세한 병원 컨텍스트 결과의 차이를 체감시키고, Loop Engineering은 루브릭을 만족할 때까지 검사와 수정을 반복시키는 것을 핵심으로 둔다. 최종 산출물은 홈페이지, 배포 URL, GitHub 저장소, `agent.md`다.
+
+## [2026-06-30] save | 보아치과 랜딩 첫 화면 메시지
+- Source: `.raw/telegram/2026-06-30-boa-dental-landing-message.md`
+- Summary: [[boa-dental-landing-message-20260630-source]]
+- Pages created: [[boa-dental-landing-message-20260630-source]]
+- Pages updated: [[dental-website-copyclone-v3]], [[sources/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 첫 화면은 실제 배포 홈페이지라는 즉시 결과물과, Claude Code/Codex 등 도구와 무관하게 쓰는 `맥락 설계`·`피드백 감각`을 HypeProof Lab의 실전 반복 훈련으로 체화한다는 메시지를 함께 보여줘야 한다.
+
+## [2026-06-30] ingest | Weekly on HypeProof 2026-06-29
+- Source: `.raw/meeting_notes/2026-06-29-weekly-on-hypeproof-gemini.md`
+- Summary: [[weekly-on-hypeproof-20260629-source]]
+- Pages created: [[weekly-on-hypeproof-20260629-source]], [[2026-06-29-weekly-on-hypeproof]]
+- Pages updated: [[boa-dental]], [[dental-website-copyclone-v3]], [[hypeproof-studio]], [[sources/_index]], [[comms/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 강의의 수강자 아웃풋은 홈페이지 초안/공개 URL/전후 비교/설명 카드/Loop Log이고, HypeProof 고유성은 Studio 로그·7 Assets 체화·레이스/커뮤니티·KOL 채널 전략에 있다.
+
+## [2026-06-27] ingest | 보아치과 AI 홍보 레이스 포스터 v1
+- Source: `.raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.pdf`
+- Companion source: `.raw/documents/boa-dental-ai-promo-race-poster-v1-20260627.html`
+- Summary: [[boa-dental-ai-promo-race-poster-v1-20260627]]
+- Pages created: [[boa-dental-ai-promo-race-poster-v1-20260627]], [[boa-dental-ai-promo-race-poster-v1]]
+- Pages updated: [[boa-dental]], [[sources/_index]], [[deliverables/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 보아치과 포스터 v1의 외부 정본 흐름은 초반 설명과 재료 정리 이후 원장님이 직접 문구·구성·톤을 깎아 최종 홈페이지 초안으로 평가받는 구조다.
+
+## [2026-06-27] correction/save | 보아치과 클로징 — 홍보 자유도 중심 정정
+- Type: curriculum correction
+- Pages updated: [[dental-website-copyclone-v3]], [[specs/track-b/_index]], [[hot]], `exports/boa-dental-design-rationale.html/.pdf`
+- From: Telegram (Jiwoong Kim). 보아치과 원장 강의의 클로징과 레슨은 부모/아이 강의와 달라야 하며, 핵심은 원장님이 자기 치과 홍보를 본인이 원하는 대로 할 수 있는 자유도를 얻는 것이라는 정정.
+- Key insight: 의료광고 검증은 필수 가드레일이지만 클로징의 주인공은 검증 자체가 아니다. 보아치과판의 두 중심 기술은 AI에게 내 병원을 제대로 질문/설명하는 Context Engineering과 첫 결과를 원하는 홍보 방향으로 계속 고쳐가는 Feedback Loop다.
+
+## [2026-06-22] correction/save | 보아치과 v3 — v2의 HypeProof DNA 누락 정정
+- Type: curriculum correction
+- Created: [[dental-website-copyclone-v3]] (md), `exports/dental-website-copyclone-v3.html/.pdf`
+- Pages updated: [[specs/track-b/_index]], [[hot]], [[log]]
+- From: Telegram (Jiwoong Kim). v2가 봉호 코어·7에셋 행동신호·와우포인트·boaclinic급 결과물을 하나도 안 박은 generic draft라는 정당한 지적.
+- Key insight: v3는 (1)봉호 5블록+AI지휘관 서사+핵심 장면(AI가 다르게 만듦→질문 고침)을 본체로, (2)7에셋을 Q&A 아닌 행동신호 관찰표로, (3)오프닝 와우포인트 라이브 데모, (4)결과물 수준을 boaclinic.com급(네이버예약·카카오·SNS 연동 + Cloudflare Pages 안정 배포)으로 고정. v2는 deprecated.
+
+## [2026-06-21] ingest/save | 보아치과 v2 카피클론 + 주인님 확정 우선순위
+- Type: curriculum/spec + priority correction
+- Created: [[dental-website-copyclone-v2]] (md), `exports/dental-website-copyclone-v2.html`
+- Pages updated: [[specs/track-b/_index]], [[hot]], [[log]]
+- From: Telegram (Jiwoong Kim). AI의 임의 P0~P3 우선순위는 할루시네이션으로 기각. 정본 우선순위 = 1) 보아치과 커리큘럼을 웹사이트 카피 방향으로 전환(핵심가치 복사·껍데기만 교체) 2) HypeProof Studio 기술 운행 가능성 체크.
+- Key insight: v1(detail-v1)의 핵심가치(요리교실·공개URL·7Assets·검증·자기병원전환)는 유지, 출발점만 "빈 샘플 생성"→"실재 사이트 정답지 클론(구조만 차용·콘텐츠 데모 교체, 도용금지)"으로 교체. Studio 운행의 P0 블로커는 이미지 맥락주입 UI + 멀티턴 연속성.
+
+## [2026-06-08] save | HypeProof Studio 메타게임 은유
+- Type: concept/spec update
+- Pages updated: [[sk-biopharma-bongho-curriculum-v2]], [[hypeproof-studio-game-skillpack-v1]], [[hot]], [[log]]
+- From: 봉호 태님 Telegram insight: “HypeProof Studio라는 커다란 게임기 안에서 게임을 만드는 게임을 한다.”
+- Key insight: Studio는 AI 코딩툴이 아니라 메타게임 OS다. 7 Assets는 내부 매핑으로 두고, 아이에게는 퀘스트/뱃지/레벨업/출시 보상으로 경험되게 한다.
+
+## [2026-06-08] correction | 7 Assets 평가 프레임 금지
+- Type: correction
+- Pages updated: [[sk-biopharma-bongho-curriculum-v2]], [[hypeproof-studio-game-skillpack-v1]], [[hot]], [[log]]
+- From: Telegram correction that framing 7 Assets as scoring/rubric risks overriding 봉호 커리큘럼.
+- Key insight: 봉호 커리큘럼 우선. 7 Assets는 아이에게 점수로 노출하지 않고, Studio가 과정 흔적을 보존한 뒤 관찰 기록/성장 코멘트로만 번역한다. 0/1/2 루브릭은 봉호님 확인 전까지 사용하지 않는다.
+
+## [2026-06-08] save | SK바이오팜 봉호 커리큘럼 v2 재작성
+- Type: curriculum/spec
+- Created: [[sk-biopharma-bongho-curriculum-v2]]
+- Pages updated: [[hypeproof-studio-game-skillpack-v1]], [[specs/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram correction that 봉호 커리큘럼 must be treated as the product core, not as a partial reference.
+- Key insight: SK바이오팜 수업은 HypeProof Studio 수업이 아니라, 봉호 커리큘럼을 HypeProof Studio로 구현한 가족 AI 게임 창작 수업이다.
+
+## [2026-06-08] decision/save | SK바이오팜 봉호 커리큘럼 구현 + Game Skill Pack
+- Type: spec/decision
+- Created: [[hypeproof-studio-game-skillpack-v1]]
+- Pages updated: [[sk-biopharma-curriculum-detail-v1]], [[hypeproof-studio]], [[specs/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram decision that SK바이오팜 게임 만들기 수업은 HypeProof Studio로 해야 하며, 게임 제작 특화 스킬·룰·프롬프트를 사전 탑재해야 한다.
+- Key insight: 봉호 커리큘럼을 구현하는 Studio는 범용 코딩툴 대체물이 아니라 아이/가족 수업의 완성률·안전성·리포트 데이터 수집을 보장하는 guided education OS다.
+
+## [2026-06-08] save | 커리큘럼 상세 v1 2종 — SK바이오팜 / 보아치과
+- Type: curriculum/spec
+- Created: [[sk-biopharma-curriculum-detail-v1]], [[dental-website-workshop-detail-v1]]
+- Pages updated: [[sk-biopharma-pilot]], [[dental-homepage-seminar-v1]], [[specs/_index]], [[specs/track-b/_index]], [[index]], [[hot]], [[log]]
+- From: Telegram discussion on prioritizing SK바이오팜 커리큘럼 상세 v1 and 보아치과 웹사이트 만들기 상세 v1 based on existing vault materials.
+- Key insight: SK바이오팜은 봉호 커리큘럼을 본체로 HypeProof Studio에서 구현하는 7 Assets Family AI Creation Lab으로, 보아치과는 Claude Code 중심 실전 홈페이지 제작 + HypeProof Studio 스킬팩 제품화 경로로 분리하는 것이 현재 최선이다.
+
+## [2026-06-08] ingest | SK바이오팜 일정/대상자 내부 설문 결과
+- Source: `.raw/images/sk-biopharma-schedule-survey-20260608.md`
+- Summary: [[sk-biopharma-schedule-survey-20260608]]
+- Pages created: [[sk-biopharma-schedule-survey-20260608]], [[kim-jinhyuk]]
+- Pages updated: [[sk-biopharma-pilot]], [[sk-biopharma]], [[sources/_index]], [[stakeholders/_index]], [[index]], [[hot]], [[log]]
+- Key insight: SK바이오팜 파일럿 수요가 20가족/23자녀/2회차/7~8월 토요일 선호로 구체화되어, 분반 의견·2회차 견적·커리큘럼 자료·가능 일정 회신이 다음 병목이 되었다.
+
+## [2026-06-07] ingest | 세미나 기획 의견 정리 — 치과 AI 홈페이지 만들기
+- Source: `.raw/articles/dental-homepage-seminar-feedback-20260607.html`
+- Summary: [[dental-homepage-seminar-feedback-20260607]]
+- Pages created: [[dental-homepage-seminar-feedback-20260607]], [[dental-homepage-seminar-v1]], [[boa-dental]], [[park-junghyun]], [[lee-jaewon]], [[gabia]], [[cafe24]], [[claude-code]], [[vercel]], [[cloudflare]], [[hypeproof-ai-xyz]]
+- Pages updated: [[sources/_index]], [[specs/track-b/_index]], [[stakeholders/_index]], [[components/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 치과 홈페이지 세미나는 자유 제작보다 샘플을 그대로 따라 만드는 요리교실식 완주 경험과 실제 배포 URL 확보가 핵심이다.
+- Correction: 주인님 정정에 따라 이 소스는 [[boa-dental]] 이후 피드백으로 표시한다.
+
+## 2026-06-01 ingest | 7 AI Native Assets 측정 구조 원본
+- Source: `.raw/articles/7assets-measurement-review-original-20260523.html`
+- Summary: [[7assets-measurement-review-original-20260523]]
+- Pages created: [[seven-ai-native-assets-original]]
+- Pages updated: [[seven-ai-native-assets-sk-strategy]], [[sk-biopharma-pilot]]
+- Key insight: 7 Assets는 Q&A 답변이 아니라 과정 신호로 측정해야 하는 절차적 역량이다.
+
 ---
 type: meta
 title: "Log"
@@ -7,9 +119,88 @@ tags:
   - meta/log
 ---
 
+## [2026-06-01] save | 7 AI Native Assets — SK바이오팜 전략 업데이트
+- Type: concept
+- Location: wiki/concepts/seven-ai-native-assets-sk-strategy.md
+- From: SK바이오팜 최종 견적서와 Bitree 제안서 비교, 7 Assets 중심 상품 전략 업데이트
+- Key insight: 7 Assets는 세일즈용 포장이 아니라 외부 고객 인터페이스이며, 16 Essence는 내부 scoring rubric으로 유지한다.
+
+
+## [2026-06-01] ingest | SK바이오팜 Bitree 최종 견적서
+- Source: `.raw/images/sk-biopharma-bitree-final-quotation-20260526.md`
+- Summary: [[sk-biopharma-bitree-final-quotation-20260526]]
+- Pages updated: [[sk-biopharma-pilot]], [[index]], [[hot]]
+- Key insight: 최종 견적은 4시간/10가족 기준 VAT 포함 10,120,000원으로, 기존 40~60만원/가족 검토가보다 높은 프리미엄/high-touch 운영 가격이다.
+
+
 # Log
 
 추가 전용. 새 엔트리는 **최상단**에 삽입. 과거 엔트리 수정 금지.
+
+---
+
+## 2026-05-15 | validation | 테스트 품질 3-Phase 개선 완료
+
+- 수정: Phase1(sys.path 삭제, anyio→asyncio, tautology assertion 수정, fixture 중복 제거, 테스트명 수정) / Phase2(test_card_node·test_spec_node _DATA_DIR monkeypatch 격리) / Phase3(error 이벤트, 갤러리/rename/save 엔드포인트, backendUrl.ts 단위 테스트, send() 가드+payload 검증)
+- Pages updated: [[test-quality-review-2026-05-15]], [[hot]], [[index]]
+- Key insight: 97(BE)+9(FE) → 111(BE)+19(FE) = 130 tests 전체 통과. HIGH 3건(sys.path 잔재, send() 가드 미검증, asyncio 마커 누락) 모두 해소. `backendUrl.test.ts` 신규 생성으로 프론트 테스트 파일 2개로 확장.
+
+---
+
+## 2026-05-15 | validation | 테스트 수정 + 전체 테스트 품질 검토
+
+- 수정: `test_auth_session_game.py` (claude_runner 임포트 → main, `_session_meta` → SQLite, 픽스처 전면 교체), `useChat.test.ts` (WS scheme env stub), `main.py` (null byte path traversal 400 처리)
+- Pages created: [[test-quality-review-2026-05-15]]
+- Pages updated: [[kids-edu-backend]], [[log]], [[hot]], [[index]]
+- Key insight: LangGraph 리라이트로 세션 저장소가 인메모리 딕트 → SQLite로 바뀌면서 테스트 픽스처가 통째로 무효화됐음. 동시에 `main.py`의 null byte path traversal 방어 구멍(Python 3.14 ValueError 미처리)이 발견돼 수정됨. 테스트 품질 검토 결과 97/9 전체 통과하나 HIGH 3건·MEDIUM 다수 공백 확인.
+
+---
+
+## 2026-05-15 | pr-merge | PR#7 feature/langgraph-gemini → main 머지 + 리뷰 반영
+- PR: https://github.com/JinyongShin/hypeproof_kids_edu/pull/7
+- Pages updated: [[adr-langgraph-gemini-backend]]
+- Key insight: [[langgraph]]+[[gemini-2-5-flash]] 백엔드 전환 PR이 리뷰 후 main에 머지됨. `edit_code_node` 실패 피드백 추가(사용자 경험), `sys.path` 반복 패턴 정리(코드 품질), Langfuse 시크릿 외부 주입(보안). 파일럿 후 처리 항목(Ping/Pong, CSP, rolling summary)은 별도 이슈로 추적 예정.
+
+---
+
+## 2026-05-15 | ingest | 국립암센터 행사 사전 확인 요청 초안
+- Source: `.raw/meeting_notes/2026-04-21-hospital-inquiry-draft.md`
+- Pages created: [[2026-04-21-hospital-inquiry-draft]]
+- Pages updated: [[comms/_index]], [[index]]
+- Key insight: 파일럿 당일 운영의 9개 핵심 체크포인트 (허가·감염관리·장비·콘텐츠 등)가 한 문서에 정리됨. [[game-content-guideline-pending]] 및 [[case-pediatric-onc-infection-control]] 과 직결.
+
+---
+
+## 2026-05-14 | vault-migration | 볼트 구조 정렬 — 스킬 철학 일치
+- 작업: wiki/wiki-ingest/wiki-query/wiki-lint 스킬 철학과 볼트 구조 갭 해소
+- Phase 0: git commit + tag (`vault-pre-migration-2026-05-14`) + 파일시스템 백업
+- Phase 1: [[sources/_index]] · [[questions/_index]] 신규 폴더 생성
+- Phase 2: `HypeProof-business-strategy.md` 루트→[[hypeproof-business-strategy]] (concepts/) 이동 + frontmatter 추가, 중복 파일 삭제
+- Phase 3: dead link 4개 stub 생성 — [[adr-langgraph-gemini-backend]] · [[adr-container-deployment]] · [[adr-multitenant-schema]] · [[langfuse-observability]]
+- Phase 4: orphan 파일 39개 → [[index]] 등록 (Validation·Projects·Assets·Sources·Questions 섹션 신설, Decisions·Specs·Runbooks·Components·Concepts·Comms 섹션 확장)
+- Phase 5: frontmatter 보완 — projects/ 3개·runbooks/ 1개·comms/ 1개 frontmatter 추가, _index.md 13개 `status: navigational` 추가, validation/ 6개 `status: archive` + `updated` 추가
+- Phase 6: vault CLAUDE.md 구조 문서 갱신 — 5개 폴더 추가, kebab-case 컨벤션 명시, 스킬 관리 폴더 주의사항 추가
+- Key insight: sources/와 questions/가 없으면 wiki-ingest·wiki-query의 지식 누적 루프가 단절됨
+
+---
+
+## 2026-05-14 — JY 액션 리스트 저장 + LangGraph E2E 완료 기록
+
+- Type: save / status update
+- Created: [[jy-action-list-2026-05-14]]
+- Updated: [[hot]]
+- Key insight: [[langgraph]] MOCK_LLM=0 E2E 테스트 완료 확인. fly.io 배포만 남음. [[sk-biopharma]] 파일럿 critical path: 제안서 초안 → Freelancer 채용 → Studio v0.1 빌드.
+
+---
+
+## 2026-05-14 — 배치 ingest 3종 (SK바이오팜 5/12 미팅 × 2 + 5/14 후속)
+
+- Source: `meeting_notes/2026-05-12.md`, `meeting_notes/20260512_meeting.md` (동일 내용), `meeting_notes/2026-05-14.md`
+- Type: batch ingest
+- Created: [[2026-05-12-sk-biopharma-meeting]], [[2026-05-14-sk-biopharma-followup]], [[sk-biopharma]], [[bitree]], [[oh-sungeun]], [[sixteen-essence]], [[hypeproof-studio]], [[adr-hypeproof-studio-v01]], [[sk-biopharma-pilot]]
+- Updated: [[index]], [[hot]]
+- Key insight: HypeProof Lab이 [[sk-biopharma]] 임직원 가족 대상 AI 게임 창작 교육 파일럿을 추진 중. 자체 IDE "[[hypeproof-studio]]" (VS Code fork) 개발 결정. 5/28 dry-run이 Go/No-go 게이트. [[sixteen-essence]] 프레임워크를 교육 IP의 핵심으로 구조화.
+- 주의: 2026-05-12.md와 20260512_meeting.md는 동일 내용 — 단일 comms 페이지로 통합.
 
 ---
 
@@ -58,7 +249,7 @@ tags:
 
 ### 구현 주의사항
 - v0.3 커리큘럼의 AI 호출 3종(캐릭터 카드, 이야기, 표지 이미지)은 현재 백엔드 미구현.
-- R4 완성보장 폴백도 P0 미충족 상태 — 4/21 후 [[implementer]] 작업 범위 재산정 필요.
+- R4 완성보장 폴백도 P0 미충족 상태 — 4/21 후 [[subagent-team-structure]] 작업 범위 재산정 필요.
 
 ---
 
@@ -515,3 +706,4 @@ tags:
 - 생성: `stakeholders/`, `decisions/`, `deliverables/`, `intel/`, `comms/` 각 `_index.md`.
 - 생성: `_templates/` (stakeholder, decision, deliverable, intel, meeting, source).
 - 생성: vault 루트 `CLAUDE.md`.
+- 2026-05-21 — Added [[dental-supersearch-curriculum-v4]] and [[dental-supersearch-engine-workshop-v2]]: dental supersearch hackathon curriculum combining HYROX-style “원장님을 이겨라” with FDE/SaaS-style internal knowledge capture.

@@ -1,8 +1,9 @@
 ---
 type: index
+status: navigational
 title: "Comms"
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-07-11
 tags:
   - index/comms
 ---
@@ -11,7 +12,14 @@ tags:
 
 미팅·주요 스레드 합성 요약. 원본 트랜스크립트는 `../../meeting_notes/` 에 있음 (frontmatter `raw_source` 참조).
 
+## Ops / Comms
+- [[2026-04-21-hospital-inquiry-draft]] (2026-04-21) — 국립암센터 행사 사전 확인 요청 초안 (허가·감염관리·장비·콘텐츠 9개 항목)
+- [[2026-04-12-team-briefing-research]] (2026-04-12) — 소아암 환아 AI 코딩 파일럿 근거 요약
+- [[2026-04-22-hospital-filamentary-checklist]] (2026-04-22) — 병원/필라멘트리 사전 확인 체크리스트
+
 ## Weekly / Meetings
+- [[2026-07-11-legal-professional-channel-meeting]] — 변호사 전문직 채널 미팅: 준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설
+- [[2026-06-29-weekly-on-hypeproof]] — 보아치과 AI 강의 아웃풋/차별점과 HypeProof 포지셔닝 정리
 - [[2026-04-21-asap-action-items]] — ASAP 액션 아이템 (필라멘트리 전달 마감 2026-04-24)
 - [[2026-04-20-wizard-curriculum]] — 나만의 마법 게임 만들기: 지휘관의 탄생 커리큘럼 설계 요약
 - [[2026-04-20-meeting-briefing]] — AI 기반 게임 제작 교육 전략 브리핑 (교육 철학·기술·운영)

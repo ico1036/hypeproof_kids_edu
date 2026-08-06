@@ -1,8 +1,9 @@
 ---
 type: index
+status: navigational
 title: "Stakeholders"
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-06-08
 tags:
   - index/stakeholders
 ---
@@ -24,6 +25,9 @@ tags:
 
 ## External
 - [[filamentary]] — 현장 교육 협력 기관. 커리큘럼 피드백 파트너 (2026-04-21 등장)
+- [[boa-dental]] — 치과 AI 홈페이지 만들기 세미나 피드백의 현장/사례 맥락 (2026-06-07)
+- [[kim-jinhyuk]] — SK바이오팜 수석매니저, 일정/대상자 내부 설문 결과 전달 (2026-06-08)
+- [[park-junghyun]] · [[lee-jaewon]] — 보아치과 이후 치과 AI 홈페이지 만들기 세미나 클라이언트 피드백 출처 (2026-06-07)
 - 이동훈 대표 · 문조일 대표 · 김성경 대표 · 박재현 소장 · 노수림 교수 — 필요 시 페이지 생성.
 
 ## Notes
