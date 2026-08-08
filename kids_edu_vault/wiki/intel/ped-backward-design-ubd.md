@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "역방향 설계(UbD) — 지도안 작성 순서의 근거"
 source_date: 2026-08-08
 created: 2026-08-08

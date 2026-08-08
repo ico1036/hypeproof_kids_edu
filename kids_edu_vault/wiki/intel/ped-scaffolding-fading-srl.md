@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "스캐폴딩·페이딩과 자기조절학습 — 금지 개입·거리 축의 이론적 근거"
 source_date: 2026-08-08
 created: 2026-08-08

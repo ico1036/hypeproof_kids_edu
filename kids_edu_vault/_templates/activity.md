@@ -2,7 +2,7 @@
 type: activity
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 id: act-000
 model: ""
 principle: []

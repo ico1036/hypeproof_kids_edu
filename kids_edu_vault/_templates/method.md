@@ -2,7 +2,7 @@
 type: method
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 id: m-000
 family: ""              # explicit | discovery | social | assessment | apprenticeship
 evidence_grade: ""      # A(다수 메타분석 일치) | B(메타분석 있음, 조건부) | C(단일·소규모) | D(이론·실무 보고)

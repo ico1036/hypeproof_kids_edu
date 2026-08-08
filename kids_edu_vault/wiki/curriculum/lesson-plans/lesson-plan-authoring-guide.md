@@ -2,7 +2,7 @@
 type: spec
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "학습 지도안 작성법"
 owner: JY
 created: 2026-08-08

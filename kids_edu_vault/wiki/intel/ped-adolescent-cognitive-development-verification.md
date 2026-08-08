@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "출처 검증 — 청소년 인지발달 주장 (형식적 조작기 / 자기평가 정확도)"
 source_date: 2026-08-08
 created: 2026-08-08

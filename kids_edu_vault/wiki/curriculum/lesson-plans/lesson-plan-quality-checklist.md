@@ -2,7 +2,7 @@
 type: spec
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "지도안 품질 체크리스트"
 created: 2026-08-08
 updated: 2026-08-08

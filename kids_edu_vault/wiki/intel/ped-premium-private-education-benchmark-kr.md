@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "국내 프리미엄 사교육 가격 벤치마크 — 가격 방어 논거"
 source_date: 2026-08-08
 created: 2026-08-08

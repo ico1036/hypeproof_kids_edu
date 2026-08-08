@@ -3,7 +3,7 @@ type: override
 status: active
 kind: scoped-variant
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 supersedes: "[[원본페이지]]#섹션앵커"
 upstream_reviewed: YYYY-MM-DD
 grounds: ""

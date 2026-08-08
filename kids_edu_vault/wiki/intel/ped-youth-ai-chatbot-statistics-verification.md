@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "출처 검증 — 청소년 AI 챗봇 사용 통계 (94.4% / 75.3% / 매일 사용)"
 source_date: 2026-08-08
 created: 2026-08-08

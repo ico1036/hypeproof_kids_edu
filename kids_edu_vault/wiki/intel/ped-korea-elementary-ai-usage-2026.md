@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "국내 초등 고학년 AI 사용 실태 — Lv1 시장 근거"
 source_date: 2026-08-08
 created: 2026-08-08

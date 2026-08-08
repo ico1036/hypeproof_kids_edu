@@ -2,7 +2,7 @@
 type: ingest-ruling
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 source: ".raw/01_이식매트릭스.md, .raw/03_지도안_24종.md"
 ruling: transform
 grounds: "교육 라인 헌법 A-1 / B-3"

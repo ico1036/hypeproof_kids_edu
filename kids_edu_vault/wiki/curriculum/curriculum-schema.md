@@ -1,6 +1,7 @@
 ---
 type: spec
 status: draft
+ip_owner: unverified
 title: "커리큘럼 자산 프론트매터 스키마"
 owner: JY
 created: 2026-08-08
@@ -23,13 +24,47 @@ tags:
 type: activity | model | principle | rubric | guardrail | constraint | asset | track | lesson-plan | override | ingest-ruling
 status: draft | active | quarantine | retired
 scope: edu-11-16          # 유효 범위
-ip_owner: hypeproof | partner-<name> | joint
+ip_owner: unverified | hypeproof | partner-<name> | joint | derived-external
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [curriculum, ...]
 ```
 
+## `ip_owner` — 값 체계
+
 `ip_owner`는 **누락 금지**. 파트너 IP가 섞인 자산은 제3자 라이선스 패키지에서 기계적으로 제외되어야 한다. → [[edu-11-16-parent-track-ip-boundary]]
+
+| 값 | 뜻 | 라이선스 패키지 |
+|---|---|---|
+| **`unverified`** | **기본값. 귀속 판정 전** | ⛔ **자동 제외** |
+| `hypeproof` | 판정 완료. 법인 단독 소유 | ✅ 포함 |
+| `partner-<name>` | 파트너 소유 | ⛔ 제외 (인바운드 계약 범위 내에서만 사용) |
+| `joint` | 공동 소유 | ⚠️ 개별 합의 필요 |
+| `derived-external` | 외부 저작물 기반 2차적저작물 | ⚠️ 재배포 검토 필요 |
+
+### 왜 `unverified`가 기본값인가
+
+2026-08-08 기준 **48건 전부 `unverified`다.** 이는 미완이 아니라 정직한 상태다.
+
+초기에는 파일을 만들 때마다 습관적으로 `hypeproof`를 넣었으나, **각 파일에 대해 "정말 법인 단독 소유인가"를 판정한 적이 없었다.** 전부 같은 값으로 채워진 필드는 "판정이 끝났다"는 잘못된 인상을 주고, 라이선스 패키지 빌드 시 그것을 믿으면 위험하다.
+
+실제로 판정이 필요한 사례:
+
+| 대상 | 쟁점 |
+|---|---|
+| `wiki/intel/ped-*` 10건 | 외부 저작물의 요약·번역. 인용 범위를 넘는 요약이 재배포되면 문제. **`derived-external` 후보** |
+| `models/kr-models-*` 4건 | 국내 교육과정 모형 정리. 같은 성격 |
+| `models/m-00*` 8건 | Gold Standard PBL 7요소(PBLWorks), 스캐폴딩 3요소 등은 **원저자의 프레임**이다 |
+| `.raw` 유래 자산 | 원본은 Jay의 아이데이션 산출물. **개인 vs 법인 귀속이 정리된 적 없다** |
+
+마지막 항목이 특히 그렇다. 회사–창업자 간 IP 귀속 문제이며 **법률 검토 영역**이다. 임의로 `hypeproof`를 적는 것은 추정이다.
+
+### 판정 규칙
+
+- **판정 없이 `hypeproof`로 올리지 않는다.** 판정 근거를 노트 본문 또는 `edu-11-16-parent-track-ip-boundary`에 남긴다
+- `partner-<name>`의 `<name>`은 **파트너사가 확정된 뒤** 채운다. 현재 미확정
+- `derived-external`은 원저작물 출처를 함께 기록한다
+- **`unverified`가 남아 있는 자산은 라이선스 패키지 빌드에서 자동 제외**된다. 이것이 이 값의 안전 기능이다
 
 ## activity — 활동 원자
 
@@ -126,7 +161,7 @@ produced: []                     # 이 판정으로 생성된 자산
 
 `/wiki-lint` 실행 시 아래를 검사한다.
 
-1. `wiki/curriculum/**` 에 `ip_owner` 누락 → 에러
+1. `wiki/curriculum/**` 에 `ip_owner` 누락 → 에러 (프론트매터 기준. 본문 코드블록은 무시)
 2. `evidence`가 빈 `activity` → 경고
 3. 한 원본·한 섹션에 `status: active` override 2개 이상 → 에러
 4. 자산이 override 대상 원본을 직접 인용 → 에러 (override 경유 필수)
@@ -135,6 +170,8 @@ produced: []                     # 이 판정으로 생성된 자산
 7. `method`에 m-002 포함인데 `guidance` 하위 필드 미완 → 에러
 8. 소집단 활동인데 `individual_evidence` 비어 있음 → 에러
 9. 피드백 활동인데 `retry: false` → 경고
+10. `ip_owner`가 정의된 5개 값 외 → 에러
+11. **`ip_owner: unverified` → 라이선스 패키지 빌드에서 자동 제외** (경고, 빌드 시 에러)
 
 ## 관련
 

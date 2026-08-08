@@ -2,7 +2,7 @@
 type: spec
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "오버라이드 프로토콜"
 owner: JY
 created: 2026-08-08

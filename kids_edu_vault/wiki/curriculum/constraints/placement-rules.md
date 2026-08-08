@@ -2,7 +2,7 @@
 type: constraint
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "배치 제약 — 컴파일러 검증 규칙"
 created: 2026-08-08
 updated: 2026-08-08

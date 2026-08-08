@@ -48,11 +48,32 @@ Jay 개요는 Parent Protocol을 **대화교육 파트너** 담당으로 두고 
 
 - **Parent AI Dialogue(1인 100만)는 우리가 파는 파트너 IP다.** 인바운드 라이선스 계약이 선행해야 한다
 - 이 모듈은 **아웃바운드 라이선스 패키지에서 제외**된다
-- lint 규칙: `wiki/curriculum/**`에 `ip_owner` 누락 시 에러
+- lint 규칙: `wiki/curriculum/**`에 `ip_owner` 누락 시 에러. 값 체계는 5단(`unverified` 기본값) → [[curriculum-schema]]
 - 지도안 "가정 연계" 항목은 작성 시 IP 경계 확인 대상 → [[lesson-plan-quality-checklist]]
 
 ## 미결
 
+### ⛔ IP 귀속 판정 48건 미완 (2026-08-08)
+
+`wiki/curriculum/**` 33건 + `wiki/intel/ped-*` 10건 + `_templates` 5건이 **전부 `ip_owner: unverified`** 상태다. 초기에 습관적으로 `hypeproof`를 넣었으나 판정 근거가 없어 전량 되돌렸다. → [[curriculum-schema]]
+
+판정이 필요한 쟁점:
+
+| 대상 | 쟁점 | 예상 값 |
+|---|---|---|
+| `intel/ped-*` 10건 | 외부 저작물의 요약·번역 | `derived-external` |
+| `models/kr-models-*` 4건 | 국내 교육과정 모형 정리 | `derived-external` |
+| `models/m-00*` 8건 | Gold Standard PBL 7요소, 스캐폴딩 3요소 등 원저자 프레임 포함 | `derived-external` 또는 부분 `hypeproof` |
+| `.raw` 유래 자산 | 원본이 Jay의 아이데이션 산출물. **개인 vs 법인 귀속 미정리** | 법률 검토 필요 |
+| 우리 순수 창작 (헌법·금지개입·스키마·배치제약) | | `hypeproof` |
+
+**이 판정은 저작권 판단이 섞여 있어 법률 검토가 선행되어야 한다.** 특히 `.raw` 유래 자산의 개인–법인 귀속은 회사 설립·지분 구조와 함께 정리될 사안이다.
+
+그동안 `unverified`가 안전장치로 작동한다 — 라이선스 패키지 빌드에서 자동 제외되므로, 판정 없이 외부로 나가지 않는다.
+
+### 그 외
+
+- `partner-<name>`의 실제 값 미정 — **파트너사가 누구인지 확정되지 않았다**
 - 외부 전문가의 Diagnostic 결과가 강사에게 **어떤 형태로** 전달되는가. 원본 해석을 그대로 넘기면 진단 라벨 문제가 재발한다 → [[ruling-profile-based-differentiation]]
 - 파트너 계약의 실제 조항 확인 (본 결정은 개요 기재 사항에 근거한 설계 판단이며 계약서 검토가 아니다)
 - `joint` 로 분류될 자산이 실제로 있는지 — 있다면 지분·사용권 별도 합의 필요

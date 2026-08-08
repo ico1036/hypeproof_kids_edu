@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "성취기준 정렬 — 2022 개정 교육과정과 UNESCO AI 역량 프레임워크"
 source_date: 2026-08-08
 created: 2026-08-08

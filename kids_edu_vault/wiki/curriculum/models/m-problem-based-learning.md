@@ -2,7 +2,7 @@
 type: method
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 id: m-004
 family: discovery
 evidence_grade: B

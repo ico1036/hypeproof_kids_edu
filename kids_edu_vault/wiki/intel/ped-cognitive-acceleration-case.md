@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "인지 가속(CASE) — 우리 프로그램의 가장 가까운 선례"
 source_date: 2026-08-08
 created: 2026-08-08

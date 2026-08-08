@@ -2,7 +2,7 @@
 type: spec
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "11~16세 교육 조사 계획 (L0)"
 owner: JY
 created: 2026-08-08

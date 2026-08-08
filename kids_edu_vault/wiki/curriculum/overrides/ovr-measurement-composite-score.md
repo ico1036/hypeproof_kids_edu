@@ -3,7 +3,7 @@ type: override
 status: active
 kind: scoped-variant
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 supersedes: "[[hypeproof-measurement-rubric-from-hyrox-20260515]]"
 upstream_reviewed: 2026-08-08
 grounds: "교육 라인 헌법 A-1 / A-4 / B-2"

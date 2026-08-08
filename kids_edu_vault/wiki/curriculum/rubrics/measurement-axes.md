@@ -2,7 +2,7 @@
 type: rubric
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "측정 5축 — 교육 라인 정본"
 created: 2026-08-08
 updated: 2026-08-08

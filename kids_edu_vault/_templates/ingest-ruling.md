@@ -2,7 +2,7 @@
 type: ingest-ruling
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 source: ".raw/<파일명>"
 ruling: transform
 grounds: ""

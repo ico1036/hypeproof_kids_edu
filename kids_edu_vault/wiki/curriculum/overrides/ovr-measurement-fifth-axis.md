@@ -3,7 +3,7 @@ type: override
 status: pending-upstream
 kind: correction
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 supersedes: "[[hypeproof-measurement-rubric-from-hyrox-20260515]]"
 upstream_reviewed: 2026-08-08
 grounds: "Jay 개요 — AI Native Self Compass 상품 정체성"

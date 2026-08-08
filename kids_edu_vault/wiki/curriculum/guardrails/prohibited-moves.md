@@ -2,7 +2,7 @@
 type: guardrail
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "금지 개입 — 강사가 하지 않는 것"
 created: 2026-08-08
 updated: 2026-08-08

@@ -2,7 +2,7 @@
 type: spec
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "근거를 다루는 원칙 — 방법론 자산의 공신력 기준"
 owner: JY
 created: 2026-08-08

@@ -2,7 +2,7 @@
 type: lesson-plan
 status: draft
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 track: ""
 session: ""
 activities: []

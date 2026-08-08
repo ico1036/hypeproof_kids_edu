@@ -2,7 +2,7 @@
 type: intel
 status: summarized
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 title: "회차 포맷 근거 — 주의 지속·블록 스케줄링·그룹 규모"
 source_date: 2026-08-08
 created: 2026-08-08

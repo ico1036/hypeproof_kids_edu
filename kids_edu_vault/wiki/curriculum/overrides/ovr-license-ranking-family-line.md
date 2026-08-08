@@ -3,7 +3,7 @@ type: override
 status: active
 kind: scoped-variant
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 supersedes: "[[hypeproof-brand-license-structure-v0.1]]"
 also_affects: "[[hypeproof-license-strategy-from-hyrox-20260515]]"
 upstream_reviewed: 2026-08-08

@@ -2,7 +2,7 @@
 type: method
 status: active
 scope: edu-11-16
-ip_owner: hypeproof
+ip_owner: unverified
 id: m-kr-korean
 family: reference
 evidence_grade: D
