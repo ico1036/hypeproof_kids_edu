@@ -18,10 +18,10 @@ tags:
 
 ## 공통 필수 필드
 
-모든 `wiki/curriculum/` 노트에 적용.
+모든 `curriculum_wiki/` 노트에 적용.
 
 ```yaml
-type: activity | model | principle | rubric | guardrail | constraint | asset | track | lesson-plan | override | ingest-ruling
+type: method | activity | rubric | guardrail | constraint | spec | asset | track | lesson-plan | ingest-ruling | meta
 status: draft | active | quarantine | retired
 scope: edu-11-16          # 유효 범위
 ip_owner: unverified | hypeproof | partner-<name> | joint | derived-external
@@ -52,7 +52,7 @@ tags: [curriculum, ...]
 
 | 대상 | 쟁점 |
 |---|---|
-| `wiki/intel/ped-*` 10건 | 외부 저작물의 요약·번역. 인용 범위를 넘는 요약이 재배포되면 문제. **`derived-external` 후보** |
+| `curriculum_wiki/research/ped-*` 10건 | 외부 저작물의 요약·번역. 인용 범위를 넘는 요약이 재배포되면 문제. **`derived-external` 후보** |
 | `models/kr-models-*` 4건 | 국내 교육과정 모형 정리. 같은 성격 |
 | `models/m-00*` 8건 | Gold Standard PBL 7요소(PBLWorks), 스캐폴딩 3요소 등은 **원저자의 프레임**이다 |
 | `.raw` 유래 자산 | 원본은 Jay의 아이데이션 산출물. **개인 vs 법인 귀속이 정리된 적 없다** |
@@ -84,7 +84,7 @@ axes: [input, load]              # 측정 5축 중 훈련 대상
 prohibited_moves: []             # 금지 개입. 강사 매뉴얼로 자동 추출
 prep_assets: []                  # 사전 준비 자산
 safety: none | attention | protocol   # protocol이면 별도 대응 절차 필수
-method: [m-002]                  # 채택 방법론 → wiki/curriculum/models/
+method: [m-002]                  # 채택 방법론 → curriculum_wiki/methods/
 guidance:                        # m-002 요건. 발견형 활동에 필수
   space: ""                      # 탐색 공간을 어떻게 좁히는가
   elicit: ""                     # 설명 유도 발문
@@ -95,7 +95,7 @@ retry: true                      # 재시도 기회 유무 (m-006 요건)
 
 ### 방법론 파생 필수 필드 (2026-08-08 추가)
 
-방법론 라이브러리 조사에서 도출된 요건. → [[models/_index|방법론 라이브러리]]
+방법론 라이브러리 조사에서 도출된 요건. → [[methods-index]]
 
 - **`guidance`** — 발견형 활동(`method`에 m-002 포함)은 3개 하위 필드를 모두 채운다. **하나라도 비면 그 활동은 "안내된 발견"이 아니라 방치**이며, 명시적 수업보다 나쁜 결과를 낸다 (Alfieri et al. 2011: 비유도 발견 d=−0.38)
 - **`individual_evidence`** — 소집단 활동은 개별 산출물이 있어야 한다. 없으면 증거가 개인에게 귀속되지 않아 Evidence(Sediment)가 성립하지 않는다
@@ -127,24 +127,6 @@ completion_link: []              # 연결된 수료 요건
 
 규격과 작성 순서는 [[lesson-plan-authoring-guide]].
 
-## override — 기존 문서와의 관계 선언
-
-원본은 수정하지 않는다. 관계만 별도 노트로 선언한다.
-
-```yaml
-type: override
-kind: correction | scoped-variant | quarantine
-status: active | retired | upstreamed | pending-upstream
-supersedes: "[[원본페이지]]#섹션앵커"
-also_affects: ""                 # 같은 주장을 담은 다른 원본 (선택)
-upstream_reviewed: YYYY-MM-DD    # 이 날짜의 원본을 보고 판단했다
-grounds: ""                      # 근거 (헌법 조항, 조사 문서 등)
-```
-
-`supersedes` / `also_affects` 에 등재된 원본에는 lint가 `has_overrides: true` 를 자동 부착한다. **원본 본문은 수정하지 않는다.**
-
-`kind` 분류와 해소 규칙은 [[override-protocol]].
-
 ## ingest-ruling — 승격 판정
 
 `.raw/` 원자재를 자산으로 승격할 때 무엇을 왜 바꿨는지 기록. 원본은 `.raw`에 불변으로 남는다.
@@ -161,20 +143,17 @@ produced: []                     # 이 판정으로 생성된 자산
 
 `/wiki-lint` 실행 시 아래를 검사한다.
 
-1. `wiki/curriculum/**` 에 `ip_owner` 누락 → 에러 (프론트매터 기준. 본문 코드블록은 무시)
+1. `curriculum_wiki/**` 에 `ip_owner` 누락 → 에러 (프론트매터 기준. 본문 코드블록은 무시)
 2. `evidence`가 빈 `activity` → 경고
-3. 한 원본·한 섹션에 `status: active` override 2개 이상 → 에러
-4. 자산이 override 대상 원본을 직접 인용 → 에러 (override 경유 필수)
-5. `status: pending-upstream` 이 90일 초과 → 경고
-6. `safety: protocol` 인데 대응 절차 링크 없음 → 에러
-7. `method`에 m-002 포함인데 `guidance` 하위 필드 미완 → 에러
-8. 소집단 활동인데 `individual_evidence` 비어 있음 → 에러
-9. 피드백 활동인데 `retry: false` → 경고
-10. `ip_owner`가 정의된 5개 값 외 → 에러
-11. **`ip_owner: unverified` → 라이선스 패키지 빌드에서 자동 제외** (경고, 빌드 시 에러)
+3. `status: quarantine` 자산이 트랙에 포함됨 → 에러
+4. `safety: protocol` 인데 대응 절차 링크 없음 → 에러
+5. `method`에 m-002 포함인데 `guidance` 하위 필드 미완 → 에러
+6. 소집단 활동인데 `individual_evidence` 비어 있음 → 에러
+7. 피드백 활동인데 `retry: false` → 경고
+8. `ip_owner`가 정의된 5개 값 외 → 에러
+9. **`ip_owner: unverified` → 라이선스 패키지 빌드에서 자동 제외** (경고, 빌드 시 에러)
 
 ## 관련
 
-- [[override-protocol]]
 - [[edu-constitution]]
 - [[lesson-plan-authoring-guide]]

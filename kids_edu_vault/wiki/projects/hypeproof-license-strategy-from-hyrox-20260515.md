@@ -4,7 +4,6 @@ title: "HypeProof 라이센스 전략 — HYROX 모델 기반"
 status: developing
 created: 2026-05-15
 updated: 2026-05-15
-has_overrides: true
 tags:
   - project
   - license

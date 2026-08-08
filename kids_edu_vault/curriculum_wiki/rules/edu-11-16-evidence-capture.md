@@ -1,6 +1,8 @@
 ---
 type: decision
 status: accepted
+scope: edu-11-16
+ip_owner: unverified
 title: "11~16세 교육 — 관찰 기록 수집 주체"
 decided: 2026-08-08
 owner: JY
@@ -44,10 +46,10 @@ Jay 개요가 Evidence를 별도 제품 컴포넌트(Sediment)로 세워둔 이�
 스키마 필드명부터 그렇게 간다. `diagnosis`, `profile`, `assessment` 를 쓰지 않는다. 해석은 외부 전문가가 별도 절차로 수행한다.
 
 **3. 총점 필드를 만들지 않는다.** (헌법 B-2)
-→ [[ovr-measurement-composite-score]]
+→ [[measurement-axes]]
 
 **4. 아동 간 비교 뷰를 만들지 않는다.** (헌법 B-1)
-자기 대비 시계열만. → [[ovr-license-ranking-family-line]]
+자기 대비 시계열만. → [[edu-constitution]]
 
 ## 귀결
 

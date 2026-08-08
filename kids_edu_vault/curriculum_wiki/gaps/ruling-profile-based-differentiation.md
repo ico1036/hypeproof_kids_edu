@@ -72,4 +72,3 @@ Diagnostic 트랙이 외부 전문가 소유(개요)라는 점도 같은 방향�
 ## 관련
 
 - [[edu-constitution]]
-- [[override-protocol]]
