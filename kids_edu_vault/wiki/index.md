@@ -2,7 +2,7 @@
 type: meta
 title: "Index"
 created: 2026-04-12
-updated: 2026-07-11
+updated: 2026-08-08
 tags:
   - meta/index
 ---
@@ -17,6 +17,14 @@ tags:
 - Subagent 팀 (2026-04-12 빌드, 6개): Wiki=`wiki-ingest`/`wiki-lint`, Dev=`architect`→`implementer`→`tester`→`reviewer`. 정의: `.claude/agents/`, 위임 규칙: `.claude/CLAUDE.md`, 팀 개요·흐름: 루트 `CLAUDE.md` "팀 & 워크플로우".
 
 ## Domains
+
+### Curriculum — 11~16세 AI 교육 자산 레이어 (2026-08-08 신설)
+- [[curriculum/_index|_index]] — L2 자산 풀. 강의 한 벌이 아니라 강의를 조립하는 원재료
+- 기반: [[curriculum-schema]] · [[edu-constitution]] · [[measurement-axes]] · [[placement-rules]]
+- 지도안: [[lesson-plan-authoring-guide]] · [[lesson-plan-quality-checklist]]
+- 메타: [[override-protocol]] · [[edu-11-16-research-plan]]
+- 오버라이드: [[ovr-license-ranking-family-line]] · [[ovr-measurement-fifth-axis]] · [[ovr-measurement-composite-score]]
+- 승격 판정: [[ruling-profile-based-differentiation]]
 
 ### Stakeholders (19)
 - [[stakeholders/_index|_index]]
@@ -39,7 +47,7 @@ tags:
 - [[2026-04-17-jay-jinyong-call]] (2026-04-17) · [[2026-04-12-jay-workshop-structure]] · [[2026-04-11-call-note]] · [[2026-02-09-meeting]] · [[2026-01-26-meeting]] · [[2026-01-19-meeting]] · [[2026-01-12-meeting]] · [[2026-01-05-meeting]]
 - Research/Ops: [[2026-04-12-team-briefing-research]] (2026-04-12) — 소아암 환아 AI 코딩 파일럿 근거 요약 · [[2026-04-22-hospital-filamentary-checklist]] (2026-04-22) — 병원/필라멘트리 사전 확인 체크리스트 · [[2026-04-21-hospital-inquiry-draft]] (2026-04-21) — 국립암센터 행사 사전 확인 요청 초안 (9개 항목)
 
-### Decisions (18)
+### Decisions (22)
 - [[decisions/_index|_index]]
 - [[regular-meeting-monday-930]] · [[discord-for-comms]] · [[podcast-format-host-panels-guest]] · [[markdown-for-knowledge-share]] · [[ai-onboarding-role]] · [[fast-implementation-mode]] · [[combat-vs-cooperative-framing]]
 - Pivot (2026-04-12): [[pivot-to-chat-preview-wrapper]] · [[iframe-sandbox-over-webcontainers]] · [[parent-gated-signup-first]]

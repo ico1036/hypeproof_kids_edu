@@ -2,7 +2,7 @@
 type: meta
 title: "Log"
 created: 2026-04-12
-updated: 2026-08-05
+updated: 2026-08-08
 tags:
   - meta/log
 ---
@@ -12,6 +12,14 @@ tags:
 볼트 변경 이력. 최신 항목이 위.
 
 ---
+
+## [2026-08-08] scaffold | 11~16세 AI 교육 자산 레이어 신설
+- Branch: `docs/ai-edu-11-16-materials`
+- Input: Jay 개요 (AI Compass 가족 라인 4개 상품 + 헌법 5조), `.raw/01_이식매트릭스.md` · `02_24차시_마스터플랜.md` · `03_지도안_24종.md` (참조), 기존 HYROX 라이선스·측정 문서
+- Pages created: [[curriculum-schema]], [[edu-constitution]], [[prohibited-moves]], [[measurement-axes]], [[placement-rules]], [[lesson-plan-authoring-guide]], [[lesson-plan-quality-checklist]], [[override-protocol]], [[edu-11-16-research-plan]], [[ovr-license-ranking-family-line]], [[ovr-measurement-fifth-axis]], [[ovr-measurement-composite-score]], [[ruling-profile-based-differentiation]], [[edu-11-16-track-architecture]], [[edu-11-16-parent-track-ip-boundary]], [[edu-11-16-evidence-capture]], [[edu-11-16-session-format]]
+- Templates created: `_templates/lesson-plan.md`, `_templates/activity.md`, `_templates/override.md`, `_templates/ingest-ruling.md`
+- Pages updated (frontmatter only, 본문 무수정): [[hypeproof-brand-license-structure-v0.1]], [[hypeproof-license-strategy-from-hyrox-20260515]], [[hypeproof-measurement-rubric-from-hyrox-20260515]] — `has_overrides: true`
+- Key insight: 강의 한 벌을 통짜로 쓰면 재조합이 안 된다. 처음부터 활동 원자로 쓰고 "강의 한 벌"은 컴파일 인스턴스로 취급한다. 배치 제약과 금지 개입을 산문에서 꺼내 기계 판독 가능한 필드로 만드는 것이 실질 산출물이다. 기존 위키 문서와 충돌하는 부분은 원본을 고치지 않고 override 3분류(correction / scoped-variant / quarantine)로 관계만 선언한다.
 
 ## [2026-07-11] ingest | 변호사 전문직 채널 미팅 메모
 - Source: `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md`
