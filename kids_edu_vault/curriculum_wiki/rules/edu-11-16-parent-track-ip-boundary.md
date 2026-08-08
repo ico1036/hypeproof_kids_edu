@@ -1,6 +1,8 @@
 ---
 type: decision
 status: accepted
+scope: edu-11-16
+ip_owner: unverified
 title: "11~16세 교육 — 부모 트랙 IP 경계"
 decided: 2026-08-08
 owner: JY
@@ -48,14 +50,14 @@ Jay 개요는 Parent Protocol을 **대화교육 파트너** 담당으로 두고 
 
 - **Parent AI Dialogue(1인 100만)는 우리가 파는 파트너 IP다.** 인바운드 라이선스 계약이 선행해야 한다
 - 이 모듈은 **아웃바운드 라이선스 패키지에서 제외**된다
-- lint 규칙: `wiki/curriculum/**`에 `ip_owner` 누락 시 에러. 값 체계는 5단(`unverified` 기본값) → [[curriculum-schema]]
+- lint 규칙: `curriculum_wiki/**`에 `ip_owner` 누락 시 에러. 값 체계는 5단(`unverified` 기본값) → [[curriculum-schema]]
 - 지도안 "가정 연계" 항목은 작성 시 IP 경계 확인 대상 → [[lesson-plan-quality-checklist]]
 
 ## 미결
 
 ### ⛔ IP 귀속 판정 48건 미완 (2026-08-08)
 
-`wiki/curriculum/**` 33건 + `wiki/intel/ped-*` 10건 + `_templates` 5건이 **전부 `ip_owner: unverified`** 상태다. 초기에 습관적으로 `hypeproof`를 넣었으나 판정 근거가 없어 전량 되돌렸다. → [[curriculum-schema]]
+`curriculum_wiki/**` 33건 + `curriculum_wiki/research/ped-*` 10건 + `_templates` 5건이 **전부 `ip_owner: unverified`** 상태다. 초기에 습관적으로 `hypeproof`를 넣었으나 판정 근거가 없어 전량 되돌렸다. → [[curriculum-schema]]
 
 판정이 필요한 쟁점:
 

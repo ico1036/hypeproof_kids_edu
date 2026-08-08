@@ -13,49 +13,19 @@ tags:
 
 ---
 
-## [2026-08-08] asset | PjBL 방법론 카드 (m-008) 승격
-- Pages created: [[m-project-based-learning]]
-- Pages updated: `models/_index.md`, [[index]], [[hot]], [[log]]
-- Key insight: Builder Portfolio 트랙(8주 480만)의 방법론 카드가 비어 있던 공백을 메웠다. Problem-Based(m-004)와 Project-Based(m-008)는 다른 방법이며 국내에서 둘 다 "PBL"로 불려 근거 오적용이 잦다. 근거는 메타분석(Chen & Yang 2019, 9개국 189개교 12,585명, d+=0.71)과 대규모 군집 RCT(Krajcik et al. 2023, 미시간 46개교 2,371명, 0.277 SD)가 있으나 둘의 차이가 크다 — RCT 쪽이 더 신뢰할 만하므로 작은 쪽을 기준으로 기대치를 잡는다. 그리고 Chen & Yang에서 서구 학생 표본이 동아시아 표본보다 효과가 컸다는 조절효과가 보고돼 우리 맥락에 불리하다. MDRC 문헌고찰(Condliffe 2017)은 "유망하지만 아직 배울 것이 많다"로 정리한다. 따라서 "PjBL은 검증된 방법"이라 쓰지 않고, 우리가 파는 것은 성취 향상이 아니라 외부 검증된 산출물과 과정 기록이라고 명시했다. 설계 공백 발견: Gold Standard 7요소 중 6번(비평·수정)에 대응하는 우리 설계가 없다 — 강사 금지 개입 탓에 비평 주체가 비어 있고, 동료·외부 사용자·AI 중 지정이 필요하다.
 
-## [2026-08-08] asset | POE 방법론 카드 (m-007) 승격
-- Pages created: [[m-poe]]
-- Pages updated: `models/_index.md`, [[index]], [[hot]], [[log]]
-- Key insight: 원전은 White & Gunstone(1992) 『Probing Understanding』 — 가르치는 기법이자 선개념을 드러내는 진단 도구라는 이중성이 핵심. 메타분석(Koyunlu Ünlü 2024, 35개 연구) g=0.979지만 출판 편향 검정과 연구 품질 조절효과를 확인하지 못해 효과크기 수치는 대외 인용 금지, 등급 B. 가장 중요한 설계 발견은 AI가 결정적이지 않다는 점 — 고전 POE는 답이 하나인 현상을 전제하는데 AI 출력은 분포다. 그래서 학습자가 배우는 것이 "내 예상이 틀렸다"가 아니라 "하나의 답을 예상한다는 프레임 자체가 틀렸다"가 되고, 이게 우리 검증 축의 핵심이자 진입 물증이다. 따라서 예상을 내용층("뭐라고 답할까")과 변동성층("20번 물으면 몇 개가 같을까") 두 층으로 묻는다. 두 번째가 우리 고유이며 진짜 진단 정보다.
 
-## [2026-08-08] research | 국내 교수·학습 모형 전 교과 조사
-- Pages created: [[kr-models-korean]], [[kr-models-science]], [[kr-models-social-moral-math]], [[kr-models-cooperative]]
-- Pages updated: [[kr-instructional-models-map]] (이식 후보 우선순위표·금지 판정표 신설), `models/_index.md`, [[index]], [[hot]], [[log]]
-- Key insight: 국어·과학·사회·도덕·수학과 + 협동학습 유형 체계를 훑어 우리 라이브러리의 공백 7개를 찾았다. 최우선은 POE(예상-관찰-설명) — .raw 1차시가 이미 POE 구조이고, AI는 예측 불가능성이 본질이라 "예상→실제→불일치 해명"이 AI를 다루는 경험 그 자체다. 예상 단계가 선개념 진단을 겸해 Evidence 원료가 되고, 배치 제약 C-6(감탄+검증 페어링)을 한 모형 안에서 자동 충족한다. 그 외 공백: 개념변화 학습(AI 오개념 교정 — 명시적 수업으로 안 되는 영역), 원형 모형(정의를 주지 않고 개념 형성), 폴리아 4단계(반성·검토 내장), 창의성 계발(발산-수렴 구조가 우리에게 없었다), 반응 중심 학습(AI 산출물에 대한 개별 반응), PjBL(Builder 트랙은 실은 Project-Based이지 Problem-Based가 아니므로 m-004 근거 적용 불가). 금지 판정 3건: STAD·TGT 보상 중심 협동학습(헌법 B-1·A-4 + FIT), 아동 트랙 거꾸로교실(화면 시간 증가 자기모순 — 초4~6의 49.2%가 이미 하루 2시간 이상), 콜버그 단계 판정(헌법 B-3). 역할 수행 학습 모형은 보류.
 
-## [2026-08-08] research | 국내 교수·학습 모형 체계 조사
-- Pages created: [[kr-instructional-models-map]]
-- Pages updated: `models/_index.md`, [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
-- Key insight: 방법론 라이브러리 6종이 전부 영미권 문헌 기반이라 국내 교수·학습 모형 체계가 누락돼 있었다. 가장 중요한 발견은 국어과 "문제 해결 학습 모형"이 서구 PBL이 아니라는 것 — 문제확인→해결방법찾기→해결하기→일반화하기의 구조화된 4단계로, 안내된 발견에 매핑해야 한다. 이름이 같아 Dochy et al.의 PBL 근거를 잘못 적용할 위험이 있었다. 지식 탐구 학습 모형의 교사 역할("절대적인 답변을 주지 않으면서 함께 탐구하는 동료")은 우리 금지 개입과 같은 말이며, 교사 출신 강사에게 한 문장으로 설명할 수 있는 통로가 된다. 과정중심평가의 교육부·KICE 정의가 우리 Evidence 개념과 거의 일치해 학교·기관 채널 프레이밍으로 쓸 수 있다(단 성적 산출로 귀결되지 않는다는 점이 차별점). POE(예상-관찰-설명)가 .raw 1차시 구조와 동일해 우선 조사 대상으로 올렸다. 이 문서의 근거 등급은 D — 국내 모형 체계는 처방적 분류이지 개별 검증된 개입이 아니므로 효과 근거로 인용하지 않는다.
 
-## [2026-08-08] research/asset | 교수학습 방법론 라이브러리 구축
-- Pages created: [[evidence-standards]], [[m-explicit-instruction]], [[m-guided-discovery]], [[m-cognitive-apprenticeship]], [[m-problem-based-learning]], [[m-cooperative-learning]], [[m-formative-feedback]], `models/_index.md` (선택 가이드)
-- Template created: `_templates/method.md` (8절 표준 포맷)
-- Pages updated: [[curriculum-schema]] (guidance/individual_evidence/retry 필드 + lint 7~9), [[index]], [[hot]], [[log]]
-- Key insight: 발견학습 논쟁의 결론은 "발견이냐 설명이냐"가 아니라 "안내가 있느냐"다. Alfieri et al.(2011) 메타분석에서 비유도 발견은 명시적 수업보다 나쁘고(d=-0.38) 유도된 발견은 낫다(d=+0.30, 유도된 발견 단독 d=0.50). 우리 금지 개입은 "하지 않을 것"만 규정했으므로 "반드시 할 것"(탐색 공간 제한·설명 유도·피드백 통로)을 guidance 필드로 강제한다. Kluger & DeNisi(1996)의 피드백 38% 역효과와 자아 지향 기제는 우리 헌법 B-1/B-2/B-3을 독립적으로 지지한다 — 순위를 매기지 않는 것이 윤리적 선택일 뿐 아니라 수행상 유리한 선택임이 확인됐다. Hattie 효과크기 순위표는 방법론 비교 근거로 쓰지 않는다(Bergeron 2017, Simpson 2017, Slavin 2018).
 
-## [2026-08-08] research | L0 사이클 ② — 신규 교수법·시장 조사
-- Pages created: [[ped-korea-elementary-ai-usage-2026]], [[ped-scaffolding-fading-srl]], [[ped-backward-design-ubd]], [[ped-session-format-attention-group-size]], [[ped-ai-literacy-standards-kr-intl]], [[ped-cognitive-acceleration-case]], [[ped-premium-private-education-benchmark-kr]]
-- Pages updated: [[prohibited-moves]], [[lesson-plan-authoring-guide]], [[measurement-axes]], [[edu-11-16-session-format]], [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
-- Key insight: (1) Lv1 시장 근거 확보 — 전교조 조사(초4~6, 2,804명) 72.1% AI 사용, 25.9% "걱정 없다", 21.2%만 출처 확인, 41.0% "멈추기 어려움". 검증 축과 거리 축 둘 다 국내 데이터로 정당화된다. (2) 금지 개입 정식화에 오류가 있었다 — 스캐폴딩 연구는 선취 금지는 지지하나 무반응(정적 스캐폴딩)은 수행을 떨어뜨린다. "선취하지 않되 유관적으로 반응한다"로 재정식화. 과잉 지원의 역효과는 근거가 없다. (3) UbD는 프레임으로만 채택 — 실증 근거가 원저자 측 정리에 기대 근거 강도가 약하다. (4) 45/15 기각, 11~17세 주의 지속 15~30분. (5) 국내 성취기준에 검증·거리 축이 사실상 없다 — 차별점이자 학교 채널 리스크. UNESCO 3수준(이해·적용·창조) 차용 제안. (6) CASE가 가장 가까운 선례(Years 7-8 = Lv1) — bridging 누락 발견, 지도안 12번 섹션 신설. 단 효과 주장은 사전검사 민감화 등 방법론 문제로 그대로 받지 않는다. (7) 가격: 1인 월 120만원으로 환산하면 대치동 밴드 안. "가족 2인 프로그램" 구조가 가격 방어 논거.
 
-## [2026-08-08] research | L0 사이클 ① — 기존 주장 출처 검증
-- Pages created: [[ped-adolescent-cognitive-development-verification]], [[ped-youth-ai-chatbot-statistics-verification]], [[ped-llm-minor-age-policy-20260808]]
-- Pages updated: [[edu-11-16-research-plan]], [[placement-rules]], [[measurement-axes]], [[edu-11-16-track-architecture]], [[index]], [[hot]], [[log]]
-- Key insight: 검증 대상 5건 중 2건이 무너졌다. (1) "형식적 조작기 11~12세 시작"은 CSMS 조사(9~16세 12,000명)로 반증 — 16세의 약 30%만 초기 형식적 추론을 보인다. 투트랙은 유지하되 근거를 점진적 발달로 교체하고, Lv2를 추상 과제 중심으로 설계하면 다수가 실패한다. (2) "5명 중 1명 거의 매일"은 국내 근거 미확인 — 서로 다른 해외 수치가 뒤섞인 것으로 보여 폐기. (3) 94.4%/75.3%는 출처 확실하나 표본이 만 14세 이상이라 Lv1(11~13세)에 적용 불가 — 시장 근거 공백. (4) Gemini는 Family Link 감독 계정으로 13세 미만도 가능 — ".raw의 Lv1 아동 계정 없음" 전제가 뒤집혔다. Lv1도 자기 계정 직접 실습이 가능하다.
 
-## [2026-08-08] scaffold | 11~16세 AI 교육 자산 레이어 신설
-- Branch: `docs/ai-edu-11-16-materials`
-- Input: Jay 개요 (AI Compass 가족 라인 4개 상품 + 헌법 5조), `.raw/01_이식매트릭스.md` · `02_24차시_마스터플랜.md` · `03_지도안_24종.md` (참조), 기존 HYROX 라이선스·측정 문서
-- Pages created: [[curriculum-schema]], [[edu-constitution]], [[prohibited-moves]], [[measurement-axes]], [[placement-rules]], [[lesson-plan-authoring-guide]], [[lesson-plan-quality-checklist]], [[override-protocol]], [[edu-11-16-research-plan]], [[ovr-license-ranking-family-line]], [[ovr-measurement-fifth-axis]], [[ovr-measurement-composite-score]], [[ruling-profile-based-differentiation]], [[edu-11-16-track-architecture]], [[edu-11-16-parent-track-ip-boundary]], [[edu-11-16-evidence-capture]], [[edu-11-16-session-format]]
-- Templates created: `_templates/lesson-plan.md`, `_templates/activity.md`, `_templates/override.md`, `_templates/ingest-ruling.md`
-- Pages updated (frontmatter only, 본문 무수정): [[hypeproof-brand-license-structure-v0.1]], [[hypeproof-license-strategy-from-hyrox-20260515]], [[hypeproof-measurement-rubric-from-hyrox-20260515]] — `has_overrides: true`
-- Key insight: 강의 한 벌을 통짜로 쓰면 재조합이 안 된다. 처음부터 활동 원자로 쓰고 "강의 한 벌"은 컴파일 인스턴스로 취급한다. 배치 제약과 금지 개입을 산문에서 꺼내 기계 판독 가능한 필드로 만드는 것이 실질 산출물이다. 기존 위키 문서와 충돌하는 부분은 원본을 고치지 않고 override 3분류(correction / scoped-variant / quarantine)로 관계만 선언한다.
+
+## [2026-08-08] split | 커리큘럼 지식을 curriculum_wiki/ 로 분리
+- 이동: `wiki/curriculum/**` 전체, `wiki/intel/ped-*` 10건, `wiki/decisions/edu-11-16-*` 4건, `_templates/` 4종 → `curriculum_wiki/`
+- 삭제: 오버라이드 3건 + `override-protocol` + `_templates/override`. `wiki/projects/*` 3건의 `has_overrides` 되돌림
+- 복원: `hot.md`를 2026-07-11 시점(BOA·SK·Studio 맥락)으로 되돌림
+- Key insight: 사업 실행 문서와 커리큘럼 지식은 목적·시간축·독자가 다르다. 한 트리에 두면 hot 캐시가 경합하고 스킬 스키마가 충돌한다. 같은 볼트 안에서 트리를 나눠 위키링크는 유지하되 메타 파일과 규약을 분리했다. 오버라이드 프로토콜은 결론이 이미 헌법·측정 문서에 흡수되어 삭제했고, 남은 조직 표준 4축 확장 제안만 사업 볼트 과제로 남겼다.
 
 ## [2026-07-11] ingest | 변호사 전문직 채널 미팅 메모
 - Source: `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md`

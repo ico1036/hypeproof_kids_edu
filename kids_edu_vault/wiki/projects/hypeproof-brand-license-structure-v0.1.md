@@ -4,7 +4,6 @@ title: "HypeProof Brand License Structure v0.1"
 status: developing
 created: 2026-05-15
 updated: 2026-05-15
-has_overrides: true
 tags:
   - project
   - license

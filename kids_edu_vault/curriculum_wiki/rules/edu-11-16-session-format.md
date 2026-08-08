@@ -1,6 +1,8 @@
 ---
 type: decision
 status: provisional
+scope: edu-11-16
+ip_owner: unverified
 title: "11~16세 교육 — 회차 포맷 (잠정)"
 decided: 2026-08-08
 owner: JY
