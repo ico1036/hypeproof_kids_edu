@@ -21,7 +21,7 @@ tags:
 ### Curriculum — 11~16세 AI 교육 자산 레이어 (2026-08-08 신설)
 - [[curriculum/_index|_index]] — L2 자산 풀. 강의 한 벌이 아니라 강의를 조립하는 원재료
 - 기반: [[curriculum-schema]] · [[edu-constitution]] · [[measurement-axes]] · [[placement-rules]]
-- **방법론 라이브러리** (`models/_index.md` 선택 가이드): [[evidence-standards]] · [[m-explicit-instruction]] · [[m-guided-discovery]] · [[m-cognitive-apprenticeship]] · [[m-problem-based-learning]] · [[m-cooperative-learning]] · [[m-formative-feedback]]
+- **방법론 라이브러리** (`models/_index.md` 선택 가이드): [[evidence-standards]] · [[m-explicit-instruction]] · [[m-guided-discovery]] · [[m-cognitive-apprenticeship]] · [[m-problem-based-learning]] · [[m-cooperative-learning]] · [[m-formative-feedback]] · [[kr-instructional-models-map]] (국내 모형 지도)
 - 지도안: [[lesson-plan-authoring-guide]] · [[lesson-plan-quality-checklist]]
 - 메타: [[override-protocol]] · [[edu-11-16-research-plan]]
 - 조사 L0 ① (출처 검증): [[ped-adolescent-cognitive-development-verification]] · [[ped-youth-ai-chatbot-statistics-verification]] · [[ped-llm-minor-age-policy-20260808]]

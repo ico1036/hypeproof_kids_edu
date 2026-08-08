@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] research | 국내 교수·학습 모형 체계 조사
+- Pages created: [[kr-instructional-models-map]]
+- Pages updated: `models/_index.md`, [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
+- Key insight: 방법론 라이브러리 6종이 전부 영미권 문헌 기반이라 국내 교수·학습 모형 체계가 누락돼 있었다. 가장 중요한 발견은 국어과 "문제 해결 학습 모형"이 서구 PBL이 아니라는 것 — 문제확인→해결방법찾기→해결하기→일반화하기의 구조화된 4단계로, 안내된 발견에 매핑해야 한다. 이름이 같아 Dochy et al.의 PBL 근거를 잘못 적용할 위험이 있었다. 지식 탐구 학습 모형의 교사 역할("절대적인 답변을 주지 않으면서 함께 탐구하는 동료")은 우리 금지 개입과 같은 말이며, 교사 출신 강사에게 한 문장으로 설명할 수 있는 통로가 된다. 과정중심평가의 교육부·KICE 정의가 우리 Evidence 개념과 거의 일치해 학교·기관 채널 프레이밍으로 쓸 수 있다(단 성적 산출로 귀결되지 않는다는 점이 차별점). POE(예상-관찰-설명)가 .raw 1차시 구조와 동일해 우선 조사 대상으로 올렸다. 이 문서의 근거 등급은 D — 국내 모형 체계는 처방적 분류이지 개별 검증된 개입이 아니므로 효과 근거로 인용하지 않는다.
+
 ## [2026-08-08] research/asset | 교수학습 방법론 라이브러리 구축
 - Pages created: [[evidence-standards]], [[m-explicit-instruction]], [[m-guided-discovery]], [[m-cognitive-apprenticeship]], [[m-problem-based-learning]], [[m-cooperative-learning]], [[m-formative-feedback]], `models/_index.md` (선택 가이드)
 - Template created: `_templates/method.md` (8절 표준 포맷)

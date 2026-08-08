@@ -28,7 +28,15 @@ tags:
 | [[m-cooperative-learning\|m-005]] | 협동학습 | social | **A** | 또래 설명, 참여 유지 | 개별 증거 | 무관 |
 | [[m-formative-feedback\|m-006]] | 형성평가·피드백 | assessment | **A** | 수행 개선, 자기조절 | 자아를 건드릴 때 | 무관 |
 
-**미작성**: 5E 탐구 모형, 토의·토론 모형, 개념형성 모형, 직소(Jigsaw)·STAD 세부 구조, Hattie & Timperley 피드백 4수준. → [[edu-11-16-research-plan]]
+### 참조 자산
+
+| 문서 | 용도 |
+|---|---|
+| [[kr-instructional-models-map]] | **국내 교수·학습 모형 지도.** 교사 출신 강사와의 소통, 학교·기관 채널 제안, 과정중심평가 정렬. **효과 근거로는 쓰지 않는다**(등급 D) |
+
+**미작성**: POE(예상-관찰-설명), 개념변화학습, 반응 중심 학습, 가치 탐구 학습, 5E 탐구 모형, 토의·토론 모형, 직소·STAD 세부 구조, Hattie & Timperley 피드백 4수준. → [[edu-11-16-research-plan]]
+
+⚠️ **POE는 우선순위가 높다** — `.raw` 1차시 설계가 이미 POE 구조이며, 국내 과학과에서 통용되는 언어다.
 
 ## 선택 가이드
 
@@ -85,18 +93,23 @@ tags:
 | 피드백 38%가 역효과, 원인은 자아 지향 | **헌법 B-1·B-2·B-3이 수행상으로도 유리**함이 독립 확인됨 → m-006 §7 |
 | 개별 책무성 없는 협동은 무임승차 | 소집단 활동은 **개별 산출물 필드 필수** → m-005 §7 |
 | PBL은 지식보다 기능에 유리 | 학부모에게 "AI 지식을 많이 배운다"고 말하지 않는다 → m-004 §7 |
+| **국내 "문제 해결 학습 모형"은 PBL이 아니다** | 구조화된 4단계로 **안내된 발견에 매핑**. PBL 근거를 잘못 적용하지 않도록 명시 → [[kr-instructional-models-map]] |
+| 과정중심평가 정의가 우리 Evidence와 거의 일치 | 학교·교사 대상 설명에서 **"과정중심평가의 실제 구현"** 프레이밍 사용 가능 |
 
-## 스키마 반영 대기
+## 스키마 반영 완료
 
-방법론 조사에서 도출되었으나 아직 [[curriculum-schema]]에 반영되지 않은 필드.
+방법론 조사에서 도출되어 [[curriculum-schema]]에 등재된 필드. lint 7~9번으로 강제된다.
 
-- `guidance` — 탐색 공간 제한 방식 / 설명 유도 발문 / 피드백 통로 (m-002)
-- `individual_evidence` — 소집단 활동의 개별 산출물 (m-005)
-- `retry` — 재시도 기회 유무 (m-006)
+| 필드 | 요건 | 출처 |
+|---|---|---|
+| `guidance.space / .elicit / .feedback` | 발견형 활동은 3개 모두 필수. 하나라도 비면 방치 | m-002 |
+| `individual_evidence` | 소집단 활동의 개별 산출물 | m-005 |
+| `retry` | 재시도 기회. false면 형성평가가 아님 | m-006 |
 
 ## 관련
 
 - [[evidence-standards]]
+- [[kr-instructional-models-map]]
 - [[prohibited-moves]]
 - [[lesson-plan-authoring-guide]]
 - [[placement-rules]]
