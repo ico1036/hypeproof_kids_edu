@@ -32,11 +32,17 @@ tags:
 
 | 문서 | 용도 |
 |---|---|
-| [[kr-instructional-models-map]] | **국내 교수·학습 모형 지도.** 교사 출신 강사와의 소통, 학교·기관 채널 제안, 과정중심평가 정렬. **효과 근거로는 쓰지 않는다**(등급 D) |
+| [[kr-instructional-models-map]] | **국내 모형 지도 (진입점).** 우리 라이브러리와의 대조, 과정중심평가 정렬, 이식 후보 우선순위 |
+| [[kr-models-korean]] | 국어과 9모형 |
+| [[kr-models-science]] | 과학과 — **POE·개념변화 학습** |
+| [[kr-models-social-moral-math]] | 사회·도덕·수학과 — 원형 모형, 논쟁문제, 폴리아 4단계 |
+| [[kr-models-cooperative]] | 협동학습 유형 + PjBL + 거꾸로교실 |
 
-**미작성**: POE(예상-관찰-설명), 개념변화학습, 반응 중심 학습, 가치 탐구 학습, 5E 탐구 모형, 토의·토론 모형, 직소·STAD 세부 구조, Hattie & Timperley 피드백 4수준. → [[edu-11-16-research-plan]]
+국내 모형은 전부 **근거 등급 D**(처방적 분류이지 검증된 개입이 아님). 효과 근거로 인용하지 않는다.
 
-⚠️ **POE는 우선순위가 높다** — `.raw` 1차시 설계가 이미 POE 구조이며, 국내 과학과에서 통용되는 언어다.
+**정식 카드 미작성 (조사 완료, 승격 대기)**: POE ⭐⭐⭐ · 개념변화 학습 · 원형 모형 · 폴리아 4단계 · 창의성 계발 · 반응 중심 학습 · **PjBL**(Builder 트랙의 실제 형태) → [[kr-instructional-models-map]]
+
+**미조사**: 5E 탐구 모형, Hattie & Timperley 피드백 4수준, 토의·토론 모형 세부, ADDIE. → [[edu-11-16-research-plan]]
 
 ## 선택 가이드
 

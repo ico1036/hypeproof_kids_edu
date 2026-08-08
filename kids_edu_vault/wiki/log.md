@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] research | 국내 교수·학습 모형 전 교과 조사
+- Pages created: [[kr-models-korean]], [[kr-models-science]], [[kr-models-social-moral-math]], [[kr-models-cooperative]]
+- Pages updated: [[kr-instructional-models-map]] (이식 후보 우선순위표·금지 판정표 신설), `models/_index.md`, [[index]], [[hot]], [[log]]
+- Key insight: 국어·과학·사회·도덕·수학과 + 협동학습 유형 체계를 훑어 우리 라이브러리의 공백 7개를 찾았다. 최우선은 POE(예상-관찰-설명) — .raw 1차시가 이미 POE 구조이고, AI는 예측 불가능성이 본질이라 "예상→실제→불일치 해명"이 AI를 다루는 경험 그 자체다. 예상 단계가 선개념 진단을 겸해 Evidence 원료가 되고, 배치 제약 C-6(감탄+검증 페어링)을 한 모형 안에서 자동 충족한다. 그 외 공백: 개념변화 학습(AI 오개념 교정 — 명시적 수업으로 안 되는 영역), 원형 모형(정의를 주지 않고 개념 형성), 폴리아 4단계(반성·검토 내장), 창의성 계발(발산-수렴 구조가 우리에게 없었다), 반응 중심 학습(AI 산출물에 대한 개별 반응), PjBL(Builder 트랙은 실은 Project-Based이지 Problem-Based가 아니므로 m-004 근거 적용 불가). 금지 판정 3건: STAD·TGT 보상 중심 협동학습(헌법 B-1·A-4 + FIT), 아동 트랙 거꾸로교실(화면 시간 증가 자기모순 — 초4~6의 49.2%가 이미 하루 2시간 이상), 콜버그 단계 판정(헌법 B-3). 역할 수행 학습 모형은 보류.
+
 ## [2026-08-08] research | 국내 교수·학습 모형 체계 조사
 - Pages created: [[kr-instructional-models-map]]
 - Pages updated: `models/_index.md`, [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
