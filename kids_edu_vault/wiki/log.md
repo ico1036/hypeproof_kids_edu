@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] asset | POE 방법론 카드 (m-007) 승격
+- Pages created: [[m-poe]]
+- Pages updated: `models/_index.md`, [[index]], [[hot]], [[log]]
+- Key insight: 원전은 White & Gunstone(1992) 『Probing Understanding』 — 가르치는 기법이자 선개념을 드러내는 진단 도구라는 이중성이 핵심. 메타분석(Koyunlu Ünlü 2024, 35개 연구) g=0.979지만 출판 편향 검정과 연구 품질 조절효과를 확인하지 못해 효과크기 수치는 대외 인용 금지, 등급 B. 가장 중요한 설계 발견은 AI가 결정적이지 않다는 점 — 고전 POE는 답이 하나인 현상을 전제하는데 AI 출력은 분포다. 그래서 학습자가 배우는 것이 "내 예상이 틀렸다"가 아니라 "하나의 답을 예상한다는 프레임 자체가 틀렸다"가 되고, 이게 우리 검증 축의 핵심이자 진입 물증이다. 따라서 예상을 내용층("뭐라고 답할까")과 변동성층("20번 물으면 몇 개가 같을까") 두 층으로 묻는다. 두 번째가 우리 고유이며 진짜 진단 정보다.
+
 ## [2026-08-08] research | 국내 교수·학습 모형 전 교과 조사
 - Pages created: [[kr-models-korean]], [[kr-models-science]], [[kr-models-social-moral-math]], [[kr-models-cooperative]]
 - Pages updated: [[kr-instructional-models-map]] (이식 후보 우선순위표·금지 판정표 신설), `models/_index.md`, [[index]], [[hot]], [[log]]
