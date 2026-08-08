@@ -2,6 +2,7 @@
 type: index
 status: navigational
 scope: edu-11-16
+ip_owner: hypeproof
 title: "활동 원자"
 created: 2026-08-08
 updated: 2026-08-08

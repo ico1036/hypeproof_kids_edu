@@ -2,6 +2,7 @@
 type: index
 status: navigational
 scope: edu-11-16
+ip_owner: hypeproof
 title: "교수학습 방법론 라이브러리 — 선택 가이드"
 created: 2026-08-08
 updated: 2026-08-08

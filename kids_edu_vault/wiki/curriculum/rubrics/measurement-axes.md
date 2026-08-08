@@ -17,7 +17,9 @@ tags:
 
 ## 정본 관계
 
-조직 표준은 [[hypeproof-measurement-rubric-from-hyrox-20260515]]의 **4축**이다. 이 라인은 그것을 정본으로 채택하되 **5번째 축을 추가**하고, **합성 단일 점수를 만들지 않는다.**
+조직 표준은 HYROX 기반 측정 rubric의 **4축**이다. 이 라인은 그것을 정본으로 채택하되 **5번째 축을 추가**하고, **합성 단일 점수를 만들지 않는다.**
+
+> 원본은 두 건의 오버라이드로 덮여 있으므로 **직접 인용하지 않고 오버라이드를 경유한다** ([[override-protocol]] 해소 규칙 3). 원본 링크는 아래 두 오버라이드 노트의 `supersedes` 필드에 있다.
 
 두 변경은 성격이 다르다.
 
@@ -103,5 +105,6 @@ UNESCO AI 역량 프레임워크(학생용, 2024)의 진행 수준을 그대로 
 ## 관련
 
 - [[edu-constitution]]
-- [[hypeproof-measurement-rubric-from-hyrox-20260515]]
+- [[ovr-measurement-fifth-axis]] · [[ovr-measurement-composite-score]] — 조직 표준 rubric과의 관계 (원본 경유 통로)
+- [[override-protocol]]
 - [[edu-11-16-track-architecture]]

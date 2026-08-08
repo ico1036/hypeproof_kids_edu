@@ -1,6 +1,7 @@
 ---
 type: index
 status: navigational
+ip_owner: hypeproof
 title: "커리큘럼 자산 레이어 — 11~16세 AI 교육"
 created: 2026-08-08
 updated: 2026-08-08
