@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] asset | PjBL 방법론 카드 (m-008) 승격
+- Pages created: [[m-project-based-learning]]
+- Pages updated: `models/_index.md`, [[index]], [[hot]], [[log]]
+- Key insight: Builder Portfolio 트랙(8주 480만)의 방법론 카드가 비어 있던 공백을 메웠다. Problem-Based(m-004)와 Project-Based(m-008)는 다른 방법이며 국내에서 둘 다 "PBL"로 불려 근거 오적용이 잦다. 근거는 메타분석(Chen & Yang 2019, 9개국 189개교 12,585명, d+=0.71)과 대규모 군집 RCT(Krajcik et al. 2023, 미시간 46개교 2,371명, 0.277 SD)가 있으나 둘의 차이가 크다 — RCT 쪽이 더 신뢰할 만하므로 작은 쪽을 기준으로 기대치를 잡는다. 그리고 Chen & Yang에서 서구 학생 표본이 동아시아 표본보다 효과가 컴다는 조절효과가 보고돼 우리 맥락에 불리하다. MDRC 문헌고찰(Condliffe 2017)은 "유망하지만 아직 배울 것이 많다"로 정리한다. 따라서 "PjBL은 검증된 방법"이라 쓰지 않고, 우리가 파는 것은 성취 향상이 아니라 외부 검증된 산출물과 과정 기록이라고 명시했다. 설계 공백 발견: Gold Standard 7요소 중 6번(비평·수정)에 대응하는 우리 설계가 없다 — 강사 금지 개입 탓에 비평 주체가 비어 있고, 동료·외부 사용자·AI 중 지정이 필요하다.
+
 ## [2026-08-08] asset | POE 방법론 카드 (m-007) 승격
 - Pages created: [[m-poe]]
 - Pages updated: `models/_index.md`, [[index]], [[hot]], [[log]]
