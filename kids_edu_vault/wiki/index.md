@@ -23,7 +23,8 @@ tags:
 - 기반: [[curriculum-schema]] · [[edu-constitution]] · [[measurement-axes]] · [[placement-rules]]
 - 지도안: [[lesson-plan-authoring-guide]] · [[lesson-plan-quality-checklist]]
 - 메타: [[override-protocol]] · [[edu-11-16-research-plan]]
-- 조사(L0 ①): [[ped-adolescent-cognitive-development-verification]] · [[ped-youth-ai-chatbot-statistics-verification]] · [[ped-llm-minor-age-policy-20260808]]
+- 조사 L0 ① (출처 검증): [[ped-adolescent-cognitive-development-verification]] · [[ped-youth-ai-chatbot-statistics-verification]] · [[ped-llm-minor-age-policy-20260808]]
+- 조사 L0 ② (교수법·시장): [[ped-korea-elementary-ai-usage-2026]] · [[ped-scaffolding-fading-srl]] · [[ped-backward-design-ubd]] · [[ped-session-format-attention-group-size]] · [[ped-ai-literacy-standards-kr-intl]] · [[ped-cognitive-acceleration-case]] · [[ped-premium-private-education-benchmark-kr]]
 - 오버라이드: [[ovr-license-ranking-family-line]] · [[ovr-measurement-fifth-axis]] · [[ovr-measurement-composite-score]]
 - 승격 판정: [[ruling-profile-based-differentiation]]
 

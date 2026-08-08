@@ -24,7 +24,16 @@ tags:
 | 사이클 | 상태 |
 |---|---|
 | ① 기존 주장 출처 검증 | ✅ **1차 완료 (2026-08-08).** 결과 3건 파일링. 원문 미확인 항목 잔존 |
-| ② 신규 교수법 조사 | 미착수 |
+| ② 신규 교수법 조사 | ✅ **1차 완료 (2026-08-08).** 결과 6건 파일링. 프리미엄 사교육은 현장 조사로 이월 |
+
+**사이클 ② 산출물**
+- [[ped-korea-elementary-ai-usage-2026]] — **Lv1 시장 근거 확보.** 초4~6 72.1% AI 사용, 41.0% "멈추기 어려움"
+- [[ped-scaffolding-fading-srl]] — **금지 개입 정식화 오류 발견·수정.** SRL 효과크기 확보
+- [[ped-backward-design-ubd]] — 작성 순서 근거. **근거 강도 약함**을 명시
+- [[ped-session-format-attention-group-size]] — 45/15 기각, 15~30분 규칙 도출. 20명은 실측으로 이월
+- [[ped-ai-literacy-standards-kr-intl]] — 국내 성취기준에 검증·거리 축 **부재**. UNESCO 3수준 차용 제안
+- [[ped-cognitive-acceleration-case]] — **가장 가까운 선례.** bridging 누락 발견
+- [[ped-premium-private-education-benchmark-kr]] — 가격 방어 논거. 경쟁사 상세는 현장 조사 필요
 
 **사이클 ① 산출물**
 - [[ped-adolescent-cognitive-development-verification]] — 형식적 조작기 **기각** / 자기평가 정확도 **지지**

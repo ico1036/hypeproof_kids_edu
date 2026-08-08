@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] research | L0 사이클 ② — 신규 교수법·시장 조사
+- Pages created: [[ped-korea-elementary-ai-usage-2026]], [[ped-scaffolding-fading-srl]], [[ped-backward-design-ubd]], [[ped-session-format-attention-group-size]], [[ped-ai-literacy-standards-kr-intl]], [[ped-cognitive-acceleration-case]], [[ped-premium-private-education-benchmark-kr]]
+- Pages updated: [[prohibited-moves]], [[lesson-plan-authoring-guide]], [[measurement-axes]], [[edu-11-16-session-format]], [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
+- Key insight: (1) Lv1 시장 근거 확보 — 전교조 조사(초4~6, 2,804명) 72.1% AI 사용, 25.9% "걱정 없다", 21.2%만 출처 확인, 41.0% "멈추기 어려움". 검증 축과 거리 축 둘 다 국내 데이터로 정당화된다. (2) 금지 개입 정식화에 오류가 있었다 — 스캐폴딩 연구는 선취 금지는 지지하나 무반응(정적 스캐폴딩)은 수행을 떨어뜨린다. "선취하지 않되 유관적으로 반응한다"로 재정식화. 과잉 지원의 역효과는 근거가 없다. (3) UbD는 프레임으로만 채택 — 실증 근거가 원저자 측 정리에 기대 근거 강도가 약하다. (4) 45/15 기각, 11~17세 주의 지속 15~30분. (5) 국내 성취기준에 검증·거리 축이 사실상 없다 — 차별점이자 학교 채널 리스크. UNESCO 3수준(이해·적용·창조) 차용 제안. (6) CASE가 가장 가까운 선례(Years 7-8 = Lv1) — bridging 누락 발견, 지도안 12번 섹션 신설. 단 효과 주장은 사전검사 민감화 등 방법론 문제로 그대로 받지 않는다. (7) 가격: 1인 월 120만원으로 환산하면 대치동 밴드 안. "가족 2인 프로그램" 구조가 가격 방어 논거.
+
 ## [2026-08-08] research | L0 사이클 ① — 기존 주장 출처 검증
 - Pages created: [[ped-adolescent-cognitive-development-verification]], [[ped-youth-ai-chatbot-statistics-verification]], [[ped-llm-minor-age-policy-20260808]]
 - Pages updated: [[edu-11-16-research-plan]], [[placement-rules]], [[measurement-axes]], [[edu-11-16-track-architecture]], [[index]], [[hot]], [[log]]
