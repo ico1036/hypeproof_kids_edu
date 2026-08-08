@@ -29,7 +29,8 @@ kids_edu_vault/
 │   ├── questions/             # wiki-query 답변 파일링 폴더 (지식 복리 누적)
 │   ├── validation/            # QA·커리큘럼 검증 결과 로그
 │   ├── projects/              # 비교육 사업 문서 (HYROX 등 외부 프로젝트)
-│   └── assets/                # 디자인·콘텐츠 자산 버전 관리
+│   ├── assets/                # 디자인·콘텐츠 자산 버전 관리
+│   └── curriculum/            # 11~16세 AI 교육 자산 레이어 (L2). 아래 참조
 └── CLAUDE.md                  # 이 파일
 ```
 
@@ -51,6 +52,29 @@ kids_edu_vault/
 | QA·검증 테스트 결과 | `validation/` | E2E 결과, 에지케이스 로그 |
 | ingest 소스 요약 | `sources/` | wiki-ingest 자동 생성 — 직접 생성 금지 |
 | 쿼리 응답 아카이브 | `questions/` | wiki-query 자동 파일링 |
+| 교육 자산 (활동·모형·루브릭) | `curriculum/` | 활동 원자, 수업모형, 지도안 규격 |
+
+## curriculum/ — 11~16세 AI 교육 자산 레이어
+
+강의 한 벌이 아니라 **강의를 조립하는 원재료**를 담는다. 진입점: `wiki/curriculum/_index.md`
+
+| 하위 폴더 | 내용 |
+|---|---|
+| `principles/` `models/` `activities/` | 원리 이식 판정 · 수업모형 · 활동 원자 |
+| `constraints/` | 배치 제약 (컴파일러 검증) |
+| `rubrics/` `guardrails/` | 측정 5축 · 헌법·금지 개입 |
+| `assets/` `tracks/` | 사전 준비 자산 · 컴파일된 트랙 |
+| `lesson-plans/` | 지도안 규격·작성법·검증 체크리스트 |
+| `overrides/` | 기존 위키 문서와의 관계 선언 (원본 무수정) |
+| `_ingest-rulings/` | `.raw` → 자산 승격 판정 |
+
+### 필수 규칙
+
+- `wiki/curriculum/**` 의 모든 노트는 **`ip_owner` 필수** (파트너 IP 기계 분리용)
+- 기존 위키 문서를 뒤집을 때 **원본 본문 수정 금지.** `overrides/` 에 관계 선언 + 원본 frontmatter에 `has_overrides: true` 만 부착 → `override-protocol.md`
+- `.raw` 원자재 승격 시 `_ingest-rulings/` 에 판정 기록
+- 지도안 작성 전 `lesson-plan-authoring-guide.md` 필독. 작성 순서: **증거 → 성취기준 → 본질적 질문 → 금지 개입 → 활동**
+- 헌법(`guardrails/edu-constitution.md`)은 참고 지침이 아니라 **게이트**. 변경은 승인 사안
 
 ## Conventions
 
