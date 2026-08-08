@@ -13,6 +13,11 @@ tags:
 
 ---
 
+## [2026-08-08] research | L0 사이클 ① — 기존 주장 출처 검증
+- Pages created: [[ped-adolescent-cognitive-development-verification]], [[ped-youth-ai-chatbot-statistics-verification]], [[ped-llm-minor-age-policy-20260808]]
+- Pages updated: [[edu-11-16-research-plan]], [[placement-rules]], [[measurement-axes]], [[edu-11-16-track-architecture]], [[index]], [[hot]], [[log]]
+- Key insight: 검증 대상 5건 중 2건이 무너졌다. (1) "형식적 조작기 11~12세 시작"은 CSMS 조사(9~16세 12,000명)로 반증 — 16세의 약 30%만 초기 형식적 추론을 보인다. 투트랙은 유지하되 근거를 점진적 발달로 교체하고, Lv2를 추상 과제 중심으로 설계하면 다수가 실패한다. (2) "5명 중 1명 거의 매일"은 국내 근거 미확인 — 서로 다른 해외 수치가 뒤섞인 것으로 보여 폐기. (3) 94.4%/75.3%는 출처 확실하나 표본이 만 14세 이상이라 Lv1(11~13세)에 적용 불가 — 시장 근거 공백. (4) Gemini는 Family Link 감독 계정으로 13세 미만도 가능 — ".raw의 Lv1 아동 계정 없음" 전제가 뒤집혔다. Lv1도 자기 계정 직접 실습이 가능하다.
+
 ## [2026-08-08] scaffold | 11~16세 AI 교육 자산 레이어 신설
 - Branch: `docs/ai-edu-11-16-materials`
 - Input: Jay 개요 (AI Compass 가족 라인 4개 상품 + 헌법 5조), `.raw/01_이식매트릭스.md` · `02_24차시_마스터플랜.md` · `03_지도안_24종.md` (참조), 기존 HYROX 라이선스·측정 문서

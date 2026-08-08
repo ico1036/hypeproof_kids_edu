@@ -23,6 +23,7 @@ tags:
 - 기반: [[curriculum-schema]] · [[edu-constitution]] · [[measurement-axes]] · [[placement-rules]]
 - 지도안: [[lesson-plan-authoring-guide]] · [[lesson-plan-quality-checklist]]
 - 메타: [[override-protocol]] · [[edu-11-16-research-plan]]
+- 조사(L0 ①): [[ped-adolescent-cognitive-development-verification]] · [[ped-youth-ai-chatbot-statistics-verification]] · [[ped-llm-minor-age-policy-20260808]]
 - 오버라이드: [[ovr-license-ranking-family-line]] · [[ovr-measurement-fifth-axis]] · [[ovr-measurement-composite-score]]
 - 승격 판정: [[ruling-profile-based-differentiation]]
 
