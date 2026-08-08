@@ -49,7 +49,22 @@ axes: [input, load]              # 측정 5축 중 훈련 대상
 prohibited_moves: []             # 금지 개입. 강사 매뉴얼로 자동 추출
 prep_assets: []                  # 사전 준비 자산
 safety: none | attention | protocol   # protocol이면 별도 대응 절차 필수
+method: [m-002]                  # 채택 방법론 → wiki/curriculum/models/
+guidance:                        # m-002 요건. 발견형 활동에 필수
+  space: ""                      # 탐색 공간을 어떻게 좁히는가
+  elicit: ""                     # 설명 유도 발문
+  feedback: ""                   # 즉각 피드백 통로
+individual_evidence: ""          # 소집단 활동의 개별 산출물 (m-005 요건)
+retry: true                      # 재시도 기회 유무 (m-006 요건)
 ```
+
+### 방법론 파생 필수 필드 (2026-08-08 추가)
+
+방법론 라이브러리 조사에서 도출된 요건. → [[models/_index|방법론 라이브러리]]
+
+- **`guidance`** — 발견형 활동(`method`에 m-002 포함)은 3개 하위 필드를 모두 채운다. **하나라도 비면 그 활동은 "안내된 발견"이 아니라 방치**이며, 명시적 수업보다 나쁜 결과를 낸다 (Alfieri et al. 2011: 비유도 발견 d=−0.38)
+- **`individual_evidence`** — 소집단 활동은 개별 산출물이 있어야 한다. 없으면 증거가 개인에게 귀속되지 않아 Evidence(Sediment)가 성립하지 않는다
+- **`retry`** — 피드백이 발생하는 활동에서 `false`면 그 피드백은 형성평가가 아니다
 
 ### 필드 주석
 
@@ -117,6 +132,9 @@ produced: []                     # 이 판정으로 생성된 자산
 4. 자산이 override 대상 원본을 직접 인용 → 에러 (override 경유 필수)
 5. `status: pending-upstream` 이 90일 초과 → 경고
 6. `safety: protocol` 인데 대응 절차 링크 없음 → 에러
+7. `method`에 m-002 포함인데 `guidance` 하위 필드 미완 → 에러
+8. 소집단 활동인데 `individual_evidence` 비어 있음 → 에러
+9. 피드백 활동인데 `retry: false` → 경고
 
 ## 관련
 

@@ -13,6 +13,12 @@ tags:
 
 ---
 
+## [2026-08-08] research/asset | 교수학습 방법론 라이브러리 구축
+- Pages created: [[evidence-standards]], [[m-explicit-instruction]], [[m-guided-discovery]], [[m-cognitive-apprenticeship]], [[m-problem-based-learning]], [[m-cooperative-learning]], [[m-formative-feedback]], `models/_index.md` (선택 가이드)
+- Template created: `_templates/method.md` (8절 표준 포맷)
+- Pages updated: [[curriculum-schema]] (guidance/individual_evidence/retry 필드 + lint 7~9), [[index]], [[hot]], [[log]]
+- Key insight: 발견학습 논쟁의 결론은 "발견이냐 설명이냐"가 아니라 "안내가 있느냐"다. Alfieri et al.(2011) 메타분석에서 비유도 발견은 명시적 수업보다 나쁘고(d=-0.38) 유도된 발견은 낫다(d=+0.30, 유도된 발견 단독 d=0.50). 우리 금지 개입은 "하지 않을 것"만 규정했으므로 "반드시 할 것"(탐색 공간 제한·설명 유도·피드백 통로)을 guidance 필드로 강제한다. Kluger & DeNisi(1996)의 피드백 38% 역효과와 자아 지향 기제는 우리 헌법 B-1/B-2/B-3을 독립적으로 지지한다 — 순위를 매기지 않는 것이 윤리적 선택일 뿐 아니라 수행상 유리한 선택임이 확인됐다. Hattie 효과크기 순위표는 방법론 비교 근거로 쓰지 않는다(Bergeron 2017, Simpson 2017, Slavin 2018).
+
 ## [2026-08-08] research | L0 사이클 ② — 신규 교수법·시장 조사
 - Pages created: [[ped-korea-elementary-ai-usage-2026]], [[ped-scaffolding-fading-srl]], [[ped-backward-design-ubd]], [[ped-session-format-attention-group-size]], [[ped-ai-literacy-standards-kr-intl]], [[ped-cognitive-acceleration-case]], [[ped-premium-private-education-benchmark-kr]]
 - Pages updated: [[prohibited-moves]], [[lesson-plan-authoring-guide]], [[measurement-axes]], [[edu-11-16-session-format]], [[edu-11-16-research-plan]], [[index]], [[hot]], [[log]]
