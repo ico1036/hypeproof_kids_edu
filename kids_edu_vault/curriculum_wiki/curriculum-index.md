@@ -51,7 +51,7 @@ tags:
 **국내 모형 지도 5종** (등급 D — 소통·정렬 도구, 효과 근거로 미사용)
 - [[kr-instructional-models-map]] (진입점) · [[kr-models-korean]] · [[kr-models-science]] · [[kr-models-social-moral-math]] · [[kr-models-cooperative]]
 
-## research/ — 조사·근거 (16)
+## research/ — 조사·근거 (17)
 
 **창업·IR 라인** (`scope: startup-ir`) — 고등학생 대상. 기존 11~16세 라인과 **별개 라인**
 - [[startup-minor-legal-boundary-kr]] — 법적 상한. **민법 제8조 영업 허락**이 지렛대
@@ -59,6 +59,7 @@ tags:
 - [[startup-modoo-project-kr]] — 모두의 창업(중기부). **실제 IR 3단계** + 대필 형사조항 + 아이디어 배타성
 - [[startup-ir-deck-structures]] — Sequoia · YC · **PSST** 3계보. 산출물 규격 후보
 - [[startup-yeep-benchmark-kr]] — 국가가 **무료로 이미 제공하는 것**. 우리 하한선
+- [[startup-yeep-deep-read-kr]] — **정독**. 8단계 모형 / AI는 주제일 뿐 / 성실한 실패 / 평가 체계의 빈칸
 - [[startup-yeep-resource-manifest]] — YEEP 자료실 전수 목록·재수집 방법 (203건)
 
 **L0 사이클 ① 기존 주장 출처 검증**
