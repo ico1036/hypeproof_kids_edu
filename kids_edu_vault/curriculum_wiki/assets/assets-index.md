@@ -1,7 +1,7 @@
 ---
 type: index
 status: navigational
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 title: "사전 준비 자산"
 created: 2026-08-08

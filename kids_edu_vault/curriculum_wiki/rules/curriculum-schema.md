@@ -1,15 +1,15 @@
 ---
 type: spec
 status: draft
+scope: common
 ip_owner: unverified
 title: "커리큘럼 자산 프론트매터 스키마"
 owner: JY
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-17
 tags:
   - curriculum
   - schema
-  - edu-11-16
 ---
 
 # 커리큘럼 자산 프론트매터 스키마
@@ -23,12 +23,88 @@ tags:
 ```yaml
 type: method | activity | rubric | guardrail | constraint | spec | asset | track | lesson-plan | ingest-ruling | meta
 status: draft | active | quarantine | retired
-scope: edu-11-16          # 유효 범위
+scope: common | edu-11-16 | startup-ir     # 유효 범위. common = 라인 무관 정본
 ip_owner: unverified | hypeproof | partner-<name> | joint | derived-external
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [curriculum, ...]
 ```
+
+## `scope` — 값 체계 (2026-08-17 신설)
+
+| 값 | 뜻 | 접두사 |
+|---|---|---|
+| **`common`** | **라인 무관.** 라인이 몇 개로 늘어도 이 문서는 하나다 | `m-` `kr-` 또는 없음 |
+| `edu-11-16` | 11~16세 라인 전용 | `edu-11-16-` `ped-` |
+| `startup-ir` | 고등학생 창업·IR 라인 전용 | `startup-` |
+
+### 왜 `common`이 신설되었는가
+
+`curriculum_wiki/`가 만들어질 때 라인은 **하나뿐이었다.** 그래서 40건 전부에 `scope: edu-11-16`이 붙었다. 두 번째 라인(`startup-ir`)이 생기자 **`edu-constitution`(헌법)조차 형식상 창업 라인에 적용되지 않는 상태**가 드러났다.
+
+**게이트 문서가 라인 전용으로 잠겨 있으면 게이트가 아니다.** 2026-08-17 26건을 `common`으로 재판정했다.
+
+### 판정 기준
+
+> **"두 번째 라인에서도 이 문서를 그대로 읽을 것인가?"**
+> 그렇다 → `common` · 아니다 → 라인값
+
+- **헌법·금지개입·근거등급·방법론 카드·지도안 규격은 `common`이다.** 대상 연령이나 상품이 바뀌어도 변하지 않는다
+- **연령·시장·상품 근거는 라인값이다.** 특정 연령대 발달 특성, 특정 시장 가격, 특정 트랙 구조
+- **`common` 문서를 한 라인의 필요로 고치려 할 때는 멈춘다.** 그건 라인 전용 문서를 새로 만들라는 신호다
+
+⚠️ **`common`은 "모든 라인에 검증됐다"는 뜻이 아니다.** 방법론 카드의 근거는 대부분 특정 연령대 연구에서 왔다. 라인마다 이식 판정이 필요하다는 사실은 그대로다. → [[ruling-startup-ir-asset-alignment]]
+
+## 파일명 — 접두사 체계 (2026-08-17 신설)
+
+파일명은 `kebab-case.md`이며 **볼트 전체에서 고유**해야 한다(위키링크가 파일명 기준이므로 `wiki/`와도 충돌 불가).
+
+접두사는 **`scope`를 파일명에서 눈으로 읽기 위한 것**이다. 프론트매터를 열지 않고도 어느 라인 문서인지 알 수 있어야 한다.
+
+접두사는 두 종류가 있다. **섞어 쓰지 않는다.**
+
+**① 종류 접두사** — 문서의 *성격*을 나타낸다. `scope`를 구속하지 않는다.
+
+| 접두사 | 대상 | 허용 `scope` |
+|---|---|---|
+| `m-` | 방법론 카드 (국제 문헌 기반) | `common` |
+| `kr-` | 국내 수업 모형 지도 | `common` |
+| `ped-` | 교수학습·시장 조사 | **`common` 또는 `edu-11-16` 둘 다 가능** |
+| `ruling-` | **판정 문서** | 모든 값 |
+| `act-` | 활동 원자 | 모든 값 |
+
+**② 라인 접두사** — 문서가 *어느 라인 전용*인지 나타낸다. `scope`와 1:1이다.
+
+| 접두사 | 대응 `scope` |
+|---|---|
+| `edu-11-16-` | `edu-11-16` |
+| `startup-` | `startup-ir` |
+| `curriculum-` | `edu-11-16` (작업 파일 `curriculum-hot`·`curriculum-log`. `curriculum-index`·`curriculum-schema`는 `common` 예외) |
+
+**③ 접두사 없음** — 라인·주제를 넘는 **정본**. `scope: common`.
+예: `edu-constitution` · `measurement-axes` · `prohibited-moves` · `placement-rules` · `methods-index` · `evidence-standards` · `lesson-plan-authoring-guide`
+
+### ⚠️ 미판정 — 규칙과 어긋난 상태로 남겨둔 2건
+
+접두사가 없어(규칙 ③) `common`이어야 하는데 `scope: edu-11-16`인 문서가 둘 있다. **추측으로 옮기지 않고 판정 대기로 둔다.**
+
+| 문서 | 쟁점 |
+|---|---|
+| [[measurement-axes]] | 문서가 스스로 "커리큘럼 라인 정본"이라 선언한다. 그런데 창업·IR 라인에는 **집단창의에 대응하는 축이 없다**(대회 배점 45~50점). `common`으로 올려 6번째 축을 넣을지, 라인 전용 측정 문서를 새로 만들지 |
+| [[placement-rules]] | 배치 제약 C-1~C-9가 11~16세 회차 구조(110분×2)에 묶여 있는지 확인 필요 |
+
+같은 이유로 `ped-session-format-attention-group-size`(표본 연령)·`ped-premium-private-education-benchmark-kr`(시장 가격대)도 `edu-11-16`에 남겼다. 넷 다 **본문을 읽어야 판정된다.**
+
+⚠️ **`ped-`가 두 `scope`를 허용하는 것은 의도된 타협이다.** 조사 문서는 "이 근거가 어느 라인까지 유효한가"가 사후에 판정된다 — 특정 연령대 표본에서 나온 조사가 알고 보니 라인 무관이거나 그 반대다. 파일명을 바꾸면 위키링크가 전부 깨지므로 **접두사는 고정하고 `scope`만 옮긴다.** 대신 `ped-` 파일은 파일명만으로 라인을 알 수 없으니 `scope`를 확인해야 한다.
+
+### 판정 규칙
+
+- **라인 전용 문서는 라인 접두사를 반드시 붙인다.** 라인이 늘어나면 접두사도 늘어난다
+- **`ruling-`이 라인 접두사보다 앞선다.** `ruling-startup-ir-...`가 맞고 `startup-ruling-...`은 틀리다. 판정 문서는 한곳에 모아 보는 것이 우선이기 때문이다
+- **접두사 없음은 "정본"의 표시다.** 라인이 아무리 늘어도 이 문서는 하나라는 선언. 새 문서에 접두사를 안 붙이려면 그 근거를 답할 수 있어야 한다
+- 접두사는 `scope`와 **모순되면 안 된다**. `startup-` 파일에 `scope: edu-11-16`이 오는 것은 오류다
+
+> ⚠️ **이 규칙은 사후에 만들어졌다.** 2026-08-17 창업·IR 라인 문서 6건 중 1건(`yeep-resource-manifest`)이 접두사를 빠뜨린 것을 발견하고 정식화했다. 관행으로 유지하던 것을 규칙으로 올리지 않으면 반드시 어긋난다.
 
 ## `ip_owner` — 값 체계
 
@@ -152,6 +228,12 @@ produced: []                     # 이 판정으로 생성된 자산
 7. 피드백 활동인데 `retry: false` → 경고
 8. `ip_owner`가 정의된 5개 값 외 → 에러
 9. **`ip_owner: unverified` → 라이선스 패키지 빌드에서 자동 제외** (경고, 빌드 시 에러)
+10. **`scope`가 라인 전용값인데 파일명에 대응 접두사 없음 → 에러**
+    (`scope: startup-ir` → `startup-` 또는 `ruling-startup-` / `scope: edu-11-16` → `edu-11-16-`·`ped-`. 접두사 없는 정본 문서는 화이트리스트로 예외 처리)
+11. **파일명 접두사와 `scope`가 모순 → 에러** (예: `startup-*.md` 에 `scope: edu-11-16`)
+12. 파일명이 볼트 전체(`wiki/` 포함)에서 중복 → 에러 (위키링크 해석 불가)
+
+> ⚠️ **lint 1~12 전부 미구현이다.** 규칙 10·11이 있었다면 `yeep-resource-manifest` 누락은 커밋 전에 걸렸다. → [[curriculum-hot]] P3
 
 ## 관련
 

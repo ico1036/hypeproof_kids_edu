@@ -50,3 +50,5 @@ src/_backup_original/
 
 # 런타임 백엔드 URL 오버라이드 — Cloudflare quick tunnel은 재시작마다 URL이 바뀌므로 .example만 트래킹
 src/frontend/public/_backend.js
+# YEEP 공개자료 원본 (대용량 PDF/PPT/ZIP, 재다운로드 가능 — 매니페스트는 볼트에 커밋됨)
+kids_edu_vault/.raw/yeep/

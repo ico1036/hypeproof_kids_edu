@@ -1,5 +1,6 @@
 ---
 type: meta
+scope: edu-11-16
 title: "Curriculum Log"
 created: 2026-08-08
 updated: 2026-08-08
@@ -13,6 +14,11 @@ tags:
 `curriculum_wiki/` 변경 이력. 최신 항목이 위. **추가 전용 — 과거 엔트리 수정 금지.**
 
 ---
+
+## [2026-08-17] rules | scope 값 체계 + 파일명 접두사 정식화
+- Pages: `curriculum-schema` (scope 값 체계·접두사 2종·lint 10~12 추가), `curriculum-index`
+- 재판정: 28건 → `scope: common` / 작업 파일 라인 분리(`startup-hot`·`startup-log` 신설)
+- Key insight: 라인이 하나일 때 붙인 `scope: edu-11-16`이 40건에 그대로 남아 **`edu-constitution`(헌법)조차 형식상 창업·IR 라인에 적용되지 않는 상태**였다. 게이트 문서가 라인 전용으로 잠겨 있으면 게이트가 아니다. 라인을 볼트로 쪼개는 방안도 검토했으나, 두 라인은 `common` 28건을 공유해 결합도가 높다 — 복사하면 두 진실이 생기고 참조하면 이름만 분리다. **라인은 축이지 트리가 아니다.** 경합한 것은 지식이 아니라 작업 상태였으므로 `hot`·`log`만 쪼갰다. `measurement-axes`·`placement-rules` 등 4건은 본문을 읽어야 판정되므로 규칙과 어긋난 상태로 명시해 남겼다.
 
 ## [2026-08-08] split | curriculum_wiki 분리 신설
 - 이전 위치: `curriculum_wiki/**` (33), `curriculum_wiki/research/ped-*` (10), `wiki/decisions/edu-11-16-*` (4), `_templates/` (4)

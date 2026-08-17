@@ -1,7 +1,7 @@
 ---
 type: spec
 status: draft
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 title: "지도안 품질 체크리스트"
 created: 2026-08-08

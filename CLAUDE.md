@@ -58,12 +58,15 @@
 | `curricula/` | **완성된 트랙·지도안** | 산출물 |
 | `_templates/` | 커리큘럼용 템플릿 4종 | |
 
+라인 구분·`scope` 값·접두사 규칙은 `curriculum_wiki/rules/curriculum-schema.md` 가 정본이다.
+
 `.raw/`(원본 참고 자료, 가공 전)는 **두 트리가 공유**한다.
 
 #### 두 트리를 다룰 때
 
 - 위키링크는 트리를 넘어 작동한다 (같은 볼트, 파일명 기준). 파일명은 볼트 전체에서 고유해야 한다
-- **메타 파일은 공유하지 않는다**: `wiki/`는 `index`·`log`·`hot`, `curriculum_wiki/`는 `curriculum-index`·`curriculum-log`·`curriculum-hot`
+- **메타 파일은 공유하지 않는다**: `wiki/`는 `index`·`log`·`hot`. `curriculum_wiki/`는 인덱스 하나(`curriculum-index`)를 공유하되 **작업 파일은 라인별** — `curriculum-hot`·`curriculum-log`(11~16세) / `startup-hot`·`startup-log`(창업·IR)
+- **`curriculum_wiki/` 안에는 라인이 둘 있고 폴더를 나누지 않는다.** `scope`(`common`|`edu-11-16`|`startup-ir`) + 파일명 접두사(`m-`·`kr-`·`ped-`·`edu-11-16-`·`startup-`·`ruling-`)로 구분한다. 헌법·방법론 카드 등 `common` 26건을 두 라인이 공유하므로 **라인은 축이지 트리가 아니다**
 - **기존 스킬은 `wiki/` 경로를 하드코딩**하고 있다. 커리큘럼 작업 시 `kids_edu_vault/CLAUDE.md`의 라우팅 표가 스킬 본문보다 **우선**한다
 - 사업 볼트 문서를 커리큘럼 판단으로 고치지 않는다. 차이는 `curriculum_wiki/` 쪽에 명시하고, 조직 문서 개정이 필요하면 `wiki/` 과제로 넘긴다
 - **향후 커리큘럼 생성 스킬**은 `curriculum_wiki/`를 입력으로 읽는다. 규칙 문서를 스킬에 복사하지 않는다 — 복사하면 두 진실이 생긴다

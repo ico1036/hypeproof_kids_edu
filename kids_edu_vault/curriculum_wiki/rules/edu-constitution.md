@@ -1,7 +1,7 @@
 ---
 type: guardrail
 status: active
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 title: "교육 라인 헌법 — 절대 하지 않는 것"
 created: 2026-08-08
