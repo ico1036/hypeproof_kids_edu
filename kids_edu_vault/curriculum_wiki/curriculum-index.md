@@ -1,5 +1,6 @@
 ---
 type: meta
+scope: common
 title: "Curriculum Index"
 created: 2026-08-08
 updated: 2026-08-08
@@ -14,6 +15,18 @@ tags:
 
 > **이 트리는 무엇인가**: 커리큘럼과 강의를 만들기 위한 **지식을 축적하고, 그 지식으로 만든 커리큘럼을 축적하는 곳**.
 > 사업·기술·제품 문서는 `wiki/`에 있다. 용도 구분은 `kids_edu_vault/CLAUDE.md` 참조.
+
+## 두 라인 — 지식은 공유, 작업 상태는 분리
+
+이 트리에는 **라인이 둘** 있다. 라인은 **`scope` 필드로 구분되며 폴더를 나누지 않는다.**
+
+| 라인 | `scope` | 접두사 | 작업 파일 |
+|---|---|---|---|
+| 11~16세 AI 교육 | `edu-11-16` | `edu-11-16-` `ped-` | [[curriculum-hot]] · [[curriculum-log]] |
+| 고등학생 창업·IR | `startup-ir` | `startup-` | [[startup-hot]] · [[startup-log]] |
+| **공유 자산** | **`common`** | `m-` `kr-` 또는 없음 | (라인 로그에 기록) |
+
+> **왜 폴더를 안 나누는가**: 두 라인은 `scope: common` 26건(헌법·방법론 카드·지도안 규격·근거 등급)을 공유한다. 복사하면 두 진실이 생기고 참조하면 이름만 분리다. **라인은 축이지 트리가 아니다.** 경합하던 것은 지식이 아니라 작업 상태였으므로 `hot`·`log`만 쪼갰다. → 값·접두사 규칙은 [[curriculum-schema]]
 
 ## 축적 구조
 
@@ -92,5 +105,6 @@ tags:
 
 ## 관련
 
-- [[curriculum-hot]] · [[curriculum-log]]
+- 11~16세 라인: [[curriculum-hot]] · [[curriculum-log]]
+- 창업·IR 라인: [[startup-hot]] · [[startup-log]]
 - `wiki/index.md` — 사업·기술·제품 문서

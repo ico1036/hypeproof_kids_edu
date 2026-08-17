@@ -45,7 +45,7 @@ Created: 2026-04-12
 
 - **위키링크는 트리를 넘어 작동한다** (같은 Obsidian 볼트, 파일명 기준). 필요하면 인용한다
 - **`.raw/`는 공유한다.** 원자재를 두 곳에 두면 원본이 흐려진다
-- **메타 파일은 절대 공유하지 않는다.** `wiki/`는 `index`·`log`·`hot`, `curriculum_wiki/`는 `curriculum-index`·`curriculum-log`·`curriculum-hot`. 섞으면 한쪽 맥락이 다른 쪽을 밀어낸다
+- **메타 파일은 절대 공유하지 않는다.** `wiki/`는 `index`·`log`·`hot`. `curriculum_wiki/`는 인덱스 하나(`curriculum-index`)를 공유하되 **작업 파일은 라인별**이다 — `curriculum-hot`·`curriculum-log`(11~16세) / `startup-hot`·`startup-log`(창업·IR). 섞으면 한쪽 맥락이 다른 쪽을 밀어낸다
 - **사업 볼트 문서를 커리큘럼 판단으로 고치지 않는다.** 차이가 생기면 `curriculum_wiki/` 쪽에 명시하고, 조직 문서 개정이 필요하면 `wiki/` 과제로 넘긴다
 
 ---
@@ -75,7 +75,9 @@ kids_edu_vault/
 │   └── assets/                # 디자인·콘텐츠 자산
 │
 ├── curriculum_wiki/           # ── 커리큘럼 지식 위키
-│   ├── curriculum-index.md  curriculum-log.md  curriculum-hot.md
+│   ├── curriculum-index.md          (공용 카탈로그)
+│   ├── curriculum-hot.md  curriculum-log.md   (11~16세 라인)
+│   ├── startup-hot.md     startup-log.md      (창업·IR 라인)
 │   ├── _templates/            # 커리큘럼용 템플릿 4종
 │   ├── methods/               # 교수학습 방법론 카드 + 국내 모형 지도   [지식]
 │   ├── research/              # 조사·근거 (ped-*)                      [지식]
@@ -133,6 +135,23 @@ kids_edu_vault/
 - **`.raw` 원자재를 자산으로 승격할 때 `gaps/`에 판정 기록**을 남긴다
 - **메타 파일 이름에 접두사를 붙인다.** 위키링크가 파일명 기준이라 `index`·`log`·`hot`은 `wiki/`와 충돌한다
 - 지식은 `methods`/`research`, 규칙은 `rules`/`design`, 산출물은 `curricula`. **섞지 않는다**
+- **모든 노트에 `scope` 필수**: `common` | `edu-11-16` | `startup-ir`. **파일명 접두사가 `scope`와 모순되면 오류** → `rules/curriculum-schema.md`
+
+### 라인은 폴더를 나누지 않는다 — `scope`로 나눈다
+
+이 트리에는 라인이 둘 있다(11~16세 AI 교육 / 고등학생 창업·IR). **폴더를 쪼개지 않는다.**
+
+| 라인 | `scope` | 접두사 | 작업 파일 |
+|---|---|---|---|
+| 11~16세 | `edu-11-16` | `edu-11-16-` `ped-` | `curriculum-hot` · `curriculum-log` |
+| 창업·IR | `startup-ir` | `startup-` | `startup-hot` · `startup-log` |
+| **공유 자산** | **`common`** | `m-` `kr-` 또는 없음 | 라인 로그에 기록 |
+
+> **왜**: 두 라인은 `common` 26건(헌법·금지개입·방법론 카드 8종·국내 모형 5종·지도안 규격·근거 등급)을 **공유한다.** 복사하면 두 진실이 생기고, 참조하면 이름만 분리다. **라인은 축이지 트리가 아니다.**
+
+- **`common` 문서를 한 라인의 필요로 고치려 할 때 멈춘다.** 그건 라인 전용 문서를 새로 만들라는 신호다
+- 라인 전용 작업은 **그 라인의 `hot`·`log`에만** 기록한다. `common` 자산 변경은 `curriculum-log`에 남긴다
+- 라인이 늘어나면 `scope` 값과 접두사, 그리고 `<line>-hot`·`<line>-log` 한 쌍을 추가한다. **폴더는 그대로 둔다**
 
 ---
 
@@ -163,10 +182,11 @@ kids_edu_vault/
 |---|---|---|
 | 소스 ingest | `wiki/sources/` + `wiki/concepts/` | **`curriculum_wiki/research/`** (조사) 또는 **`methods/`** (방법론 자산) |
 | autoresearch 산출 | `wiki/sources/` + `wiki/concepts/` | **`curriculum_wiki/research/`** |
-| 인덱스·로그·캐시 갱신 | `wiki/index·log·hot` | **`curriculum-index`·`curriculum-log`·`curriculum-hot`** |
-| query 읽는 순서 | `wiki/hot` → `wiki/index` | **`curriculum-hot` → `curriculum-index`** |
+| 인덱스 갱신 | `wiki/index` | **`curriculum-index`** (라인 무관 공용) |
+| 로그·캐시 갱신 | `wiki/log·hot` | **해당 라인의 `hot`·`log`** — 11~16세는 `curriculum-*`, 창업·IR은 `startup-*` |
+| query 읽는 순서 | `wiki/hot` → `wiki/index` | **해당 라인 `hot` → `curriculum-index`.** 라인이 불명확하면 두 `hot` 모두 읽는다 |
 
-**lint 한계**: `rules/curriculum-schema.md`의 lint 규칙 11개(`ip_owner`, `guidance` 3필드 등)는 `wiki-lint` 스킬에 구현되어 있지 않다. 규칙 준수는 사람과 CLAUDE.md가 책임지고, **자동 검출은 향후 커리큘럼 스킬에서 구현**한다.
+**lint 한계**: `rules/curriculum-schema.md`의 lint 규칙 12개(`ip_owner`, `guidance` 3필드 등)는 `wiki-lint` 스킬에 구현되어 있지 않다. 규칙 준수는 사람과 CLAUDE.md가 책임지고, **자동 검출은 향후 커리큘럼 스킬에서 구현**한다.
 
 ### 명령
 

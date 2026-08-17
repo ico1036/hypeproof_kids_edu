@@ -1,17 +1,20 @@
 ---
 type: meta
+scope: edu-11-16
 title: "Curriculum Hot"
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-17
 tags:
   - meta/cache
   - curriculum
+  - edu-11-16
 ---
 
-# Curriculum Hot — 커리큘럼 위키 컨텍스트 캐시
+# Curriculum Hot — 11~16세 라인 컨텍스트 캐시
 
-> 500단어 이내. 이 트리에서 작업을 끝낼 때마다 완전히 덮어쓴다.
-> 사업·기술 맥락은 `wiki/hot.md`에 따로 있다. 섞지 않는다.
+> 500단어 이내. **이 라인**에서 작업을 끝낼 때마다 완전히 덮어쓴다.
+> 창업·IR 라인 맥락은 [[startup-hot]], 사업·기술 맥락은 `wiki/hot.md`에 따로 있다. 섞지 않는다.
+> 공유 자산(`scope: common`)은 두 라인이 함께 쓴다. 한 라인의 필요로 여기서 고치지 않는다.
 
 ## 지금 (2026-08-08)
 

@@ -1,15 +1,15 @@
 ---
 type: spec
 status: draft
+scope: common
 ip_owner: unverified
 title: "커리큘럼 자산 프론트매터 스키마"
 owner: JY
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-17
 tags:
   - curriculum
   - schema
-  - edu-11-16
 ---
 
 # 커리큘럼 자산 프론트매터 스키마
@@ -61,16 +61,41 @@ tags: [curriculum, ...]
 
 접두사는 **`scope`를 파일명에서 눈으로 읽기 위한 것**이다. 프론트매터를 열지 않고도 어느 라인 문서인지 알 수 있어야 한다.
 
-| 접두사 | 대상 | 대응 `scope` |
+접두사는 두 종류가 있다. **섞어 쓰지 않는다.**
+
+**① 종류 접두사** — 문서의 *성격*을 나타낸다. `scope`를 구속하지 않는다.
+
+| 접두사 | 대상 | 허용 `scope` |
 |---|---|---|
-| `m-` | 방법론 카드 (국제 문헌 기반) | 라인 공통 |
-| `kr-` | 국내 수업 모형 지도 | 라인 공통 |
-| `ped-` | 교수학습·시장 조사 | 라인 공통 또는 `edu-11-16` |
-| `startup-` | **창업·IR 라인 전용** | `startup-ir` |
-| `edu-11-16-` | 11~16세 라인 전용 규칙·명세 | `edu-11-16` |
-| `ruling-` | **판정 문서** (라인 무관) | 해당 라인 |
-| `act-` | 활동 원자 | 해당 라인 |
-| 접두사 없음 | 라인·주제를 넘는 정본 문서 | 예: `edu-constitution`, `measurement-axes`, `curriculum-schema`, `methods-index`, `evidence-standards` |
+| `m-` | 방법론 카드 (국제 문헌 기반) | `common` |
+| `kr-` | 국내 수업 모형 지도 | `common` |
+| `ped-` | 교수학습·시장 조사 | **`common` 또는 `edu-11-16` 둘 다 가능** |
+| `ruling-` | **판정 문서** | 모든 값 |
+| `act-` | 활동 원자 | 모든 값 |
+
+**② 라인 접두사** — 문서가 *어느 라인 전용*인지 나타낸다. `scope`와 1:1이다.
+
+| 접두사 | 대응 `scope` |
+|---|---|
+| `edu-11-16-` | `edu-11-16` |
+| `startup-` | `startup-ir` |
+| `curriculum-` | `edu-11-16` (작업 파일 `curriculum-hot`·`curriculum-log`. `curriculum-index`·`curriculum-schema`는 `common` 예외) |
+
+**③ 접두사 없음** — 라인·주제를 넘는 **정본**. `scope: common`.
+예: `edu-constitution` · `measurement-axes` · `prohibited-moves` · `placement-rules` · `methods-index` · `evidence-standards` · `lesson-plan-authoring-guide`
+
+### ⚠️ 미판정 — 규칙과 어긋난 상태로 남겨둔 2건
+
+접두사가 없어(규칙 ③) `common`이어야 하는데 `scope: edu-11-16`인 문서가 둘 있다. **추측으로 옮기지 않고 판정 대기로 둔다.**
+
+| 문서 | 쟁점 |
+|---|---|
+| [[measurement-axes]] | 문서가 스스로 "커리큘럼 라인 정본"이라 선언한다. 그런데 창업·IR 라인에는 **집단창의에 대응하는 축이 없다**(대회 배점 45~50점). `common`으로 올려 6번째 축을 넣을지, 라인 전용 측정 문서를 새로 만들지 |
+| [[placement-rules]] | 배치 제약 C-1~C-9가 11~16세 회차 구조(110분×2)에 묶여 있는지 확인 필요 |
+
+같은 이유로 `ped-session-format-attention-group-size`(표본 연령)·`ped-premium-private-education-benchmark-kr`(시장 가격대)도 `edu-11-16`에 남겼다. 넷 다 **본문을 읽어야 판정된다.**
+
+⚠️ **`ped-`가 두 `scope`를 허용하는 것은 의도된 타협이다.** 조사 문서는 "이 근거가 어느 라인까지 유효한가"가 사후에 판정된다 — 특정 연령대 표본에서 나온 조사가 알고 보니 라인 무관이거나 그 반대다. 파일명을 바꾸면 위키링크가 전부 깨지므로 **접두사는 고정하고 `scope`만 옮긴다.** 대신 `ped-` 파일은 파일명만으로 라인을 알 수 없으니 `scope`를 확인해야 한다.
 
 ### 판정 규칙
 
