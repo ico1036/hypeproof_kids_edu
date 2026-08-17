@@ -38,7 +38,12 @@ tags:
 **국내 모형 지도 5종** (등급 D — 소통·정렬 도구, 효과 근거로 미사용)
 - [[kr-instructional-models-map]] (진입점) · [[kr-models-korean]] · [[kr-models-science]] · [[kr-models-social-moral-math]] · [[kr-models-cooperative]]
 
-## research/ — 조사·근거 (10)
+## research/ — 조사·근거 (13)
+
+**창업·IR 라인** (`scope: startup-ir`) — 고등학생 대상. 기존 11~16세 라인과 **별개 라인**
+- [[startup-minor-legal-boundary-kr]] — 법적 상한. **민법 제8조 영업 허락**이 지렛대
+- [[startup-youth-competition-kr]] — 청소년 창업경진대회 심사 배점. **아이템 30점 / 과정 70점**
+- [[startup-ir-deck-structures]] — Sequoia · YC · **PSST** 3계보. 산출물 규격 후보
 
 **L0 사이클 ① 기존 주장 출처 검증**
 - [[ped-adolescent-cognitive-development-verification]] — 형식적 조작기 **기각** / 자기평가 정확도 지지
@@ -71,10 +76,11 @@ tags:
 - [[lesson-plan-authoring-guide]] — 작성 순서·12절 규격·강사 자유도
 - [[lesson-plan-quality-checklist]] — 3관문 검증
 
-## gaps/ — 미해결 (2)
+## gaps/ — 미해결 (3)
 
 - [[edu-11-16-research-plan]] — 조사 계획·진행 상황·미조사 목록
 - [[ruling-profile-based-differentiation]] — `.raw` 승격 판정
+- [[ruling-startup-ir-asset-alignment]] — 창업·IR 라인 자산 승계 판정. **7 Assets 전면 / No-Debug 미승계**
 
 ## activities/ · assets/ · curricula/ — 아직 비어 있음
 
