@@ -55,8 +55,8 @@ tags:
 
 **창업·IR 라인** (`scope: startup-ir`) — 고등학생 대상. 기존 11~16세 라인과 **별개 라인**
 - [[startup-minor-legal-boundary-kr]] — 법적 상한. **민법 제8조 영업 허락**이 지렛대
-- [[startup-youth-competition-kr]] — 청소년 창업경진대회 심사 배점. **아이템 30점 / 과정 70점**
-- [[startup-modoo-project-kr]] — 모두의 창업(중기부). **실제 IR 3단계** + 대필 형사조항 + 아이디어 배타성
+- [[startup-youth-competition-kr]] — 청소년 창업경진대회 심사 배점(**벤치마크**). 아이템 30점 / 과정 70점
+- [[startup-modoo-project-kr]] — 모두의 창업(중기부, **벤치마크**). 실제 IR 3단계 + **대필 형사조항**
 - [[startup-ir-deck-structures]] — Sequoia · YC · **PSST** 3계보. 산출물 규격 후보
 - [[startup-yeep-benchmark-kr]] — 국가가 **무료로 이미 제공하는 것**. 우리 하한선
 - [[startup-yeep-deep-read-kr]] — **정독**. 8단계 모형 / AI는 주제일 뿐 / 성실한 실패 / 평가 체계의 빈칸
@@ -93,11 +93,12 @@ tags:
 - [[lesson-plan-authoring-guide]] — 작성 순서·12절 규격·강사 자유도
 - [[lesson-plan-quality-checklist]] — 3관문 검증
 
-## gaps/ — 미해결 (3)
+## gaps/ — 미해결 (4)
 
 - [[edu-11-16-research-plan]] — 조사 계획·진행 상황·미조사 목록
 - [[ruling-profile-based-differentiation]] — `.raw` 승격 판정
 - [[ruling-startup-ir-asset-alignment]] — 창업·IR 라인 자산 승계 판정. **7 Assets 전면 / No-Debug 미승계**
+- [[ruling-startup-ir-target-and-scope]] — 창업·IR 목표·채널·진입 구간. **국가 대회는 목표가 아니라 참고 자료**
 
 ## activities/ · assets/ · curricula/ — 아직 비어 있음
 
