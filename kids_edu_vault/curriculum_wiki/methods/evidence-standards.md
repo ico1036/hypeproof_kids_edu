@@ -1,7 +1,7 @@
 ---
 type: spec
 status: active
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 title: "근거를 다루는 원칙 — 방법론 자산의 공신력 기준"
 owner: JY

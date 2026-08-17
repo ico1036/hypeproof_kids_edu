@@ -27,7 +27,7 @@ tags:
 산출물      curricula/          ← 완성된 트랙·지도안이 여기 쌓인다
 ```
 
-## methods/ — 교수학습 방법론 (15)
+## methods/ — 교수학습 방법론 (15) · `scope: common`
 
 - [[methods-index]] — **선택 가이드**. 목표 → 선행지식 → 제약 3단계
 - [[evidence-standards]] — 근거 등급 기준. 효과크기 서열화 금지
@@ -67,7 +67,7 @@ tags:
 - [[prohibited-moves]] — 강사 금지 개입 4계열
 - [[placement-rules]] — 배치 제약 C-1~C-9
 - [[measurement-axes]] — 측정 5축 × 3수준
-- [[curriculum-schema]] — 프론트매터 스키마 + **파일명 접두사 체계** + lint 12개
+- [[curriculum-schema]] — 프론트매터 스키마 + **`scope` 값 체계** + **파일명 접두사** + lint 12개
 - [[edu-11-16-track-architecture]] — 상품별 독립 완결 트랙
 - [[edu-11-16-session-format]] — 회차 포맷 (`provisional`)
 - [[edu-11-16-evidence-capture]] — 관찰 기록 수집 주체

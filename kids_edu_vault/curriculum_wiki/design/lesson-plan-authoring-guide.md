@@ -1,7 +1,7 @@
 ---
 type: spec
 status: draft
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 title: "학습 지도안 작성법"
 owner: JY

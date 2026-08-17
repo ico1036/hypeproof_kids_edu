@@ -23,12 +23,37 @@ tags:
 ```yaml
 type: method | activity | rubric | guardrail | constraint | spec | asset | track | lesson-plan | ingest-ruling | meta
 status: draft | active | quarantine | retired
-scope: edu-11-16          # 유효 범위
+scope: common | edu-11-16 | startup-ir     # 유효 범위. common = 라인 무관 정본
 ip_owner: unverified | hypeproof | partner-<name> | joint | derived-external
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 tags: [curriculum, ...]
 ```
+
+## `scope` — 값 체계 (2026-08-17 신설)
+
+| 값 | 뜻 | 접두사 |
+|---|---|---|
+| **`common`** | **라인 무관.** 라인이 몇 개로 늘어도 이 문서는 하나다 | `m-` `kr-` 또는 없음 |
+| `edu-11-16` | 11~16세 라인 전용 | `edu-11-16-` `ped-` |
+| `startup-ir` | 고등학생 창업·IR 라인 전용 | `startup-` |
+
+### 왜 `common`이 신설되었는가
+
+`curriculum_wiki/`가 만들어질 때 라인은 **하나뿐이었다.** 그래서 40건 전부에 `scope: edu-11-16`이 붙었다. 두 번째 라인(`startup-ir`)이 생기자 **`edu-constitution`(헌법)조차 형식상 창업 라인에 적용되지 않는 상태**가 드러났다.
+
+**게이트 문서가 라인 전용으로 잠겨 있으면 게이트가 아니다.** 2026-08-17 26건을 `common`으로 재판정했다.
+
+### 판정 기준
+
+> **"두 번째 라인에서도 이 문서를 그대로 읽을 것인가?"**
+> 그렇다 → `common` · 아니다 → 라인값
+
+- **헌법·금지개입·근거등급·방법론 카드·지도안 규격은 `common`이다.** 대상 연령이나 상품이 바뀌어도 변하지 않는다
+- **연령·시장·상품 근거는 라인값이다.** 특정 연령대 발달 특성, 특정 시장 가격, 특정 트랙 구조
+- **`common` 문서를 한 라인의 필요로 고치려 할 때는 멈춘다.** 그건 라인 전용 문서를 새로 만들라는 신호다
+
+⚠️ **`common`은 "모든 라인에 검증됐다"는 뜻이 아니다.** 방법론 카드의 근거는 대부분 특정 연령대 연구에서 왔다. 라인마다 이식 판정이 필요하다는 사실은 그대로다. → [[ruling-startup-ir-asset-alignment]]
 
 ## 파일명 — 접두사 체계 (2026-08-17 신설)
 

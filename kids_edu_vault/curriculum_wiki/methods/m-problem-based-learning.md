@@ -1,7 +1,7 @@
 ---
 type: method
 status: active
-scope: edu-11-16
+scope: common
 ip_owner: unverified
 id: m-004
 family: discovery
