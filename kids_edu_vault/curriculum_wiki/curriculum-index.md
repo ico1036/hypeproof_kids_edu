@@ -45,7 +45,7 @@ tags:
 - [[startup-youth-competition-kr]] — 청소년 창업경진대회 심사 배점. **아이템 30점 / 과정 70점**
 - [[startup-ir-deck-structures]] — Sequoia · YC · **PSST** 3계보. 산출물 규격 후보
 - [[startup-yeep-benchmark-kr]] — 국가가 **무료로 이미 제공하는 것**. 우리 하한선
-- [[yeep-resource-manifest]] — YEEP 자료실 전수 목록·재수집 방법 (203건)
+- [[startup-yeep-resource-manifest]] — YEEP 자료실 전수 목록·재수집 방법 (203건)
 
 **L0 사이클 ① 기존 주장 출처 검증**
 - [[ped-adolescent-cognitive-development-verification]] — 형식적 조작기 **기각** / 자기평가 정확도 지지
@@ -67,7 +67,7 @@ tags:
 - [[prohibited-moves]] — 강사 금지 개입 4계열
 - [[placement-rules]] — 배치 제약 C-1~C-9
 - [[measurement-axes]] — 측정 5축 × 3수준
-- [[curriculum-schema]] — 프론트매터 스키마 + lint 11개
+- [[curriculum-schema]] — 프론트매터 스키마 + **파일명 접두사 체계** + lint 12개
 - [[edu-11-16-track-architecture]] — 상품별 독립 완결 트랙
 - [[edu-11-16-session-format]] — 회차 포맷 (`provisional`)
 - [[edu-11-16-evidence-capture]] — 관찰 기록 수집 주체
