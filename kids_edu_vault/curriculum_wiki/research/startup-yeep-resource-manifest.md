@@ -19,18 +19,36 @@ tags:
 
 > **왜 이 목록이 필요한가**: 이 자료들은 우리 커리큘럼의 **하한선이자 비교 기준**이다. 무료로 이미 제공되는 것을 모르고 만들면 중복이 된다. → [[startup-yeep-benchmark-kr]]
 
-## 접근 방법 (로그인 불필요)
+## 재수집 — 도구가 있다
 
-목록: `https://yeep.go.kr/noti/eduExlntCaseList.do` (POST `currentPage`로 페이징)
-상세: `https://yeep.go.kr/noti/eduExlntCaseDetail.do?bltnNo=<번호>`
-첨부: `https://yeep.go.kr/file/getFileDownloadAllUser.do?sysFileName=<sysFileName>&uploadFileName=<URL인코딩된 파일명>&filePath=<filePath>&disp=attachment`
+원본 파일은 **저장소에 없다**(저작권·용량. 아래 참조). 대신 재수집 도구를 커밋해뒀다.
 
-상세 페이지의 `<a name="attFile">` 태그 속성(`fileNm`·`upldFileNm`·`filePathText`)이 각각 위 3개 파라미터다.
+```bash
+cd tools/yeep-fetch
+uv run yeep.py scrape   -o manifest.json
+uv run yeep.py download -m manifest.json -o ../../kids_edu_vault/.raw/yeep
+```
 
-⚠️ **원본 파일은 git에 포함하지 않는다** (총 2.5GB). `kids_edu_vault/.raw/yeep/` 는 gitignore 되어 있으며, 이 매니페스트로 재수집한다.
-⚠️ 저작권: 교육부·KOEF 공개 자료. **내부 참조·벤치마크 용도**. 재배포·상업적 이용 전 이용 조건 확인 필요.
+기본값은 이 문서의 우선순위 자료 42개(1.0GB). 범위 조절과 동작 원리는
+`tools/yeep-fetch/README.md` 참조. **로그인 불필요.**
 
-**✅ 표시**는 로컬에 내려받은 파일.
+### 접근 방식 (참고)
+
+목록: `POST /noti/eduExlntCaseList.do` (body `currentPage`)
+상세: `GET /noti/eduExlntCaseDetail.do?bltnNo=<번호>`
+첨부: `GET /file/getFileDownloadAllUser.do?sysFileName=&uploadFileName=&filePath=&disp=attachment`
+
+상세 페이지의 `<a name="attFile">` 속성(`fileNm`·`upldFileNm`·`filePathText`)이 그대로 위 3개 파라미터다.
+
+### ⛔ 원본을 커밋하지 않는다
+
+이 저장소는 **공개**이고 자료 저작권은 KOEF·교육부에 있으며 **공공누리 표시가 없다.**
+교수-학습 매뉴얼 판권지: *"무단 전재와 복제를 금합니다."*
+**내부 참조·연구·비평**은 되지만 **공개 저장소 게시는 재배포**다.
+기술적으로도 100MB 초과 파일 2개 때문에 GitHub이 푸시를 거부한다.
+→ `kids_edu_vault/.raw/yeep/` 는 gitignore 되어 있다. 해제하지 말 것.
+
+**✅ 표시**는 최초 수집(2026-08-17) 시 로컬에 내려받은 파일.
 
 
 ## 창업체험교육 콘텐츠 — 53건 / 첨부 242개

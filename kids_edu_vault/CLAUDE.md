@@ -55,6 +55,7 @@ Created: 2026-04-12
 ```
 kids_edu_vault/
 ├── .raw/                      # 원본 소스 (immutable). 두 트리 공유. 수정 금지
+│   └── yeep/                  # ⛔ gitignore. KOEF·교육부 저작물 → tools/yeep-fetch/ 로 재수집
 ├── _templates/                # 사업 위키용 템플릿 10종
 ├── _attachments/  exports/
 ├── wiki/                      # ── 사업 위키 (Mode C)
@@ -160,6 +161,7 @@ kids_edu_vault/
 - 모든 노트는 YAML frontmatter 필수: `type`, `status`, `created`, `updated`, `tags` (최소)
 - Wikilink는 `[[Note Name]]` 형식. **파일명은 볼트 전체에서 고유해야 한다** — 두 트리를 합쳐도
 - `.raw/` 안의 원본은 절대 수정 금지
+- **외부 저작물 원본은 커밋하지 않는다.** 이 저장소는 **공개**다. 국가·기관 공개자료라도 공공누리(KOGL) 표시가 없으면 내부 참조·연구·비평까지만 허용되고 **공개 저장소 게시는 재배포**다. `.raw/yeep/`(1.1GB, KOEF·교육부 저작물)는 gitignore이며 `tools/yeep-fetch/`로 재수집한다. 볼트에는 **우리가 쓴 분석만** 남기고 인용은 출처를 밝혀 필요한 범위로 제한한다
 - 각 트리의 `index`는 마스터 카탈로그: 문서 추가마다 갱신
 - 각 트리의 `log`는 추가 전용: 과거 엔트리 수정 금지. 새 로그는 **최상단**
 - 각 트리의 `hot`은 500단어 이내 캐시: 작업 끝날 때 **완전히 덮어쓸 것**(저널 아님)
