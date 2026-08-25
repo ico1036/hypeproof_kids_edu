@@ -9,6 +9,7 @@
 - `meeting_notes/` — 회의록, 커리큘럼, 환경 체크리스트, 병원 문의 초안
 - `kids_edu_vault/` — **Obsidian Vault (메인)**. 아래 구조 참조
 - `src/` — 기술 구현 소스
+- `tools/` — 조사·운영 보조 스크립트. `yeep-fetch/` = 국가 창업교육 자료(YEEP) 재수집 도구
 - `build_teams.md` — 팀 빌드 관련
 - `product-requirements-gap-plan.md` — PR과 구현 갭 분석
 - `2026-04-12-mvp-dev-plan.md` — MVP 개발 계획
@@ -97,6 +98,7 @@
 - 태그: `#tag` 형식
 - 템플릿: `_templates/` 폴더 참조
 - `.raw/` 폴더의 자료는 가공 후 `wiki/` 로 이동
+- **외부 저작물 원본은 저장소에 커밋하지 않는다.** 이 저장소는 **공개**다. 국가·기관 공개자료라도 공공누리 표시가 없으면 재배포가 아니라 내부 참조까지만 허용된다. `.raw/yeep/`(1.1GB)는 gitignore이며 **재수집 도구 `tools/yeep-fetch/`로 복원**한다. 볼트에는 우리가 쓴 분석만 남긴다
 
 ## Slash Commands
 - `/wiki` — 새 위키 페이지 생성

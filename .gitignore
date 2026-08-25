@@ -52,3 +52,6 @@ src/_backup_original/
 src/frontend/public/_backend.js
 # YEEP 공개자료 원본 (대용량 PDF/PPT/ZIP, 재다운로드 가능 — 매니페스트는 볼트에 커밋됨)
 kids_edu_vault/.raw/yeep/
+
+# 조사 중 내려받은 외부 원문 (학술 논문 등 저작권 있는 자료 포함) — 로컬 참조용
+kids_edu_vault/.raw/sources/
