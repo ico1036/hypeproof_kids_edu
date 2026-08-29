@@ -30,5 +30,8 @@ tags:
 - [[park-junghyun]] · [[lee-jaewon]] — 보아치과 이후 치과 AI 홈페이지 만들기 세미나 클라이언트 피드백 출처 (2026-06-07)
 - 이동훈 대표 · 문조일 대표 · 김성경 대표 · 박재현 소장 · 노수림 교수 — 필요 시 페이지 생성.
 
+- [[jesse-kim]] — 개발. 소스 구조 정리·기술 문서. 내부 병목 우선 관점
+- [[ir-mentor-candidates-20260915]] — 9/15 IR 멘토 후보 4인 (미확인 정보)
+
 ## Notes
 - 새 stakeholder는 `_templates/stakeholder.md`로 생성.

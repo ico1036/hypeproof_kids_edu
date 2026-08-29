@@ -16,6 +16,7 @@ tags:
 - [[pilot-env-design]] — 유료 파일럿 실행환경 설계
 
 ## Draft
+- [[teen-ai-startup-camp-v0]] — 중고등 AI 창업 캠프 사업 구상 v0 (2026-08-25, 대부분 미정)
 - [[sk-biopharma-bongho-curriculum-v2]] — 봉호 커리큘럼 코어를 본체로 둔 SK바이오팜 가족 AI 게임 창작 커리큘럼 v2
 - [[hypeproof-studio-game-skillpack-v1]] — HypeProof Studio 게임 제작 특화 스킬/룰/프롬프트팩 v1
 - [[sk-biopharma-curriculum-detail-v1]] — SK바이오팜 가족 AI Creation Lab 4시간 커리큘럼 상세 v1

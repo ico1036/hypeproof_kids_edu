@@ -16,6 +16,7 @@ tags:
 - [[environ-kukrip-amsenter]] — 국립암센터 파일럿 장소 현장 체크
 
 ## Research Synthesis
+- [[g-stack]] — G스택 (스텁). 1주차 분석 대상, 정체 미확인
 - [[research-peds-onc-coding-ed]] — 소아암 환아 대상 코딩·AI 교육 선례 (2026-04-12 autoresearch)
 
 ## Case Studies — 소아암 / 병원학교 / 테크 기반 교육

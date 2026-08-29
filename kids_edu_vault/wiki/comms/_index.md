@@ -18,6 +18,7 @@ tags:
 - [[2026-04-22-hospital-filamentary-checklist]] (2026-04-22) — 병원/필라멘트리 사전 확인 체크리스트
 
 ## Weekly / Meetings
+- [[2026-08-25-weekly-on-hypeproof]] — AI 네이티브 창업 교육 채택, IR 미션 드리븐 전환, 롱텀/숏텀 2축
 - [[2026-07-11-legal-professional-channel-meeting]] — 변호사 전문직 채널 미팅: 준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설
 - [[2026-06-29-weekly-on-hypeproof]] — 보아치과 AI 강의 아웃풋/차별점과 HypeProof 포지셔닝 정리
 - [[2026-04-21-asap-action-items]] — ASAP 액션 아이템 (필라멘트리 전달 마감 2026-04-24)

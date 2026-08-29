@@ -15,6 +15,8 @@ wiki-ingest 스킬이 소스를 처리할 때 생성하는 요약 페이지 목�
 
 ## 인덱스
 
+- [[hypeproof-mission-20260731-source]] — HypeProof Lab MISSION.md (정본, 제품 조직 정정 + 법인·IP 최우선 과제)
+- [[weekly-on-hypeproof-20260825-source]] — Weekly on HypeProof 2026-08-25 (창업 교육 사업안, 미션 드리븐 전환, 160분 리텐션)
 - [[legal-professional-channel-meeting-20260711-source]] — 변호사 전문직 채널 미팅 메모 (준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설)
 - [[boa-dental-ai-homepage-cuesheet-20260706]] — 보아치과 AI 홈페이지 실습 큐시트 2026-07-06 (2시간 외부 공유용 정본)
 - [[weekly-on-hypeproof-20260629-source]] — Weekly on HypeProof 2026-06-29 (보아치과 강의 아웃풋, Studio 로그, 우리만 가능한 포지셔닝)

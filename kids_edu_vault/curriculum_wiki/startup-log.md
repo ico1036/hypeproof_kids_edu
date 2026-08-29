@@ -3,7 +3,7 @@ type: meta
 scope: startup-ir
 title: "Startup Log"
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-29
 tags:
   - meta/log
   - curriculum
@@ -17,6 +17,14 @@ tags:
 공유 자산(`scope: common`) 변경은 [[curriculum-log]]에 기록한다. 라인 문서만 여기에 남긴다.
 
 ---
+
+## [2026-08-29] intake | 2026-08-25 사업 회의가 이 라인에 준 영향
+- Source: `wiki/` 회의록 [[2026-08-25-weekly-on-hypeproof]] (원본 `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 ...` 요약본 + 스크립트)
+- 갱신: `startup-hot` — "사업 쪽에서 들어온 것" 섹션 추가. 이 라인 문서는 신규 생성 없음
+- 들어온 것: 창업 교육이 **팀의 숏텀 시장 진입 축으로 채택** / 타겟이 **소득 상위 1%·해외 대학 진학 지망**으로 좁혀짐 / **30일 초과 시 학원 등록 의무** → 캠프 형식 / **연령·진로별 3~4개 트랙 스킴** 제안 / 교육 목표는 **문제 정의→해결→제품화 전 과정 경험**
+- 판정 필요로 남긴 것: 3~4개 트랙 스킴이 [[edu-11-16-track-architecture]]·[[ruling-profile-based-differentiation]]과 충돌하는가 / 캠프 형식이 [[startup-minor-legal-boundary-kr]] 조사와 일치하는가 / 좁아진 타겟이 [[ped-premium-private-education-benchmark-kr]] 전제와 맞는가
+- ⚠️ 경계: 회의에서 **모두의 창업 연계**가 다시 등장했으나 D-1을 뒤집지 않는다. [[ruling-startup-ir-target-and-scope]]의 미확정 3층 구조 중 한 층이며 **미성년자 본인인증이 선결**이다. 또한 사업 문서의 "IR"은 **회사 IR**이고 이 라인의 "IR"은 **학생 행위**다 — 같은 단어, 다른 대상
+- Key insight: 이 라인은 JY 단독 조사에서 팀 과제로 올라왔고, 그만큼 **사업 쪽 서술이 조사 결론을 앞질러 확정처럼 굳을 위험**이 생겼다. 사업 구상 [[teen-ai-startup-camp-v0]]은 스스로 "대부분 미정"이라고 명시하지만, 모두의 창업 연계와 G스택 차별점 두 항목은 이 라인의 조사·판정과 직접 충돌할 수 있어 감시 대상이다.
 
 ## [2026-08-17] ruling | 목표·채널·진입 구간 결정 4건 (JY)
 - Pages: `ruling-startup-ir-target-and-scope` / 갱신: `startup-hot` 전면, 벤치마크 2건에 지위 배너

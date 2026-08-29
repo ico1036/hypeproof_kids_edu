@@ -3,7 +3,7 @@ type: index
 status: navigational
 title: "Concepts"
 created: 2026-04-12
-updated: 2026-07-11
+updated: 2026-08-29
 tags:
   - index/concepts
 ---
@@ -13,6 +13,7 @@ tags:
 재사용되는 아이디어·프레임워크·용어. 한 개념 = 한 페이지. 조직 문맥의 전문 용어 설명.
 
 ## Core
+- [[hypeproof-mission]] — ⭐ **미션·정체성 정본 (2026-07-31).** 충돌 시 이 문서가 이긴다
 - [[hypeproof-lab]] — 조직 정의와 미션
 - [[mission-driven]] — 미션 드리븐 운영 철학
 - [[tracks-a-b]] — 운영 시스템 트랙 A(브랜딩) / B(사업화)

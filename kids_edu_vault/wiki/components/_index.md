@@ -27,6 +27,9 @@ tags:
 - [[cafe24]] — 기존 외주/호스팅 비교 대상
 - [[hypeproof-ai-xyz]] — AI 셀프 제작 레퍼런스 사이트
 
+## Internal Products
+- [[sediment]] — 지식 침전·활용 프로덕트 (스텁, 정의 미확정)
+
 ## Notes
 - 새 component는 `_templates/component.md`로 생성.
 - `stack_layer`: `infra | platform | ai | content`.

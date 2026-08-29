@@ -18,16 +18,18 @@ tags:
 
 ## Domains
 
-### Stakeholders (19)
+### Stakeholders (21)
 - [[stakeholders/_index|_index]]
 - [[jay-lee]] · [[jay]] (별칭, 2026-04-17) · [[jinyong-shin]] · [[jiwoong-kim]] · [[tj]] · [[bongho-tae]] · [[kiwon-nam]]
 - Pilot (신규, 2026-04-12): [[ryan]] · [[jehyeong]] · [[jungwoo]]
 - External (2026-04-21): [[filamentary]]
 - Dental seminar feedback (2026-06-07): [[boa-dental]] · [[park-junghyun]] · [[lee-jaewon]]
 - SK바이오팜 (2026-05-14~06-08): [[sk-biopharma]] · [[bitree]] · [[oh-sungeun]] · [[kim-jinhyuk]]
+- 창업·IR (2026-08-25): [[jesse-kim]] · [[ir-mentor-candidates-20260915]] (미확인 정보)
 
-### Comms — Meetings (16)
+### Comms — Meetings (17)
 - [[comms/_index|_index]]
+- [[2026-08-25-weekly-on-hypeproof]] (2026-08-25) — AI 네이티브 창업 교육 채택, IR 미션 드리븐 전환, 롱텀/숏텀 2축
 - [[2026-07-11-legal-professional-channel-meeting]] (2026-07-11) — 변호사 전문직 채널: 준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설
 - [[2026-06-29-weekly-on-hypeproof]] (2026-06-29) — 보아치과 AI 강의 아웃풋/차별점과 HypeProof 포지셔닝 정리
 - [[2026-05-12-sk-biopharma-meeting]] (2026-05-12) — SK바이오팜 × 비트리 × HypeProof Lab 미팅 (게임 창작 교육 프로그램 기획)
@@ -57,8 +59,9 @@ tags:
 - Bug / Content (2026-04-18→2026-05-01): [[game-bug-fix-2026-05-01]] · [[game-content-guideline-pending]] (pending — 의료 전문가 확인 전 보류)
 - LLM Infra: [[llm-provider-scaling]] — LLM 제공사 스케일링 결정
 
-### Deliverables (15)
+### Deliverables (16)
 - [[deliverables/_index|_index]]
+- [[ir-20260915-plan]] (2026-08-25) — 9/15 IR 준비 계획: 롱텀 미션 / 숏텀 마켓 2축, 3주 타임라인
 - [[okr-q2-jy]]
 - [[pilot-5-5-milestones]] — 전체 팀 마일스톤 (2026-04-12 확정)
 - [[2026-05-05-pilot]] — 파일럿 실행 현황 페이지 (2026-04-17 신규)
@@ -72,7 +75,7 @@ tags:
 - [[pilot-gemini-api-key]] · [[pilot-server-domain]] · [[pilot-oauth-setup]] · [[pilot-cline-gemini-integration]] · [[pilot-game-starter-template]] · [[pilot-rehearsal-late-april]] · [[pilot-operator-guide]]
 - [[curriculum-submission-v2]] (2026-04-22) — 커리큘럼 협력사 제출용 포맷 (final)
 
-### Specs (26)
+### Specs (27)
 - [[specs/_index|_index]]
 - [[pilot-env-design]] · [[pilot-curriculum-adapted]] · [[sk-biopharma-bongho-curriculum-v2]] · [[sk-biopharma-curriculum-detail-v1]] · [[hypeproof-studio-game-skillpack-v1]]
 - [[curriculum-wizard-v1]] (2026-04-20) — 나만의 마법 게임 만들기 커리큘럼 상세 스펙 (게임 타이틀 카드)
@@ -87,29 +90,33 @@ tags:
 - Core: [[curriculum-core]] — 커리큘럼 코어 (skin 독립 공통 로직)
 - Track A: [[curriculum-v2-lesson-wow-impact]] · [[curriculum-wow-lesson-run]]
 - Track B: [[legal-divorce-brief-prep-consulting]] (draft) · [[dental-doctor-curriculum-v1]] (archive) · [[dental-doctor-curriculum-v2]] (archive) · [[dental-doctor-curriculum-v3]] (active) · [[facilitator-script-dental-v3]] · [[dental-supersearch-curriculum-v4]] (draft) · [[dental-supersearch-engine-workshop-v2]] (draft) · [[dental-homepage-seminar-v1]] (draft) · [[dental-website-workshop-detail-v1]] (draft) · [[boa-dental-ai-homepage-cuesheet-20260706-spec]] (active)
+- Startup education (2026-08-25): [[teen-ai-startup-camp-v0]] (draft, 대부분 미정)
 - Skins: [[specs/skins/adult/skin-adult|adult/skin]] · [[specs/skins/kids/skin-kids|kids/skin]]
 
-### Components (15)
+### Components (16)
 - [[components/_index|_index]]
 - [[code-server]] · [[oauth2-proxy]] · [[caddy]] · [[cline]] · [[gemini-2-5-flash]] · [[sans-kids-school-2025]]
 - Dev (2026-04-12): [[kids-edu-backend]] · [[kids-edu-frontend]]
 - [[langgraph]] — LangGraph StateGraph 백엔드 (stub)
+- Internal products: [[sediment]] — 지식 침전·활용 프로덕트 (스텁)
 - Dental homepage stack (2026-06-07): [[gabia]] · [[cafe24]] · [[claude-code]] · [[vercel]] · [[cloudflare]] · [[hypeproof-ai-xyz]]
 
-### Concepts (13)
+### Concepts (14)
 - [[seven-ai-native-assets-sk-strategy]] — SK바이오팜 제안서의 7 AI Native Assets를 HypeProof Studio/성장 리포트/가격 방어 논리와 매칭한 전략 업데이트
 - [[concepts/_index|_index]]
+- ⭐ [[hypeproof-mission]] — **미션·정체성 정본 (2026-07-31).** 제품 조직 정정 + 법인·IP 최우선 과제. 충돌 시 이 문서가 이긴다
 - [[hypeproof-lab]] · [[mission-driven]] · [[tracks-a-b]] · [[fundamental-content-teams]] · [[ai-native-workflow]]
 - Pedagogy: [[no-debug-philosophy]] · [[ai-persona-workflows]] · [[single-html-runtime]] · [[vibe-coding]] (2026-04-21)
 - Product IP (2026-05-14): [[sixteen-essence]] · [[hypeproof-studio]]
 - Business: [[hypeproof-business-strategy]] (2026-05-04) — 2채널 수익 전략 (비트리 채널 / 다이렉트 채널)
 - Professional Channel: [[legal-brief-prep-loop]] — 변호사 준비서면 루프 (사실 추출, 해석 분기, truthworthy 교정, pass/fail 감각)
 
-### Intel (14)
+### Intel (15)
 - [[intel/_index|_index]]
 - [[boa-dental-demand-validation]] — 보아치과/박정현 원장 AI 강의 수요 검증
 - Venue: [[environ-kukrip-amsenter]]
 - Synthesis: [[research-peds-onc-coding-ed]]
+- External stack (2026-08-25): [[g-stack]] — 스텁, 정체 미확인
 - Cases: [[case-sickle-cell-coding-study]] · [[case-stjude-educational-challenges]] · [[case-starlight-therapeutic-gaming]] · [[case-techquity-pediatric-oncology]] · [[case-hospital-pedagogy-framework]] · [[case-pediatric-onc-infection-control]] · [[case-korean-hospital-schools]] · [[case-academic-continuity-peds-onc]] · [[case-oep-socioecological-program]]
 - Tech/Market (2026-04-12): [[intel-wrapper-architecture]] · [[intel-auth-billing-compliance]] · [[intel-competitive-landscape-2026]]
 
@@ -149,6 +156,8 @@ tags:
 - [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — HYROX 작업 중 보존한 HypeProof AI 협업 원칙 자산
 
 ### Sources — 원본 소스 요약 (wiki-ingest 자동 생성)
+- [[hypeproof-mission-20260731-source]] — HypeProof Lab MISSION.md 정본 (제품 조직 정정, 법인·IP 최우선 과제)
+- [[weekly-on-hypeproof-20260825-source]] — Weekly on HypeProof 2026-08-25 (창업 교육 사업안, 미션 드리븐 전환, 160분 리텐션)
 - [[legal-professional-channel-meeting-20260711-source]] — 변호사 전문직 채널 미팅 메모 (준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설)
 - [[boa-dental-ai-homepage-cuesheet-20260706]] — 보아치과 AI 홈페이지 실습 큐시트 2026-07-06 (2시간 외부 공유용 정본)
 - [[weekly-on-hypeproof-20260629-source]] — Weekly on HypeProof 2026-06-29 (보아치과 강의 아웃풋, Studio 로그, 우리만 가능한 포지셔닝)
@@ -163,6 +172,8 @@ tags:
 - [[questions/_index|_index]] _(현재 비어있음 — wiki-query 사용 시 자동 생성)_
 
 ## Recent Sources (ingested)
+- `/Users/jj_home/Git/HypeProof/hypeprooflab/MISSION.md` (2026-07-31 확정, 별도 레포 정본) → [[hypeproof-mission-20260731-source]] + [[hypeproof-mission]] + [[hypeproof-lab]] + [[mission-driven]] + [[hypeproof-business-strategy]]
+- `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 ...` 요약본 + 스크립트 (2026-08-25, 회의 1건 / 파일 2개) → [[weekly-on-hypeproof-20260825-source]] + [[2026-08-25-weekly-on-hypeproof]] + [[teen-ai-startup-camp-v0]] + [[ir-20260915-plan]] + [[ir-mentor-candidates-20260915]] + [[jesse-kim]] + [[g-stack]] + [[sediment]]
 - `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md` (2026-07-11, 변호사 전문직 채널 미팅 메모) → [[legal-professional-channel-meeting-20260711-source]] + [[2026-07-11-legal-professional-channel-meeting]] + [[legal-brief-prep-loop]] + [[legal-divorce-brief-prep-consulting]]
 - `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf` + `.html` + `.txt` (2026-07-06, 보아치과 AI 홈페이지 실습 큐시트) → [[boa-dental-ai-homepage-cuesheet-20260706]] + [[boa-dental-ai-homepage-cuesheet-20260706-spec]] + [[boa-dental]]
 - `.raw/meeting_notes/2026-06-29-weekly-on-hypeproof-gemini.md` (2026-06-29, Weekly on HypeProof) → [[weekly-on-hypeproof-20260629-source]] + [[2026-06-29-weekly-on-hypeproof]] + [[boa-dental]] + [[dental-website-copyclone-v3]] + [[hypeproof-studio]]
