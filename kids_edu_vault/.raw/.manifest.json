@@ -280,38 +280,9 @@
       "note": "Telegram ingest request from Jiwoong Kim: legal professional channel meeting notes; GEO and divorce-dismissal niche left as confirmation-needed."
     },
     ".raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini.md": {
-      "hash": "6250aa261e0b97a621daff20f4265d3f",
+      "hash": "b9a1a827cb3a51d0f4e7e374c9fb99cc",
       "ingested_at": "2026-08-29",
-      "note": "2026-08-25 Weekly 회의 1건의 Gemini 요약본 (파일 2개 = 회의 1건)",
-      "pages_created": [
-        "wiki/sources/weekly-on-hypeproof-20260825-source.md",
-        "wiki/comms/2026-08-25-weekly-on-hypeproof.md",
-        "wiki/specs/teen-ai-startup-camp-v0.md",
-        "wiki/deliverables/ir-20260915-plan.md",
-        "wiki/stakeholders/ir-mentor-candidates-20260915.md",
-        "wiki/stakeholders/jesse-kim.md",
-        "wiki/intel/g-stack.md",
-        "wiki/components/sediment.md"
-      ],
-      "pages_updated": [
-        "wiki/index.md",
-        "wiki/hot.md",
-        "wiki/log.md",
-        "wiki/comms/_index.md",
-        "wiki/sources/_index.md",
-        "wiki/stakeholders/_index.md",
-        "wiki/specs/_index.md",
-        "wiki/deliverables/_index.md",
-        "wiki/intel/_index.md",
-        "wiki/components/_index.md",
-        "curriculum_wiki/startup-hot.md",
-        "curriculum_wiki/startup-log.md"
-      ]
-    },
-    ".raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini (1).md": {
-      "hash": "15df32b6ea9f870462da676bf0dd258b",
-      "ingested_at": "2026-08-29",
-      "note": "2026-08-25 Weekly 회의 1건의 전체 스크립트 (파일 2개 = 회의 1건)",
+      "note": "2026-08-25 Weekly 요약본. 동반 스크립트 파일은 2026-08-29 삭제(공개 저장소 PII). 초대자 이메일·캘린더 링크 마스킹됨",
       "pages_created": [
         "wiki/sources/weekly-on-hypeproof-20260825-source.md",
         "wiki/comms/2026-08-25-weekly-on-hypeproof.md",

@@ -5,7 +5,7 @@ status: summarized
 source_type: meeting_transcript
 source_date: 2026-08-25
 raw_path: ".raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini.md"
-raw_path_transcript: ".raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini (1).md"
+transcript_status: deleted-2026-08-29
 tags:
   - source
   - meeting
@@ -22,9 +22,11 @@ related:
 
 # Source — Weekly on HypeProof 2026-08-25
 
-> [!note] 파일 2개 = 회의 1건
-> 같은 회의의 **Gemini 요약본**과 **전체 스크립트**(1,034줄)다. 별개 회의가 아니다.
-> 스크립트는 자동 음성 인식 결과라 인명·고유명사 오인식이 많다. **고유명사는 요약본 표기를 우선**하고, 스크립트는 맥락 보강용으로만 쓴다.
+> [!note] 원본은 요약본만 남아 있다
+> 최초 입수 시 같은 회의의 **Gemini 요약본**과 **전체 스크립트**(1,034줄) 2개 파일이었다. 별개 회의가 아니다.
+> **스크립트는 2026-08-29에 삭제했다** — 공개 저장소라 참석자 이메일과 사담이 포함된 축어록을 남기지 않는다. 원본이 필요하면 Google Docs 회의 기록(접근 제한)에서 다시 받는다.
+> 아래 정리는 **삭제 전 스크립트를 읽고 추출한 것**이다. 스크립트는 자동 음성 인식 결과라 인명·고유명사 오인식이 많았으므로 **고유명사는 요약본 표기를 채택**했다.
+> 요약본에서도 초대자 이메일 목록과 캘린더 링크는 커밋 전 마스킹했다.
 
 ## 요약
 
@@ -102,6 +104,6 @@ related:
 
 ## 원본
 
-- `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini.md` (요약본)
-- `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini (1).md` (스크립트)
+- `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini.md` (요약본, 이메일 마스킹됨)
+- ~~동 `(1).md` (전체 스크립트)~~ — 2026-08-29 삭제. 이 페이지가 그 내용의 유일한 볼트 기록이다
 - Meeting note: [[2026-08-25-weekly-on-hypeproof]]

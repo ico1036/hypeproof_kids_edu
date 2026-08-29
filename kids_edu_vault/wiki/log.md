@@ -19,7 +19,7 @@ tags:
 - Pages created: [[hypeproof-mission]], [[hypeproof-mission-20260731-source]], [[2026-08-25-weekly-on-hypeproof]], [[weekly-on-hypeproof-20260825-source]], [[teen-ai-startup-camp-v0]], [[ir-20260915-plan]], [[ir-mentor-candidates-20260915]], [[jesse-kim]], [[g-stack]], [[sediment]]
 - Pages updated: [[hypeproof-lab]], [[mission-driven]], [[hypeproof-business-strategy]], [[startup-hot]], [[startup-log]], [[concepts/_index]], [[comms/_index]], [[sources/_index]], [[stakeholders/_index]], [[specs/_index]], [[deliverables/_index]], [[intel/_index]], [[components/_index]], [[index]], [[hot]], [[log]]
 - Key insight: 미션 정본이 조직 정체성을 **콘텐츠 조직 → AI 제품 조직**으로 정정한다. 강의는 목적이 아니라 제품을 성숙시키고 고객을 얻는 수단이며, 그래서 강의 산출물은 부산물이 아니라 제품 자산이고 IP 귀속이 급하다. 법인·IP·라이선스 최우선 과제는 시한(2026-08-22)을 넘겼다. 8/25 회의는 이 정본과 정확히 같은 방향으로 움직였다 — Jay Lee가 IR을 마켓 드리븐에서 미션 드리븐으로 틀었고, 팀은 롱텀(미션)/숏텀(창업 교육) 2축을 채택했다. 다만 숏텀 축의 사업 가설은 전부 2차 정보이고 G스택 차별점에는 내부 반론이 있다. 현재 가장 단단한 근거는 SK바이오팜 세션의 평균 160분 리텐션 하나다.
-- Note: 파일 2개는 별개 회의가 아니라 **한 회의의 요약본 + 스크립트**다. `wiki/` 안에 "IR"이 회사 IR과 학생 IR 두 뜻으로 존재하게 되었으므로 문서 간 이동 시 주의.
+- Note: 파일 2개는 별개 회의가 아니라 **한 회의의 요약본 + 스크립트**였고, **스크립트는 2026-08-29 삭제**했다(공개 저장소 PII). 요약본의 초대자 이메일·캘린더 링크도 마스킹 후 커밋. `wiki/` 안에 "IR"이 회사 IR과 학생 IR 두 뜻으로 존재하게 되었으므로 문서 간 이동 시 주의.
 
 
 
