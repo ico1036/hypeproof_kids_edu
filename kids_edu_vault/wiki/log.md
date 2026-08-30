@@ -2,7 +2,7 @@
 type: meta
 title: "Log"
 created: 2026-04-12
-updated: 2026-08-29
+updated: 2026-08-30
 tags:
   - meta/log
 ---
@@ -12,6 +12,14 @@ tags:
 볼트 변경 이력. 최신 항목이 위.
 
 ---
+
+## [2026-08-30] ingest | 정본 8/10 포지셔닝 리셋 + 미션↔제품 정렬 점검
+- Sources: `hypeprooflab/MISSION.md`(확정 2026-07-31 · 개정 2026-08-10) · `hypeprooflab/docs/decisions/2026-08-10-positioning-reset.md`
+- Summary: [[hypeproof-positioning-reset-20260810]]
+- Pages created: [[hypeproof-positioning-reset-20260810]], [[mission-product-alignment]], [[chalk]]
+- Pages updated: [[hypeproof-mission]](7/31→8/10 전면 재작성), [[hypeproof-mission-20260731-source]](대체됨 배너), [[hypeproof-lab]], [[hypeproof-business-strategy]], [[mission-driven]], [[sediment]], [[concepts/_index]], [[components/_index]], [[sources/_index]], [[index]], [[hot]], [[log]]
+- Key insight: 8/29 작업 전체가 **7/31판 위에서** 이뤄졌다. 로컬 저장소가 855 커밋 뒤처져 있었고 마지막 fetch가 8/2였다. 그 결과 [[hypeproof-mission]]이 `status: canonical`을 달고 폐기된 문장을 싣고 있었다 — 정본을 자처하며 틀린 상태가 가장 나쁘다. 8/10 개정의 핵심은 문장이 아니라 **논증의 축**이다: 방어 논리가 잔여 방어에서 구조적 방어로 뒤집혔고("벤더가 개선할수록 시장이 커진다"), 사용자와 구매자가 분리됐으며, 직접 강의가 매출 사업에서 증명 엔진으로 재정의됐다. 그리고 정본이 **제3자 강사 운영 0건**을 사업 모델의 병목으로 못 박았다.
+- Note: **정본 인용 전 `git fetch`를 먼저 한다.** 오래된 체크아웃은 없는 것보다 나쁘다 — 확신을 주기 때문이다. 결정 문서도 같은 교훈을 남겼다: "의미 충돌은 먼저 머지된 쪽이 조용히 이긴다. 어떤 CI 게이트도 이걸 보지 않는다."
 
 ## [2026-08-29] ingest | HypeProof Lab MISSION.md (정본) + Weekly 2026-08-25
 - Sources: `/Users/jj_home/Git/HypeProof/hypeprooflab/MISSION.md` (별도 레포, 2026-07-31 확정 정본) · `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 20_58 KST - Notes by Gemini.md` + 동 `(1).md` 스크립트
@@ -752,4 +760,9 @@ tags:
 - 생성: `stakeholders/`, `decisions/`, `deliverables/`, `intel/`, `comms/` 각 `_index.md`.
 - 생성: `_templates/` (stakeholder, decision, deliverable, intel, meeting, source).
 - 생성: vault 루트 `CLAUDE.md`.
-- 2026-05-21 — Added [[dental-supersearch-curriculum-v4]] and [[dental-supersearch-engine-workshop-v2]]: dental supersearch hackathon curriculum combining HYROX-style “원장님을 이겨라” with FDE/SaaS-style internal knowledge capture.
+- 2026-05-21 — Added [[dental-supersearch-curriculum-v4]] and [[dental-supersearch-engine-workshop-v2]]: dental supersearch hackathon curriculum combining HYROX-style “원장님을 이겨라” with FDE/SaaS-style internal knowledge capture.## [2026-05-21] spec | 치과 지식 슈퍼서치엔진 v4
+- Pages: [[dental-supersearch-curriculum-v4]] · [[dental-supersearch-engine-workshop-v2]]
+- v3의 "원장님은 5분, 직원이 주인공" 구조를 유지하면서 산출물을 검색 웹앱 + 원장 검증 로그 + 병원 내부 검색 규칙으로 전환. "원장님을 이겨라" 게임 장치와 7 Assets를 검색스킬 제작 루프로 엮음
+- Note: 2026-08-30 hot 캐시 정리 시 log 기록이 없어 이관함
+
+

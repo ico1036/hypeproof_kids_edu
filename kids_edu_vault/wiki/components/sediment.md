@@ -1,13 +1,13 @@
 ---
 type: component
 title: "Sediment (세디먼트)"
-status: stub
+status: active
 tags:
   - component
   - product
   - internal
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 related:
   - "[[2026-08-25-weekly-on-hypeproof]]"
   - "[[hypeproof-studio]]"
@@ -15,8 +15,18 @@ related:
 
 # Sediment (세디먼트)
 
-> [!gap] 스텁 — 제품 정의가 확정되지 않았다
-> 2026-08-25 회의에서 언급된 자사 프로덕트다. 이 볼트에 기존 문서가 없어 회의 발화 기준으로 생성했다.
+> **지식 DB / SaaS 백엔드·프론트.** 제품 3종 중 하나로, Studio가 만든 증거를 **쌓고 꺼낸다.**
+> 2026-08-10 정본 개정으로 정의가 분명해졌다 — 아래 참조.
+
+## 정본이 정한 자리 (2026-08-10)
+
+미션의 세 층위 중 **혼란(disorder)** 에 대응하는 제품이다.
+
+> 직군 경계가 무너졌는데 **공통 언어가 없다.** Sediment는 **경계가 무너진 조직의 공통 판단 기준**이다.
+
+> [!important] 정의가 바뀌었다
+> v1: 조직 지식 유실 방지 → **v2: 보관이 아니라 판단 정렬(judgment alignment).**
+> 이 변경으로 붐비는 카테고리(지식관리)에서 빠져나올 자리를 얻었다. 기업 대화에서는 아이 얘기보다 먼저 꽂힐 수 있다.
 
 ## 원래 목적
 
@@ -36,4 +46,4 @@ related:
 
 ## 관련
 
-- [[2026-08-25-weekly-on-hypeproof]] · [[hypeproof-studio]] · [[hypeproof-mission]]
+- [[2026-08-25-weekly-on-hypeproof]] · [[hypeproof-studio]] · [[chalk]] · [[hypeproof-mission]] · [[mission-product-alignment]]

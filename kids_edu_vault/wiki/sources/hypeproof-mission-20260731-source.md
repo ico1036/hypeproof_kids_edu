@@ -11,7 +11,7 @@ tags:
   - organization
   - canonical
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 related:
   - "[[hypeproof-mission]]"
   - "[[hypeproof-lab]]"
@@ -19,7 +19,12 @@ related:
   - "[[hypeproof-business-strategy]]"
 ---
 
-# Source — HypeProof Lab MISSION.md
+# Source — HypeProof Lab MISSION.md (7/31판)
+
+> [!stale] 상위 판으로 대체됨
+> `MISSION.md`는 **2026-08-10에 개정**됐다. 이 요약은 7/31판 기준이며 **현행 정본이 아니다.**
+> 현행: [[hypeproof-positioning-reset-20260810]] · 미러: [[hypeproof-mission]]
+> 특히 미션 문장의 `AI를 배울 수 있게 한다`와 정체성 서술이 바뀌었다. 역사 기록으로만 참조할 것.
 
 > [!important] 이 소스는 **정본(canonical)** 이다
 > 2026-07-31 확정. 미션·정체성에 대해 이 볼트의 다른 문서와 충돌하면 **MISSION.md가 이긴다.**

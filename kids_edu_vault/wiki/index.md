@@ -98,13 +98,14 @@ tags:
 - [[code-server]] · [[oauth2-proxy]] · [[caddy]] · [[cline]] · [[gemini-2-5-flash]] · [[sans-kids-school-2025]]
 - Dev (2026-04-12): [[kids-edu-backend]] · [[kids-edu-frontend]]
 - [[langgraph]] — LangGraph StateGraph 백엔드 (stub)
-- Internal products: [[sediment]] — 지식 침전·활용 프로덕트 (스텁)
+- 제품 3종: [[hypeproof-studio]] (돌린다) · [[chalk]] (만든다, 제안 단계) · [[sediment]] (판단 정렬)
 - Dental homepage stack (2026-06-07): [[gabia]] · [[cafe24]] · [[claude-code]] · [[vercel]] · [[cloudflare]] · [[hypeproof-ai-xyz]]
 
 ### Concepts (14)
 - [[seven-ai-native-assets-sk-strategy]] — SK바이오팜 제안서의 7 AI Native Assets를 HypeProof Studio/성장 리포트/가격 방어 논리와 매칭한 전략 업데이트
 - [[concepts/_index|_index]]
-- ⭐ [[hypeproof-mission]] — **미션·정체성 정본 (2026-07-31).** 제품 조직 정정 + 법인·IP 최우선 과제. 충돌 시 이 문서가 이긴다
+- ⭐ [[hypeproof-mission]] — **미션·정체성 정본 (확정 2026-07-31 · 개정 2026-08-10).** 사교육 SW 회사 · 사용자/구매자 분리 · 증거 제품 라인
+- [[mission-product-alignment]] — 정본 ↔ 제품 대조. 규격 3분열 · 신원 취급 위험 · 세 칸 사다리
 - [[hypeproof-lab]] · [[mission-driven]] · [[tracks-a-b]] · [[fundamental-content-teams]] · [[ai-native-workflow]]
 - Pedagogy: [[no-debug-philosophy]] · [[ai-persona-workflows]] · [[single-html-runtime]] · [[vibe-coding]] (2026-04-21)
 - Product IP (2026-05-14): [[sixteen-essence]] · [[hypeproof-studio]]
@@ -156,7 +157,8 @@ tags:
 - [[hypeproof-hyrox-assets-v0.1]] (2026-05-03) — HYROX 작업 중 보존한 HypeProof AI 협업 원칙 자산
 
 ### Sources — 원본 소스 요약 (wiki-ingest 자동 생성)
-- [[hypeproof-mission-20260731-source]] — HypeProof Lab MISSION.md 정본 (제품 조직 정정, 법인·IP 최우선 과제)
+- [[hypeproof-positioning-reset-20260810]] — 포지셔닝 리셋 (정본 개정, 8/10)
+- [[hypeproof-mission-20260731-source]] — MISSION.md 7/31판 (대체됨)
 - [[weekly-on-hypeproof-20260825-source]] — Weekly on HypeProof 2026-08-25 (창업 교육 사업안, 미션 드리븐 전환, 160분 리텐션)
 - [[legal-professional-channel-meeting-20260711-source]] — 변호사 전문직 채널 미팅 메모 (준비서면 루프, truthworthy 요구, 이혼/GEO 니치 가설)
 - [[boa-dental-ai-homepage-cuesheet-20260706]] — 보아치과 AI 홈페이지 실습 큐시트 2026-07-06 (2시간 외부 공유용 정본)
@@ -172,7 +174,8 @@ tags:
 - [[questions/_index|_index]] _(현재 비어있음 — wiki-query 사용 시 자동 생성)_
 
 ## Recent Sources (ingested)
-- `/Users/jj_home/Git/HypeProof/hypeprooflab/MISSION.md` (2026-07-31 확정, 별도 레포 정본) → [[hypeproof-mission-20260731-source]] + [[hypeproof-mission]] + [[hypeproof-lab]] + [[mission-driven]] + [[hypeproof-business-strategy]]
+- `hypeprooflab/MISSION.md` + `docs/decisions/2026-08-10-positioning-reset.md` (2026-08-10 정본 개정) → [[hypeproof-positioning-reset-20260810]] + [[hypeproof-mission]] + [[mission-product-alignment]] + [[chalk]] + [[sediment]]
+- `hypeprooflab:MISSION.md` (2026-07-31 확정 — ⚠️ 8/10 개정으로 대체됨) → [[hypeproof-mission-20260731-source]] + [[hypeproof-mission]] + [[hypeproof-lab]] + [[mission-driven]] + [[hypeproof-business-strategy]]
 - `.raw/meeting_notes/Weekly on HypeProof - 2026_08_25 ...` 요약본 + 스크립트 (2026-08-25, 회의 1건 / 파일 2개) → [[weekly-on-hypeproof-20260825-source]] + [[2026-08-25-weekly-on-hypeproof]] + [[teen-ai-startup-camp-v0]] + [[ir-20260915-plan]] + [[ir-mentor-candidates-20260915]] + [[jesse-kim]] + [[g-stack]] + [[sediment]]
 - `.raw/telegram/2026-07-11-legal-professional-channel-meeting.md` (2026-07-11, 변호사 전문직 채널 미팅 메모) → [[legal-professional-channel-meeting-20260711-source]] + [[2026-07-11-legal-professional-channel-meeting]] + [[legal-brief-prep-loop]] + [[legal-divorce-brief-prep-consulting]]
 - `.raw/documents/boa-dental-ai-homepage-cuesheet-20260706.pdf` + `.html` + `.txt` (2026-07-06, 보아치과 AI 홈페이지 실습 큐시트) → [[boa-dental-ai-homepage-cuesheet-20260706]] + [[boa-dental-ai-homepage-cuesheet-20260706-spec]] + [[boa-dental]]

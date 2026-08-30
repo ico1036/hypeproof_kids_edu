@@ -308,22 +308,37 @@
         "curriculum_wiki/startup-log.md"
       ]
     },
-    "/Users/jj_home/Git/HypeProof/hypeprooflab/MISSION.md": {
-      "hash": "980a49164a916415299620c432281e8b",
-      "ingested_at": "2026-08-29",
-      "note": "별도 레포의 정본 문서. 원본이 개정되면 wiki/concepts/hypeproof-mission.md 미러를 갱신할 것",
+    "hypeprooflab:MISSION.md": {
+      "hash": "dc2da39d62673301064989b0751f2c5c",
+      "source_ref": "origin/main@c25e9871",
+      "ingested_at": "2026-08-30",
+      "note": "정본. 확정 2026-07-31 · 개정 2026-08-10(포지셔닝 리셋). 로컬 체크아웃이 아니라 origin/main 기준으로 읽었다. ⚠️ 외부 저장소 문서 — .raw/에 없다. 재확인 시 git fetch 선행",
       "pages_created": [
-        "wiki/sources/hypeproof-mission-20260731-source.md",
         "wiki/concepts/hypeproof-mission.md"
       ],
       "pages_updated": [
         "wiki/concepts/hypeproof-lab.md",
         "wiki/concepts/mission-driven.md",
         "wiki/concepts/hypeproof-business-strategy.md",
-        "wiki/concepts/_index.md",
+        "wiki/components/sediment.md"
+      ]
+    },
+    "hypeprooflab:docs/decisions/2026-08-10-positioning-reset.md": {
+      "hash": "10c4e26ddc1e3ec9f93ce92883e5a881",
+      "source_ref": "origin/main@c25e9871",
+      "ingested_at": "2026-08-30",
+      "note": "개정 근거와 버린 선택지. 하루에 두 번 개정(v1 오전/v2 저녁), 결정 4건. ⚠️ 외부 저장소 문서 — .raw/에 없다. 재확인 시 git fetch 선행",
+      "pages_created": [
+        "wiki/sources/hypeproof-positioning-reset-20260810.md",
+        "wiki/concepts/mission-product-alignment.md",
+        "wiki/components/chalk.md"
+      ],
+      "pages_updated": [
         "wiki/index.md",
         "wiki/hot.md",
-        "wiki/log.md"
+        "wiki/log.md",
+        "curriculum_wiki/curriculum-hot.md",
+        "curriculum_wiki/curriculum-log.md"
       ]
     }
   }
